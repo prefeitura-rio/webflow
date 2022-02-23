@@ -13,8 +13,6 @@ Copie o head abaixo e cole no seu template
 <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
 <script src="https://unpkg.com/scrollama"></script>
 <style>
-
-
     .mapboxgl-canvas-container.mapboxgl-touch-zoom-rotate.mapboxgl-touch-drag-pan,
     .mapboxgl-canvas-container.mapboxgl-touch-zoom-rotate.mapboxgl-touch-drag-pan .mapboxgl-canvas {
         touch-action: unset;
@@ -52,15 +50,28 @@ Copie o body abaixo e cole no seu template
       id: 'riodejaneiro',
       // mapAnimation: 'easeTo', // flyTo, easeTo
       location: {
-        center: {
-          lon: -43.41869,
-          lat: -22.95622
-        },
-        zoom: 10.85,
-        pitch: 27.00,
-        bearing: -2.79,
-        speed: 2,
-        curve: 1
+        mobile: {
+          center: {
+            lon: -43.41869,
+            lat: -22.95622
+          },
+          zoom: 10.85,
+          pitch: 27.00,
+          bearing: -2.79,
+          speed: 2,
+          curve: 1
+          },
+        desktop: {
+          center: {
+            lon: -43.41869,
+            lat: -22.95622
+          },
+          zoom: 8.85,
+          pitch: 27.00,
+          bearing: -2.79,
+          speed: 2,
+          curve: 1
+          }
       },
       rotateAnimation: {
         duration: 100, // seconds
@@ -69,27 +80,40 @@ Copie o body abaixo e cole no seu template
       mapAnimation: 'flyTo',
       // callback: 'newContainer', 
       onChapterEnter: [{
-        layer: 'municipio',
+        layer: 'jacarezinho-full',
         opacity: 1,
       }, ],
       onChapterExit: [{
-        layer: 'municipio ',
+        layer: 'jacarezinho-full',
         opacity: 0,
       }]
     },
     {
       id: 'bairro',
       location: {
-        center: {
-          lon: -43.25119,
-          lat: -22.88566
+        mobile: {
+          center: {
+            lon: -43.25119,
+            lat: -22.88566
+          },
+          zoom: 14.98,
+          pitch: 8.50,
+          bearing: -34.70,
+          speed: 2,
+          curve: 1
         },
-        zoom: 14.98,
-        pitch: 8.50,
-        bearing: -34.70,
-        speed: 2,
-        curve: 1
-      },
+        desktop: {
+            center: {
+              lon: -43.25119,
+              lat: -22.88566
+            },
+            zoom: 14.98,
+            pitch: 8.50,
+            bearing: -34.70,
+            speed: 2,
+            curve: 1
+          },
+        },
       mapAnimation: 'flyTo',
       onChapterEnter: [
       {
@@ -129,39 +153,17 @@ Copie o body abaixo e cole no seu template
     return layerTypes[layerType];
   }
 
-  function setLayerOpacity(layer) {
-    var paintProps = getLayerPaintType(layer.layer);
-    paintProps.forEach(function(prop) {
-      var options = {};
-      if (layer.duration) {
-        var transitionProp = prop + "-transition";
-        options = {
-          "duration": layer.duration
-        };
-        map.setPaintProperty(layer.layer, transitionProp, options);
-      }
-      map.setPaintProperty(layer.layer, prop, layer.opacity, options);
-    });
+  function getWidth() {
+    return Math.max(
+      document.body.scrollWidth,
+      document.documentElement.scrollWidth,
+      document.body.offsetWidth,
+      document.documentElement.offsetWidth,
+      document.documentElement.clientWidth
+    );
   }
 
-  mapboxgl.accessToken = config.accessToken;
-
-  console.log('Here1')
-  var map = new mapboxgl.Map({
-    container: 'map',
-    style: config.style,
-    center: config.chapters[0].location.center,
-    zoom: config.chapters[0].location.zoom,
-    bearing: config.chapters[0].location.bearing,
-    pitch: config.chapters[0].location.pitch,
-    interactive: false
-  });
-
-  console.log('Here2')
-  // instantiate the scrollama
-  var scroller = scrollama();
-
-  map.on("load", function() {
+  function set3dTerrain(map, config) {
     if (config.use3dTerrain) {
       map.addSource('mapbox-dem', {
         'type': 'raster-dem',
@@ -186,6 +188,42 @@ Copie o body abaixo e cole no seu template
         }
       });
     };
+  }
+
+  function setLayerOpacity(layer) {
+    var paintProps = getLayerPaintType(layer.layer);
+    paintProps.forEach(function(prop) {
+      var options = {};
+      if (layer.duration) {
+        var transitionProp = prop + "-transition";
+        options = {
+          "duration": layer.duration
+        };
+        map.setPaintProperty(layer.layer, transitionProp, options);
+      }
+      map.setPaintProperty(layer.layer, prop, layer.opacity, options);
+    });
+  }
+
+  mapboxgl.accessToken = config.accessToken;
+
+  console.log('Here1')
+  var map = new mapboxgl.Map({
+    container: 'map',
+    style: config.style,
+    center: config.chapters[0].location.mobile.center,
+    zoom: config.chapters[0].location.mobile.zoom,
+    bearing: config.chapters[0].location.mobile.bearing,
+    pitch: config.chapters[0].location.mobile.pitch,
+    interactive: false
+  });
+
+  // instantiate the scrollama
+  var scroller = scrollama();
+
+  map.on("load", function() {
+    // Load 3d buildings
+    set3dTerrain(map, config);
 
     // setup the instance, pass callback functions
     scroller
@@ -194,11 +232,21 @@ Copie o body abaixo e cole no seu template
       offset: 0.5,
     })
       .onStepEnter(response => {
+
       console.log(response)
       var chapter = config.chapters.find(chap => chap.id === response.element.id);
       console.log(chapter)
+
       response.element.classList.add('active');
-      map[chapter.mapAnimation || 'flyTo'](chapter.location);
+
+      console.log(getWidth())
+      if (getWidth() < 500) {
+        map[chapter.mapAnimation || 'flyTo'](chapter.location.mobile)
+      } else {
+        map[chapter.mapAnimation || 'flyTo'](chapter.location.desktop) 
+      }
+
+      
       if (chapter.onChapterEnter.length > 0) {
         chapter.onChapterEnter.forEach(setLayerOpacity);
       }
