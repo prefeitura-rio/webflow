@@ -45,6 +45,7 @@ Copie o body abaixo e cole no seu template
     style: 'mapbox://styles/caiojacintho/ckyu4kjqz000a14p7kivbajq6',
     accessToken: 'pk.eyJ1IjoiY2Fpb2phY2ludGhvIiwiYSI6ImNreXVmeGNjeTBiaGczMm1sYTAzc2EyNWwifQ.gmZ0eUpq0-tgaQb3tJ0PiQ',
     theme: 'light',
+    cameraViewWidthBreakpoint: 500, // in pixels
     use3dTerrain: true,
     chapters: [{
       id: 'riodejaneiro',
@@ -55,7 +56,7 @@ Copie o body abaixo e cole no seu template
             lon: -43.41869,
             lat: -22.95622
           },
-          zoom: 10.85,
+          zoom: 12.85,
           pitch: 27.00,
           bearing: -2.79,
           speed: 2,
@@ -211,10 +212,10 @@ Copie o body abaixo e cole no seu template
   var map = new mapboxgl.Map({
     container: 'map',
     style: config.style,
-    center: config.chapters[0].location.mobile.center,
-    zoom: config.chapters[0].location.mobile.zoom,
-    bearing: config.chapters[0].location.mobile.bearing,
-    pitch: config.chapters[0].location.mobile.pitch,
+    center: config.chapters[0].location.desktop.center,
+    zoom: config.chapters[0].location.desktop.zoom,
+    bearing: config.chapters[0].location.desktop.bearing,
+    pitch: config.chapters[0].location.desktop.pitch,
     interactive: false
   });
 
@@ -239,9 +240,8 @@ Copie o body abaixo e cole no seu template
 
       response.element.classList.add('active');
 
-      console.log(getWidth())
-      if (getWidth() < 500) {
-        map[chapter.mapAnimation || 'flyTo'](chapter.location.mobile)
+      if (getWidth() < config.cameraViewWidthBreakpoint) {
+        map[chapter.mapAnimation || 'flyTo'](chapter.location.mobile || chapter.location.desktop)
       } else {
         map[chapter.mapAnimation || 'flyTo'](chapter.location.desktop) 
       }
