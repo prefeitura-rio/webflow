@@ -134,7 +134,7 @@ function startMap() {
         // setup the instance, pass callback functions
         scroller
         .setup({
-        step: '.section',
+        step: '.section1',
         offset: 0.5,
         })
         .onStepEnter(response => {
