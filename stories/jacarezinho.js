@@ -4,352 +4,85 @@ var config = {
     theme: 'light',
     use3dTerrain: true,
     chapters: [{
-      id: 'inicio',
+      id: 'riodejaneiro',
+      // mapAnimation: 'easeTo', // flyTo, easeTo
       location: {
-        center: [-43.51986, -23.01196],
-        zoom: 7.74,
-        pitch: 15.50,
-        bearing: 0.00,
-        speed: 2,
-        curve: 1
+        mobile: {
+          center: {
+            lon: -43.41869,
+            lat: -22.95622
+          },
+          zoom: 10.85,
+          pitch: 27.00,
+          bearing: -2.79,
+          speed: 2,
+          curve: 1
+          },
+        desktop: {
+          center: {
+            lon: -43.41869,
+            lat: -22.95622
+          },
+          zoom: 8.85,
+          pitch: 27.00,
+          bearing: -2.79,
+          speed: 2,
+          curve: 1
+          }
       },
       rotateAnimation: {
-        duration: 120, 
-        degrees: 180 
+        duration: 100, // seconds
+        degrees: 180 // degress
       },
       mapAnimation: 'flyTo',
-      onChapterEnter: [
-      {
-        layer: 'municipio',
-        opacity: .3,
-      }, 
-      ],
-      onChapterExit: [
-      {
-        layer: 'municipio',
+      // callback: 'newContainer', 
+      onChapterEnter: [{
+        layer: 'jacarezinho-full',
+        opacity: 1,
+      }, ],
+      onChapterExit: [{
+        layer: 'jacarezinho-full',
         opacity: 0,
-      }
-      ]
+      }]
     },
     {
-      id: 'parte1',
+      id: 'bairro',
       location: {
-        center: [-43.25988, -22.89086],
-        zoom: 13.58,
-        pitch: 15.50,
-        bearing: -35.20,
-        speed: 2,
-        curve: 1
-      },
-      rotateAnimation: {
-        duration: 0,
-        degrees: 0 
-      },
-      mapAnimation: 'flyTo',
-      onChapterEnter: [
-      {
-        layer: 'fogocruzado',
-        opacity: 1,
-      }, 
-            {
-        layer: 'jacarezinho',
-        opacity: 1,
-      }, 
-      ],
-      onChapterExit: [
-      {
-        layer: 'fogocruzado',
-        opacity: 0,
-      },
-            {
-        layer: 'jacarezinho',
-        opacity: 0,
-      }
-      ]
-    },
-         {
-      id: 'parte2',
-      location: {
-        center: [-43.25988, -22.89086],
-        zoom: 13.58,
-        pitch: 15.50,
-        bearing: -35.20,
-        speed: 2,
-        curve: 1
-      },
-      rotateAnimation: {
-        duration: 0, 
-        degrees: 0 
-      },
-      mapAnimation: 'flyTo',
-      onChapterEnter: [
-      {
-        layer: 'populacao',
-        opacity: .8,
-      }
-      ],
-      onChapterExit: [
-        {
-          layer: 'populacao',
-          opacity: 0,
-        }
-      ]
-    },
-         {
-      id: 'parte4',
-      location: {
-        center: [-43.25988, -22.89086],
-        zoom: 13.58,
-        pitch: 15.50,
-        bearing: -35.20,
-        speed: 2,
-        curve: 1
-      },
-      rotateAnimation: {
-        duration: 0, 
-        degrees: 0 
-      },
-      mapAnimation: 'flyTo',
-      onChapterEnter: [
-      {
-        layer: 'renda',
-        opacity: .8,
-      }
-      ],
-      onChapterExit: [
-        {
-          layer: 'renda',
-          opacity: 0,
-        }
-      ]
-    },
-                 {
-      id: 'parte5',
-      location: {
-        center: [-43.25435, -22.88469],
-        zoom: 12.69,
-        pitch: 15.00,
-        bearing: -32.35,
-        speed: 2,
-        curve: 1
-      },
-      rotateAnimation: {
-        duration: 0, 
-        degrees: 0
-      },
-      mapAnimation: 'flyTo',
-      onChapterEnter: [
-      {
-        layer: 'escolas',
-        opacity: 1,
-      },
-        {
-        layer: 'creches',
-        opacity: 1,
-      },
-        {
-        layer: 'bairros',
-        opacity: .2,
-      }
-      ],
-      onChapterExit: [
-        {
-          layer: 'escolas',
-          opacity: 0,
+        mobile: {
+          center: {
+            lon: -43.25119,
+            lat: -22.88566
+          },
+          zoom: 14.98,
+          pitch: 8.50,
+          bearing: -34.70,
+          speed: 2,
+          curve: 1
         },
-                {
-          layer: 'creches',
-          opacity: 0,
+        desktop: {
+            center: {
+              lon: -43.25119,
+              lat: -22.88566
+            },
+            zoom: 14.98,
+            pitch: 8.50,
+            bearing: -34.70,
+            speed: 2,
+            curve: 1
+          },
         },
-                {
-          layer: 'bairros',
-          opacity: 0,
-        }
-      ]
-     },
-             {
-      id: 'parte6',
-      location: {
-        center: [-43.25435, -22.88469],
-        zoom: 12.69,
-        pitch: 15.00,
-        bearing: -32.35,
-        speed: 2,
-        curve: 1
-      },
-      rotateAnimation: {
-        duration: 0, 
-        degrees: 0 
-      },
       mapAnimation: 'flyTo',
       onChapterEnter: [
       {
-        layer: 'escolas',
-        opacity: 1,
-      },
-        {
-        layer: 'creches',
-        opacity: 1,
-      },
-        {
-        layer: 'bairros',
-        opacity: .2,
-      }
-      ],
-      onChapterExit: [
-        {
-          layer: 'escolas',
-          opacity: 0,
-        },
-                {
-          layer: 'creches',
-          opacity: 0,
-        },
-                {
-          layer: 'bairros',
-          opacity: 0,
-        }
-      ]
-     },
-             {
-      id: 'parte7',
-      location: {
-        center: [-43.26084, -22.88630],
-        zoom: 13.73,
-        pitch: 60.00,
-        bearing: -9.95,
-        speed: 2,
-        curve: 1
-      },
-      rotateAnimation: {
-        duration: 0, 
-        degrees: 0 
-      },
-      mapAnimation: 'flyTo',
-      onChapterEnter: [
-      {
-        layer: 'saude',
+        layer: 'jacarezinho-full',
         opacity: 1,
       }
       ],
       onChapterExit: [
         {
-          layer: 'saude',
+          layer: 'jacarezinho-full',
           opacity: 0,
         }
       ]
-    },
-                 {
-      id: 'parte8',
-      location: {
-        center: [-43.26084, -22.88630],
-        zoom: 13.73,
-        pitch: 60.00,
-        bearing: -9.95,
-        speed: 2,
-        curve: 1
-      },
-      rotateAnimation: {
-        duration: 0, 
-        degrees: 0 
-      },
-      mapAnimation: 'flyTo',
-      onChapterEnter: [
-      {
-        layer: 'saude',
-        opacity: 1,
-      }
-      ],
-      onChapterExit: [
-        {
-          layer: 'saude',
-          opacity: 0,
-        }
-      ]
-    },
-                 {
-      id: 'parte9',
-      location: {
-        center: [-43.26084, -22.88630],
-        zoom: 13.73,
-        pitch: 60.00,
-        bearing: -9.95,
-        speed: 2,
-        curve: 1
-      },
-      rotateAnimation: {
-        duration: 0, 
-        degrees: 0 
-      },
-      mapAnimation: 'flyTo',
-      onChapterEnter: [
-      {
-        layer: 'saude',
-        opacity: 1,
-      }
-      ],
-      onChapterExit: [
-        {
-          layer: 'saude',
-          opacity: 0,
-        }
-      ]
-    },
-                 {
-      id: 'parte10',
-      location: {
-        center: [-43.26084, -22.88630],
-        zoom: 13.73,
-        pitch: 60.00,
-        bearing: -9.95,
-        speed: 2,
-        curve: 1
-      },
-      rotateAnimation: {
-        duration: 0, 
-        degrees: 0 
-      },
-      mapAnimation: 'flyTo',
-      onChapterEnter: [
-      {
-        layer: 'saude',
-        opacity: 1,
-      }
-      ],
-      onChapterExit: [
-        {
-          layer: 'saude',
-          opacity: 0,
-        }
-      ]
-    },
-                 {
-      id: 'parte11',
-      location: {
-        center: [-43.26084, -22.88630],
-        zoom: 13.73,
-        pitch: 60.00,
-        bearing: -9.95,
-        speed: 2,
-        curve: 1
-      },
-      rotateAnimation: {
-        duration: 0, 
-        degrees: 0 
-      },
-      mapAnimation: 'flyTo',
-      onChapterEnter: [
-      {
-        layer: 'saude',
-        opacity: 1,
-      }
-      ],
-      onChapterExit: [
-        {
-          layer: 'saude',
-          opacity: 0,
-        }
-      ]
-    },
-        ]
+    }, ]
   };
