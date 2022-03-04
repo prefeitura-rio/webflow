@@ -80,7 +80,7 @@ var config = {
                 },
                 {
                     layer: 'jacarezinho-full',
-                    opacity: .2,
+                    opacity: .25,
                 }
             ],
             onChapterExit: [{
@@ -134,7 +134,7 @@ var config = {
                 },
                 {
                     layer: 'jacarezinho-full',
-                    opacity: .2,
+                    opacity: .25,
                 }
             ],
             onChapterExit: [{
