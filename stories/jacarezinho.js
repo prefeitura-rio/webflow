@@ -75,12 +75,20 @@ var config = {
                     opacity: 1,
                 },
                 {
+                    layer: 'jacarezinho',
+                    opacity: 1,
+                },
+                {
                     layer: 'jacarezinho-full',
                     opacity: .2,
                 }
             ],
             onChapterExit: [{
                     layer: 'fogocruzado',
+                    opacity: 0,
+                },
+                {
+                    layer: 'jacarezinho',
                     opacity: 0,
                 },
                 {
@@ -91,6 +99,60 @@ var config = {
         },
         {
             id: 'parte2',
+            location: {
+                mobile: {
+                    center: {
+                        lon: -43.25119,
+                        lat: -22.88566
+                    },
+                    zoom: 14.98,
+                    pitch: 8.50,
+                    bearing: -34.70,
+                    speed: 2,
+                    curve: 1
+                },
+                desktop: {
+                    center: {
+                        lon: -43.25852,
+                        lat: -22.88845
+                    },
+                    zoom: 14.92,
+                    pitch: 1.50,
+                    bearing: -36.40,
+                    speed: 2,
+                    curve: 1
+                },
+            },
+            mapAnimation: 'flyTo',
+            onChapterEnter: [{
+                    layer: 'fogocruzado',
+                    opacity: 1,
+                },
+                {
+                    layer: 'jacarezinho',
+                    opacity: 1,
+                },
+                {
+                    layer: 'jacarezinho-full',
+                    opacity: .2,
+                }
+            ],
+            onChapterExit: [{
+                    layer: 'fogocruzado',
+                    opacity: 0,
+                },
+                {
+                    layer: 'jacarezinho',
+                    opacity: 0,
+                },
+                {
+                    layer: 'jacarezinho-full',
+                    opacity: 0,
+                }
+            ]
+        },
+        {
+            id: 'parte3',
             location: {
                 mobile: {
                     center: {
@@ -118,7 +180,7 @@ var config = {
             mapAnimation: 'flyTo',
             onChapterEnter: [{
                 layer: 'populacao',
-                opacity: 1,
+                opacity: .8,
             }],
             onChapterExit: [{
                 layer: 'populacao',
@@ -126,7 +188,7 @@ var config = {
             }]
         },
         {
-            id: 'parte3',
+            id: 'parte4',
             location: {
                 mobile: {
                     center: {
@@ -141,28 +203,214 @@ var config = {
                 },
                 desktop: {
                     center: {
-                        lon: -43.25085,
-                        lat: -22.88066
+                        lon: -43.25986,
+                        lat: -22.88952
                     },
-                    zoom: 11.49,
+                    zoom: 14.47,
                     pitch: 1.50,
-                    bearing: 0.00,
+                    bearing: -36.40,
                     speed: 2,
                     curve: 1
                 },
             },
             mapAnimation: 'flyTo',
             onChapterEnter: [{
-                layer: 'cres',
+                layer: 'populacao',
                 opacity: .8,
             }],
             onChapterExit: [{
-                layer: 'cres',
+                layer: 'populacao',
                 opacity: 0,
             }]
         },
         {
-            id: 'parte4',
+            id: 'parte5',
+            location: {
+                mobile: {
+                    center: {
+                        lon: -43.25119,
+                        lat: -22.88566
+                    },
+                    zoom: 14.98,
+                    pitch: 8.50,
+                    bearing: -34.70,
+                    speed: 2,
+                    curve: 1
+                },
+                desktop: {
+                    center: {
+                        lon: -43.25537,
+                        lat: -22.88806
+                    },
+                    zoom: 14.36,
+                    pitch: 0.50,
+                    bearing: -37.35,
+                    speed: 2,
+                    curve: 1
+                },
+            },
+            mapAnimation: 'flyTo',
+            onChapterEnter: [{
+                    layer: 'cres',
+                    opacity: .2,
+                },
+                {
+                    layer: 'escolas',
+                    opacity: 1,
+                },
+                {
+                    layer: 'creches',
+                    opacity: 1,
+                },
+                {
+                    layer: 'bairros',
+                    opacity: 1,
+                }
+            ],
+            onChapterExit: [{
+                    layer: 'cres',
+                    opacity: 0,
+                },
+                {
+                    layer: 'escolas',
+                    opacity: 0,
+                },
+                {
+                    layer: 'creches',
+                    opacity: 0,
+                },
+                {
+                    layer: 'bairros',
+                    opacity: 0,
+                }
+            ]
+        },
+        {
+            id: 'parte6',
+            location: {
+                mobile: {
+                    center: {
+                        lon: -43.25119,
+                        lat: -22.88566
+                    },
+                    zoom: 14.98,
+                    pitch: 8.50,
+                    bearing: -34.70,
+                    speed: 2,
+                    curve: 1
+                },
+                desktop: {
+                    center: {
+                        lon: -43.25537,
+                        lat: -22.88806
+                    },
+                    zoom: 14.36,
+                    pitch: 0.50,
+                    bearing: -37.35,
+                    speed: 2,
+                    curve: 1
+                },
+            },
+            mapAnimation: 'flyTo',
+            onChapterEnter: [{
+                    layer: 'cres',
+                    opacity: .2,
+                },
+                {
+                    layer: 'escolas',
+                    opacity: 1,
+                },
+                {
+                    layer: 'creches',
+                    opacity: 1,
+                },
+                {
+                    layer: 'bairros',
+                    opacity: 1,
+                }
+            ],
+            onChapterExit: [{
+                    layer: 'cres',
+                    opacity: 0,
+                },
+                {
+                    layer: 'escolas',
+                    opacity: 0,
+                },
+                {
+                    layer: 'creches',
+                    opacity: 0,
+                },
+                {
+                    layer: 'bairros',
+                    opacity: 0,
+                }
+            ]
+        },
+        {
+            id: 'parte7',
+            location: {
+                mobile: {
+                    center: {
+                        lon: -43.25119,
+                        lat: -22.88566
+                    },
+                    zoom: 14.98,
+                    pitch: 8.50,
+                    bearing: -34.70,
+                    speed: 2,
+                    curve: 1
+                },
+                desktop: {
+                    center: {
+                        lon: -43.25537,
+                        lat: -22.88806
+                    },
+                    zoom: 14.36,
+                    pitch: 0.50,
+                    bearing: -37.35,
+                    speed: 2,
+                    curve: 1
+                },
+            },
+            mapAnimation: 'flyTo',
+            onChapterEnter: [{
+                    layer: 'cres',
+                    opacity: .2,
+                },
+                {
+                    layer: 'escolas',
+                    opacity: 1,
+                },
+                {
+                    layer: 'creches',
+                    opacity: 1,
+                },
+                {
+                    layer: 'bairros',
+                    opacity: 1,
+                }
+            ],
+            onChapterExit: [{
+                    layer: 'cres',
+                    opacity: 0,
+                },
+                {
+                    layer: 'escolas',
+                    opacity: 0,
+                },
+                {
+                    layer: 'creches',
+                    opacity: 0,
+                },
+                {
+                    layer: 'bairros',
+                    opacity: 0,
+                }
+            ]
+        },
+        {
+            id: 'parte8',
             location: {
                 mobile: {
                     center: {
@@ -208,7 +456,7 @@ var config = {
             ]
         },
         {
-            id: 'parte5',
+            id: 'parte9',
             location: {
                 mobile: {
                     center: {
@@ -240,7 +488,7 @@ var config = {
                 },
                 {
                     layer: 'saude2',
-                    opacity: .3,
+                    opacity: .4,
                 }
             ],
             onChapterExit: [{
@@ -254,7 +502,7 @@ var config = {
             ]
         },
         {
-            id: 'parte6',
+            id: 'parte10',
             location: {
                 mobile: {
                     center: {
@@ -291,6 +539,98 @@ var config = {
             ],
             onChapterExit: [{
                     layer: 'hidrografia',
+                    opacity: 0,
+                },
+                {
+                    layer: '',
+                    opacity: 0,
+                }
+            ]
+        },
+        {
+            id: 'parte11',
+            location: {
+                mobile: {
+                    center: {
+                        lon: -43.25119,
+                        lat: -22.88566
+                    },
+                    zoom: 14.98,
+                    pitch: 8.50,
+                    bearing: -34.70,
+                    speed: 2,
+                    curve: 1
+                },
+                desktop: {
+                    center: {
+                        lon: -43.26318,
+                        lat: -22.89040
+                    },
+                    zoom: 14.78,
+                    pitch: 57.00,
+                    bearing: 17.13,
+                    speed: 2,
+                    curve: 1
+                },
+            },
+            mapAnimation: 'flyTo',
+            onChapterEnter: [{
+                    layer: 'hidrografia',
+                    opacity: 1,
+                },
+                {
+                    layer: '',
+                    opacity: .3,
+                }
+            ],
+            onChapterExit: [{
+                    layer: 'hidrografia',
+                    opacity: 0,
+                },
+                {
+                    layer: '',
+                    opacity: 0,
+                }
+            ]
+        },
+        {
+            id: 'parte12',
+            location: {
+                mobile: {
+                    center: {
+                        lon: -43.25119,
+                        lat: -22.88566
+                    },
+                    zoom: 14.98,
+                    pitch: 8.50,
+                    bearing: -34.70,
+                    speed: 2,
+                    curve: 1
+                },
+                desktop: {
+                    center: {
+                        lon: -43.44161,
+                        lat: -22.92543
+                    },
+                    zoom: 9.64,
+                    pitch: 0.00,
+                    bearing: -0.40,
+                    speed: 2,
+                    curve: 1
+                },
+            },
+            mapAnimation: 'flyTo',
+            onChapterEnter: [{
+                    layer: 'municipio',
+                    opacity: .5,
+                },
+                {
+                    layer: '',
+                    opacity: .3,
+                }
+            ],
+            onChapterExit: [{
+                    layer: 'municipio',
                     opacity: 0,
                 },
                 {
