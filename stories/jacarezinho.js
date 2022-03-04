@@ -71,7 +71,7 @@ var config = {
             },
             mapAnimation: 'flyTo',
             onChapterEnter: [{
-                    layer: 'fogocruzado',
+                    layer: 'fogojacarezinho',
                     opacity: 1,
                 },
                 {
@@ -84,7 +84,7 @@ var config = {
                 }
             ],
             onChapterExit: [{
-                    layer: 'fogocruzado',
+                    layer: 'fogojacarezinho',
                     opacity: 0,
                 },
                 {
@@ -125,7 +125,7 @@ var config = {
             },
             mapAnimation: 'flyTo',
             onChapterEnter: [{
-                    layer: 'fogocruzado',
+                    layer: 'fogojacarezinho',
                     opacity: 1,
                 },
                 {
@@ -138,7 +138,7 @@ var config = {
                 }
             ],
             onChapterExit: [{
-                    layer: 'fogocruzado',
+                    layer: 'fogojacarezinho',
                     opacity: 0,
                 },
                 {
