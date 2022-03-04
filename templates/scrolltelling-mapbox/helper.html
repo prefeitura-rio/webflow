@@ -18,7 +18,7 @@
         }
         #target img { width:50px; height:50px; }
         #position { 
-            position:absolute; top:0; height: 100px; width: 300px; 
+            position:absolute; top:0; height: 120px; width: 300px; 
             background-color: #fff;
             padding: 15px;
             margin: 10px;
@@ -83,7 +83,8 @@
         var settings = 'center: {\n\tlon:' + map.getCenter().lng.toFixed(5) + ',\n\tlat:' + map.getCenter().lat.toFixed(5) + '},\n' +
             'zoom: ' + map.getZoom().toFixed(2) + ',\n' + 
             'pitch: ' + map.getPitch().toFixed(2) + ',\n' + 
-            'bearing: ' + map.getBearing().toFixed(2) + '\n';
+            'bearing: ' + map.getBearing().toFixed(2) + '\n' +
+            'coordinates: ' + map.getCenter().lng.toFixed(5) + ',' + map.getCenter().lat.toFixed(5);
         
         position.innerText = settings;
     };

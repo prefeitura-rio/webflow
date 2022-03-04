@@ -1,40 +1,39 @@
-var labelsContainer = [
-{
-    'layerId': 'label-escolas',
-    'labels': [{
-            'description': "Ford's Theater dsd 2",
-            'textColor': '#fff',
-            'textSize': 12,
-            "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
-            'coordinates': [-43.25119, -22.88566]
-        },
-        {
-            'description': "Escola Comunitária",
-            'textColor': '#fff',
-            'textSize': 12,
-            "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
-            'coordinates': [-43.25, -22.88]
-        },
-    ]
-},
-{
-    'layerId': 'label-saude',
-    'labels': [{
-            'description': "Hospital",
-            'textColor': '#fff',
-            'textSize': 12,
-            "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
-            'coordinates': [-43.25119, -22.88566]
-        },
-        {
-            'description': "Centro de Saúde",
-            'textColor': '#fff',
-            'textSize': 12,
-            "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
-            'coordinates': [-43.25, -22.88]
-        },
-    ]
-},
+var labelsContainer = [{
+        'layerId': 'label-escolas',
+        'labels': [{
+                'description': "Caio é legal",
+                'textColor': '#fff',
+                'textSize': 23,
+                "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
+                'coordinates': [-43.25119, -22.88566]
+            },
+            {
+                'description': "Escola Comunitária",
+                'textColor': '#fff',
+                'textSize': 12,
+                "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
+                'coordinates': [-43.25, -22.88]
+            },
+        ]
+    },
+    {
+        'layerId': 'label-saude',
+        'labels': [{
+                'description': "Hospital",
+                'textColor': '#fff',
+                'textSize': 12,
+                "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
+                'coordinates': [-43.25119, -22.88566]
+            },
+            {
+                'description': "Centro de Saúde",
+                'textColor': '#fff',
+                'textSize': 12,
+                "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
+                'coordinates': [-43.25, -22.88]
+            },
+        ]
+    },
 ]
 
 
@@ -159,21 +158,23 @@ var config = {
             },
             mapAnimation: 'flyTo',
             onChapterEnter: [{
-                layer: 'jacarezinho-full',
-                opacity: 1,
-            },
-            {
-                layer: 'label-saude',
-                opacity: 1,
-            }],
+                    layer: 'jacarezinho-full',
+                    opacity: 1,
+                },
+                {
+                    layer: 'label-saude',
+                    opacity: 1,
+                }
+            ],
             onChapterExit: [{
-                layer: 'jacarezinho-full',
-                opacity: 0,
-            },
-            {
-                layer: 'label-saude',
-                opacity: 0,
-            }]
+                    layer: 'jacarezinho-full',
+                    opacity: 0,
+                },
+                {
+                    layer: 'label-saude',
+                    opacity: 0,
+                }
+            ]
         },
     ]
 };
