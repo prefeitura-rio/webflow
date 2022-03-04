@@ -1,4 +1,17 @@
-var config = {
+    function addLabelToMap(map, labelsContainer) {
+
+        for (var i = 0; i < labelsContainer.length; i++) {
+            var labelContainer = labelsContainer[i];
+
+            var geojson = prepareLabel(labelContainer, geojsonEmpty);
+
+            console.log(geojson)
+            console.log(labelContainer.layerId)
+
+            map.addSource(labelContainer.layerId, {
+                'type': 'geojson',
+                'data': geojson
+            });var config = {
     style: 'mapbox://styles/caiojacintho/ckyu4kjqz000a14p7kivbajq6',
     accessToken: 'pk.eyJ1IjoiY2Fpb2phY2ludGhvIiwiYSI6ImNreXVmeGNjeTBiaGczMm1sYTAzc2EyNWwifQ.gmZ0eUpq0-tgaQb3tJ0PiQ',
     theme: 'light',
