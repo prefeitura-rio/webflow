@@ -93,6 +93,9 @@ function startMap() {
                     'text-color': label.textColor,
                     'text-size': label.textSize,
                     "text-font": label.textFont,
+                    'text-halo-width': label.textHaloWidth,
+                    'text-halo-color': label.textHaloColor,
+                    'text-halo-blur': label.textHaloBlur,
                 },
                 'geometry': {
                     'type': 'Point',
@@ -137,10 +140,14 @@ function startMap() {
                     'icon-image': ['get', 'icon'],
                     'text-size': ['get', 'text-size'],
 
+
                 },
                 'paint': {
                     "text-color": ['get', 'text-color'],
                     'text-opacity': 0,
+                    'text-halo-width': ['get', 'text-halo-width'],
+                    'text-halo-color': ['get', 'text-halo-color'],
+                    'text-halo-blur': ['get', 'text-halo-blur'],
                 }
             });
         }

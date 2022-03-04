@@ -5,6 +5,9 @@ var labelsContainer = [{
                 'textColor': '#fff',
                 'textSize': 23,
                 "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
+                'textHaloColor': '#000',
+                'textHaloWidth': 1,
+                'textHaloBlur': 1,
                 'coordinates': [-43.25119, -22.88566]
             },
             {
@@ -12,6 +15,9 @@ var labelsContainer = [{
                 'textColor': '#fff',
                 'textSize': 12,
                 "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
+                'textHaloColor': '#000',
+                'textHaloWidth': 1,
+                'textHaloBlur': 1,
                 'coordinates': [-43.25, -22.88]
             },
         ]
@@ -23,6 +29,9 @@ var labelsContainer = [{
                 'textColor': '#fff',
                 'textSize': 12,
                 "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
+                'textHaloColor': '#000',
+                'textHaloWidth': 100,
+                'textHaloBlur': 1,
                 'coordinates': [-43.25119, -22.88566]
             },
             {
@@ -30,6 +39,9 @@ var labelsContainer = [{
                 'textColor': '#fff',
                 'textSize': 12,
                 "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
+                'textHaloColor': '#000',
+                'textHaloWidth': 1,
+                'textHaloBlur': 1,
                 'coordinates': [-43.25, -22.88]
             },
         ]
