@@ -16,61 +16,62 @@ function startMap() {
     }
 
     function getWidth() {
-    return Math.max(
-        document.body.scrollWidth,
-        document.documentElement.scrollWidth,
-        document.body.offsetWidth,
-        document.documentElement.offsetWidth,
-        document.documentElement.clientWidth
-    );
+        return Math.max(
+            document.body.scrollWidth,
+            document.documentElement.scrollWidth,
+            document.body.offsetWidth,
+            document.documentElement.offsetWidth,
+            document.documentElement.clientWidth
+        );
     }
 
     function set3dTerrain(map, config) {
-    if (config.use3dTerrain) {
-        map.addSource('mapbox-dem', {
-        'type': 'raster-dem',
-        'url': 'mapbox://mapbox.mapbox-terrain-dem-v1',
-        'tileSize': 512,
-        'maxzoom': 14
-        });
-        // add the DEM source as a terrain layer with exaggerated height
-        map.setTerrain({
-        'source': 'mapbox-dem',
-        'exaggeration': 1.5
-        });
+        if (config.use3dTerrain) {
+            map.addSource('mapbox-dem', {
+                'type': 'raster-dem',
+                'url': 'mapbox://mapbox.mapbox-terrain-dem-v1',
+                'tileSize': 512,
+                'maxzoom': 14
+            });
+            // add the DEM source as a terrain layer with exaggerated height
+            map.setTerrain({
+                'source': 'mapbox-dem',
+                'exaggeration': 1.5
+            });
 
-        // add a sky layer that will show when the map is highly pitched
-        map.addLayer({
-        'id': 'sky',
-        'type': 'sky',
-        'paint': {
-            'sky-type': 'atmosphere',
-            'sky-atmosphere-sun': [0.0, 0.0],
-            'sky-atmosphere-sun-intensity': 15
-        }
-        });
-    };
+            // add a sky layer that will show when the map is highly pitched
+            map.addLayer({
+                'id': 'sky',
+                'type': 'sky',
+                'paint': {
+                    'sky-type': 'atmosphere',
+                    'sky-atmosphere-sun': [0.0, 0.0],
+                    'sky-atmosphere-sun-intensity': 15
+                }
+            });
+        };
     }
 
     function setLayerOpacity(layer) {
-    var paintProps = getLayerPaintType(layer.layer);
-    paintProps.forEach(function(prop) {
-        var options = {};
-        if (layer.duration) {
-        var transitionProp = prop + "-transition";
-        options = {
-            "duration": layer.duration
-        };
-        map.setPaintProperty(layer.layer, transitionProp, options);
-        }
-        map.setPaintProperty(layer.layer, prop, layer.opacity, options);
-    });
+        console.log(layer);
+        var paintProps = getLayerPaintType(layer.layer);
+        console.log(paintProps)
+        paintProps.forEach(function (prop) {
+            var options = {};
+            if (layer.duration) {
+                var transitionProp = prop + "-transition";
+                options = {
+                    "duration": layer.duration
+                };
+                map.setPaintProperty(layer.layer, transitionProp, options);
+            }
+            map.setPaintProperty(layer.layer, prop, layer.opacity, options);
+        });
     }
 
 
     mapboxgl.accessToken = config.accessToken;
 
-    console.log('Here1')
     var map = new mapboxgl.Map({
         container: 'map',
         style: config.style,
@@ -81,102 +82,130 @@ function startMap() {
         interactive: false
     });
 
-    const places = {
-            'type': 'FeatureCollection',
-            'features': [
-            {
-            'type': 'Feature',
-            'properties': {
-                'description': "Ford's Theater 1",
-                'icon': 'theatre-15',
-                'text-color': '#fff',
-                'text-size': 12,
-                "text-font": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
-            },
-            'geometry': {
-                'type': 'Point',
-                'coordinates': [-43.25119,-22.88566]
+    function prepareLabel(labelContainer, g) {
+        console.log('labelContainer', labelContainer)
+        for (var i = 0; i < labelContainer.labels.length; i++) {
+            var label = labelContainer.labels[i];
+            var feature = {
+                'type': 'Feature',
+                'properties': {
+                    'description': label.description,
+                    'text-color': label.textColor,
+                    'text-size': label.textSize,
+                    "text-font": label.textFont,
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': label.coordinates
                 }
-            },
-            ]
-        };
+            }
+            g.features.push(feature);
+        }
+        console.log('g', g)
+        return g
+    }
+
+    function addLabelToMap(map, labelsContainer) {
+
+        for (var i = 0; i < labelsContainer.length; i++) {
+            var labelContainer = labelsContainer[i];
+
+            var geojsonEmpty = {
+                'type': 'FeatureCollection',
+                'features': []
+            }
+
+            var geojson = prepareLabel(labelContainer, geojsonEmpty);
+
+            console.log('geojson', geojson)
+            console.log(labelContainer.layerId)
+
+            map.addSource(labelContainer.layerId, {
+                'type': 'geojson',
+                'data': geojson
+            });
+
+            map.addLayer({
+                'id': labelContainer.layerId,
+                'type': 'symbol',
+                'source': labelContainer.layerId,
+                'layout': {
+                    'text-field': ['get', 'description'],
+                    'text-variable-anchor': ['top', 'bottom', 'left', 'right'],
+                    'text-radial-offset': 0.5,
+                    'text-justify': 'auto',
+                    'icon-image': ['get', 'icon'],
+                    'text-size': ['get', 'text-size'],
+
+                },
+                'paint': {
+                    "text-color": ['get', 'text-color'],
+                    'text-opacity': 0,
+                }
+            });
+        }
+    }
+
 
     // instantiate the scrollama
     var scroller = scrollama();
 
-    map.on("load", function() {
+    map.on("load", function () {
 
-        map.addSource('places', {
-        'type': 'geojson',
-        'data': places
-        });
+        addLabelToMap(map, labelsContainer)
 
-        map.addLayer({
-        'id': 'poi-labels',
-        'type': 'symbol',
-        'source': 'places',
-        'layout': {
-            'text-field': ['get', 'description'],
-            'text-variable-anchor': ['top', 'bottom', 'left', 'right'],
-            'text-radial-offset': 0.5,
-            'text-justify': 'auto',
-            'icon-image': ['get', 'icon'],
-            'text-size': ['get', 'text-size'],
-            
-        },
-        'paint': {
-            "text-color": ['get', 'text-color'],
-        }
-        });
         // Load 3d buildings
         set3dTerrain(map, config);
 
         // setup the instance, pass callback functions
         scroller
-        .setup({
-        step: '.section1',
-        offset: 0.5,
-        })
-        .onStepEnter(response => {
+            .setup({
+                step: '.section1',
+                offset: 0.5,
+            })
+            .onStepEnter(response => {
 
-            console.log(response)
-            var chapter = config.chapters.find(chap => chap.id === response.element.id);
-            console.log(chapter)
+                // Get current chapter
+                var chapter = config.chapters.find(chap => chap.id === response.element.id);
 
-            response.element.classList.add('active');
+                response.element.classList.add('active');
 
-            if (getWidth() < config.cameraViewWidthBreakpoint) {
-            map[chapter.mapAnimation || 'flyTo'](chapter.location.mobile || chapter.location.desktop)
-            } else {
-            map[chapter.mapAnimation || 'flyTo'](chapter.location.desktop) 
-            }
-
-            
-            if (chapter.onChapterEnter.length > 0) {
-            chapter.onChapterEnter.forEach(setLayerOpacity);
-            }
-            if (chapter.callback) {
-            window[chapter.callback](chapter);
-            }
-
-            if (chapter.rotateAnimation !== undefined) {
-            map.once('moveend', function() {
-                const rotateNumber = map.getBearing();
-                map.rotateTo(rotateNumber + chapter.rotateAnimation.degrees, {
-                duration: chapter.rotateAnimation.duration * 1000, // milliseconds
-                easing: function(t) {
-                    return t;
+                // Set screen breakpoint
+                if (getWidth() < config.cameraViewWidthBreakpoint) {
+                    map[chapter.mapAnimation || 'flyTo'](chapter.location.mobile || chapter.location.desktop)
+                } else {
+                    map[chapter.mapAnimation || 'flyTo'](chapter.location.desktop)
                 }
-                });
+
+                // Set layer opacity for each layer
+                if (chapter.onChapterEnter.length > 0) {
+                    chapter.onChapterEnter.forEach(setLayerOpacity);
+                }
+
+                // Callback for chapter enter
+                if (chapter.callback) {
+                    window[chapter.callback](chapter);
+                }
+
+                // Set rotate animation
+                if (chapter.rotateAnimation !== undefined) {
+                    map.once('moveend', function () {
+                        const rotateNumber = map.getBearing();
+                        map.rotateTo(rotateNumber + chapter.rotateAnimation.degrees, {
+                            duration: chapter.rotateAnimation.duration * 1000, // milliseconds
+                            easing: function (t) {
+                                return t;
+                            }
+                        });
+                    });
+                }
+            })
+            .onStepExit(response => {
+                var chapter = config.chapters.find(chap => chap.id === response.element.id);
+                if (chapter.onChapterExit.length > 0) {
+                    chapter.onChapterExit.forEach(setLayerOpacity);
+                }
             });
-            }
-        })
-        .onStepExit(response => {
-            var chapter = config.chapters.find(chap => chap.id === response.element.id);
-            if (chapter.onChapterExit.length > 0) {
-            chapter.onChapterExit.forEach(setLayerOpacity);
-            }
-        });
     });
 
     // setup resize event
