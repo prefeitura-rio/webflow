@@ -1,3 +1,53 @@
+var labelsContainer = [{
+        'layerId': 'label-escolas',
+        'labels': [{
+                'description': "Caio é legal",
+                'textColor': '#fff',
+                'textSize': 23,
+                "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
+                'textHaloColor': '#000',
+                'textHaloWidth': 1,
+                'textHaloBlur': 1,
+                'coordinates': [-43.25119, -22.88566]
+            },
+            {
+                'description': "Escola Comunitária",
+                'textColor': '#fff',
+                'textSize': 12,
+                "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
+                'textHaloColor': '#000',
+                'textHaloWidth': 1,
+                'textHaloBlur': 1,
+                'coordinates': [-43.25, -22.88]
+            },
+        ]
+    },
+    {
+        'layerId': 'label-saude',
+        'labels': [{
+                'description': "Hospital",
+                'textColor': '#fff',
+                'textSize': 12,
+                "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
+                'textHaloColor': '#000',
+                'textHaloWidth': 100,
+                'textHaloBlur': 1,
+                'coordinates': [-43.25119, -22.88566]
+            },
+            {
+                'description': "Centro de Saúde",
+                'textColor': '#fff',
+                'textSize': 12,
+                "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
+                'textHaloColor': '#000',
+                'textHaloWidth': 1,
+                'textHaloBlur': 1,
+                'coordinates': [-43.25, -22.88]
+            },
+        ]
+    },
+]
+
 var config = {
     style: 'mapbox://styles/caiojacintho/ckyu4kjqz000a14p7kivbajq6',
     accessToken: 'pk.eyJ1IjoiY2Fpb2phY2ludGhvIiwiYSI6ImNreXVmeGNjeTBiaGczMm1sYTAzc2EyNWwifQ.gmZ0eUpq0-tgaQb3tJ0PiQ',
