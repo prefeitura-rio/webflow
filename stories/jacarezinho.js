@@ -10,7 +10,7 @@ var config = {
                 mobile: {
                     center: {
                         lon: -43.41869,
-                        lat: -22.95622
+                        lat: -21.95622
                     },
                     zoom: 10.85,
                     pitch: 27.00,
