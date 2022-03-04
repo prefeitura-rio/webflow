@@ -5,7 +5,7 @@ var config = {
     use3dTerrain: true,
     chapters: [{
             id: 'riodejaneiro',
-            // mapAnimation: 'easeTo', // flyTo, easeTo, sei la
+            // mapAnimation: 'easeTo', // flyTo, easeTo, seinao
             location: {
                 mobile: {
                     center: {
