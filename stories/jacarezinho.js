@@ -1,7 +1,7 @@
 var labelsContainer = [{
         'layerId': 'label-escolas',
         'labels': [{
-                'description': "Caio é legal",
+                'description': "Caio é",
                 'textColor': '#fff',
                 'textSize': 23,
                 "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
@@ -94,6 +94,52 @@ var config = {
             }]
         },
         {
+            id: 'parte0',
+            location: {
+                mobile: {
+                    center: {
+                        lon: -43.25119,
+                        lat: -22.88566
+                    },
+                    zoom: 14.98,
+                    pitch: 8.50,
+                    bearing: -34.70,
+                    speed: 2,
+                    curve: 1
+                },
+                desktop: {
+                    center: {
+                        lon: -43.25908,
+                        lat: -22.88702
+                    },
+                    zoom: 13.01,
+                    pitch: 0.00,
+                    bearing: 0.00,
+                    speed: 2,
+                    curve: 1
+                },
+            },
+            mapAnimation: 'flyTo',
+            onChapterEnter: [{
+                    layer: 'bairros1',
+                    opacity: 1,
+                },
+                {
+                    layer: 'jacarezinho-full',
+                    opacity: .8,
+                }
+            ],
+            onChapterExit: [{
+                    layer: 'bairros1',
+                    opacity: 0,
+                },
+                {
+                    layer: 'jacarezinho-full',
+                    opacity: 0,
+                }
+            ]
+        },
+        {
             id: 'parte1',
             location: {
                 mobile: {
@@ -125,20 +171,12 @@ var config = {
                     opacity: 1,
                 },
                 {
-                    layer: 'jacarezinho',
-                    opacity: 1,
-                },
-                {
                     layer: 'jacarezinho-full',
-                    opacity: .2,
+                    opacity: .3,
                 }
             ],
             onChapterExit: [{
                     layer: 'fogojacarezinho',
-                    opacity: 0,
-                },
-                {
-                    layer: 'jacarezinho',
                     opacity: 0,
                 },
                 {
@@ -179,20 +217,12 @@ var config = {
                     opacity: 1,
                 },
                 {
-                    layer: 'jacarezinho',
-                    opacity: 1,
-                },
-                {
                     layer: 'jacarezinho-full',
                     opacity: .2,
                 }
             ],
             onChapterExit: [{
                     layer: 'fogojacarezinho',
-                    opacity: 0,
-                },
-                {
-                    layer: 'jacarezinho',
                     opacity: 0,
                 },
                 {
@@ -567,35 +597,25 @@ var config = {
                 },
                 desktop: {
                     center: {
-                        lon: -43.26318,
-                        lat: -22.89040
+                        lon: -43.25999,
+                        lat: -22.88684
                     },
-                    zoom: 14.78,
-                    pitch: 57.00,
-                    bearing: 17.13,
+                    zoom: 14.91,
+                    pitch: 60.00,
+                    bearing: -21.73,
                     speed: 2,
                     curve: 1
                 },
             },
             mapAnimation: 'flyTo',
             onChapterEnter: [{
-                    layer: 'hidrografia',
-                    opacity: 1,
-                },
-                {
-                    layer: '',
-                    opacity: .3,
-                }
-            ],
+                layer: 'comlurb',
+                opacity: 1,
+            }, ],
             onChapterExit: [{
-                    layer: 'hidrografia',
-                    opacity: 0,
-                },
-                {
-                    layer: '',
-                    opacity: 0,
-                }
-            ]
+                layer: 'comlurb',
+                opacity: 0,
+            }, ]
         },
         {
             id: 'parte11',
@@ -613,35 +633,25 @@ var config = {
                 },
                 desktop: {
                     center: {
-                        lon: -43.26318,
-                        lat: -22.89040
+                        lon: -43.25999,
+                        lat: -22.88684
                     },
-                    zoom: 14.78,
-                    pitch: 57.00,
-                    bearing: 17.13,
+                    zoom: 14.91,
+                    pitch: 60.00,
+                    bearing: -21.73,
                     speed: 2,
                     curve: 1
                 },
             },
             mapAnimation: 'flyTo',
             onChapterEnter: [{
-                    layer: 'hidrografia',
-                    opacity: 1,
-                },
-                {
-                    layer: '',
-                    opacity: .3,
-                }
-            ],
+                layer: 'comlurb',
+                opacity: 1,
+            }, ],
             onChapterExit: [{
-                    layer: 'hidrografia',
-                    opacity: 0,
-                },
-                {
-                    layer: '',
-                    opacity: 0,
-                }
-            ]
+                layer: 'comlurb',
+                opacity: 0,
+            }, ]
         },
         {
             id: 'parte12',
@@ -671,23 +681,13 @@ var config = {
             },
             mapAnimation: 'flyTo',
             onChapterEnter: [{
-                    layer: 'municipio',
-                    opacity: .5,
-                },
-                {
-                    layer: '',
-                    opacity: .3,
-                }
-            ],
+                layer: 'municipio',
+                opacity: .5,
+            }, ],
             onChapterExit: [{
-                    layer: 'municipio',
-                    opacity: 0,
-                },
-                {
-                    layer: '',
-                    opacity: 0,
-                }
-            ]
+                layer: 'municipio',
+                opacity: 0,
+            }, ]
         },
     ]
 };

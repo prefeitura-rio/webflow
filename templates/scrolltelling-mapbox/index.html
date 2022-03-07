@@ -1,57 +1,59 @@
 <head>
-<!-- ------------------------------------------
+    <!-- ------------------------------------------
 Copie o head abaixo e cole no seu template
 ------------------------------------------ -->
 
-<link href='https://uploads-ssl.webflow.com/5d88f370c5599e348fb22cbe/5d8b9e9b916e2bac8bac604b_mapbox_gl.txt' rel='stylesheet' />
+    <link href='https://uploads-ssl.webflow.com/5d88f370c5599e348fb22cbe/5d8b9e9b916e2bac8bac604b_mapbox_gl.txt' rel='stylesheet' />
 
-<meta charset='utf-8' />
-<title>Mapbox Storytelling</title>
-<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
-<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.js'></script>
-<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.css' rel='stylesheet' />
-<script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
-<script src="https://unpkg.com/scrollama"></script>
-<style>
-    .mapboxgl-canvas-container.mapboxgl-touch-zoom-rotate.mapboxgl-touch-drag-pan,
-    .mapboxgl-canvas-container.mapboxgl-touch-zoom-rotate.mapboxgl-touch-drag-pan .mapboxgl-canvas {
-        touch-action: unset;
-    }
-    .mapboxgl-canvas {
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    }
-    .mapboxgl-canvas:focus {
-    outline:none;
-    }
-</style>
+    <meta charset='utf-8' />
+    <title>Mapbox Storytelling</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.css' rel='stylesheet' />
+    <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+    <script src="https://unpkg.com/scrollama"></script>
+    <style>
+        .mapboxgl-canvas-container.mapboxgl-touch-zoom-rotate.mapboxgl-touch-drag-pan,
+        .mapboxgl-canvas-container.mapboxgl-touch-zoom-rotate.mapboxgl-touch-drag-pan .mapboxgl-canvas {
+            touch-action: unset;
+        }
+        
+        .mapboxgl-canvas {
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        }
+        
+        .mapboxgl-canvas:focus {
+            outline: none;
+        }
+    </style>
 
-<!-- ------------------------------------------
+    <!-- ------------------------------------------
 Copie até aqui o head
 ------------------------------------------ -->
-<link rel="stylesheet" href="local.css">
+    <link rel="stylesheet" href="local.css">
 </head>
 
 <body>
-<!-- ------------------------------------------
+    <!-- ------------------------------------------
 Copie o body abaixo e cole no seu template
 ------------------------------------------ -->
 
-<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.js'></script>
-<!-- <script src="https://prefeitura-rio.github.io/webflow/templates/scrolltelling-mapbox/mapengine.js"></script>
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.js'></script>
+    <!-- <script src="https://prefeitura-rio.github.io/webflow/templates/scrolltelling-mapbox/mapengine.js"></script>
 <script src="https://prefeitura-rio.github.io/webflow/stories/jacarezinho.js"></script> -->
 
-<script src="mapengine.js"></script>
-<script src="../../stories/template.js"></script>
-<script src='local.js'></script>
+    <script src="mapengine.js"></script>
+    <script src="../../stories/jacarezinho.js"></script>
+    <script src='local.js'></script>
 
-<script>
-createLocalRecords(config);
-startMap();
-</script>
+    <script>
+        createLocalRecords(config);
+        startMap();
+    </script>
 
 
 
-<!-- ------------------------------------------
+    <!-- ------------------------------------------
 Copie até aqui o body
 ------------------------------------------ -->
 </body>
