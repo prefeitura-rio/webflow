@@ -1,48 +1,78 @@
 var labelsContainer = [{
-        'layerId': 'label-escolas',
+        'layerId': 'label-bairros',
         'labels': [{
-                'description': "Caio é",
-                'textColor': '#fff',
-                'textSize': 23,
+                'description': "JACAREZINHO",
+                'textColor': '#a63a3a',
+                'textSize': 25,
                 "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
                 'textHaloColor': '#000',
-                'textHaloWidth': 1,
-                'textHaloBlur': 1,
-                'coordinates': [-43.25119, -22.88566]
+                'textHaloWidth': 50,
+                'textHaloBlur': 50,
+                'coordinates': [-43.25769, -22.88634]
             },
             {
-                'description': "Escola Comunitária",
-                'textColor': '#fff',
-                'textSize': 12,
+                'description': "JACARÉ",
+                'textColor': '#ffffff',
+                'textSize': 20,
                 "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
                 'textHaloColor': '#000',
-                'textHaloWidth': 1,
-                'textHaloBlur': 1,
-                'coordinates': [-43.25, -22.88]
+                'textHaloWidth': 50,
+                'textHaloBlur': 50,
+                'coordinates': [-43.25282, -22.89176]
+            },
+            {
+                'description': "MANGUINHOS",
+                'textColor': '#ffffff',
+                'textSize': 20,
+                "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
+                'textHaloColor': '#000',
+                'textHaloWidth': 50,
+                'textHaloBlur': 50,
+                'coordinates': [-43.24402, -22.87991]
+            },
+            {
+                'description': "MARACANÃ",
+                'textColor': '#ffffff',
+                'textSize': 15,
+                "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
+                'textHaloColor': '#000',
+                'textHaloWidth': 50,
+                'textHaloBlur': 50,
+                'coordinates': [-43.22880, -22.91349]
+            },
+            {
+                'description': "ENGENHÃO",
+                'textColor': '#ffffff',
+                'textSize': 15,
+                "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
+                'textHaloColor': '#000',
+                'textHaloWidth': 50,
+                'textHaloBlur': 50,
+                'coordinates': [-43.29157, -22.89523]
             },
         ]
     },
     {
-        'layerId': 'label-saude',
+        'layerId': 'label-comunidade',
         'labels': [{
-                'description': "Hospital",
-                'textColor': '#fff',
-                'textSize': 12,
+                'description': "COMUNIDADE",
+                'textColor': '#a63a3a',
+                'textSize': 22,
                 "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
                 'textHaloColor': '#000',
-                'textHaloWidth': 100,
-                'textHaloBlur': 1,
-                'coordinates': [-43.25119, -22.88566]
+                'textHaloWidth': 50,
+                'textHaloBlur': 50,
+                'coordinates': [-43.25756, -22.8864]
             },
             {
-                'description': "Centro de Saúde",
-                'textColor': '#fff',
-                'textSize': 12,
+                'description': "BAIRRO",
+                'textColor': '#d98787',
+                'textSize': 20,
                 "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
                 'textHaloColor': '#000',
-                'textHaloWidth': 1,
-                'textHaloBlur': 1,
-                'coordinates': [-43.25, -22.88]
+                'textHaloWidth': 50,
+                'textHaloBlur': 50,
+                'coordinates': [-43.25722, -22.88423]
             },
         ]
     },
@@ -127,6 +157,10 @@ var config = {
                 {
                     layer: 'jacarezinho-full',
                     opacity: .8,
+                },
+                {
+                    layer: 'label-bairros',
+                    opacity: 1,
                 }
             ],
             onChapterExit: [{
@@ -135,6 +169,10 @@ var config = {
                 },
                 {
                     layer: 'jacarezinho-full',
+                    opacity: 0,
+                },
+                {
+                    layer: 'label-bairros',
                     opacity: 0,
                 }
             ]
@@ -168,11 +206,15 @@ var config = {
             mapAnimation: 'flyTo',
             onChapterEnter: [{
                     layer: 'comunidade',
-                    opacity: 1,
+                    opacity: .8,
                 },
                 {
                     layer: 'jacarezinho-full',
-                    opacity: .5,
+                    opacity: .4,
+                },
+                {
+                    layer: 'label-comunidade',
+                    opacity: 1,
                 }
             ],
             onChapterExit: [{
@@ -181,6 +223,10 @@ var config = {
                 },
                 {
                     layer: 'jacarezinho-full',
+                    opacity: 0,
+                },
+                {
+                    layer: 'label-comunidade',
                     opacity: 0,
                 }
             ]
@@ -247,12 +293,12 @@ var config = {
                 },
                 desktop: {
                     center: {
-                        lon: -43.25986,
-                        lat: -22.88952
+                        lon: -43.25941,
+                        lat: -22.88992
                     },
-                    zoom: 14.47,
-                    pitch: 1.50,
-                    bearing: -36.40,
+                    zoom: 14.71,
+                    pitch: 0.50,
+                    bearing: -35.49,
                     speed: 2,
                     curve: 1
                 },
@@ -283,12 +329,12 @@ var config = {
                 },
                 desktop: {
                     center: {
-                        lon: -43.25986,
-                        lat: -22.88952
+                        lon: -43.25945,
+                        lat: -22.88928
                     },
-                    zoom: 14.47,
-                    pitch: 1.50,
-                    bearing: -36.40,
+                    zoom: 14.95,
+                    pitch: 0.50,
+                    bearing: -35.49,
                     speed: 2,
                     curve: 1
                 },
