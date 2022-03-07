@@ -33,3 +33,18 @@
   border: 10px solid #ffffff;
   /* Set size  */
 }
+
+@media (max-width:800px){
+  .headerLogo h1 {
+      text-align:left;
+  }
+
+}
+@media (max-width:800px){
+#map {
+    width: 100vw;
+    height: 50vh;
+    top: 0;
+    left: 0;
+    position: fixed;  
+}}

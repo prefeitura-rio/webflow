@@ -83,6 +83,7 @@ var config = {
     accessToken: 'pk.eyJ1IjoiY2Fpb2phY2ludGhvIiwiYSI6ImNreXVmeGNjeTBiaGczMm1sYTAzc2EyNWwifQ.gmZ0eUpq0-tgaQb3tJ0PiQ',
     theme: 'light',
     use3dTerrain: true,
+    cameraViewWidthBreakpoint: 800,
     chapters: [{
             id: 'inicio',
             // mapAnimation: 'easeTo', // flyTo, easeTo, seinao
