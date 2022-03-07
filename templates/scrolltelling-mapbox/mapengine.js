@@ -139,6 +139,7 @@ function startMap() {
                     'text-justify': 'auto',
                     'icon-image': ['get', 'icon'],
                     'text-size': ['get', 'text-size'],
+                    'text-ignore-placement': true,
 
 
                 },
