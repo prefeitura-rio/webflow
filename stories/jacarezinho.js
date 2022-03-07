@@ -167,16 +167,16 @@ var config = {
             },
             mapAnimation: 'flyTo',
             onChapterEnter: [{
-                    layer: 'fogojacarezinho',
+                    layer: 'comunidade',
                     opacity: 1,
                 },
                 {
                     layer: 'jacarezinho-full',
-                    opacity: .3,
+                    opacity: .5,
                 }
             ],
             onChapterExit: [{
-                    layer: 'fogojacarezinho',
+                    layer: 'comunidade',
                     opacity: 0,
                 },
                 {
@@ -218,7 +218,7 @@ var config = {
                 },
                 {
                     layer: 'jacarezinho-full',
-                    opacity: .2,
+                    opacity: .4,
                 }
             ],
             onChapterExit: [{
@@ -319,20 +319,20 @@ var config = {
                 },
                 desktop: {
                     center: {
-                        lon: -43.25537,
-                        lat: -22.88806
+                        lon: -43.25352,
+                        lat: -22.88379
                     },
-                    zoom: 14.36,
-                    pitch: 0.50,
-                    bearing: -37.35,
+                    zoom: 13.98,
+                    pitch: 1.50,
+                    bearing: -35.04,
                     speed: 2,
                     curve: 1
                 },
             },
             mapAnimation: 'flyTo',
             onChapterEnter: [{
-                    layer: 'cres',
-                    opacity: .2,
+                    layer: 'bairros',
+                    opacity: 1,
                 },
                 {
                     layer: 'escolas',
@@ -342,13 +342,9 @@ var config = {
                     layer: 'creches',
                     opacity: 1,
                 },
-                {
-                    layer: 'bairros',
-                    opacity: 1,
-                }
             ],
             onChapterExit: [{
-                    layer: 'cres',
+                    layer: 'bairros',
                     opacity: 0,
                 },
                 {
@@ -359,10 +355,6 @@ var config = {
                     layer: 'creches',
                     opacity: 0,
                 },
-                {
-                    layer: 'bairros',
-                    opacity: 0,
-                }
             ]
         },
         {
@@ -393,8 +385,8 @@ var config = {
             },
             mapAnimation: 'flyTo',
             onChapterEnter: [{
-                    layer: 'cres',
-                    opacity: .2,
+                    layer: 'bairros',
+                    opacity: 1,
                 },
                 {
                     layer: 'escolas',
@@ -404,13 +396,9 @@ var config = {
                     layer: 'creches',
                     opacity: 1,
                 },
-                {
-                    layer: 'bairros',
-                    opacity: 1,
-                }
             ],
             onChapterExit: [{
-                    layer: 'cres',
+                    layer: 'bairros',
                     opacity: 0,
                 },
                 {
@@ -421,10 +409,6 @@ var config = {
                     layer: 'creches',
                     opacity: 0,
                 },
-                {
-                    layer: 'bairros',
-                    opacity: 0,
-                }
             ]
         },
         {
@@ -517,23 +501,13 @@ var config = {
             },
             mapAnimation: 'flyTo',
             onChapterEnter: [{
-                    layer: 'saude',
-                    opacity: 1,
-                },
-                {
-                    layer: 'saude1',
-                    opacity: .4,
-                }
-            ],
+                layer: 'saude1',
+                opacity: .4,
+            }, ],
             onChapterExit: [{
-                    layer: 'saude',
-                    opacity: 0,
-                },
-                {
-                    layer: 'saude1',
-                    opacity: 0,
-                }
-            ]
+                layer: 'saude1',
+                opacity: 0,
+            }, ]
         },
         {
             id: 'parte9',
@@ -551,35 +525,25 @@ var config = {
                 },
                 desktop: {
                     center: {
-                        lon: -43.26308,
-                        lat: -22.89238
+                        lon: -43.25928,
+                        lat: -22.88773
                     },
-                    zoom: 17.42,
-                    pitch: 60.00,
-                    bearing: 11.20,
+                    zoom: 14.73,
+                    pitch: 38.50,
+                    bearing: 0.00,
                     speed: 2,
                     curve: 1
                 },
             },
             mapAnimation: 'flyTo',
             onChapterEnter: [{
-                    layer: 'saude',
-                    opacity: 1,
-                },
-                {
-                    layer: 'saude2',
-                    opacity: .4,
-                }
-            ],
+                layer: 'saude2',
+                opacity: .4,
+            }, ],
             onChapterExit: [{
-                    layer: 'saude',
-                    opacity: 0,
-                },
-                {
-                    layer: 'saude2',
-                    opacity: 0,
-                }
-            ]
+                layer: 'saude2',
+                opacity: 0,
+            }, ]
         },
         {
             id: 'parte10',
@@ -597,23 +561,23 @@ var config = {
                 },
                 desktop: {
                     center: {
-                        lon: -43.25999,
-                        lat: -22.88684
+                        lon: -43.25933,
+                        lat: -22.88645
                     },
-                    zoom: 14.91,
+                    zoom: 15.39,
                     pitch: 60.00,
-                    bearing: -21.73,
+                    bearing: -19.03,
                     speed: 2,
                     curve: 1
                 },
             },
             mapAnimation: 'flyTo',
             onChapterEnter: [{
-                layer: 'comlurb',
+                layer: 'comlurbmenor',
                 opacity: 1,
             }, ],
             onChapterExit: [{
-                layer: 'comlurb',
+                layer: 'comlurbmenor',
                 opacity: 0,
             }, ]
         },
