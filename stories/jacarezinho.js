@@ -28,7 +28,7 @@ var labelsContainer = [{
                 'textHaloColor': '#000',
                 'textHaloWidth': 50,
                 'textHaloBlur': 50,
-                'coordinates': [-43.22880, -22.91349]
+                'coordinates': [-43.23197, -22.90836]
             },
             {
                 'description': "ENGENHÃO",
@@ -105,7 +105,7 @@ var labelsContainer = [{
                 'textHaloColor': '#000',
                 'textHaloWidth': 50,
                 'textHaloBlur': 50,
-                'coordinates': [-43.25722, -22.88423]
+                'coordinates': [-43.25758, -22.88316]
             },
         ]
     },
