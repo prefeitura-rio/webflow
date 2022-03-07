@@ -142,7 +142,7 @@ var config = {
                 }
             },
             rotateAnimation: {
-                duration: 500, // seconds
+                duration: 450, // seconds
                 degrees: 180 // degress
             },
             mapAnimation: 'flyTo',
