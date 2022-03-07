@@ -1,29 +1,19 @@
 var labelsContainer = [{
         'layerId': 'label-bairros',
         'labels': [{
-                'description': "JACAREZINHO",
-                'textColor': '#a63a3a',
-                'textSize': 25,
-                "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
-                'textHaloColor': '#000',
-                'textHaloWidth': 50,
-                'textHaloBlur': 50,
-                'coordinates': [-43.25769, -22.88634]
-            },
-            {
                 'description': "JACARÉ",
                 'textColor': '#ffffff',
-                'textSize': 20,
+                'textSize': 18,
                 "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
                 'textHaloColor': '#000',
                 'textHaloWidth': 50,
                 'textHaloBlur': 50,
-                'coordinates': [-43.25282, -22.89176]
+                'coordinates': [-43.25184, -22.89181]
             },
             {
                 'description': "MANGUINHOS",
                 'textColor': '#ffffff',
-                'textSize': 20,
+                'textSize': 18,
                 "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
                 'textHaloColor': '#000',
                 'textHaloWidth': 50,
@@ -49,6 +39,49 @@ var labelsContainer = [{
                 'textHaloWidth': 50,
                 'textHaloBlur': 50,
                 'coordinates': [-43.29157, -22.89523]
+            },
+            {
+                'description': "JACAREZINHO",
+                'textColor': '#a63a3a',
+                'textSize': 25,
+                "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
+                'textHaloColor': '#000',
+                'textHaloWidth': 50,
+                'textHaloBlur': 50,
+                'coordinates': [-43.26159, -22.88377]
+            },
+        ]
+    },
+    {
+        'layerId': 'label-escolas',
+        'labels': [{
+                'description': "JACARÉ",
+                'textColor': '#ffffff',
+                'textSize': 18,
+                "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
+                'textHaloColor': '#000',
+                'textHaloWidth': 50,
+                'textHaloBlur': 50,
+                'coordinates': [-43.25478, -22.89127]
+            },
+            {
+                'description': "MANGUINHOS",
+                'textColor': '#ffffff',
+                'textSize': 18,
+                "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
+                'textHaloColor': '#000',
+                'textHaloWidth': 50,
+                'textHaloBlur': 50,
+                'coordinates': [-43.24466, -22.88187]
+            },
+            {
+                'description': "JACAREZINHO",
+                'textColor': '#ffffff',
+                'textSize': 18,
+                "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
+                'textHaloColor': '#000',
+                'textHaloWidth': 50,
+                'coordinates': [-43.25766, -22.88637]
             },
         ]
     },
@@ -109,7 +142,7 @@ var config = {
                 }
             },
             rotateAnimation: {
-                duration: 130, // seconds
+                duration: 500, // seconds
                 degrees: 180 // degress
             },
             mapAnimation: 'flyTo',
@@ -293,10 +326,10 @@ var config = {
                 },
                 desktop: {
                     center: {
-                        lon: -43.25941,
-                        lat: -22.88992
+                        lon: -43.25945,
+                        lat: -22.88928
                     },
-                    zoom: 14.71,
+                    zoom: 14.95,
                     pitch: 0.50,
                     bearing: -35.49,
                     speed: 2,
@@ -378,7 +411,7 @@ var config = {
             mapAnimation: 'flyTo',
             onChapterEnter: [{
                     layer: 'bairros',
-                    opacity: 1,
+                    opacity: .3,
                 },
                 {
                     layer: 'escolas',
@@ -386,6 +419,10 @@ var config = {
                 },
                 {
                     layer: 'creches',
+                    opacity: 1,
+                },
+                {
+                    layer: 'label-escolas',
                     opacity: 1,
                 },
             ],
@@ -399,6 +436,10 @@ var config = {
                 },
                 {
                     layer: 'creches',
+                    opacity: 0,
+                },
+                {
+                    layer: 'label-escolas',
                     opacity: 0,
                 },
             ]
@@ -419,12 +460,12 @@ var config = {
                 },
                 desktop: {
                     center: {
-                        lon: -43.25537,
-                        lat: -22.88806
+                        lon: -43.25352,
+                        lat: -22.88379
                     },
-                    zoom: 14.36,
-                    pitch: 0.50,
-                    bearing: -37.35,
+                    zoom: 13.98,
+                    pitch: 1.50,
+                    bearing: -35.04,
                     speed: 2,
                     curve: 1
                 },
@@ -432,7 +473,7 @@ var config = {
             mapAnimation: 'flyTo',
             onChapterEnter: [{
                     layer: 'bairros',
-                    opacity: 1,
+                    opacity: .3,
                 },
                 {
                     layer: 'escolas',
@@ -440,6 +481,10 @@ var config = {
                 },
                 {
                     layer: 'creches',
+                    opacity: 1,
+                },
+                {
+                    layer: 'label-escolas',
                     opacity: 1,
                 },
             ],
@@ -453,6 +498,10 @@ var config = {
                 },
                 {
                     layer: 'creches',
+                    opacity: 0,
+                },
+                {
+                    layer: 'label-escolas',
                     opacity: 0,
                 },
             ]
@@ -473,20 +522,20 @@ var config = {
                 },
                 desktop: {
                     center: {
-                        lon: -43.25537,
-                        lat: -22.88806
+                        lon: -43.25352,
+                        lat: -22.88379
                     },
-                    zoom: 14.36,
-                    pitch: 0.50,
-                    bearing: -37.35,
+                    zoom: 13.98,
+                    pitch: 1.50,
+                    bearing: -35.04,
                     speed: 2,
                     curve: 1
                 },
             },
             mapAnimation: 'flyTo',
             onChapterEnter: [{
-                    layer: 'cres',
-                    opacity: .2,
+                    layer: 'bairros',
+                    opacity: .3,
                 },
                 {
                     layer: 'escolas',
@@ -497,12 +546,12 @@ var config = {
                     opacity: 1,
                 },
                 {
-                    layer: 'bairros',
+                    layer: 'label-escolas',
                     opacity: 1,
-                }
+                },
             ],
             onChapterExit: [{
-                    layer: 'cres',
+                    layer: 'bairros',
                     opacity: 0,
                 },
                 {
@@ -514,9 +563,9 @@ var config = {
                     opacity: 0,
                 },
                 {
-                    layer: 'bairros',
+                    layer: 'label-escolas',
                     opacity: 0,
-                }
+                },
             ]
         },
         {
