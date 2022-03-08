@@ -153,7 +153,7 @@ var config = {
             // callback: 'newContainer', 
             onChapterEnter: [{
                 layer: 'municipio',
-                opacity: .5,
+                opacity: .9,
             }, ],
             onChapterExit: [{
                 layer: 'municipio',
