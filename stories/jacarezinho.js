@@ -48,7 +48,7 @@ var labelsContainer = [{
                 'textHaloColor': '#000',
                 'textHaloWidth': 50,
                 'textHaloBlur': 50,
-                'coordinates': [-43.26159, -22.88377]
+                'coordinates': [-43.26505, -22.88362]
             },
         ]
     },
@@ -123,12 +123,12 @@ var config = {
             location: {
                 mobile: {
                     center: {
-                        lon: -43.47426,
-                        lat: -22.94035
+                        lon: -43.46915,
+                        lat: -22.92849
                     },
-                    zoom: 8.69,
-                    pitch: 0.50,
-                    bearing: -0.24,
+                    zoom: 8.40,
+                    pitch: 0.00,
+                    bearing: -2.42,
                     speed: 1,
                     curve: 1
                 },
@@ -164,12 +164,12 @@ var config = {
             location: {
                 mobile: {
                     center: {
-                        lon: -43.26758,
-                        lat: -22.88931
+                        lon: -43.26402,
+                        lat: -22.89053
                     },
-                    zoom: 11.80,
-                    pitch: 0.50,
-                    bearing: -0.24,
+                    zoom: 11.41,
+                    pitch: 0.00,
+                    bearing: -2.42,
                     speed: 1,
                     curve: 1
                 },
@@ -224,7 +224,7 @@ var config = {
                     zoom: 13.64,
                     pitch: 0.00,
                     bearing: -37.84,
-                    speed: 2,
+                    speed: 1,
                     curve: 1
                 },
                 desktop: {
@@ -235,7 +235,7 @@ var config = {
                     zoom: 14.92,
                     pitch: 1.50,
                     bearing: -36.40,
-                    speed: 2,
+                    speed: 1,
                     curve: 1
                 },
             },
@@ -278,7 +278,7 @@ var config = {
                     zoom: 13.64,
                     pitch: 0.00,
                     bearing: -37.84,
-                    speed: 2,
+                    speed: 1,
                     curve: 1
                 },
                 desktop: {
@@ -289,7 +289,7 @@ var config = {
                     zoom: 14.92,
                     pitch: 1.50,
                     bearing: -36.40,
-                    speed: 2,
+                    speed: 1,
                     curve: 1
                 },
             },
@@ -318,13 +318,13 @@ var config = {
             location: {
                 mobile: {
                     center: {
-                        lon: -43.25119,
-                        lat: -22.88566
+                        lon: -43.26072,
+                        lat: -22.88951
                     },
-                    zoom: 14.98,
-                    pitch: 8.50,
-                    bearing: -34.70,
-                    speed: 2,
+                    zoom: 13.35,
+                    pitch: 0.00,
+                    bearing: -37.96,
+                    speed: 1,
                     curve: 1
                 },
                 desktop: {
@@ -335,7 +335,7 @@ var config = {
                     zoom: 14.95,
                     pitch: 0.50,
                     bearing: -35.49,
-                    speed: 2,
+                    speed: 1,
                     curve: 1
                 },
             },
@@ -354,13 +354,13 @@ var config = {
             location: {
                 mobile: {
                     center: {
-                        lon: -43.25119,
-                        lat: -22.88566
+                        lon: -43.26072,
+                        lat: -22.88951
                     },
-                    zoom: 14.98,
-                    pitch: 8.50,
-                    bearing: -34.70,
-                    speed: 2,
+                    zoom: 13.35,
+                    pitch: 0.00,
+                    bearing: -37.96,
+                    speed: 1,
                     curve: 1
                 },
                 desktop: {
@@ -371,7 +371,7 @@ var config = {
                     zoom: 14.95,
                     pitch: 0.50,
                     bearing: -35.49,
-                    speed: 2,
+                    speed: 1,
                     curve: 1
                 },
             },
@@ -390,13 +390,13 @@ var config = {
             location: {
                 mobile: {
                     center: {
-                        lon: -43.25119,
-                        lat: -22.88566
+                        lon: -43.25389,
+                        lat: -22.88327
                     },
-                    zoom: 14.98,
-                    pitch: 8.50,
-                    bearing: -34.70,
-                    speed: 2,
+                    zoom: 12.67,
+                    pitch: 0.00,
+                    bearing: -37.96,
+                    speed: 1,
                     curve: 1
                 },
                 desktop: {
@@ -407,7 +407,7 @@ var config = {
                     zoom: 13.98,
                     pitch: 1.50,
                     bearing: -35.04,
-                    speed: 2,
+                    speed: 1,
                     curve: 1
                 },
             },
@@ -452,13 +452,13 @@ var config = {
             location: {
                 mobile: {
                     center: {
-                        lon: -43.25797,
-                        lat: -22.88667
+                        lon: -43.26031,
+                        lat: -22.88751
                     },
-                    zoom: 14.52,
-                    pitch: 0.50,
-                    bearing: -34.20,
-                    speed: 2,
+                    zoom: 13.64,
+                    pitch: 0.00,
+                    bearing: -37.96,
+                    speed: 1,
                     curve: 1
                 },
                 desktop: {
@@ -469,7 +469,7 @@ var config = {
                     zoom: 14.76,
                     pitch: 0.50,
                     bearing: -34.20,
-                    speed: 2,
+                    speed: 1,
                     curve: 1
                 },
             },
@@ -514,13 +514,13 @@ var config = {
             location: {
                 mobile: {
                     center: {
-                        lon: -43.25119,
-                        lat: -22.88566
+                        lon: -43.24702,
+                        lat: -22.87990
                     },
-                    zoom: 14.98,
-                    pitch: 8.50,
-                    bearing: -34.70,
-                    speed: 2,
+                    zoom: 13.40,
+                    pitch: 0.00,
+                    bearing: -37.96,
+                    speed: 1,
                     curve: 1
                 },
                 desktop: {
@@ -531,7 +531,7 @@ var config = {
                     zoom: 14.76,
                     pitch: 0.50,
                     bearing: -34.20,
-                    speed: 2,
+                    speed: 1,
                     curve: 1
                 },
             },
@@ -576,13 +576,13 @@ var config = {
             location: {
                 mobile: {
                     center: {
-                        lon: -43.25119,
-                        lat: -22.88566
+                        lon: -43.25730,
+                        lat: -22.89343
                     },
-                    zoom: 14.98,
-                    pitch: 8.50,
-                    bearing: -34.70,
-                    speed: 2,
+                    zoom: 13.64,
+                    pitch: 0.00,
+                    bearing: -37.96,
+                    speed: 1,
                     curve: 1
                 },
                 desktop: {
@@ -593,7 +593,7 @@ var config = {
                     zoom: 14.76,
                     pitch: 0.50,
                     bearing: -34.20,
-                    speed: 2,
+                    speed: 1,
                     curve: 1
                 },
             },
@@ -638,13 +638,13 @@ var config = {
             location: {
                 mobile: {
                     center: {
-                        lon: -43.25119,
-                        lat: -22.88566
+                        lon: -43.26065,
+                        lat: -22.88742
                     },
-                    zoom: 14.98,
-                    pitch: 8.50,
-                    bearing: -34.70,
-                    speed: 2,
+                    zoom: 13.64,
+                    pitch: 56.00,
+                    bearing: 0.00,
+                    speed: 1,
                     curve: 1
                 },
                 desktop: {
@@ -655,7 +655,7 @@ var config = {
                     zoom: 14.73,
                     pitch: 38.50,
                     bearing: 0.00,
-                    speed: 2,
+                    speed: 1,
                     curve: 1
                 },
             },
@@ -684,13 +684,13 @@ var config = {
             location: {
                 mobile: {
                     center: {
-                        lon: -43.25119,
-                        lat: -22.88566
+                        lon: -43.26065,
+                        lat: -22.88742
                     },
-                    zoom: 14.98,
-                    pitch: 8.50,
-                    bearing: -34.70,
-                    speed: 2,
+                    zoom: 13.64,
+                    pitch: 56.00,
+                    bearing: 0.00,
+                    speed: 1,
                     curve: 1
                 },
                 desktop: {
@@ -701,7 +701,7 @@ var config = {
                     zoom: 14.73,
                     pitch: 38.50,
                     bearing: 0.00,
-                    speed: 2,
+                    speed: 1,
                     curve: 1
                 },
             },
@@ -730,13 +730,13 @@ var config = {
             location: {
                 mobile: {
                     center: {
-                        lon: -43.25119,
-                        lat: -22.88566
+                        lon: -43.26058,
+                        lat: -22.88726
                     },
-                    zoom: 14.98,
-                    pitch: 8.50,
-                    bearing: -34.70,
-                    speed: 2,
+                    zoom: 13.89,
+                    pitch: 60.00,
+                    bearing: -26.39,
+                    speed: 1,
                     curve: 1
                 },
                 desktop: {
@@ -747,7 +747,7 @@ var config = {
                     zoom: 15.39,
                     pitch: 60.00,
                     bearing: -19.03,
-                    speed: 2,
+                    speed: 1,
                     curve: 1
                 },
             },
@@ -766,13 +766,13 @@ var config = {
             location: {
                 mobile: {
                     center: {
-                        lon: -43.25119,
-                        lat: -22.88566
+                        lon: -43.26076,
+                        lat: -22.88714
                     },
-                    zoom: 14.98,
-                    pitch: 8.50,
-                    bearing: -34.70,
-                    speed: 2,
+                    zoom: 13.64,
+                    pitch: 60.00,
+                    bearing: -19.99,
+                    speed: 1,
                     curve: 1
                 },
                 desktop: {
@@ -783,9 +783,13 @@ var config = {
                     zoom: 14.91,
                     pitch: 60.00,
                     bearing: -21.73,
-                    speed: 2,
+                    speed: 1,
                     curve: 1
                 },
+            },
+            rotateAnimation: {
+                duration: 350, // seconds
+                degrees: 180 // degress
             },
             mapAnimation: 'flyTo',
             onChapterEnter: [{
@@ -802,13 +806,13 @@ var config = {
             location: {
                 mobile: {
                     center: {
-                        lon: -43.25119,
-                        lat: -22.88566
+                        lon: -43.46915,
+                        lat: -22.92849
                     },
-                    zoom: 14.98,
-                    pitch: 8.50,
-                    bearing: -34.70,
-                    speed: 2,
+                    zoom: 8.40,
+                    pitch: 0.00,
+                    bearing: -2.42,
+                    speed: 1,
                     curve: 1
                 },
                 desktop: {
@@ -819,9 +823,13 @@ var config = {
                     zoom: 9.64,
                     pitch: 0.00,
                     bearing: -0.40,
-                    speed: 2,
+                    speed: 1,
                     curve: 1
                 },
+            },
+            rotateAnimation: {
+                duration: 450, // seconds
+                degrees: 180 // degress
             },
             mapAnimation: 'flyTo',
             onChapterEnter: [{
