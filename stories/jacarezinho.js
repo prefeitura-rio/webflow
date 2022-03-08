@@ -450,23 +450,23 @@ var config = {
             location: {
                 mobile: {
                     center: {
-                        lon: -43.25119,
-                        lat: -22.88566
+                        lon: -43.25797,
+                        lat: -22.88667
                     },
-                    zoom: 14.98,
-                    pitch: 8.50,
-                    bearing: -34.70,
+                    zoom: 14.52,
+                    pitch: 0.50,
+                    bearing: -34.20,
                     speed: 2,
                     curve: 1
                 },
                 desktop: {
                     center: {
-                        lon: -43.25352,
-                        lat: -22.88379
+                        lon: -43.25801,
+                        lat: -22.88643
                     },
-                    zoom: 13.98,
-                    pitch: 1.50,
-                    bearing: -35.04,
+                    zoom: 14.76,
+                    pitch: 0.50,
+                    bearing: -34.20,
                     speed: 2,
                     curve: 1
                 },
@@ -523,12 +523,74 @@ var config = {
                 },
                 desktop: {
                     center: {
-                        lon: -43.25352,
-                        lat: -22.88379
+                        lon: -43.25124,
+                        lat: -22.88340
                     },
-                    zoom: 13.98,
-                    pitch: 1.50,
-                    bearing: -35.04,
+                    zoom: 14.76,
+                    pitch: 0.50,
+                    bearing: -34.20,
+                    speed: 2,
+                    curve: 1
+                },
+            },
+            mapAnimation: 'flyTo',
+            onChapterEnter: [{
+                    layer: 'bairros',
+                    opacity: .3,
+                },
+                {
+                    layer: 'escolas',
+                    opacity: 1,
+                },
+                {
+                    layer: 'creches',
+                    opacity: 1,
+                },
+                {
+                    layer: 'label-escolas',
+                    opacity: 1,
+                },
+            ],
+            onChapterExit: [{
+                    layer: 'bairros',
+                    opacity: 0,
+                },
+                {
+                    layer: 'escolas',
+                    opacity: 0,
+                },
+                {
+                    layer: 'creches',
+                    opacity: 0,
+                },
+                {
+                    layer: 'label-escolas',
+                    opacity: 0,
+                },
+            ]
+        },
+        {
+            id: 'parte77',
+            location: {
+                mobile: {
+                    center: {
+                        lon: -43.25119,
+                        lat: -22.88566
+                    },
+                    zoom: 14.98,
+                    pitch: 8.50,
+                    bearing: -34.70,
+                    speed: 2,
+                    curve: 1
+                },
+                desktop: {
+                    center: {
+                        lon: -43.25411,
+                        lat: -22.89009
+                    },
+                    zoom: 14.76,
+                    pitch: 0.50,
+                    bearing: -34.20,
                     speed: 2,
                     curve: 1
                 },
@@ -597,13 +659,23 @@ var config = {
             },
             mapAnimation: 'flyTo',
             onChapterEnter: [{
-                layer: 'saude1',
-                opacity: .4,
-            }, ],
+                    layer: 'saude',
+                    opacity: 1,
+                },
+                {
+                    layer: 'saude1',
+                    opacity: .4,
+                }
+            ],
             onChapterExit: [{
-                layer: 'saude1',
-                opacity: 0,
-            }, ]
+                    layer: 'saude',
+                    opacity: 0,
+                },
+                {
+                    layer: 'saude1',
+                    opacity: 0,
+                }
+            ]
         },
         {
             id: 'parte9',
@@ -633,13 +705,23 @@ var config = {
             },
             mapAnimation: 'flyTo',
             onChapterEnter: [{
-                layer: 'saude2',
-                opacity: .4,
-            }, ],
+                    layer: 'saude',
+                    opacity: 1,
+                },
+                {
+                    layer: 'saude2',
+                    opacity: .4,
+                }
+            ],
             onChapterExit: [{
-                layer: 'saude2',
-                opacity: 0,
-            }, ]
+                    layer: 'saude',
+                    opacity: 0,
+                },
+                {
+                    layer: 'saude2',
+                    opacity: 0,
+                }
+            ]
         },
         {
             id: 'parte10',
