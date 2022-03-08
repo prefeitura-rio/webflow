@@ -123,12 +123,14 @@ var config = {
             location: {
                 mobile: {
                     center: {
-                        lon: -43.47918,
-                        lat: -22.92342
+                        lon: -43.47426,
+                        lat: -22.94035
                     },
-                    zoom: 10.25,
-                    pitch: 0.00,
-                    bearing: -0.40
+                    zoom: 8.69,
+                    pitch: 0.50,
+                    bearing: -0.24,
+                    speed: 1,
+                    curve: 1
                 },
                 desktop: {
                     center: {
@@ -138,7 +140,7 @@ var config = {
                     zoom: 9.64,
                     pitch: 0.00,
                     bearing: -0.40,
-                    speed: 2,
+                    speed: 1,
                     curve: 1
                 }
             },
@@ -162,13 +164,13 @@ var config = {
             location: {
                 mobile: {
                     center: {
-                        lon: -43.25119,
-                        lat: -22.88566
+                        lon: -43.26758,
+                        lat: -22.88931
                     },
-                    zoom: 14.98,
-                    pitch: 8.50,
-                    bearing: -34.70,
-                    speed: 2,
+                    zoom: 11.80,
+                    pitch: 0.50,
+                    bearing: -0.24,
+                    speed: 1,
                     curve: 1
                 },
                 desktop: {
@@ -179,7 +181,7 @@ var config = {
                     zoom: 13.01,
                     pitch: 0.00,
                     bearing: 0.00,
-                    speed: 2,
+                    speed: 1,
                     curve: 1
                 },
             },
@@ -216,12 +218,12 @@ var config = {
             location: {
                 mobile: {
                     center: {
-                        lon: -43.25119,
-                        lat: -22.88566
+                        lon: -43.25825,
+                        lat: -22.88736
                     },
-                    zoom: 14.98,
-                    pitch: 8.50,
-                    bearing: -34.70,
+                    zoom: 13.64,
+                    pitch: 0.00,
+                    bearing: -37.84,
                     speed: 2,
                     curve: 1
                 },
@@ -270,12 +272,12 @@ var config = {
             location: {
                 mobile: {
                     center: {
-                        lon: -43.25119,
-                        lat: -22.88566
+                        lon: -43.25825,
+                        lat: -22.88736
                     },
-                    zoom: 14.98,
-                    pitch: 8.50,
-                    bearing: -34.70,
+                    zoom: 13.64,
+                    pitch: 0.00,
+                    bearing: -37.84,
                     speed: 2,
                     curve: 1
                 },
