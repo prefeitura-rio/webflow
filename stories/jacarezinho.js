@@ -573,7 +573,7 @@ var config = {
             ]
         },
         {
-            id: 'parte77',
+            id: 'parte13',
             location: {
                 mobile: {
                     center: {
