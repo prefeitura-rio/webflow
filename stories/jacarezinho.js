@@ -1,25 +1,26 @@
 var labelsContainer = [{
         'layerId': 'label-bairros',
-        'labels': [{
-                'description': "JACARÉ",
-                'textColor': '#ffffff',
-                'textSize': 18,
-                "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
-                'textHaloColor': '#000',
-                'textHaloWidth': 50,
-                'textHaloBlur': 50,
-                'coordinates': [-43.25184, -22.89181]
-            },
-            {
-                'description': "MANGUINHOS",
-                'textColor': '#ffffff',
-                'textSize': 18,
-                "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
-                'textHaloColor': '#000',
-                'textHaloWidth': 50,
-                'textHaloBlur': 50,
-                'coordinates': [-43.24402, -22.87991]
-            },
+        'labels': [
+            /*{
+                            'description': "JACARÉ",
+                            'textColor': '#ffffff',
+                            'textSize': 18,
+                            "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
+                            'textHaloColor': '#000',
+                            'textHaloWidth': 50,
+                            'textHaloBlur': 50,
+                            'coordinates': [-43.25184, -22.89181]
+                        },
+                        {
+                            'description': "MANGUINHOS",
+                            'textColor': '#ffffff',
+                            'textSize': 18,
+                            "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
+                            'textHaloColor': '#000',
+                            'textHaloWidth': 50,
+                            'textHaloBlur': 50,
+                            'coordinates': [-43.24402, -22.87991]
+                        },*/
             {
                 'description': "MARACANÃ",
                 'textColor': '#ffffff',
