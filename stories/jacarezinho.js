@@ -146,8 +146,8 @@ var config = {
                 }
             },
             rotateAnimation: {
-                duration: 450, // seconds
-                degrees: 180 // degress
+                duration: 200, // seconds
+                degrees: 45 // degress
             },
             mapAnimation: 'flyTo',
             // callback: 'newContainer', 
@@ -242,32 +242,24 @@ var config = {
             },
             mapAnimation: 'flyTo',
             onChapterEnter: [{
-                    layer: 'comunidade',
-                    opacity: .8,
-                },
-                {
-                    layer: 'jacarezinho-full',
-                    opacity: .4,
-                },
-                {
-                    layer: 'label-comunidade',
-                    opacity: 1,
-                }
-            ],
-            onChapterExit: [{
-                    layer: 'comunidade',
-                    opacity: 0,
-                },
-                {
-                    layer: 'jacarezinho-full',
-                    opacity: 0,
-                },
-                {
-                    layer: 'label-comunidade',
-                    opacity: 0,
-                }
-            ]
-        },
+                layer: 'fogojacarezinho',
+                opacity: 1,
+            },
+            {
+                layer: 'jacarezinho-full',
+                opacity: .4,
+            }
+        ],
+        onChapterExit: [{
+                layer: 'fogojacarezinho',
+                opacity: 0,
+            },
+            {
+                layer: 'jacarezinho-full',
+                opacity: 0,
+            }
+        ]
+    },
         {
             id: 'parte2',
             location: {
@@ -296,24 +288,32 @@ var config = {
             },
             mapAnimation: 'flyTo',
             onChapterEnter: [{
-                    layer: 'fogojacarezinho',
-                    opacity: 1,
-                },
-                {
-                    layer: 'jacarezinho-full',
-                    opacity: .4,
-                }
-            ],
-            onChapterExit: [{
-                    layer: 'fogojacarezinho',
-                    opacity: 0,
-                },
-                {
-                    layer: 'jacarezinho-full',
-                    opacity: 0,
-                }
-            ]
-        },
+                layer: 'comunidade',
+                opacity: .8,
+            },
+            {
+                layer: 'jacarezinho-full',
+                opacity: .4,
+            },
+            {
+                layer: 'label-comunidade',
+                opacity: 1,
+            }
+        ],
+        onChapterExit: [{
+                layer: 'comunidade',
+                opacity: 0,
+            },
+            {
+                layer: 'jacarezinho-full',
+                opacity: 0,
+            },
+            {
+                layer: 'label-comunidade',
+                opacity: 0,
+            }
+        ]
+    },
         {
             id: 'parte3',
             location: {
