@@ -1,4 +1,4 @@
-function startMap() {
+function startMap(datavizId) {
 
     var layerTypes = {
         'fill': ['fill-opacity'],
@@ -168,7 +168,7 @@ function startMap() {
         // setup the instance, pass callback functions
         scroller
             .setup({
-                step: '.section1',
+                step: '.section_' + datavizId,
                 offset: 0.5,
             })
             .onStepEnter(response => {

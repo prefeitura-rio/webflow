@@ -26,7 +26,7 @@ function createLocalRecords(config) {
         var container = document.createElement('div');
         container.setAttribute('id', record.id);
 
-        container.classList.add('section1');
+        container.classList.add('section-template');
         if (idx === 0) {
             container.classList.add('active');
         }
