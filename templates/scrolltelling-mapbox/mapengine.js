@@ -83,7 +83,7 @@ function startMap(datavizId) {
     });
 
     function prepareLabel(labelContainer, g) {
-        console.log('labelContainer', labelContainer)
+
         for (var i = 0; i < labelContainer.labels.length; i++) {
             var label = labelContainer.labels[i];
             var feature = {
@@ -104,7 +104,6 @@ function startMap(datavizId) {
             }
             g.features.push(feature);
         }
-        console.log('g', g)
         return g
     }
 
@@ -119,9 +118,6 @@ function startMap(datavizId) {
             }
 
             var geojson = prepareLabel(labelContainer, geojsonEmpty);
-
-            console.log('geojson', geojson)
-            console.log(labelContainer.layerId)
 
             map.addSource(labelContainer.layerId, {
                 'type': 'geojson',
@@ -157,14 +153,14 @@ function startMap(datavizId) {
 
     // instantiate the scrollama
     var scroller = scrollama();
-
+    console.log('scroller', scroller)
     map.on("load", function () {
 
         addLabelToMap(map, labelsContainer)
 
         // Load 3d buildings
         set3dTerrain(map, config);
-
+        
         // setup the instance, pass callback functions
         scroller
             .setup({
@@ -172,6 +168,8 @@ function startMap(datavizId) {
                 offset: 0.5,
             })
             .onStepEnter(response => {
+
+                console.log('oi')
 
                 // Get current chapter
                 var chapter = config.chapters.find(chap => chap.id === response.element.id);
@@ -193,6 +191,13 @@ function startMap(datavizId) {
                 // Callback for chapter enter
                 if (chapter.callback) {
                     window[chapter.callback](chapter);
+                }
+
+                // Set map style
+                if (chapter.style) {
+                    map.setStyle(chapter.style);
+                } else {
+                    map.setStyle(config.style);
                 }
 
                 // Set rotate animation

@@ -112,6 +112,7 @@ var labelsContainer = [{
     },
 ]
 
+
 var config = {
     style: 'mapbox://styles/escritoriodedados/cl0o1yvxn001015mtsysibtq6',
     accessToken: 'pk.eyJ1IjoiZXNjcml0b3Jpb2RlZGFkb3MiLCJhIjoiY2t5bGx6Z2I1MG5nbzJwcGUyeHFxcGs1bCJ9.sAUs1LRcb3R4l-6Dbhk8Pw',
@@ -151,15 +152,45 @@ var config = {
             },
             mapAnimation: 'flyTo',
             // callback: 'newContainer', 
-            onChapterEnter: [{
-                layer: 'municipio',
-                opacity: .9,
-            }, ],
-            onChapterExit: [{
-                layer: 'municipio',
-                opacity: 0,
-            }]
+            onChapterEnter: [, ],
+            onChapterExit: []
         },
-
+        {
+            id: 'change-style',
+            style: 'mapbox://styles/escritoriodedados/cl0o3gv0r000214nyitwqkz83',
+            // mapAnimation: 'easeTo', // flyTo, easeTo, seinao
+            location: {
+                mobile: {
+                    center: {
+                        lon: -43.46915,
+                        lat: -22.92849
+                    },
+                    zoom: 8.40,
+                    pitch: 0.00,
+                    bearing: -2.42,
+                    speed: 1,
+                    curve: 1
+                },
+                desktop: {
+                    center: {
+                        lon: -43.44161,
+                        lat: -22.92543
+                    },
+                    zoom: 9.64,
+                    pitch: 0.00,
+                    bearing: -0.40,
+                    speed: 1,
+                    curve: 1
+                }
+            },
+            rotateAnimation: {
+                duration: 200, // seconds
+                degrees: 45 // degress
+            },
+            mapAnimation: 'flyTo',
+            // callback: 'newContainer', 
+            onChapterEnter: [, ],
+            onChapterExit: []
+        },
     ]
 };
