@@ -148,7 +148,7 @@ var config = {
             },
             rotateAnimation: {
                 duration: 200, // seconds
-                degrees: 45 // degress
+                degrees: 15 // degress
             },
             mapAnimation: 'flyTo',
             // callback: 'newContainer', 
