@@ -152,8 +152,270 @@ var config = {
             },
             mapAnimation: 'flyTo',
             // callback: 'newContainer', 
-            onChapterEnter: [, ],
+            onChapterEnter: [],
             onChapterExit: []
+        },
+        {
+            id: 'parte0',
+            // mapAnimation: 'easeTo', // flyTo, easeTo, seinao
+            location: {
+                mobile: {
+                    center: {
+                        lon: -43.46915,
+                        lat: -22.92849
+                    },
+                    zoom: 8.40,
+                    pitch: 0.00,
+                    bearing: -2.42,
+                    speed: 1,
+                    curve: 1
+                },
+                desktop: {
+                    center: {
+                        lon: -43.44161,
+                        lat: -22.92543
+                    },
+                    zoom: 9.64,
+                    pitch: 0.00,
+                    bearing: -0.40,
+                    speed: 1,
+                    curve: 1
+                }
+            },
+            rotateAnimation: {
+                duration: 200, // seconds
+                degrees: 45 // degress
+            },
+            mapAnimation: 'flyTo',
+            // callback: 'newContainer', 
+            onChapterEnter: [{
+                layer: 'metro',
+                opacity: 1,
+            }, ],
+            onChapterExit: [{
+                layer: 'metro',
+                opacity: 0,
+            }, ]
+        },
+        {
+            id: 'parte1',
+            // mapAnimation: 'easeTo', // flyTo, easeTo, seinao
+            location: {
+                mobile: {
+                    center: {
+                        lon: -43.46915,
+                        lat: -22.92849
+                    },
+                    zoom: 8.40,
+                    pitch: 0.00,
+                    bearing: -2.42,
+                    speed: 1,
+                    curve: 1
+                },
+                desktop: {
+                    center: {
+                        lon: -43.44161,
+                        lat: -22.92543
+                    },
+                    zoom: 9.64,
+                    pitch: 0.00,
+                    bearing: -0.40,
+                    speed: 1,
+                    curve: 1
+                }
+            },
+            rotateAnimation: {
+                duration: 200, // seconds
+                degrees: 45 // degress
+            },
+            mapAnimation: 'flyTo',
+            // callback: 'newContainer', 
+            onChapterEnter: [{
+                layer: 'corredor_transoeste',
+                opacity: 1,
+            }, ],
+            onChapterExit: [{
+                layer: 'corredor_transoeste',
+                opacity: 0,
+            }, ]
+        },
+        {
+            id: 'parte2',
+            // mapAnimation: 'easeTo', // flyTo, easeTo, seinao
+            location: {
+                mobile: {
+                    center: {
+                        lon: -43.46915,
+                        lat: -22.92849
+                    },
+                    zoom: 8.40,
+                    pitch: 0.00,
+                    bearing: -2.42,
+                    speed: 1,
+                    curve: 1
+                },
+                desktop: {
+                    center: {
+                        lon: -43.44161,
+                        lat: -22.92543
+                    },
+                    zoom: 9.64,
+                    pitch: 0.00,
+                    bearing: -0.40,
+                    speed: 1,
+                    curve: 1
+                }
+            },
+            rotateAnimation: {
+                duration: 200, // seconds
+                degrees: 45 // degress
+            },
+            mapAnimation: 'flyTo',
+            // callback: 'newContainer', 
+            onChapterEnter: [{
+                layer: 'corredor_transcarioca',
+                opacity: 1,
+            }, ],
+            onChapterExit: [{
+                layer: 'corredor_transcarioca',
+                opacity: 0,
+            }, ]
+        },
+        {
+            id: 'parte3',
+            // mapAnimation: 'easeTo', // flyTo, easeTo, seinao
+            location: {
+                mobile: {
+                    center: {
+                        lon: -43.46915,
+                        lat: -22.92849
+                    },
+                    zoom: 8.40,
+                    pitch: 0.00,
+                    bearing: -2.42,
+                    speed: 1,
+                    curve: 1
+                },
+                desktop: {
+                    center: {
+                        lon: -43.44161,
+                        lat: -22.92543
+                    },
+                    zoom: 9.64,
+                    pitch: 0.00,
+                    bearing: -0.40,
+                    speed: 1,
+                    curve: 1
+                }
+            },
+            rotateAnimation: {
+                duration: 200, // seconds
+                degrees: 45 // degress
+            },
+            mapAnimation: 'flyTo',
+            // callback: 'newContainer', 
+            onChapterEnter: [{
+                layer: 'corredor_transolimpica',
+                opacity: 1,
+            }, ],
+            onChapterExit: [{
+                layer: 'corredor_transolimpica',
+                opacity: 0,
+            }, ]
+        },
+        {
+            id: 'parte4',
+            // mapAnimation: 'easeTo', // flyTo, easeTo, seinao
+            location: {
+                mobile: {
+                    center: {
+                        lon: -43.46915,
+                        lat: -22.92849
+                    },
+                    zoom: 8.40,
+                    pitch: 0.00,
+                    bearing: -2.42,
+                    speed: 1,
+                    curve: 1
+                },
+                desktop: {
+                    center: {
+                        lon: -43.44161,
+                        lat: -22.92543
+                    },
+                    zoom: 9.64,
+                    pitch: 0.00,
+                    bearing: -0.40,
+                    speed: 1,
+                    curve: 1
+                }
+            },
+            rotateAnimation: {
+                duration: 200, // seconds
+                degrees: 45 // degress
+            },
+            mapAnimation: 'flyTo',
+            // callback: 'newContainer', 
+            onChapterEnter: [{
+                layer: 'corredor_transbrasil',
+                opacity: 1,
+            }, ],
+            onChapterExit: [{
+                layer: 'corredor_transbrasil',
+                opacity: 0,
+            }, ]
+        },
+        {
+            id: 'parte5',
+            // mapAnimation: 'easeTo', // flyTo, easeTo, seinao
+            location: {
+                mobile: {
+                    center: {
+                        lon: -43.46915,
+                        lat: -22.92849
+                    },
+                    zoom: 8.40,
+                    pitch: 0.00,
+                    bearing: -2.42,
+                    speed: 1,
+                    curve: 1
+                },
+                desktop: {
+                    center: {
+                        lon: -43.44161,
+                        lat: -22.92543
+                    },
+                    zoom: 9.64,
+                    pitch: 0.00,
+                    bearing: -0.40,
+                    speed: 1,
+                    curve: 1
+                }
+            },
+            rotateAnimation: {
+                duration: 200, // seconds
+                degrees: 45 // degress
+            },
+            mapAnimation: 'flyTo',
+            // callback: 'newContainer', 
+            onChapterEnter: [{
+                    layer: 'corredor_transbrasil',
+                    opacity: 1,
+                },
+                {
+                    layer: 'metro',
+                    opacity: 1,
+                },
+            ],
+            onChapterExit: [{
+                    layer: 'corredor_transbrasil',
+                    opacity: 0,
+                },
+                {
+                    layer: 'metro',
+                    opacity: 0,
+                },
+            ]
         },
         {
             id: 'change-style',
