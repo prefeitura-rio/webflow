@@ -114,7 +114,7 @@ var labelsContainer = [{
 
 
 var config = {
-    style: 'mapbox://styles/escritoriodedados/cl0o1yvxn001015mtsysibtq6',
+    style: 'mapbox://styles/escritoriodedados/cl0o3gv0r000214nyitwqkz83',
     accessToken: 'pk.eyJ1IjoiZXNjcml0b3Jpb2RlZGFkb3MiLCJhIjoiY2t5bGx6Z2I1MG5nbzJwcGUyeHFxcGs1bCJ9.sAUs1LRcb3R4l-6Dbhk8Pw',
     theme: 'light',
     use3dTerrain: true,
@@ -147,7 +147,7 @@ var config = {
                 }
             },
             rotateAnimation: {
-                duration: 200, // seconds
+                duration: 2000, // seconds
                 degrees: 15 // degress
             },
             mapAnimation: 'flyTo',
