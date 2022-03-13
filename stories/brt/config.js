@@ -15,7 +15,7 @@ var labelsContainer = [{
         'layerId': 'label-transbrasil',
         'labels': [{
             'description': "TRANSBRASIL",
-            'textColor': '#ffec42',
+            'textColor': '#d1be1a',
             'textSize': 22,
             "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
             'textHaloColor': '#ffffff',
@@ -93,7 +93,8 @@ var config = {
     theme: 'light',
     use3dTerrain: true,
     cameraViewWidthBreakpoint: 800,
-    chapters: [{
+    chapters: [
+        {
             id: 'parte0',
             // mapAnimation: 'easeTo', // flyTo, easeTo, seinao
             location: {
@@ -126,8 +127,9 @@ var config = {
             },
             mapAnimation: 'flyTo',
             // callback: 'newContainer', 
-            onChapterEnter: [{
-                    layer: 'metro',
+            onChapterEnter: [
+                {
+                    layer: 'jacarezinho',
                     opacity: 1,
                 },
                 {
@@ -135,8 +137,9 @@ var config = {
                     opacity: 1,
                 },
             ],
-            onChapterExit: [{
-                    layer: 'metro',
+            onChapterExit: [
+                {
+                    layer: 'jacarezinho',
                     opacity: 0,
                 },
                 {
@@ -178,8 +181,9 @@ var config = {
             },
             mapAnimation: 'flyTo',
             // callback: 'newContainer', 
-            onChapterEnter: [{
-                    layer: 'corredor_transoeste',
+            onChapterEnter: [
+                {
+                    layer: 'estacao_transoeste',
                     opacity: 1,
                 },
                 {
@@ -188,7 +192,7 @@ var config = {
                 },
             ],
             onChapterExit: [{
-                    layer: 'corredor_transoeste',
+                    layer: 'estacao_transoeste',
                     opacity: 0,
                 },
                 {
@@ -230,8 +234,9 @@ var config = {
             },
             mapAnimation: 'flyTo',
             // callback: 'newContainer', 
-            onChapterEnter: [{
-                    layer: 'corredor_transcarioca',
+            onChapterEnter: [
+                {
+                    layer: 'estacao_transcarioca',
                     opacity: 1,
                 },
                 {
@@ -240,7 +245,7 @@ var config = {
                 },
             ],
             onChapterExit: [{
-                    layer: 'corredor_transcarioca',
+                    layer: 'estacao_transcarioca',
                     opacity: 0,
                 },
                 {
@@ -282,8 +287,9 @@ var config = {
             },
             mapAnimation: 'flyTo',
             // callback: 'newContainer', 
-            onChapterEnter: [{
-                    layer: 'corredor_transolimpica',
+            onChapterEnter: [
+                {
+                    layer: 'estacao_transolimpica',
                     opacity: 1,
                 },
                 {
@@ -291,8 +297,9 @@ var config = {
                     opacity: 1,
                 },
             ],
-            onChapterExit: [{
-                    layer: 'corredor_transolimpica',
+            onChapterExit: [
+                {
+                    layer: 'estacao_transolimpica',
                     opacity: 0,
                 },
                 {
@@ -334,8 +341,9 @@ var config = {
             },
             mapAnimation: 'flyTo',
             // callback: 'newContainer', 
-            onChapterEnter: [{
-                    layer: 'corredor_transbrasil',
+            onChapterEnter: [
+                {
+                    layer: 'estacao_transbrasil',
                     opacity: 1,
                 },
                 {
@@ -343,8 +351,10 @@ var config = {
                     opacity: 1,
                 },
             ],
-            onChapterExit: [{
-                    layer: 'corredor_transbrasil',
+            onChapterExit: [
+
+                {
+                    layer: 'estacao_transbrasil',
                     opacity: 0,
                 },
                 {
@@ -352,134 +362,6 @@ var config = {
                     opacity: 0,
                 },
             ]
-        },
-        {
-            id: 'parte5',
-            // mapAnimation: 'easeTo', // flyTo, easeTo, seinao
-            location: {
-                mobile: {
-                    center: {
-                        lon: -43.46915,
-                        lat: -22.92849
-                    },
-                    zoom: 8.40,
-                    pitch: 0.00,
-                    bearing: -2.42,
-                    speed: 1,
-                    curve: 1
-                },
-                desktop: {
-                    center: {
-                        lon: -43.25942,
-                        lat: -22.92894
-                    },
-                    zoom: 9.93,
-                    pitch: 0.00,
-                    bearing: 0.00,
-                    speed: 1,
-                    curve: 1
-                }
-            },
-            rotateAnimation: {
-                duration: 800, // seconds
-                degrees: 45 // degress
-            },
-            mapAnimation: 'flyTo',
-            // callback: 'newContainer', 
-            onChapterEnter: [{
-                    layer: 'linhaonibus',
-                    opacity: 1,
-                },
-                {
-                    layer: 'linhabrt',
-                    opacity: 1,
-                },
-            ],
-            onChapterExit: [{
-                    layer: 'linhaonibus',
-                    opacity: 0,
-                },
-                {
-                    layer: 'linhabrt',
-                    opacity: 0,
-                },
-            ],
-        },
-        {
-            id: 'parte6',
-            // mapAnimation: 'easeTo', // flyTo, easeTo, seinao
-            location: {
-                mobile: {
-                    center: {
-                        lon: -43.46915,
-                        lat: -22.92849
-                    },
-                    zoom: 8.40,
-                    pitch: 0.00,
-                    bearing: -2.42,
-                    speed: 1,
-                    curve: 1
-                },
-                desktop: {
-                    center: {
-                        lon: -43.25942,
-                        lat: -22.92894
-                    },
-                    zoom: 9.93,
-                    pitch: 0.00,
-                    bearing: 0.00,
-                    speed: 1,
-                    curve: 1
-                }
-            },
-            rotateAnimation: {
-                duration: 800, // seconds
-                degrees: 45 // degress
-            },
-            mapAnimation: 'flyTo',
-            // callback: 'newContainer', 
-            onChapterEnter: [{
-                    layer: 'metro',
-                    opacity: 1,
-                },
-                {
-                    layer: 'corredor_transbrasil',
-                    opacity: 1,
-                },
-                {
-                    layer: 'corredor_transoeste',
-                    opacity: 1,
-                },
-                {
-                    layer: 'corredor_transcarioca',
-                    opacity: 1,
-                },
-                {
-                    layer: 'corredor_transolimpica',
-                    opacity: 1,
-                },
-            ],
-            onChapterExit: [{
-                    layer: 'metro',
-                    opacity: 0,
-                },
-                {
-                    layer: 'corredor_transbrasil',
-                    opacity: 0,
-                },
-                {
-                    layer: 'corredor_transoeste',
-                    opacity: 0,
-                },
-                {
-                    layer: 'corredor_transcarioca',
-                    opacity: 0,
-                },
-                {
-                    layer: 'corredor_transolimpica',
-                    opacity: 0,
-                },
-            ],
         },
     ]
 };

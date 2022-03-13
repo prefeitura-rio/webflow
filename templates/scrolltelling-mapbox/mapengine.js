@@ -55,8 +55,10 @@ function startMap(datavizId) {
 
     function setLayerOpacity(layer) {
 
+        console.log('layer', layer)
         var paintProps = getLayerPaintType(layer.layer);
         paintProps.forEach(function (prop) {
+            console.log('prop', prop)
             var options = {};
             if (layer.duration) {
                 var transitionProp = prop + "-transition";
@@ -66,6 +68,8 @@ function startMap(datavizId) {
                 map.setPaintProperty(layer.layer, transitionProp, options);
             }
             map.setPaintProperty(layer.layer, prop, layer.opacity, options);
+            map.setPaintProperty(layer.layer, prop, layer.opacity, options);
+            console.log(map.getLayer(layer.layer))
         });
     }
 
@@ -152,7 +156,7 @@ function startMap(datavizId) {
 
     // instantiate the scrollama
     var scroller = scrollama();
-    console.log('scroller', scroller)
+
     map.on("load", function () {
 
         addLabelToMap(map, labelsContainer)
@@ -166,14 +170,16 @@ function startMap(datavizId) {
             .setup({
                 step: '.section_' + datavizId,
                 offset: 0.5,
+                debug: true
             })
             .onStepEnter(response => {
-
+                console.log('--------CHAPTER ENTER------')
+                console.log('response', response)
 
                 // Get current chapter
                 var chapter = config.chapters.find(chap => chap.id === response.element.id);
 
-
+                console.log('chapter', chapter.id)
                 response.element.classList.add('active');
 
                 // Set screen breakpoint
@@ -208,11 +214,15 @@ function startMap(datavizId) {
 
             })
             .onStepExit(response => {
+
+                console.log('--------CHAPTER EXIT------')
                 var chapter = config.chapters.find(chap => chap.id === response.element.id);
 
                 if (chapter.onChapterExit.length > 0) {
                     chapter.onChapterExit.forEach(setLayerOpacity);
                 }
+
+                response.element.classList.remove('active');
             });
     });
 
