@@ -172,12 +172,12 @@ var config = {
                 },
                 desktop: {
                     center: {
-                        lon: -43.44161,
-                        lat: -22.92543
+                        lon: -43.24560,
+                        lat: -22.92449
                     },
-                    zoom: 9.64,
+                    zoom: 9.69,
                     pitch: 0.00,
-                    bearing: -0.40,
+                    bearing: 0.00,
                     speed: 1,
                     curve: 1
                 }
@@ -214,12 +214,12 @@ var config = {
                 },
                 desktop: {
                     center: {
-                        lon: -43.44161,
-                        lat: -22.92543
+                        lon: -43.24560,
+                        lat: -22.92449
                     },
-                    zoom: 9.64,
+                    zoom: 9.69,
                     pitch: 0.00,
-                    bearing: -0.40,
+                    bearing: 0.00,
                     speed: 1,
                     curve: 1
                 }
