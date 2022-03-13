@@ -273,23 +273,13 @@ var config = {
             mapAnimation: 'flyTo',
             // callback: 'newContainer', 
             onChapterEnter: [{
-                    layer: 'corredor_transcarioca',
-                    opacity: 1,
-                },
-                {
-                    layer: 'corredor_transoeste',
-                    opacity: .2,
-                },
-            ],
+                layer: 'corredor_transcarioca',
+                opacity: 1,
+            }, ],
             onChapterExit: [{
-                    layer: 'corredor_transcarioca',
-                    opacity: 0,
-                },
-                {
-                    layer: 'corredor_transoeste',
-                    opacity: 0,
-                },
-            ]
+                layer: 'corredor_transcarioca',
+                opacity: 0,
+            }, ]
         },
         {
             id: 'parte3',
@@ -325,31 +315,13 @@ var config = {
             mapAnimation: 'flyTo',
             // callback: 'newContainer', 
             onChapterEnter: [{
-                    layer: 'corredor_transolimpica',
-                    opacity: 1,
-                },
-                {
-                    layer: 'corredor_transcarioca',
-                    opacity: .2,
-                },
-                {
-                    layer: 'corredor_transoeste',
-                    opacity: .2,
-                },
-            ],
+                layer: 'corredor_transolimpica',
+                opacity: 1,
+            }, ],
             onChapterExit: [{
-                    layer: 'corredor_transolimpica',
-                    opacity: 0,
-                },
-                {
-                    layer: 'corredor_transcarioca',
-                    opacity: 0,
-                },
-                {
-                    layer: 'corredor_transoeste',
-                    opacity: 0,
-                },
-            ]
+                layer: 'corredor_transolimpica',
+                opacity: 0,
+            }, ]
         },
         {
             id: 'parte4',
@@ -385,39 +357,13 @@ var config = {
             mapAnimation: 'flyTo',
             // callback: 'newContainer', 
             onChapterEnter: [{
-                    layer: 'corredor_transbrasil',
-                    opacity: 1,
-                },
-                {
-                    layer: 'corredor_transolimpica',
-                    opacity: .2,
-                },
-                {
-                    layer: 'corredor_transcarioca',
-                    opacity: .2,
-                },
-                {
-                    layer: 'corredor_transoeste',
-                    opacity: .2,
-                },
-            ],
+                layer: 'corredor_transbrasil',
+                opacity: 1,
+            }, ],
             onChapterExit: [{
-                    layer: 'corredor_transbrasil',
-                    opacity: 0,
-                },
-                {
-                    layer: 'corredor_transolimpica',
-                    opacity: 0,
-                },
-                {
-                    layer: 'corredor_transcarioca',
-                    opacity: 02,
-                },
-                {
-                    layer: 'corredor_transoeste',
-                    opacity: 0,
-                },
-            ]
+                layer: 'corredor_transbrasil',
+                opacity: 0,
+            }, ]
         },
         {
             id: 'parte5',
@@ -461,7 +407,7 @@ var config = {
                     opacity: 1,
                 },
                 {
-                    layer: 'corredor_transolimpica',
+                    layer: 'corredor_transoeste',
                     opacity: 1,
                 },
                 {
@@ -469,7 +415,7 @@ var config = {
                     opacity: 1,
                 },
                 {
-                    layer: 'corredor_transoeste',
+                    layer: 'corredor_transolimpica',
                     opacity: 1,
                 },
             ],
@@ -482,7 +428,7 @@ var config = {
                     opacity: 0,
                 },
                 {
-                    layer: 'corredor_transolimpica',
+                    layer: 'corredor_transoeste',
                     opacity: 0,
                 },
                 {
@@ -490,7 +436,83 @@ var config = {
                     opacity: 0,
                 },
                 {
+                    layer: 'corredor_transolimpica',
+                    opacity: 0,
+                },
+            ],
+        },
+        {
+            id: 'parte6',
+            // mapAnimation: 'easeTo', // flyTo, easeTo, seinao
+            location: {
+                mobile: {
+                    center: {
+                        lon: -43.46915,
+                        lat: -22.92849
+                    },
+                    zoom: 8.40,
+                    pitch: 0.00,
+                    bearing: -2.42,
+                    speed: 1,
+                    curve: 1
+                },
+                desktop: {
+                    center: {
+                        lon: -43.25942,
+                        lat: -22.92894
+                    },
+                    zoom: 9.93,
+                    pitch: 0.00,
+                    bearing: 0.00,
+                    speed: 1,
+                    curve: 1
+                }
+            },
+            rotateAnimation: {
+                duration: 200, // seconds
+                degrees: 45 // degress
+            },
+            mapAnimation: 'flyTo',
+            // callback: 'newContainer', 
+            onChapterEnter: [{
+                    layer: 'metro',
+                    opacity: 1,
+                },
+                {
+                    layer: 'corredor_transbrasil',
+                    opacity: 1,
+                },
+                {
                     layer: 'corredor_transoeste',
+                    opacity: 1,
+                },
+                {
+                    layer: 'corredor_transcarioca',
+                    opacity: 1,
+                },
+                {
+                    layer: 'corredor_transolimpica',
+                    opacity: 1,
+                },
+            ],
+            onChapterExit: [{
+                    layer: 'metro',
+                    opacity: 0,
+                },
+                {
+                    layer: 'corredor_transbrasil',
+                    opacity: 0,
+                },
+                {
+                    layer: 'corredor_transoeste',
+                    opacity: 0,
+                },
+                {
+                    layer: 'corredor_transcarioca',
+                    opacity: 0,
+                },
+                {
+                    layer: 'corredor_transolimpica',
                     opacity: 0,
                 },
             ],
