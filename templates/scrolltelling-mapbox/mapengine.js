@@ -170,7 +170,7 @@ function startMap(datavizId) {
             .setup({
                 step: '.section_' + datavizId,
                 offset: 0.5,
-                debug: true
+                // debug: true
             })
             .onStepEnter(response => {
                 console.log('--------CHAPTER ENTER------')

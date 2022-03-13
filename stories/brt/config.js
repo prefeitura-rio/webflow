@@ -236,6 +236,14 @@ var config = {
             // callback: 'newContainer', 
             onChapterEnter: [
                 {
+                    layer: 'estacao_transoeste',
+                    opacity: 1,
+                },
+                {
+                    layer: 'label-transoeste',
+                    opacity: 1,
+                },
+                {
                     layer: 'estacao_transcarioca',
                     opacity: 1,
                 },
@@ -244,7 +252,16 @@ var config = {
                     opacity: 1,
                 },
             ],
-            onChapterExit: [{
+            onChapterExit: [
+                {
+                    layer: 'estacao_transoeste',
+                    opacity: 0,
+                },
+                {
+                    layer: 'label-transoeste',
+                    opacity: 0,
+                },
+                {
                     layer: 'estacao_transcarioca',
                     opacity: 0,
                 },
@@ -289,6 +306,22 @@ var config = {
             // callback: 'newContainer', 
             onChapterEnter: [
                 {
+                    layer: 'estacao_transoeste',
+                    opacity: 1,
+                },
+                {
+                    layer: 'label-transoeste',
+                    opacity: 1,
+                },
+                {
+                    layer: 'estacao_transcarioca',
+                    opacity: 1,
+                },
+                {
+                    layer: 'label-transcarioca',
+                    opacity: 1,
+                },
+                {
                     layer: 'estacao_transolimpica',
                     opacity: 1,
                 },
@@ -298,6 +331,22 @@ var config = {
                 },
             ],
             onChapterExit: [
+                {
+                    layer: 'estacao_transoeste',
+                    opacity: 0,
+                },
+                {
+                    layer: 'label-transoeste',
+                    opacity: 0,
+                },
+                {
+                    layer: 'estacao_transcarioca',
+                    opacity: 0,
+                },
+                {
+                    layer: 'label-transcarioca',
+                    opacity: 0,
+                },
                 {
                     layer: 'estacao_transolimpica',
                     opacity: 0,
@@ -343,6 +392,30 @@ var config = {
             // callback: 'newContainer', 
             onChapterEnter: [
                 {
+                    layer: 'estacao_transoeste',
+                    opacity: 1,
+                },
+                {
+                    layer: 'label-transoeste',
+                    opacity: 1,
+                },
+                {
+                    layer: 'estacao_transcarioca',
+                    opacity: 1,
+                },
+                {
+                    layer: 'label-transcarioca',
+                    opacity: 1,
+                },
+                {
+                    layer: 'estacao_transolimpica',
+                    opacity: 1,
+                },
+                {
+                    layer: 'label-transolimpica',
+                    opacity: 1,
+                },
+                {
                     layer: 'estacao_transbrasil',
                     opacity: 1,
                 },
@@ -352,7 +425,30 @@ var config = {
                 },
             ],
             onChapterExit: [
-
+                {
+                    layer: 'estacao_transoeste',
+                    opacity: 0,
+                },
+                {
+                    layer: 'label-transoeste',
+                    opacity: 0,
+                },
+                {
+                    layer: 'estacao_transcarioca',
+                    opacity: 0,
+                },
+                {
+                    layer: 'label-transcarioca',
+                    opacity: 0,
+                },
+                {
+                    layer: 'estacao_transolimpica',
+                    opacity: 0,
+                },
+                {
+                    layer: 'label-transolimpica',
+                    opacity: 0,
+                },
                 {
                     layer: 'estacao_transbrasil',
                     opacity: 0,
