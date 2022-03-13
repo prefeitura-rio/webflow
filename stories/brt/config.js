@@ -1,112 +1,86 @@
 var labelsContainer = [{
-        'layerId': 'label-bairros',
-        'labels': [
-            /*{
-                            'description': "JACARÉ",
-                            'textColor': '#ffffff',
-                            'textSize': 18,
-                            "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
-                            'textHaloColor': '#000',
-                            'textHaloWidth': 50,
-                            'textHaloBlur': 50,
-                            'coordinates': [-43.25184, -22.89181]
-                        },
-                        {
-                            'description': "MANGUINHOS",
-                            'textColor': '#ffffff',
-                            'textSize': 18,
-                            "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
-                            'textHaloColor': '#000',
-                            'textHaloWidth': 50,
-                            'textHaloBlur': 50,
-                            'coordinates': [-43.24402, -22.87991]
-                        },*/
-            {
-                'description': "MARACANÃ",
-                'textColor': '#ffffff',
-                'textSize': 15,
-                "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
-                'textHaloColor': '#000',
-                'textHaloWidth': 50,
-                'textHaloBlur': 50,
-                'coordinates': [-43.23197, -22.90836]
-            },
-            {
-                'description': "ENGENHÃO",
-                'textColor': '#ffffff',
-                'textSize': 15,
-                "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
-                'textHaloColor': '#000',
-                'textHaloWidth': 50,
-                'textHaloBlur': 50,
-                'coordinates': [-43.29157, -22.89523]
-            },
-            {
-                'description': "JACAREZINHO",
-                'textColor': '#a63a3a',
-                'textSize': 25,
-                "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
-                'textHaloColor': '#000',
-                'textHaloWidth': 50,
-                'textHaloBlur': 50,
-                'coordinates': [-43.26505, -22.88362]
-            },
-        ]
+        'layerId': 'label-transoeste',
+        'labels': [{
+            'description': "TRANSOESTE",
+            'textColor': '#299ed3',
+            'textSize': 22,
+            "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
+            'textHaloColor': '#ffffff',
+            'textHaloWidth': 50,
+            'textHaloBlur': 50,
+            'coordinates': [-43.49040, -22.93575]
+        }, ]
     },
     {
-        'layerId': 'label-escolas',
+        'layerId': 'label-transbrasil',
         'labels': [{
-                'description': "JACARÉ",
-                'textColor': '#ffffff',
-                'textSize': 18,
-                "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
-                'textHaloColor': '#000',
-                'textHaloWidth': 50,
-                'textHaloBlur': 50,
-                'coordinates': [-43.25478, -22.89127]
-            },
-            {
-                'description': "MANGUINHOS",
-                'textColor': '#ffffff',
-                'textSize': 18,
-                "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
-                'textHaloColor': '#000',
-                'textHaloWidth': 50,
-                'textHaloBlur': 50,
-                'coordinates': [-43.24466, -22.88187]
-            },
-            {
-                'description': "JACAREZINHO",
-                'textColor': '#ffffff',
-                'textSize': 18,
-                "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
-                'textHaloColor': '#000',
-                'textHaloWidth': 50,
-                'coordinates': [-43.25766, -22.88637]
-            },
-        ]
+            'description': "TRANSBRASIL",
+            'textColor': '#ffec42',
+            'textSize': 22,
+            "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
+            'textHaloColor': '#ffffff',
+            'textHaloWidth': 50,
+            'textHaloBlur': 50,
+            'coordinates': [-43.33026, -22.883087]
+        }, ]
     },
     {
-        'layerId': 'label-comunidade',
+        'layerId': 'label-transcarioca',
         'labels': [{
-                'description': "COMUNIDADE",
-                'textColor': '#a63a3a',
+            'description': "TRANSCARIOCA",
+            'textColor': '#f9811f',
+            'textSize': 22,
+            "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
+            'textHaloColor': '#ffffff',
+            'textHaloWidth': 50,
+            'textHaloBlur': 50,
+            'coordinates': [-43.25044, -22.93747]
+        }, ]
+    },
+    {
+        'layerId': 'label-transolimpica',
+        'labels': [{
+            'description': "TRANSOLIMPICA",
+            'textColor': '#1db657',
+            'textSize': 22,
+            "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
+            'textHaloColor': '#ffffff',
+            'textHaloWidth': 50,
+            'textHaloBlur': 50,
+            'coordinates': [-43.49374, -22.88898]
+        }, ]
+    },
+    {
+        'layerId': 'label-transporte',
+        'labels': [{
+                'description': "METRO",
+                'textColor': '#53d219',
                 'textSize': 22,
                 "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
-                'textHaloColor': '#000',
+                'textHaloColor': '#ffffff',
                 'textHaloWidth': 50,
                 'textHaloBlur': 50,
-                'coordinates': [-43.25756, -22.8864]
+                'coordinates': [-43.27815, -22.94700]
             },
             {
-                'description': "BAIRRO",
-                'textColor': '#d98787',
-                'textSize': 20,
+                'description': "TREM",
+                'textColor': '#ca4444',
+                'textSize': 22,
                 "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
-                'textHaloColor': '#000',
+                'textHaloColor': '#ffffff',
                 'textHaloWidth': 50,
                 'textHaloBlur': 50,
-                'coordinates': [-43.25758, -22.88316]
+                'coordinates': [-43.37976, -22.87862]
+            },
+            {
+                'description': "VLT",
+                'textColor': '#4b59d2',
+                'textSize': 22,
+                "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
+                'textHaloColor': '#ffffff',
+                'textHaloWidth': 50,
+                'textHaloBlur': 50,
+                'coordinates': [-43.17483, -22.86222]
             },
         ]
     },
@@ -153,13 +127,23 @@ var config = {
             mapAnimation: 'flyTo',
             // callback: 'newContainer', 
             onChapterEnter: [{
-                layer: 'metro',
-                opacity: 1,
-            }, ],
+                    layer: 'metro',
+                    opacity: 1,
+                },
+                {
+                    layer: 'label-transporte',
+                    opacity: 1,
+                },
+            ],
             onChapterExit: [{
-                layer: 'metro',
-                opacity: 0,
-            }, ]
+                    layer: 'metro',
+                    opacity: 0,
+                },
+                {
+                    layer: 'label-transporte',
+                    opacity: 0,
+                },
+            ]
         },
         {
             id: 'parte1',
@@ -189,19 +173,29 @@ var config = {
                 }
             },
             rotateAnimation: {
-                duration: 200, // seconds
+                duration: 800, // seconds
                 degrees: 45 // degress
             },
             mapAnimation: 'flyTo',
             // callback: 'newContainer', 
             onChapterEnter: [{
-                layer: 'corredor_transoeste',
-                opacity: 1,
-            }, ],
+                    layer: 'corredor_transoeste',
+                    opacity: 1,
+                },
+                {
+                    layer: 'label-transoeste',
+                    opacity: 1,
+                },
+            ],
             onChapterExit: [{
-                layer: 'corredor_transoeste',
-                opacity: 0,
-            }, ]
+                    layer: 'corredor_transoeste',
+                    opacity: 0,
+                },
+                {
+                    layer: 'label-transoeste',
+                    opacity: 0,
+                },
+            ]
         },
         {
             id: 'parte2',
@@ -231,19 +225,29 @@ var config = {
                 }
             },
             rotateAnimation: {
-                duration: 200, // seconds
+                duration: 800, // seconds
                 degrees: 45 // degress
             },
             mapAnimation: 'flyTo',
             // callback: 'newContainer', 
             onChapterEnter: [{
-                layer: 'corredor_transcarioca',
-                opacity: 1,
-            }, ],
+                    layer: 'corredor_transcarioca',
+                    opacity: 1,
+                },
+                {
+                    layer: 'label-transcarioca',
+                    opacity: 1,
+                },
+            ],
             onChapterExit: [{
-                layer: 'corredor_transcarioca',
-                opacity: 0,
-            }, ]
+                    layer: 'corredor_transcarioca',
+                    opacity: 0,
+                },
+                {
+                    layer: 'label-transcarioca',
+                    opacity: 0,
+                },
+            ]
         },
         {
             id: 'parte3',
@@ -273,19 +277,29 @@ var config = {
                 }
             },
             rotateAnimation: {
-                duration: 200, // seconds
+                duration: 800, // seconds
                 degrees: 45 // degress
             },
             mapAnimation: 'flyTo',
             // callback: 'newContainer', 
             onChapterEnter: [{
-                layer: 'corredor_transolimpica',
-                opacity: 1,
-            }, ],
+                    layer: 'corredor_transolimpica',
+                    opacity: 1,
+                },
+                {
+                    layer: 'label-transolimpica',
+                    opacity: 1,
+                },
+            ],
             onChapterExit: [{
-                layer: 'corredor_transolimpica',
-                opacity: 0,
-            }, ]
+                    layer: 'corredor_transolimpica',
+                    opacity: 0,
+                },
+                {
+                    layer: 'label-transolimpica',
+                    opacity: 0,
+                },
+            ]
         },
         {
             id: 'parte4',
@@ -315,19 +329,29 @@ var config = {
                 }
             },
             rotateAnimation: {
-                duration: 200, // seconds
+                duration: 800, // seconds
                 degrees: 45 // degress
             },
             mapAnimation: 'flyTo',
             // callback: 'newContainer', 
             onChapterEnter: [{
-                layer: 'corredor_transbrasil',
-                opacity: 1,
-            }, ],
+                    layer: 'corredor_transbrasil',
+                    opacity: 1,
+                },
+                {
+                    layer: 'label-transbrasil',
+                    opacity: 1,
+                },
+            ],
             onChapterExit: [{
-                layer: 'corredor_transbrasil',
-                opacity: 0,
-            }, ]
+                    layer: 'corredor_transbrasil',
+                    opacity: 0,
+                },
+                {
+                    layer: 'label-transbrasil',
+                    opacity: 0,
+                },
+            ]
         },
         {
             id: 'parte5',
@@ -357,7 +381,7 @@ var config = {
                 }
             },
             rotateAnimation: {
-                duration: 200, // seconds
+                duration: 800, // seconds
                 degrees: 45 // degress
             },
             mapAnimation: 'flyTo',
@@ -409,7 +433,7 @@ var config = {
                 }
             },
             rotateAnimation: {
-                duration: 200, // seconds
+                duration: 800, // seconds
                 degrees: 45 // degress
             },
             mapAnimation: 'flyTo',
