@@ -399,44 +399,20 @@ var config = {
             mapAnimation: 'flyTo',
             // callback: 'newContainer', 
             onChapterEnter: [{
-                    layer: 'metro',
+                    layer: 'linhaonibus',
                     opacity: 1,
                 },
                 {
-                    layer: 'corredor_transbrasil',
-                    opacity: 1,
-                },
-                {
-                    layer: 'corredor_transoeste',
-                    opacity: 1,
-                },
-                {
-                    layer: 'corredor_transcarioca',
-                    opacity: 1,
-                },
-                {
-                    layer: 'corredor_transolimpica',
+                    layer: 'linhabrt',
                     opacity: 1,
                 },
             ],
             onChapterExit: [{
-                    layer: 'metro',
+                    layer: 'linhaonibus',
                     opacity: 0,
                 },
                 {
-                    layer: 'corredor_transbrasil',
-                    opacity: 0,
-                },
-                {
-                    layer: 'corredor_transoeste',
-                    opacity: 0,
-                },
-                {
-                    layer: 'corredor_transcarioca',
-                    opacity: 0,
-                },
-                {
-                    layer: 'corredor_transolimpica',
+                    layer: 'linhabrt',
                     opacity: 0,
                 },
             ],
