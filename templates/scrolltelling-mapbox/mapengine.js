@@ -11,7 +11,7 @@ function startMap(datavizId) {
     }
 
     function getLayerPaintType(layer) {
-        console.log(layer);
+
         var layerType = map.getLayer(layer).type;
         return layerTypes[layerType];
     }
@@ -56,8 +56,7 @@ function startMap(datavizId) {
     function setLayerOpacity(layer) {
 
         var paintProps = getLayerPaintType(layer.layer);
-        console.log(paintProps)
-        paintProps.forEach(function(prop) {
+        paintProps.forEach(function (prop) {
             var options = {};
             if (layer.duration) {
                 var transitionProp = prop + "-transition";
@@ -151,16 +150,16 @@ function startMap(datavizId) {
         }
     }
 
-
     // instantiate the scrollama
     var scroller = scrollama();
     console.log('scroller', scroller)
-    map.on("load", function() {
+    map.on("load", function () {
 
         addLabelToMap(map, labelsContainer)
 
         // Load 3d buildings
         set3dTerrain(map, config);
+
 
         // setup the instance, pass callback functions
         scroller
@@ -170,10 +169,10 @@ function startMap(datavizId) {
             })
             .onStepEnter(response => {
 
-                console.log('oi')
 
                 // Get current chapter
                 var chapter = config.chapters.find(chap => chap.id === response.element.id);
+
 
                 response.element.classList.add('active');
 
@@ -194,28 +193,23 @@ function startMap(datavizId) {
                     window[chapter.callback](chapter);
                 }
 
-                // Set map style
-                if (chapter.style) {
-                    map.setStyle(chapter.style);
-                } else {
-                    map.setStyle(config.style);
-                }
-
                 // Set rotate animation
                 if (chapter.rotateAnimation !== undefined) {
-                    map.once('moveend', function() {
+                    map.once('moveend', function () {
                         const rotateNumber = map.getBearing();
                         map.rotateTo(rotateNumber + chapter.rotateAnimation.degrees, {
                             duration: chapter.rotateAnimation.duration * 1000, // milliseconds
-                            easing: function(t) {
+                            easing: function (t) {
                                 return t;
                             }
                         });
                     });
                 }
+
             })
             .onStepExit(response => {
                 var chapter = config.chapters.find(chap => chap.id === response.element.id);
+
                 if (chapter.onChapterExit.length > 0) {
                     chapter.onChapterExit.forEach(setLayerOpacity);
                 }

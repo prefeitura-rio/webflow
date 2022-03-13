@@ -415,44 +415,7 @@ var config = {
                     layer: 'metro',
                     opacity: 0,
                 },
-            ]
-        },
-        {
-            id: 'change-style',
-            style: 'mapbox://styles/escritoriodedados/cl0o3gv0r000214nyitwqkz83',
-            // mapAnimation: 'easeTo', // flyTo, easeTo, seinao
-            location: {
-                mobile: {
-                    center: {
-                        lon: -43.46915,
-                        lat: -22.92849
-                    },
-                    zoom: 8.40,
-                    pitch: 0.00,
-                    bearing: -2.42,
-                    speed: 1,
-                    curve: 1
-                },
-                desktop: {
-                    center: {
-                        lon: -43.44161,
-                        lat: -22.92543
-                    },
-                    zoom: 9.64,
-                    pitch: 0.00,
-                    bearing: -0.40,
-                    speed: 1,
-                    curve: 1
-                }
-            },
-            rotateAnimation: {
-                duration: 200, // seconds
-                degrees: 45 // degress
-            },
-            mapAnimation: 'flyTo',
-            // callback: 'newContainer', 
-            onChapterEnter: [, ],
-            onChapterExit: []
+            ],
         },
     ]
 };
