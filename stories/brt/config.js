@@ -1226,9 +1226,8 @@ var config = {
             location: {
                 mobile: {
                     center: {
-                        lon: -43.46915,
-                        lat: -22.92849
-                    },
+                        lon:-43.20258,
+                        lat:-22.89941},
                     zoom: 8.40,
                     pitch: 0.00,
                     bearing: -2.42,
@@ -1237,9 +1236,8 @@ var config = {
                 },
                 desktop: {
                     center: {
-                        lon: -43.20946,
-                        lat: -22.89926
-                    },
+                        lon:-43.20671,
+                        lat:-22.90025},
                     zoom: 16.42,
                     pitch: 45.00,
                     bearing: 0.00,
