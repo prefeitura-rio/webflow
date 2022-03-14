@@ -15,10 +15,10 @@ var labelsContainer = [{
         'layerId': 'label-transbrasil',
         'labels': [{
             'description': "TRANSBRASIL",
-            'textColor': '#d1be1a',
+            'textColor': '#ffffff',
             'textSize': 22,
             "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
-            'textHaloColor': '#ffffff',
+            'textHaloColor': '#d1be1a',
             'textHaloWidth': 50,
             'textHaloBlur': 50,
             'coordinates': [-43.33511, -22.76938]
@@ -51,6 +51,57 @@ var labelsContainer = [{
         }, ]
     },
     {
+        'layerId': 'label-abertura-transoeste',
+        'labels': [{
+            'description': "ABERTURA 2022",
+            'textColor': '#000000',
+            'textSize': 17,
+            "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
+            'textHaloColor': '#ffffff',
+            'textHaloWidth': 50,
+            'textHaloBlur': 50,
+            'coordinates': [-43.26200, -23.05568]
+        }, ]
+    },
+    /*    {
+            'layerId': 'label-abertura-transbrasil',
+            'labels': [{
+                'description': "ABERTURA 2021",
+                'textColor': '#000000',
+                'textSize': 17,
+                "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
+                'textHaloColor': '#ffffff',
+                'textHaloWidth': 50,
+                'textHaloBlur': 50,
+                'coordinates': [-43.26200, -23.05568]
+            }, ]
+        }, */
+    {
+        'layerId': 'label-abertura-transolimpica',
+        'labels': [{
+            'description': "ABERTURA 2020",
+            'textColor': '#000000',
+            'textSize': 17,
+            "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
+            'textHaloColor': '#ffffff',
+            'textHaloWidth': 50,
+            'textHaloBlur': 50,
+            'coordinates': [-43.26200, -23.05568]
+        }, ]
+    }, {
+        'layerId': 'label-abertura-transcarioca',
+        'labels': [{
+            'description': "ABERTURA 2019",
+            'textColor': '#000000',
+            'textSize': 17,
+            "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
+            'textHaloColor': '#ffffff',
+            'textHaloWidth': 50,
+            'textHaloBlur': 50,
+            'coordinates': [-43.26200, -23.05568]
+        }, ]
+    },
+    {
         'layerId': 'label-reabertura',
         'labels': [{
             'description': "ESTAÇÕES REABERTAS",
@@ -60,7 +111,21 @@ var labelsContainer = [{
             'textHaloColor': '#ffffff',
             'textHaloWidth': 50,
             'textHaloBlur': 50,
+            'textJustify': 'left',
             'coordinates': [-43.26895, -22.94070]
+        }, ]
+    },
+    {
+        'layerId': 'label-reabertura1',
+        'labels': [{
+            'description': "ESTAÇÕES REABERTAS",
+            'textColor': '#299ed3',
+            'textSize': 22,
+            "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
+            'textHaloColor': '#ffffff',
+            'textHaloWidth': 50,
+            'textHaloBlur': 50,
+            'coordinates': [-43.49813, -22.93957]
         }, ]
     },
     {
@@ -86,7 +151,7 @@ var labelsContainer = [{
                 'coordinates': [-43.37976, -22.87862]
             },
         ]
-    }, 
+    },
     {
         'layerId': 'label-crivela-brasil',
         'labels': [{
@@ -98,7 +163,7 @@ var labelsContainer = [{
             'textHaloWidth': 50,
             'textHaloBlur': 50,
             'textJustify': 'left',
-            'coordinates': [-43.37990,-23.04896]
+            'coordinates': [-43.37990, -23.04896]
         }, ]
     },
 ]
@@ -204,6 +269,10 @@ var config = {
                     layer: 'label-transoeste',
                     opacity: 1,
                 },
+                {
+                    layer: 'label-abertura-transoeste',
+                    opacity: 1,
+                },
             ],
             onChapterExit: [{
                     layer: 'transporte',
@@ -215,6 +284,10 @@ var config = {
                 },
                 {
                     layer: 'label-transoeste',
+                    opacity: 0,
+                },
+                {
+                    layer: 'label-abertura-transoeste',
                     opacity: 0,
                 },
             ]
@@ -268,6 +341,10 @@ var config = {
                     layer: 'label-transcarioca',
                     opacity: 1,
                 },
+                {
+                    layer: 'label-abertura-transcarioca',
+                    opacity: 1,
+                },
             ],
             onChapterExit: [{
                     layer: 'transporte',
@@ -287,6 +364,10 @@ var config = {
                 },
                 {
                     layer: 'label-transcarioca',
+                    opacity: 0,
+                },
+                {
+                    layer: 'label-abertura-transcarioca',
                     opacity: 0,
                 },
             ]
@@ -349,6 +430,10 @@ var config = {
                     layer: 'label-transolimpica',
                     opacity: 1,
                 },
+                {
+                    layer: 'label-abertura-transolimpica',
+                    opacity: 1,
+                },
             ],
             onChapterExit: [{
                     layer: 'transporte',
@@ -376,6 +461,10 @@ var config = {
                 },
                 {
                     layer: 'label-transolimpica',
+                    opacity: 0,
+                },
+                {
+                    layer: 'label-abertura-transolimpica',
                     opacity: 0,
                 },
             ]
@@ -446,6 +535,10 @@ var config = {
                     layer: 'label-transbrasil',
                     opacity: 1,
                 },
+                {
+                    layer: 'label-abertura-transbrasil',
+                    opacity: 1,
+                },
             ],
             onChapterExit: [{
                     layer: 'transporte',
@@ -483,6 +576,10 @@ var config = {
                     layer: 'label-transbrasil',
                     opacity: 0,
                 },
+                {
+                    layer: 'label-abertura-transbrasil',
+                    opacity: 0,
+                },
             ]
         },
         {
@@ -502,10 +599,10 @@ var config = {
                 },
                 desktop: {
                     center: {
-                        lon: -43.25942,
-                        lat: -22.92894
+                        lon: -43.30505,
+                        lat: -22.95810
                     },
-                    zoom: 9.93,
+                    zoom: 11.85,
                     pitch: 0.00,
                     bearing: 0.00,
                     speed: 1,
@@ -761,23 +858,23 @@ var config = {
             mapAnimation: 'flyTo',
             // callback: 'newContainer', 
             onChapterEnter: [{
-                layer: 'crivela-transbrasil',
-                opacity: 1,
-            }, 
-            {
-                layer: 'label-crivela-brasil',
-                opacity: 1,
-            }
-        ],
+                    layer: 'crivela-transbrasil',
+                    opacity: 1,
+                },
+                {
+                    layer: 'label-crivela-brasil',
+                    opacity: 1,
+                }
+            ],
             onChapterExit: [{
-                layer: 'crivela-transbrasil',
-                opacity: 0,
-            }, 
-            {
-                layer: 'label-crivela-brasil',
-                opacity: 0,
-            }
-        ]
+                    layer: 'crivela-transbrasil',
+                    opacity: 0,
+                },
+                {
+                    layer: 'label-crivela-brasil',
+                    opacity: 0,
+                }
+            ]
         },
         {
             id: 'crivela3',
@@ -940,13 +1037,23 @@ var config = {
             mapAnimation: 'flyTo',
             // callback: 'newContainer', 
             onChapterEnter: [{
-                layer: 'retomada-2',
-                opacity: 1,
-            }, ],
+                    layer: 'retomada-2',
+                    opacity: 1,
+                },
+                {
+                    layer: 'label-reabertura1',
+                    opacity: 1,
+                },
+            ],
             onChapterExit: [{
-                layer: 'retomada-2',
-                opacity: 0,
-            }, ]
+                    layer: 'retomada-2',
+                    opacity: 0,
+                },
+                {
+                    layer: 'label-reabertura1',
+                    opacity: 0,
+                },
+            ]
         },
         {
             id: 'recuperacao4',
@@ -1019,13 +1126,23 @@ var config = {
             mapAnimation: 'flyTo',
             // callback: 'newContainer', 
             onChapterEnter: [{
-                layer: 'estacao_transbrasil',
-                opacity: 1,
-            }, ],
+                    layer: 'estacao_transbrasil',
+                    opacity: 1,
+                },
+                {
+                    layer: 'corredor_transbrasil1',
+                    opacity: 1,
+                },
+            ],
             onChapterExit: [{
-                layer: 'estacao_transbrasil',
-                opacity: 0,
-            }, ]
+                    layer: 'estacao_transbrasil',
+                    opacity: 0,
+                },
+                {
+                    layer: 'corredor_transbrasil1',
+                    opacity: 0,
+                },
+            ]
         },
         {
             id: 'final2',
@@ -1072,6 +1189,79 @@ var config = {
                 },
                 {
                     layer: 'transporte_completo',
+                    opacity: 0,
+                },
+            ]
+        },
+        {
+            id: 'final3',
+            // mapAnimation: 'easeTo', // flyTo, easeTo, seinao
+            location: {
+                mobile: {
+                    center: {
+                        lon: -43.46915,
+                        lat: -22.92849
+                    },
+                    zoom: 8.40,
+                    pitch: 0.00,
+                    bearing: -2.42,
+                    speed: 1,
+                    curve: 1
+                },
+                desktop: {
+                    center: {
+                        lon: -43.44823,
+                        lat: -22.92715
+                    },
+                    zoom: 10.20,
+                    pitch: 0.00,
+                    bearing: 0.00,
+                    speed: 1,
+                    curve: 1
+                }
+            },
+
+            mapAnimation: 'flyTo',
+            // callback: 'newContainer', 
+            onChapterEnter: [{
+                    layer: 'transporte',
+                    opacity: 1,
+                },
+                {
+                    layer: 'corredor_transoeste',
+                    opacity: 1,
+                },
+                {
+                    layer: 'corredor_transcarioca',
+                    opacity: 1,
+                },
+                {
+                    layer: 'corredor_transolimpica',
+                    opacity: 1,
+                },
+                {
+                    layer: 'corredor_transbrasil',
+                    opacity: 1,
+                },
+            ],
+            onChapterExit: [{
+                    layer: 'transporte',
+                    opacity: 0,
+                },
+                {
+                    layer: 'corredor_transoeste',
+                    opacity: 0,
+                },
+                {
+                    layer: 'corredor_transcarioca',
+                    opacity: 0,
+                },
+                {
+                    layer: 'corredor_transolimpica',
+                    opacity: 0,
+                },
+                {
+                    layer: 'corredor_transbrasil',
                     opacity: 0,
                 },
             ]
