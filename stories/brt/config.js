@@ -54,7 +54,7 @@ var labelsContainer = [{
         'layerId': 'label-transporte',
         'labels': [{
                 'description': "METRO",
-                'textColor': '#53d219',
+                'textColor': '#766f6f',
                 'textSize': 22,
                 "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
                 'textHaloColor': '#ffffff',
@@ -64,23 +64,13 @@ var labelsContainer = [{
             },
             {
                 'description': "TREM",
-                'textColor': '#ca4444',
+                'textColor': '#766f6f',
                 'textSize': 22,
                 "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
                 'textHaloColor': '#ffffff',
                 'textHaloWidth': 50,
                 'textHaloBlur': 50,
                 'coordinates': [-43.37976, -22.87862]
-            },
-            {
-                'description': "VLT",
-                'textColor': '#4b59d2',
-                'textSize': 22,
-                "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
-                'textHaloColor': '#ffffff',
-                'textHaloWidth': 50,
-                'textHaloBlur': 50,
-                'coordinates': [-43.17483, -22.86222]
             },
         ]
     },
@@ -403,6 +393,10 @@ var config = {
             // callback: 'newContainer', 
             onChapterEnter: [
                 {
+                    layer: 'transporte',
+                    opacity: 1,
+                },
+                {
                     layer: 'corredor_transoeste',
                     opacity: 1,
                 },
@@ -436,6 +430,10 @@ var config = {
                 },
             ],
             onChapterExit: [
+                {
+                    layer: 'transporte',
+                    opacity: 0,
+                },
                 {
                     layer: 'corredor_transoeste',
                     opacity: 0,
@@ -671,6 +669,7 @@ var config = {
         // 2017-2020
         {
             id: 'crivela1',
+            style: 'mapbox://styles/escritoriodedados/cl0o3gv0r000214nyitwqkz83',
             // mapAnimation: 'easeTo', // flyTo, easeTo, seinao
             location: {
                 mobile: {
@@ -701,11 +700,7 @@ var config = {
             // callback: 'newContainer', 
             onChapterEnter: [
                 {
-                    layer: 'transporte',
-                    opacity: 1,
-                },
-                {
-                    layer: 'corredor_transoeste',
+                    layer: 'estacao_transoeste',
                     opacity: 1,
                 },
                 {
@@ -713,7 +708,7 @@ var config = {
                     opacity: 1,
                 },
                 {
-                    layer: 'corredor_transcarioca',
+                    layer: 'estacao_transcarioca',
                     opacity: 1,
                 },
                 {
@@ -721,7 +716,7 @@ var config = {
                     opacity: 1,
                 },
                 {
-                    layer: 'corredor_transolimpica',
+                    layer: 'estacao_transolimpica',
                     opacity: 1,
                 },
                 {
@@ -729,7 +724,7 @@ var config = {
                     opacity: 1,
                 },
                 {
-                    layer: 'corredor_transbrasil',
+                    layer: 'estacao_transbrasil',
                     opacity: 1,
                 },
                 {
@@ -739,11 +734,7 @@ var config = {
             ],
             onChapterExit: [
                 {
-                    layer: 'transporte',
-                    opacity: 0,
-                },
-                {
-                    layer: 'corredor_transoeste',
+                    layer: 'estacao_transoeste',
                     opacity: 0,
                 },
                 {
@@ -751,7 +742,7 @@ var config = {
                     opacity: 0,
                 },
                 {
-                    layer: 'corredor_transcarioca',
+                    layer: 'estacao_transcarioca',
                     opacity: 0,
                 },
                 {
@@ -759,7 +750,7 @@ var config = {
                     opacity: 0,
                 },
                 {
-                    layer: 'corredor_transolimpica',
+                    layer: 'estacao_transolimpica',
                     opacity: 0,
                 },
                 {
@@ -767,7 +758,7 @@ var config = {
                     opacity: 0,
                 },
                 {
-                    layer: 'corredor_transbrasil',
+                    layer: 'estacao_transbrasil',
                     opacity: 0,
                 },
                 {
@@ -821,6 +812,7 @@ var config = {
         },
         {
             id: 'crivela3',
+            style: 'mapbox://styles/escritoriodedados/cl0o1yvxn001015mtsysibtq6',
             // mapAnimation: 'easeTo', // flyTo, easeTo, seinao
             location: {
                 mobile: {
@@ -865,6 +857,7 @@ var config = {
         // 2021 - Linha do Tempo
         {
             id: 'recuperacao1',
+            style: 'mapbox://styles/escritoriodedados/cl0o1yvxn001015mtsysibtq6',
             // mapAnimation: 'easeTo', // flyTo, easeTo, seinao
             location: {
                 mobile: {
