@@ -1084,7 +1084,7 @@ var config = {
             // callback: 'newContainer', 
             onChapterEnter: [{
                     layer: 'gentileza',
-                    opacity: 1,
+                    opacity: .7,
                 },
                 {
                     layer: 'transporte_completo',
