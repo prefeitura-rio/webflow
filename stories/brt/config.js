@@ -1046,10 +1046,9 @@ var config = {
                 },
                 desktop: {
                     center: {
-                        lon: -43.25942,
-                        lat: -22.92894
-                    },
-                    zoom: 9.93,
+                        lon:-43.21537,
+                        lat:-22.86059},
+                    zoom: 11.01,
                     pitch: 0.00,
                     bearing: 0.00,
                     speed: 1,
