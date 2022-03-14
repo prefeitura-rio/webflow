@@ -51,9 +51,35 @@ var labelsContainer = [{
         }, ]
     },
     {
+        'layerId': 'label-crivela',
+        'labels': [{
+            'description': "56 ESTAÇÕES ABANDONADAS",
+            'textColor': '#000000',
+            'textSize': 22,
+            "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
+            'textHaloColor': '#ffffff',
+            'textHaloWidth': 50,
+            'textHaloBlur': 50,
+            'coordinates': [-43.26200, -23.05568]
+        }, ]
+    },
+    {
+        'layerId': 'label-intermodal',
+        'labels': [{
+            'description': "TERMINAL INTERMODAL GENTILEZA",
+            'textColor': '#004b80',
+            'textSize': 12,
+            "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
+            'textHaloColor': '#ffffff',
+            'textHaloWidth': 50,
+            'textHaloBlur': 50,
+            'coordinates': [-43.21324, -22.90186]
+        }, ]
+    },
+    {
         'layerId': 'label-abertura-transoeste',
         'labels': [{
-            'description': "ABERTURA 2022",
+            'description': "PRIMEIRO CORREDOR BRT",
             'textColor': '#000000',
             'textSize': 17,
             "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
@@ -63,23 +89,23 @@ var labelsContainer = [{
             'coordinates': [-43.26200, -23.05568]
         }, ]
     },
-    /*    {
-            'layerId': 'label-abertura-transbrasil',
-            'labels': [{
-                'description': "ABERTURA 2021",
-                'textColor': '#000000',
-                'textSize': 17,
-                "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
-                'textHaloColor': '#ffffff',
-                'textHaloWidth': 50,
-                'textHaloBlur': 50,
-                'coordinates': [-43.26200, -23.05568]
-            }, ]
-        }, */
+    {
+        'layerId': 'label-abertura-transbrasil',
+        'labels': [{
+            'description': "TRAÇADO DO FUTURO CORREDOR TRANSBRASIL",
+            'textColor': '#000000',
+            'textSize': 17,
+            "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
+            'textHaloColor': '#ffffff',
+            'textHaloWidth': 50,
+            'textHaloBlur': 50,
+            'coordinates': [-43.26200, -23.05568]
+        }, ]
+    },
     {
         'layerId': 'label-abertura-transolimpica',
         'labels': [{
-            'description': "ABERTURA 2020",
+            'description': "TERCEIRO CORREDOR BRT",
             'textColor': '#000000',
             'textSize': 17,
             "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
@@ -91,7 +117,7 @@ var labelsContainer = [{
     }, {
         'layerId': 'label-abertura-transcarioca',
         'labels': [{
-            'description': "ABERTURA 2019",
+            'description': "SEGUNDO CORREDOR BRT",
             'textColor': '#000000',
             'textSize': 17,
             "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
@@ -104,7 +130,7 @@ var labelsContainer = [{
     {
         'layerId': 'label-reabertura',
         'labels': [{
-            'description': "ESTAÇÕES REABERTAS",
+            'description': "7 ESTAÇÕES REFORMADAS",
             'textColor': '#f9811f',
             'textSize': 22,
             "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
@@ -118,7 +144,7 @@ var labelsContainer = [{
     {
         'layerId': 'label-reabertura1',
         'labels': [{
-            'description': "ESTAÇÕES REABERTAS",
+            'description': "TODAS AS ESTAÇÕES REABERTAS",
             'textColor': '#299ed3',
             'textSize': 22,
             "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
@@ -131,26 +157,30 @@ var labelsContainer = [{
     {
         'layerId': 'label-transporte',
         'labels': [{
-                'description': "METRO",
-                'textColor': '#766f6f',
-                'textSize': 22,
-                "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
-                'textHaloColor': '#ffffff',
-                'textHaloWidth': 50,
-                'textHaloBlur': 50,
-                'coordinates': [-43.27815, -22.94700]
-            },
-            {
-                'description': "TREM",
-                'textColor': '#766f6f',
-                'textSize': 22,
-                "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
-                'textHaloColor': '#ffffff',
-                'textHaloWidth': 50,
-                'textHaloBlur': 50,
-                'coordinates': [-43.37976, -22.87862]
-            },
-        ]
+            'description': "MALHA DE TRENS E METRÔ",
+            'textColor': '#3b3b3b',
+            'textSize': 22,
+            "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
+            'textHaloColor': '#ffffff',
+            'textHaloWidth': 50,
+            'textHaloBlur': 50,
+            'textJustify': 'left',
+            'coordinates': [-43.30997, -23.05506]
+        }, ]
+    },
+    {
+        'layerId': 'label-transbrasil-final',
+        'labels': [{
+            'description': "TRAÇADO DO CORREDOR TRANSBRASIL",
+            'textColor': '#ffffff',
+            'textSize': 22,
+            "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
+            'textHaloColor': '#d1be1a',
+            'textHaloWidth': 50,
+            'textHaloBlur': 50,
+            'textJustify': 'left',
+            'coordinates': [-43.31747, -22.85460]
+        }, ]
     },
     {
         'layerId': 'label-crivela-brasil',
@@ -164,6 +194,34 @@ var labelsContainer = [{
             'textHaloBlur': 50,
             'textJustify': 'left',
             'coordinates': [-43.37990, -23.04896]
+        }, ]
+    },
+    {
+        'layerId': 'label-recuperacao',
+        'labels': [{
+            'description': "RETOMADA DE OBRAS DA TRANSBRASIL EM AGOSTO DE 2021",
+            'textColor': '#000000',
+            'textSize': 22,
+            "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
+            'textHaloColor': 'white',
+            'textHaloWidth': 50,
+            'textHaloBlur': 50,
+            'textJustify': 'left',
+            'coordinates': [-43.37990, -23.04896]
+        }, ]
+    },
+    {
+        'layerId': 'label-futuro',
+        'labels': [{
+            'description': "FUTURA MALHA DE TRANSPORTES DE ALTA CAPACIDADE",
+            'textColor': '#000000',
+            'textSize': 22,
+            "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
+            'textHaloColor': 'white',
+            'textHaloWidth': 50,
+            'textHaloBlur': 50,
+            'textJustify': 'left',
+            'coordinates': [-43.27356, -23.04384]
         }, ]
     },
 ]
@@ -908,13 +966,23 @@ var config = {
             mapAnimation: 'flyTo',
             // callback: 'newContainer', 
             onChapterEnter: [{
-                layer: 'crivela-estacoes',
-                opacity: 1,
-            }, ],
+                    layer: 'crivela-estacoes',
+                    opacity: 1,
+                },
+                {
+                    layer: 'label-crivela',
+                    opacity: 1,
+                },
+            ],
             onChapterExit: [{
-                layer: 'crivela-estacoes',
-                opacity: 0,
-            }, ]
+                    layer: 'crivela-estacoes',
+                    opacity: 0,
+                },
+                {
+                    layer: 'label-crivela',
+                    opacity: 0,
+                },
+            ]
         },
         // 2021 - Linha do Tempo
         {
@@ -949,13 +1017,23 @@ var config = {
             mapAnimation: 'flyTo',
             // callback: 'newContainer', 
             onChapterEnter: [{
-                layer: 'crivela-estacoes',
-                opacity: 1,
-            }, ],
+                    layer: 'crivela-estacoes',
+                    opacity: 1,
+                },
+                {
+                    layer: 'label-recuperacao',
+                    opacity: 1,
+                },
+            ],
             onChapterExit: [{
-                layer: 'crivela-estacoes',
-                opacity: 0,
-            }, ]
+                    layer: 'crivela-estacoes',
+                    opacity: 0,
+                },
+                {
+                    layer: 'label-recuperacao',
+                    opacity: 0,
+                },
+            ]
         },
         {
             id: 'recuperacao2',
@@ -1130,7 +1208,7 @@ var config = {
                     opacity: 1,
                 },
                 {
-                    layer: 'corredor_transbrasil1',
+                    layer: 'label-transbrasil-final',
                     opacity: 1,
                 },
             ],
@@ -1139,7 +1217,7 @@ var config = {
                     opacity: 0,
                 },
                 {
-                    layer: 'corredor_transbrasil1',
+                    layer: 'label-transbrasil-final',
                     opacity: 0,
                 },
             ]
@@ -1161,11 +1239,11 @@ var config = {
                 },
                 desktop: {
                     center: {
-                        lon: -43.19655,
-                        lat: -22.89957
+                        lon: -43.20946,
+                        lat: -22.89926
                     },
-                    zoom: 13.82,
-                    pitch: 0.00,
+                    zoom: 16.42,
+                    pitch: 45.00,
                     bearing: 0.00,
                     speed: 1,
                     curve: 1
@@ -1182,6 +1260,10 @@ var config = {
                     layer: 'transporte_completo',
                     opacity: 1,
                 },
+                {
+                    layer: 'label-intermodal',
+                    opacity: 1,
+                },
             ],
             onChapterExit: [{
                     layer: 'gentileza',
@@ -1189,6 +1271,10 @@ var config = {
                 },
                 {
                     layer: 'transporte_completo',
+                    opacity: 0,
+                },
+                {
+                    layer: 'label-intermodal',
                     opacity: 0,
                 },
             ]
@@ -1243,6 +1329,10 @@ var config = {
                     layer: 'corredor_transbrasil',
                     opacity: 1,
                 },
+                {
+                    layer: 'label-futuro',
+                    opacity: 1,
+                },
             ],
             onChapterExit: [{
                     layer: 'transporte',
@@ -1262,6 +1352,10 @@ var config = {
                 },
                 {
                     layer: 'corredor_transbrasil',
+                    opacity: 0,
+                },
+                {
+                    layer: 'label-futuro',
                     opacity: 0,
                 },
             ]
