@@ -53,7 +53,7 @@ var labelsContainer = [{
     {
         'layerId': 'label-crivela',
         'labels': [{
-            'description': "56 ESTAÇÕES ABANDONADAS",
+            'description': "56 ESTAÇÕES FORAM ABANDONADAS",
             'textColor': '#000000',
             'textSize': 22,
             "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
@@ -65,16 +65,58 @@ var labelsContainer = [{
     },
     {
         'layerId': 'label-intermodal',
-        'labels': [{
+        'labels': [
+            {
             'description': "TERMINAL INTERMODAL GENTILEZA",
             'textColor': '#004b80',
-            'textSize': 12,
+            'textSize': 25,
             "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
             'textHaloColor': '#ffffff',
             'textHaloWidth': 50,
             'textHaloBlur': 50,
-            'coordinates': [-43.21324, -22.90186]
-        }, ]
+            'coordinates': [-43.21177,-22.90067]
+        },
+        {
+            'description': "RODOVIÁRIA",
+            'textColor': '#004b80',
+            'textSize': 25,
+            "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
+            'textHaloColor': '#ffffff',
+            'textHaloWidth': 50,
+            'textHaloBlur': 50,
+            'coordinates': [-43.20907,-22.89846]
+        },
+        {
+            'description': "TERMINAL DE ÔNIBUS",
+            'textColor': '#004b80',
+            'textSize': 25,
+            "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
+            'textHaloColor': '#ffffff',
+            'textHaloWidth': 50,
+            'textHaloBlur': 50,
+            'coordinates': [-43.20768,-22.90137]
+        },
+        {
+            'description': "VLT",
+            'textColor': '#black',
+            'textSize': 25,
+            "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
+            'textHaloColor': '#ffffff',
+            'textHaloWidth': 50,
+            'textHaloBlur': 50,
+            'coordinates': [-43.20661,-22.89842]
+        },
+        {
+            'description': "TRANSBRASIL",
+            'textColor': '#ffffff',
+            'textSize': 25,
+            "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
+            'textHaloColor': '#d1be1a',
+            'textHaloWidth': 50,
+            'textHaloBlur': 50,
+            'coordinates': [-43.21288,-22.89673]
+        },
+     ]
     },
     {
         'layerId': 'label-abertura-transoeste',
@@ -130,7 +172,7 @@ var labelsContainer = [{
     {
         'layerId': 'label-reabertura',
         'labels': [{
-            'description': "7 ESTAÇÕES REFORMADAS",
+            'description': "7 ESTAÇÕES REABERTAS NO PRIMEIRO SEMESTRE",
             'textColor': '#f9811f',
             'textSize': 22,
             "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
@@ -144,14 +186,28 @@ var labelsContainer = [{
     {
         'layerId': 'label-reabertura1',
         'labels': [{
-            'description': "TODAS AS ESTAÇÕES REABERTAS",
+            'description': "CESÁRIO DE MELO VOLTA À OPERAR",
             'textColor': '#299ed3',
             'textSize': 22,
             "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
             'textHaloColor': '#ffffff',
             'textHaloWidth': 50,
             'textHaloBlur': 50,
+            'textJustify': 'left',
             'coordinates': [-43.49813, -22.93957]
+        }, ]
+    },
+    {
+        'layerId': 'label-reabertura2',
+        'labels': [{
+            'description': "TODAS AS ESTAÇÕES REABERTAS ANTES DO FINAL DE 2021",
+            'textColor': '#299ed3',
+            'textSize': 22,
+            "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
+            'textHaloColor': '#ffffff',
+            'textHaloWidth': 50,
+            'textHaloBlur': 50,
+            'coordinates': [-43.26200, -23.05568]
         }, ]
     },
     {
@@ -171,7 +227,7 @@ var labelsContainer = [{
     {
         'layerId': 'label-transbrasil-final',
         'labels': [{
-            'description': "TRAÇADO DO CORREDOR TRANSBRASIL",
+            'description': "CORREDOR TRANSBRASIL SERÁ FINALIZADO AINDA EM 2022",
             'textColor': '#ffffff',
             'textSize': 22,
             "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
@@ -197,9 +253,23 @@ var labelsContainer = [{
         }, ]
     },
     {
+        'layerId': 'label-crivela-estacoes',
+        'labels': [{
+            'description': "ESTAÇÕES EM FUNCIONAMENTO E PLANEJADAS EM 2016",
+            'textColor': 'black',
+            'textSize': 22,
+            "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
+            'textHaloColor': 'white',
+            'textHaloWidth': 50,
+            'textHaloBlur': 50,
+            'textJustify': 'left',
+            'coordinates': [-43.26200, -23.05568]
+        }, ]
+    },
+    {
         'layerId': 'label-recuperacao',
         'labels': [{
-            'description': "RETOMADA DE OBRAS DA TRANSBRASIL EM AGOSTO DE 2021",
+            'description': "ESTAÇÕES EM FUNCIONAMENTO NO COMEÇO DE 2021",
             'textColor': '#000000',
             'textSize': 22,
             "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
@@ -223,6 +293,66 @@ var labelsContainer = [{
             'textJustify': 'left',
             'coordinates': [-43.27356, -23.04384]
         }, ]
+    },
+    {
+        'layerId': 'label-comparacao',
+        'labels': [
+            {
+            'description': "ORIGEM:\nJARDIM OCEÂNICO",
+            'textColor': '#000000',
+            'textSize': 18,
+            "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
+            'textHaloColor': 'white',
+            'textHaloWidth': 50,
+            'textHaloBlur': 50,
+            'textJustify': 'left',
+            'coordinates': [-43.31735,-23.00785]
+        },
+        {
+            'description': "DESTINO: TANQUE",
+            'textColor': '#000000',
+            'textSize': 18,
+            "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
+            'textHaloColor': 'white',
+            'textHaloWidth': 50,
+            'textHaloBlur': 50,
+            'textJustify': 'left',
+            'coordinates': [-43.36046,-22.90838]
+        },
+        {
+            'description': "75 MINUTOS DE CARRO",
+            'textColor': '#f01919',
+            'textSize': 18,
+            "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
+            'textHaloColor': 'white',
+            'textHaloWidth': 50,
+            'textHaloBlur': 50,
+            'textJustify': 'left', 
+            'coordinates': [-43.34011,-22.95090]
+        },
+        {
+            'description': "65 MINUTOS\nDE BRT",
+            'textColor': '#299cd1',
+            'textSize': 18,
+            "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
+            'textHaloColor': 'white',
+            'textHaloWidth': 50,
+            'textHaloBlur': 50,
+            'textJustify': 'left',
+            'coordinates': [-43.38797,-22.93684]
+        },
+        {
+            'description': "BRT É MAIS RÁPIDO QUE CARRO NA HORA DO RUSH",
+            'textColor': '#299cd1',
+            'textSize': 22,
+            "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
+            'textHaloColor': 'white',
+            'textHaloWidth': 50,
+            'textHaloBlur': 50,
+            'textJustify': 'left',
+            'coordinates': [-43.32817,-22.92523]
+        },
+     ]
     },
 ]
 
@@ -384,15 +514,11 @@ var config = {
                     opacity: 1,
                 },
                 {
-                    layer: 'corredor_transoeste',
+                    layer: 'inicio2',
                     opacity: 1,
                 },
                 {
                     layer: 'label-transoeste',
-                    opacity: 1,
-                },
-                {
-                    layer: 'corredor_transcarioca',
                     opacity: 1,
                 },
                 {
@@ -409,15 +535,11 @@ var config = {
                     opacity: 0,
                 },
                 {
-                    layer: 'corredor_transoeste',
+                    layer: 'inicio2',
                     opacity: 0,
                 },
                 {
                     layer: 'label-transoeste',
-                    opacity: 0,
-                },
-                {
-                    layer: 'corredor_transcarioca',
                     opacity: 0,
                 },
                 {
@@ -465,7 +587,7 @@ var config = {
                     opacity: 1,
                 },
                 {
-                    layer: 'corredor_transoeste',
+                    layer: 'inicio3',
                     opacity: 1,
                 },
                 {
@@ -473,15 +595,7 @@ var config = {
                     opacity: 1,
                 },
                 {
-                    layer: 'corredor_transcarioca',
-                    opacity: 1,
-                },
-                {
                     layer: 'label-transcarioca',
-                    opacity: 1,
-                },
-                {
-                    layer: 'corredor_transolimpica',
                     opacity: 1,
                 },
                 {
@@ -498,7 +612,7 @@ var config = {
                     opacity: 0,
                 },
                 {
-                    layer: 'corredor_transoeste',
+                    layer: 'inicio3',
                     opacity: 0,
                 },
                 {
@@ -506,15 +620,7 @@ var config = {
                     opacity: 0,
                 },
                 {
-                    layer: 'corredor_transcarioca',
-                    opacity: 0,
-                },
-                {
                     layer: 'label-transcarioca',
-                    opacity: 0,
-                },
-                {
-                    layer: 'corredor_transolimpica',
                     opacity: 0,
                 },
                 {
@@ -562,15 +668,7 @@ var config = {
                     opacity: 1,
                 },
                 {
-                    layer: 'corredor_transoeste',
-                    opacity: 1,
-                },
-                {
                     layer: 'label-transoeste',
-                    opacity: 1,
-                },
-                {
-                    layer: 'corredor_transcarioca',
                     opacity: 1,
                 },
                 {
@@ -578,11 +676,11 @@ var config = {
                     opacity: 1,
                 },
                 {
-                    layer: 'corredor_transolimpica',
+                    layer: 'label-transolimpica',
                     opacity: 1,
                 },
                 {
-                    layer: 'label-transolimpica',
+                    layer: 'inicio3',
                     opacity: 1,
                 },
                 {
@@ -603,15 +701,7 @@ var config = {
                     opacity: 0,
                 },
                 {
-                    layer: 'corredor_transoeste',
-                    opacity: 0,
-                },
-                {
                     layer: 'label-transoeste',
-                    opacity: 0,
-                },
-                {
-                    layer: 'corredor_transcarioca',
                     opacity: 0,
                 },
                 {
@@ -619,7 +709,7 @@ var config = {
                     opacity: 0,
                 },
                 {
-                    layer: 'corredor_transolimpica',
+                    layer: 'inicio3',
                     opacity: 0,
                 },
                 {
@@ -678,6 +768,10 @@ var config = {
                     layer: 'comparacao-brt',
                     opacity: 1,
                 },
+                {
+                    layer: 'label-comparacao',
+                    opacity: 1,
+                }
             ],
             onChapterExit: [{
                     layer: 'comparacao-onibus',
@@ -687,103 +781,10 @@ var config = {
                     layer: 'comparacao-brt',
                     opacity: 0,
                 },
-            ]
-        },
-        {
-            id: 'inicio7',
-            // mapAnimation: 'easeTo', // flyTo, easeTo, seinao
-            location: {
-                mobile: {
-                    center: {
-                        lon: -43.46915,
-                        lat: -22.92849
-                    },
-                    zoom: 8.40,
-                    pitch: 0.00,
-                    bearing: -2.42,
-                    speed: 1,
-                    curve: 1
-                },
-                desktop: {
-                    center: {
-                        lon: -43.25942,
-                        lat: -22.92894
-                    },
-                    zoom: 9.93,
-                    pitch: 0.00,
-                    bearing: 0.00,
-                    speed: 1,
-                    curve: 1
+                {
+                    layer: 'label-comparacao',
+                    opacity: 0,
                 }
-            },
-
-            mapAnimation: 'flyTo',
-            // callback: 'newContainer', 
-            onChapterEnter: [{
-                    layer: 'corredor_transoeste',
-                    opacity: 1,
-                },
-                {
-                    layer: 'label-transoeste',
-                    opacity: 1,
-                },
-                {
-                    layer: 'corredor_transcarioca',
-                    opacity: 1,
-                },
-                {
-                    layer: 'label-transcarioca',
-                    opacity: 1,
-                },
-                {
-                    layer: 'corredor_transolimpica',
-                    opacity: 1,
-                },
-                {
-                    layer: 'label-transolimpica',
-                    opacity: 1,
-                },
-                {
-                    layer: 'corredor_transbrasil',
-                    opacity: 1,
-                },
-                {
-                    layer: 'label-transbrasil',
-                    opacity: 1,
-                },
-            ],
-            onChapterExit: [{
-                    layer: 'corredor_transoeste',
-                    opacity: 0,
-                },
-                {
-                    layer: 'label-transoeste',
-                    opacity: 0,
-                },
-                {
-                    layer: 'corredor_transcarioca',
-                    opacity: 0,
-                },
-                {
-                    layer: 'label-transcarioca',
-                    opacity: 0,
-                },
-                {
-                    layer: 'corredor_transolimpica',
-                    opacity: 0,
-                },
-                {
-                    layer: 'label-transolimpica',
-                    opacity: 0,
-                },
-                {
-                    layer: 'corredor_transbrasil',
-                    opacity: 0,
-                },
-                {
-                    layer: 'label-transbrasil',
-                    opacity: 0,
-                },
             ]
         },
         // 2017-2020
@@ -823,15 +824,7 @@ var config = {
                     opacity: 1,
                 },
                 {
-                    layer: 'label-transoeste',
-                    opacity: 1,
-                },
-                {
                     layer: 'estacao_transcarioca',
-                    opacity: 1,
-                },
-                {
-                    layer: 'label-transcarioca',
                     opacity: 1,
                 },
                 {
@@ -839,32 +832,21 @@ var config = {
                     opacity: 1,
                 },
                 {
-                    layer: 'label-transolimpica',
-                    opacity: 1,
-                },
-                {
                     layer: 'estacao_transbrasil',
                     opacity: 1,
                 },
                 {
-                    layer: 'label-transbrasil',
+                    layer: 'label-crivela-estacoes',
                     opacity: 1,
                 },
             ],
-            onChapterExit: [{
+            onChapterExit: [
+                {
                     layer: 'estacao_transoeste',
                     opacity: 0,
                 },
                 {
-                    layer: 'label-transoeste',
-                    opacity: 0,
-                },
-                {
                     layer: 'estacao_transcarioca',
-                    opacity: 0,
-                },
-                {
-                    layer: 'label-transcarioca',
                     opacity: 0,
                 },
                 {
@@ -872,15 +854,11 @@ var config = {
                     opacity: 0,
                 },
                 {
-                    layer: 'label-transolimpica',
-                    opacity: 0,
-                },
-                {
                     layer: 'estacao_transbrasil',
                     opacity: 0,
                 },
                 {
-                    layer: 'label-transbrasil',
+                    layer: 'label-crivela-estacoes',
                     opacity: 0,
                 },
             ]
@@ -1166,11 +1144,21 @@ var config = {
             onChapterEnter: [{
                 layer: 'retomada-3',
                 opacity: 1,
-            }, ],
+            },
+            {
+                layer: 'label-reabertura2',
+                opacity: 1,
+            },
+        ],
             onChapterExit: [{
                 layer: 'retomada-3',
                 opacity: 0,
-            }, ]
+            }, 
+            {
+                layer: 'label-reabertura2',
+                opacity: 0,
+            },
+        ]
         },
         // 2022 - Futuro
         {
@@ -1203,21 +1191,31 @@ var config = {
 
             mapAnimation: 'flyTo',
             // callback: 'newContainer', 
-            onChapterEnter: [{
-                    layer: 'estacao_transbrasil',
+            onChapterEnter: [
+                {
+                    layer: 'corredor_transbrasil',
                     opacity: 1,
                 },
                 {
                     layer: 'label-transbrasil-final',
                     opacity: 1,
                 },
+                {
+                    layer: 'transporte-completo',
+                    opacity: 0.2,
+                },
             ],
-            onChapterExit: [{
-                    layer: 'estacao_transbrasil',
+            onChapterExit: [
+                {
+                    layer: 'corredor_transbrasil',
                     opacity: 0,
                 },
                 {
                     layer: 'label-transbrasil-final',
+                    opacity: 0,
+                },
+                {
+                    layer: 'transporte-completo',
                     opacity: 0,
                 },
             ]
@@ -1257,20 +1255,29 @@ var config = {
                     opacity: .7,
                 },
                 {
-                    layer: 'transporte_completo',
-                    opacity: 1,
+                    layer: 'corredor_transbrasil',
+                    opacity: 0.5,
+                },
+                {
+                    layer: 'transporte-completo',
+                    opacity: 0.7,
                 },
                 {
                     layer: 'label-intermodal',
                     opacity: 1,
                 },
             ],
-            onChapterExit: [{
+            onChapterExit: [
+                {
+                    layer: 'corredor_transbrasil',
+                    opacity: 0,
+                },
+                {
                     layer: 'gentileza',
                     opacity: 0,
                 },
                 {
-                    layer: 'transporte_completo',
+                    layer: 'transporte-completo',
                     opacity: 0,
                 },
                 {
@@ -1310,7 +1317,7 @@ var config = {
             mapAnimation: 'flyTo',
             // callback: 'newContainer', 
             onChapterEnter: [{
-                    layer: 'transporte',
+                    layer: 'transporte-completo',
                     opacity: 1,
                 },
                 {
@@ -1335,7 +1342,7 @@ var config = {
                 },
             ],
             onChapterExit: [{
-                    layer: 'transporte',
+                    layer: 'transporte-completo',
                     opacity: 0,
                 },
                 {
