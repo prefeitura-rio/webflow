@@ -8,7 +8,7 @@ var labelsContainer = [{
             'textHaloColor': '#ffffff',
             'textHaloWidth': 50,
             'textHaloBlur': 50,
-            'coordinates': [-43.49040, -22.93575]
+            'coordinates': [-43.50186,-22.97128]
         }, ]
     },
     {
@@ -21,7 +21,7 @@ var labelsContainer = [{
             'textHaloColor': '#ffffff',
             'textHaloWidth': 50,
             'textHaloBlur': 50,
-            'coordinates': [-43.33026, -22.883087]
+            'coordinates': [-43.35032,-22.78958]
         }, ]
     },
     {
@@ -34,7 +34,7 @@ var labelsContainer = [{
             'textHaloColor': '#ffffff',
             'textHaloWidth': 50,
             'textHaloBlur': 50,
-            'coordinates': [-43.25044, -22.93747]
+            'coordinates': [-43.27152,-22.89830]
         }, ]
     },
     {
@@ -47,7 +47,7 @@ var labelsContainer = [{
             'textHaloColor': '#ffffff',
             'textHaloWidth': 50,
             'textHaloBlur': 50,
-            'coordinates': [-43.49374, -22.88898]
+            'coordinates': [-43.49742,-22.85302]
         }, ]
     },
     {
@@ -88,14 +88,18 @@ var labelsContainer = [{
 
 
 var config = {
-    style: 'mapbox://styles/escritoriodedados/cl0o1yvxn001015mtsysibtq6',
+    // style: 'stories/brt/style.json',
+    // style: 'mapbox://styles/escritoriodedados/ckwpfvolk150q15qk5hdcxuao', // modificado
+    // style: 'mapbox://styles/escritoriodedados/cl0pyw2j6000d15np43i9pa9p',  // basic
+    // style: 'mapbox://styles/escritoriodedados/cl0o1yvxn001015mtsysibtq6', // original
     accessToken: 'pk.eyJ1IjoiZXNjcml0b3Jpb2RlZGFkb3MiLCJhIjoiY2t5bGx6Z2I1MG5nbzJwcGUyeHFxcGs1bCJ9.sAUs1LRcb3R4l-6Dbhk8Pw',
     theme: 'light',
     use3dTerrain: true,
     cameraViewWidthBreakpoint: 800,
     chapters: [
+        // 2012 - 2019
         {
-            id: 'parte0',
+            id: 'inicio1',
             // mapAnimation: 'easeTo', // flyTo, easeTo, seinao
             location: {
                 mobile: {
@@ -121,15 +125,11 @@ var config = {
                     curve: 1
                 }
             },
-            rotateAnimation: {
-                duration: 200, // seconds
-                degrees: 45 // degress
-            },
             mapAnimation: 'flyTo',
             // callback: 'newContainer', 
             onChapterEnter: [
                 {
-                    layer: 'jacarezinho',
+                    layer: 'transporte',
                     opacity: 1,
                 },
                 {
@@ -139,7 +139,7 @@ var config = {
             ],
             onChapterExit: [
                 {
-                    layer: 'jacarezinho',
+                    layer: 'transporte',
                     opacity: 0,
                 },
                 {
@@ -149,7 +149,7 @@ var config = {
             ]
         },
         {
-            id: 'parte1',
+            id: 'inicio2',
             // mapAnimation: 'easeTo', // flyTo, easeTo, seinao
             location: {
                 mobile: {
@@ -175,15 +175,15 @@ var config = {
                     curve: 1
                 }
             },
-            rotateAnimation: {
-                duration: 800, // seconds
-                degrees: 45 // degress
-            },
             mapAnimation: 'flyTo',
             // callback: 'newContainer', 
             onChapterEnter: [
                 {
-                    layer: 'estacao_transoeste',
+                    layer: 'transporte',
+                    opacity: 1,
+                },
+                {
+                    layer: 'corredor_transoeste',
                     opacity: 1,
                 },
                 {
@@ -191,8 +191,13 @@ var config = {
                     opacity: 1,
                 },
             ],
-            onChapterExit: [{
-                    layer: 'estacao_transoeste',
+            onChapterExit: [
+                {
+                    layer: 'transporte',
+                    opacity: 0,
+                },
+                {
+                    layer: 'corredor_transoeste',
                     opacity: 0,
                 },
                 {
@@ -202,7 +207,7 @@ var config = {
             ]
         },
         {
-            id: 'parte2',
+            id: 'inicio3',
             // mapAnimation: 'easeTo', // flyTo, easeTo, seinao
             location: {
                 mobile: {
@@ -228,15 +233,15 @@ var config = {
                     curve: 1
                 }
             },
-            rotateAnimation: {
-                duration: 800, // seconds
-                degrees: 45 // degress
-            },
             mapAnimation: 'flyTo',
             // callback: 'newContainer', 
             onChapterEnter: [
                 {
-                    layer: 'estacao_transoeste',
+                    layer: 'transporte',
+                    opacity: 1,
+                },
+                {
+                    layer: 'corredor_transoeste',
                     opacity: 1,
                 },
                 {
@@ -244,7 +249,7 @@ var config = {
                     opacity: 1,
                 },
                 {
-                    layer: 'estacao_transcarioca',
+                    layer: 'corredor_transcarioca',
                     opacity: 1,
                 },
                 {
@@ -254,7 +259,11 @@ var config = {
             ],
             onChapterExit: [
                 {
-                    layer: 'estacao_transoeste',
+                    layer: 'transporte',
+                    opacity: 0,
+                },
+                {
+                    layer: 'corredor_transoeste',
                     opacity: 0,
                 },
                 {
@@ -262,7 +271,7 @@ var config = {
                     opacity: 0,
                 },
                 {
-                    layer: 'estacao_transcarioca',
+                    layer: 'corredor_transcarioca',
                     opacity: 0,
                 },
                 {
@@ -272,7 +281,7 @@ var config = {
             ]
         },
         {
-            id: 'parte3',
+            id: 'inicio4',
             // mapAnimation: 'easeTo', // flyTo, easeTo, seinao
             location: {
                 mobile: {
@@ -298,15 +307,16 @@ var config = {
                     curve: 1
                 }
             },
-            rotateAnimation: {
-                duration: 800, // seconds
-                degrees: 45 // degress
-            },
+
             mapAnimation: 'flyTo',
             // callback: 'newContainer', 
             onChapterEnter: [
                 {
-                    layer: 'estacao_transoeste',
+                    layer: 'transporte',
+                    opacity: 1,
+                },
+                {
+                    layer: 'corredor_transoeste',
                     opacity: 1,
                 },
                 {
@@ -314,7 +324,7 @@ var config = {
                     opacity: 1,
                 },
                 {
-                    layer: 'estacao_transcarioca',
+                    layer: 'corredor_transcarioca',
                     opacity: 1,
                 },
                 {
@@ -322,7 +332,7 @@ var config = {
                     opacity: 1,
                 },
                 {
-                    layer: 'estacao_transolimpica',
+                    layer: 'corredor_transolimpica',
                     opacity: 1,
                 },
                 {
@@ -332,7 +342,11 @@ var config = {
             ],
             onChapterExit: [
                 {
-                    layer: 'estacao_transoeste',
+                    layer: 'transporte',
+                    opacity: 0,
+                },
+                {
+                    layer: 'corredor_transoeste',
                     opacity: 0,
                 },
                 {
@@ -340,7 +354,7 @@ var config = {
                     opacity: 0,
                 },
                 {
-                    layer: 'estacao_transcarioca',
+                    layer: 'corredor_transcarioca',
                     opacity: 0,
                 },
                 {
@@ -348,7 +362,7 @@ var config = {
                     opacity: 0,
                 },
                 {
-                    layer: 'estacao_transolimpica',
+                    layer: 'corredor_transolimpica',
                     opacity: 0,
                 },
                 {
@@ -358,7 +372,7 @@ var config = {
             ]
         },
         {
-            id: 'parte4',
+            id: 'inicio5',
             // mapAnimation: 'easeTo', // flyTo, easeTo, seinao
             location: {
                 mobile: {
@@ -384,15 +398,12 @@ var config = {
                     curve: 1
                 }
             },
-            rotateAnimation: {
-                duration: 800, // seconds
-                degrees: 45 // degress
-            },
+
             mapAnimation: 'flyTo',
             // callback: 'newContainer', 
             onChapterEnter: [
                 {
-                    layer: 'estacao_transoeste',
+                    layer: 'corredor_transoeste',
                     opacity: 1,
                 },
                 {
@@ -400,7 +411,7 @@ var config = {
                     opacity: 1,
                 },
                 {
-                    layer: 'estacao_transcarioca',
+                    layer: 'corredor_transcarioca',
                     opacity: 1,
                 },
                 {
@@ -408,7 +419,7 @@ var config = {
                     opacity: 1,
                 },
                 {
-                    layer: 'estacao_transolimpica',
+                    layer: 'corredor_transolimpica',
                     opacity: 1,
                 },
                 {
@@ -416,7 +427,7 @@ var config = {
                     opacity: 1,
                 },
                 {
-                    layer: 'estacao_transbrasil',
+                    layer: 'corredor_transbrasil',
                     opacity: 1,
                 },
                 {
@@ -426,7 +437,7 @@ var config = {
             ],
             onChapterExit: [
                 {
-                    layer: 'estacao_transoeste',
+                    layer: 'corredor_transoeste',
                     opacity: 0,
                 },
                 {
@@ -434,7 +445,7 @@ var config = {
                     opacity: 0,
                 },
                 {
-                    layer: 'estacao_transcarioca',
+                    layer: 'corredor_transcarioca',
                     opacity: 0,
                 },
                 {
@@ -442,7 +453,7 @@ var config = {
                     opacity: 0,
                 },
                 {
-                    layer: 'estacao_transolimpica',
+                    layer: 'corredor_transolimpica',
                     opacity: 0,
                 },
                 {
@@ -450,7 +461,7 @@ var config = {
                     opacity: 0,
                 },
                 {
-                    layer: 'estacao_transbrasil',
+                    layer: 'corredor_transbrasil',
                     opacity: 0,
                 },
                 {
@@ -460,7 +471,7 @@ var config = {
             ]
         },
         {
-            id: 'parte5',
+            id: 'inicio6',
             // mapAnimation: 'easeTo', // flyTo, easeTo, seinao
             location: {
                 mobile: {
@@ -486,15 +497,12 @@ var config = {
                     curve: 1
                 }
             },
-            rotateAnimation: {
-                duration: 800, // seconds
-                degrees: 45 // degress
-            },
+
             mapAnimation: 'flyTo',
             // callback: 'newContainer', 
             onChapterEnter: [
                 {
-                    layer: 'estacao_transoeste',
+                    layer: 'corredor_transoeste',
                     opacity: 1,
                 },
                 {
@@ -502,7 +510,7 @@ var config = {
                     opacity: 1,
                 },
                 {
-                    layer: 'estacao_transcarioca',
+                    layer: 'corredor_transcarioca',
                     opacity: 1,
                 },
                 {
@@ -510,7 +518,7 @@ var config = {
                     opacity: 1,
                 },
                 {
-                    layer: 'estacao_transolimpica',
+                    layer: 'corredor_transolimpica',
                     opacity: 1,
                 },
                 {
@@ -518,7 +526,7 @@ var config = {
                     opacity: 1,
                 },
                 {
-                    layer: 'estacao_transbrasil',
+                    layer: 'corredor_transbrasil',
                     opacity: 1,
                 },
                 {
@@ -528,7 +536,7 @@ var config = {
             ],
             onChapterExit: [
                 {
-                    layer: 'estacao_transoeste',
+                    layer: 'corredor_transoeste',
                     opacity: 0,
                 },
                 {
@@ -536,7 +544,7 @@ var config = {
                     opacity: 0,
                 },
                 {
-                    layer: 'estacao_transcarioca',
+                    layer: 'corredor_transcarioca',
                     opacity: 0,
                 },
                 {
@@ -544,7 +552,7 @@ var config = {
                     opacity: 0,
                 },
                 {
-                    layer: 'estacao_transolimpica',
+                    layer: 'corredor_transolimpica',
                     opacity: 0,
                 },
                 {
@@ -552,7 +560,7 @@ var config = {
                     opacity: 0,
                 },
                 {
-                    layer: 'estacao_transbrasil',
+                    layer: 'corredor_transbrasil',
                     opacity: 0,
                 },
                 {
@@ -562,7 +570,7 @@ var config = {
             ]
         },
         {
-            id: 'parte6',
+            id: 'inicio7',
             // mapAnimation: 'easeTo', // flyTo, easeTo, seinao
             location: {
                 mobile: {
@@ -588,10 +596,214 @@ var config = {
                     curve: 1
                 }
             },
-            rotateAnimation: {
-                duration: 800, // seconds
-                degrees: 45 // degress
+
+            mapAnimation: 'flyTo',
+            // callback: 'newContainer', 
+            onChapterEnter: [
+                {
+                    layer: 'corredor_transoeste',
+                    opacity: 1,
+                },
+                {
+                    layer: 'label-transoeste',
+                    opacity: 1,
+                },
+                {
+                    layer: 'corredor_transcarioca',
+                    opacity: 1,
+                },
+                {
+                    layer: 'label-transcarioca',
+                    opacity: 1,
+                },
+                {
+                    layer: 'corredor_transolimpica',
+                    opacity: 1,
+                },
+                {
+                    layer: 'label-transolimpica',
+                    opacity: 1,
+                },
+                {
+                    layer: 'corredor_transbrasil',
+                    opacity: 1,
+                },
+                {
+                    layer: 'label-transbrasil',
+                    opacity: 1,
+                },
+            ],
+            onChapterExit: [
+                {
+                    layer: 'corredor_transoeste',
+                    opacity: 0,
+                },
+                {
+                    layer: 'label-transoeste',
+                    opacity: 0,
+                },
+                {
+                    layer: 'corredor_transcarioca',
+                    opacity: 0,
+                },
+                {
+                    layer: 'label-transcarioca',
+                    opacity: 0,
+                },
+                {
+                    layer: 'corredor_transolimpica',
+                    opacity: 0,
+                },
+                {
+                    layer: 'label-transolimpica',
+                    opacity: 0,
+                },
+                {
+                    layer: 'corredor_transbrasil',
+                    opacity: 0,
+                },
+                {
+                    layer: 'label-transbrasil',
+                    opacity: 0,
+                },
+            ]
+        },
+        // 2017-2020
+        {
+            id: 'crivela1',
+            // mapAnimation: 'easeTo', // flyTo, easeTo, seinao
+            location: {
+                mobile: {
+                    center: {
+                        lon: -43.46915,
+                        lat: -22.92849
+                    },
+                    zoom: 8.40,
+                    pitch: 0.00,
+                    bearing: -2.42,
+                    speed: 1,
+                    curve: 1
+                },
+                desktop: {
+                    center: {
+                        lon: -43.25942,
+                        lat: -22.92894
+                    },
+                    zoom: 9.93,
+                    pitch: 0.00,
+                    bearing: 0.00,
+                    speed: 1,
+                    curve: 1
+                }
             },
+
+            mapAnimation: 'flyTo',
+            // callback: 'newContainer', 
+            onChapterEnter: [
+                {
+                    layer: 'transporte',
+                    opacity: 1,
+                },
+                {
+                    layer: 'corredor_transoeste',
+                    opacity: 1,
+                },
+                {
+                    layer: 'label-transoeste',
+                    opacity: 1,
+                },
+                {
+                    layer: 'corredor_transcarioca',
+                    opacity: 1,
+                },
+                {
+                    layer: 'label-transcarioca',
+                    opacity: 1,
+                },
+                {
+                    layer: 'corredor_transolimpica',
+                    opacity: 1,
+                },
+                {
+                    layer: 'label-transolimpica',
+                    opacity: 1,
+                },
+                {
+                    layer: 'corredor_transbrasil',
+                    opacity: 1,
+                },
+                {
+                    layer: 'label-transbrasil',
+                    opacity: 1,
+                },
+            ],
+            onChapterExit: [
+                {
+                    layer: 'transporte',
+                    opacity: 0,
+                },
+                {
+                    layer: 'corredor_transoeste',
+                    opacity: 0,
+                },
+                {
+                    layer: 'label-transoeste',
+                    opacity: 0,
+                },
+                {
+                    layer: 'corredor_transcarioca',
+                    opacity: 0,
+                },
+                {
+                    layer: 'label-transcarioca',
+                    opacity: 0,
+                },
+                {
+                    layer: 'corredor_transolimpica',
+                    opacity: 0,
+                },
+                {
+                    layer: 'label-transolimpica',
+                    opacity: 0,
+                },
+                {
+                    layer: 'corredor_transbrasil',
+                    opacity: 0,
+                },
+                {
+                    layer: 'label-transbrasil',
+                    opacity: 0,
+                },
+            ]
+        },
+        {
+            id: 'crivela2',
+            // mapAnimation: 'easeTo', // flyTo, easeTo, seinao
+            location: {
+                mobile: {
+                    center: {
+                        lon: -43.46915,
+                        lat: -22.92849
+                    },
+                    zoom: 8.40,
+                    pitch: 0.00,
+                    bearing: -2.42,
+                    speed: 1,
+                    curve: 1
+                },
+                desktop: {
+                    center: {
+                        lon: -43.25942,
+                        lat: -22.92894
+                    },
+                    zoom: 9.93,
+                    pitch: 0.00,
+                    bearing: 0.00,
+                    speed: 1,
+                    curve: 1
+                }
+            },
+
             mapAnimation: 'flyTo',
             // callback: 'newContainer', 
             onChapterEnter: [
@@ -608,7 +820,7 @@ var config = {
             ]
         },
         {
-            id: 'parte7',
+            id: 'crivela3',
             // mapAnimation: 'easeTo', // flyTo, easeTo, seinao
             location: {
                 mobile: {
@@ -634,10 +846,51 @@ var config = {
                     curve: 1
                 }
             },
-            rotateAnimation: {
-                duration: 800, // seconds
-                degrees: 45 // degress
+
+            mapAnimation: 'flyTo',
+            // callback: 'newContainer', 
+            onChapterEnter: [
+                {
+                    layer: 'crivela-estacoes',
+                    opacity: 1,
+                },
+            ],
+            onChapterExit: [
+                {
+                    layer: 'crivela-estacoes',
+                    opacity: 0,
+                },
+            ]
+        },
+        // 2021 - Linha do Tempo
+        {
+            id: 'recuperacao1',
+            // mapAnimation: 'easeTo', // flyTo, easeTo, seinao
+            location: {
+                mobile: {
+                    center: {
+                        lon: -43.46915,
+                        lat: -22.92849
+                    },
+                    zoom: 8.40,
+                    pitch: 0.00,
+                    bearing: -2.42,
+                    speed: 1,
+                    curve: 1
+                },
+                desktop: {
+                    center: {
+                        lon: -43.25942,
+                        lat: -22.92894
+                    },
+                    zoom: 9.93,
+                    pitch: 0.00,
+                    bearing: 0.00,
+                    speed: 1,
+                    curve: 1
+                }
             },
+
             mapAnimation: 'flyTo',
             // callback: 'newContainer', 
             onChapterEnter: [
@@ -654,7 +907,7 @@ var config = {
             ]
         },
         {
-            id: 'parte8',
+            id: 'recuperacao2',
             // mapAnimation: 'easeTo', // flyTo, easeTo, seinao
             location: {
                 mobile: {
@@ -680,10 +933,7 @@ var config = {
                     curve: 1
                 }
             },
-            rotateAnimation: {
-                duration: 800, // seconds
-                degrees: 45 // degress
-            },
+
             mapAnimation: 'flyTo',
             // callback: 'newContainer', 
             onChapterEnter: [
@@ -700,7 +950,7 @@ var config = {
             ]
         },
         {
-            id: 'parte9',
+            id: 'recuperacao3',
             // mapAnimation: 'easeTo', // flyTo, easeTo, seinao
             location: {
                 mobile: {
@@ -726,10 +976,7 @@ var config = {
                     curve: 1
                 }
             },
-            rotateAnimation: {
-                duration: 800, // seconds
-                degrees: 45 // degress
-            },
+
             mapAnimation: 'flyTo',
             // callback: 'newContainer', 
             onChapterEnter: [
@@ -746,7 +993,7 @@ var config = {
             ]
         },
         {
-            id: 'parte9',
+            id: 'recuperacao4',
             // mapAnimation: 'easeTo', // flyTo, easeTo, seinao
             location: {
                 mobile: {
@@ -772,10 +1019,7 @@ var config = {
                     curve: 1
                 }
             },
-            rotateAnimation: {
-                duration: 800, // seconds
-                degrees: 45 // degress
-            },
+
             mapAnimation: 'flyTo',
             // callback: 'newContainer', 
             onChapterEnter: [
@@ -787,6 +1031,93 @@ var config = {
             onChapterExit: [
                 {
                     layer: 'retomada-3',
+                    opacity: 0,
+                },
+            ]
+        },
+        // 2022 - Futuro
+        {
+            id: 'final1',
+            // mapAnimation: 'easeTo', // flyTo, easeTo, seinao
+            location: {
+                mobile: {
+                    center: {
+                        lon: -43.46915,
+                        lat: -22.92849
+                    },
+                    zoom: 8.40,
+                    pitch: 0.00,
+                    bearing: -2.42,
+                    speed: 1,
+                    curve: 1
+                },
+                desktop: {
+                    center: {
+                        lon: -43.25942,
+                        lat: -22.92894
+                    },
+                    zoom: 9.93,
+                    pitch: 0.00,
+                    bearing: 0.00,
+                    speed: 1,
+                    curve: 1
+                }
+            },
+
+            mapAnimation: 'flyTo',
+            // callback: 'newContainer', 
+            onChapterEnter: [
+                {
+                    layer: 'estacao_transbrasil',
+                    opacity: 1,
+                },
+            ],
+            onChapterExit: [
+                {
+                    layer: 'estacao_transbrasil',
+                    opacity: 0,
+                },
+            ]
+        },
+        {
+            id: 'final2',
+            // mapAnimation: 'easeTo', // flyTo, easeTo, seinao
+            location: {
+                mobile: {
+                    center: {
+                        lon: -43.46915,
+                        lat: -22.92849
+                    },
+                    zoom: 8.40,
+                    pitch: 0.00,
+                    bearing: -2.42,
+                    speed: 1,
+                    curve: 1
+                },
+                desktop: {
+                    center: {
+                        lon: -43.25942,
+                        lat: -22.92894
+                    },
+                    zoom: 9.93,
+                    pitch: 0.00,
+                    bearing: 0.00,
+                    speed: 1,
+                    curve: 1
+                }
+            },
+
+            mapAnimation: 'flyTo',
+            // callback: 'newContainer', 
+            onChapterEnter: [
+                {
+                    layer: 'estacao_transbrasil',
+                    opacity: 1,
+                },
+            ],
+            onChapterExit: [
+                {
+                    layer: 'estacao_transbrasil',
                     opacity: 0,
                 },
             ]

@@ -1,4 +1,4 @@
-function startMap(datavizId) {
+function startMap(datavizId, style) {
 
     var layerTypes = {
         'fill': ['fill-opacity'],
@@ -60,14 +60,7 @@ function startMap(datavizId) {
         paintProps.forEach(function (prop) {
             console.log('prop', prop)
             var options = {};
-            if (layer.duration) {
-                var transitionProp = prop + "-transition";
-                options = {
-                    "duration": layer.duration
-                };
-                map.setPaintProperty(layer.layer, transitionProp, options);
-            }
-            map.setPaintProperty(layer.layer, prop, layer.opacity, options);
+
             map.setPaintProperty(layer.layer, prop, layer.opacity, options);
             console.log(map.getLayer(layer.layer))
         });
