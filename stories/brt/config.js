@@ -86,6 +86,20 @@ var labelsContainer = [{
                 'coordinates': [-43.37976, -22.87862]
             },
         ]
+    }, 
+    {
+        'layerId': 'label-crivela-brasil',
+        'labels': [{
+            'description': "OBRAS DA TRANSBRASIL NÃO AVANÇARAM",
+            'textColor': '#d1be1a',
+            'textSize': 22,
+            "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
+            'textHaloColor': 'white',
+            'textHaloWidth': 50,
+            'textHaloBlur': 50,
+            'textJustify': 'left',
+            'coordinates': [-43.37990,-23.04896]
+        }, ]
     },
 ]
 
@@ -749,11 +763,21 @@ var config = {
             onChapterEnter: [{
                 layer: 'crivela-transbrasil',
                 opacity: 1,
-            }, ],
+            }, 
+            {
+                layer: 'label-crivela-brasil',
+                opacity: 1,
+            }
+        ],
             onChapterExit: [{
                 layer: 'crivela-transbrasil',
                 opacity: 0,
-            }, ]
+            }, 
+            {
+                layer: 'label-crivela-brasil',
+                opacity: 0,
+            }
+        ]
         },
         {
             id: 'crivela3',
@@ -1020,12 +1044,12 @@ var config = {
                 },
                 desktop: {
                     center: {
-                        lon: -43.20937,
-                        lat: -22.89922
+                        lon: -43.19655,
+                        lat: -22.89957
                     },
-                    zoom: 16.04,
-                    pitch: 58.00,
-                    bearing: 18.40,
+                    zoom: 13.82,
+                    pitch: 0.00,
+                    bearing: 0.00,
                     speed: 1,
                     curve: 1
                 }
