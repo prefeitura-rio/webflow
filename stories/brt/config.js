@@ -193,7 +193,7 @@ var labelsContainer = [{
             'textHaloWidth': 50,
             'textHaloBlur': 50,
             'textJustify': 'left',
-            'coordinates': [-43.37990, -23.04896]
+            'coordinates': [-43.26200, -23.05568]
         }, ]
     },
     {
