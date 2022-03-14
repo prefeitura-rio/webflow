@@ -1,9 +1,11 @@
-var labelsContainer = [{
+var labelsContainer = [
+    {
         'layerId': 'label-transoeste',
         'labels': [{
             'description': "TRANSOESTE",
             'textColor': '#299ed3',
             'textSize': 22,
+            'textSizeMobile': 12,
             "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
             'textHaloColor': '#ffffff',
             'textHaloWidth': 50,
@@ -156,7 +158,8 @@ var labelsContainer = [{
             'textHaloBlur': 50,
             'coordinates': [-43.26200, -23.05568]
         }, ]
-    }, {
+    }, 
+    {
         'layerId': 'label-abertura-transcarioca',
         'labels': [{
             'description': "SEGUNDO CORREDOR BRT",
@@ -358,9 +361,6 @@ var labelsContainer = [{
 
 
 var config = {
-    // style: 'stories/brt/style.json',
-    // style: 'mapbox://styles/escritoriodedados/ckwpfvolk150q15qk5hdcxuao', // modificado
-    // style: 'mapbox://styles/escritoriodedados/cl0pyw2j6000d15np43i9pa9p',  // basic
     style: 'mapbox://styles/escritoriodedados/cl0o1yvxn001015mtsysibtq6', // original
     accessToken: 'pk.eyJ1IjoiZXNjcml0b3Jpb2RlZGFkb3MiLCJhIjoiY2t5bGx6Z2I1MG5nbzJwcGUyeHFxcGs1bCJ9.sAUs1LRcb3R4l-6Dbhk8Pw',
     theme: 'light',
@@ -787,7 +787,7 @@ var config = {
                 }
             ]
         },
-        // 2017-2020
+        // 2017 - 2020
         {
             id: 'crivela1',
             style: 'mapbox://styles/escritoriodedados/cl0o3gv0r000214nyitwqkz83',

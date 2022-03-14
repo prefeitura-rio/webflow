@@ -1,5 +1,9 @@
 function startMap(datavizId, style) {
 
+    function isMobile() {
+        return (getWidth() < config.cameraViewWidthBreakpoint)
+    }
+
     var layerTypes = {
         'fill': ['fill-opacity'],
         'line': ['line-opacity'],
@@ -88,7 +92,7 @@ function startMap(datavizId, style) {
                 'properties': {
                     'description': label.description,
                     'text-color': label.textColor,
-                    'text-size': label.textSize,
+                    'text-size': isMobile() ? label.textSizeMobile : label.textSize,
                     "text-font": label.textFont,
                     'text-halo-width': label.textHaloWidth,
                     'text-halo-color': label.textHaloColor,
@@ -176,7 +180,7 @@ function startMap(datavizId, style) {
                 response.element.classList.add('active');
 
                 // Set screen breakpoint
-                if (getWidth() < config.cameraViewWidthBreakpoint) {
+                if (isMobile(config)) {
                     map[chapter.mapAnimation || 'flyTo'](chapter.location.mobile || chapter.location.desktop)
                 } else {
                     map[chapter.mapAnimation || 'flyTo'](chapter.location.desktop)
