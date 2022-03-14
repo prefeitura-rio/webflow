@@ -1102,13 +1102,21 @@ var config = {
             // callback: 'newContainer', 
             onChapterEnter: [
                 {
-                    layer: 'estacao_transbrasil',
+                    layer: 'gentileza',
+                    opacity: 1,
+                },
+                {
+                    layer: 'transporte_completo',
                     opacity: 1,
                 },
             ],
             onChapterExit: [
                 {
-                    layer: 'estacao_transbrasil',
+                    layer: 'gentileza',
+                    opacity: 0,
+                },
+                {
+                    layer: 'transporte_completo',
                     opacity: 0,
                 },
             ]
