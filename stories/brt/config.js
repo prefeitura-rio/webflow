@@ -91,7 +91,7 @@ var config = {
     // style: 'stories/brt/style.json',
     // style: 'mapbox://styles/escritoriodedados/ckwpfvolk150q15qk5hdcxuao', // modificado
     // style: 'mapbox://styles/escritoriodedados/cl0pyw2j6000d15np43i9pa9p',  // basic
-    // style: 'mapbox://styles/escritoriodedados/cl0o1yvxn001015mtsysibtq6', // original
+    style: 'mapbox://styles/escritoriodedados/cl0o1yvxn001015mtsysibtq6', // original
     accessToken: 'pk.eyJ1IjoiZXNjcml0b3Jpb2RlZGFkb3MiLCJhIjoiY2t5bGx6Z2I1MG5nbzJwcGUyeHFxcGs1bCJ9.sAUs1LRcb3R4l-6Dbhk8Pw',
     theme: 'light',
     use3dTerrain: true,
