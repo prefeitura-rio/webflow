@@ -8,7 +8,7 @@ var labelsContainer = [{
             'textHaloColor': '#ffffff',
             'textHaloWidth': 50,
             'textHaloBlur': 50,
-            'coordinates': [-43.50186, -22.97128]
+            'coordinates': [-43.49813, -22.93957]
         }, ]
     },
     {
@@ -21,7 +21,7 @@ var labelsContainer = [{
             'textHaloColor': '#ffffff',
             'textHaloWidth': 50,
             'textHaloBlur': 50,
-            'coordinates': [-43.35032, -22.78958]
+            'coordinates': [-43.33511, -22.76938]
         }, ]
     },
     {
@@ -34,7 +34,7 @@ var labelsContainer = [{
             'textHaloColor': '#ffffff',
             'textHaloWidth': 50,
             'textHaloBlur': 50,
-            'coordinates': [-43.27152, -22.89830]
+            'coordinates': [-43.26895, -22.94070]
         }, ]
     },
     {
@@ -47,7 +47,20 @@ var labelsContainer = [{
             'textHaloColor': '#ffffff',
             'textHaloWidth': 50,
             'textHaloBlur': 50,
-            'coordinates': [-43.49742, -22.85302]
+            'coordinates': [-43.48157, -22.82394]
+        }, ]
+    },
+    {
+        'layerId': 'label-reabertura',
+        'labels': [{
+            'description': "ESTAÇÕES REABERTAS",
+            'textColor': '#f9811f',
+            'textSize': 22,
+            "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
+            'textHaloColor': '#ffffff',
+            'textHaloWidth': 50,
+            'textHaloBlur': 50,
+            'coordinates': [-43.26895, -22.94070]
         }, ]
     },
     {
@@ -489,68 +502,20 @@ var config = {
             mapAnimation: 'flyTo',
             // callback: 'newContainer', 
             onChapterEnter: [{
-                    layer: 'corredor_transoeste',
+                    layer: 'comparacao-onibus',
                     opacity: 1,
                 },
                 {
-                    layer: 'label-transoeste',
-                    opacity: 1,
-                },
-                {
-                    layer: 'corredor_transcarioca',
-                    opacity: 1,
-                },
-                {
-                    layer: 'label-transcarioca',
-                    opacity: 1,
-                },
-                {
-                    layer: 'corredor_transolimpica',
-                    opacity: 1,
-                },
-                {
-                    layer: 'label-transolimpica',
-                    opacity: 1,
-                },
-                {
-                    layer: 'corredor_transbrasil',
-                    opacity: 1,
-                },
-                {
-                    layer: 'label-transbrasil',
+                    layer: 'comparacao-brt',
                     opacity: 1,
                 },
             ],
             onChapterExit: [{
-                    layer: 'corredor_transoeste',
+                    layer: 'comparacao-onibus',
                     opacity: 0,
                 },
                 {
-                    layer: 'label-transoeste',
-                    opacity: 0,
-                },
-                {
-                    layer: 'corredor_transcarioca',
-                    opacity: 0,
-                },
-                {
-                    layer: 'label-transcarioca',
-                    opacity: 0,
-                },
-                {
-                    layer: 'corredor_transolimpica',
-                    opacity: 0,
-                },
-                {
-                    layer: 'label-transolimpica',
-                    opacity: 0,
-                },
-                {
-                    layer: 'corredor_transbrasil',
-                    opacity: 0,
-                },
-                {
-                    layer: 'label-transbrasil',
+                    layer: 'comparacao-brt',
                     opacity: 0,
                 },
             ]
@@ -888,10 +853,10 @@ var config = {
                 },
                 desktop: {
                     center: {
-                        lon: -43.25942,
-                        lat: -22.92894
+                        lon: -43.23681,
+                        lat: -22.90992
                     },
-                    zoom: 9.93,
+                    zoom: 10.58,
                     pitch: 0.00,
                     bearing: 0.00,
                     speed: 1,
@@ -902,13 +867,23 @@ var config = {
             mapAnimation: 'flyTo',
             // callback: 'newContainer', 
             onChapterEnter: [{
-                layer: 'retomada-1',
-                opacity: 1,
-            }, ],
+                    layer: 'retomada-1',
+                    opacity: 1,
+                },
+                {
+                    layer: 'label-reabertura',
+                    opacity: 1,
+                },
+            ],
             onChapterExit: [{
-                layer: 'retomada-1',
-                opacity: 0,
-            }, ]
+                    layer: 'retomada-1',
+                    opacity: 0,
+                },
+                {
+                    layer: 'label-reabertura',
+                    opacity: 0,
+                },
+            ]
         },
         {
             id: 'recuperacao3',
@@ -927,10 +902,10 @@ var config = {
                 },
                 desktop: {
                     center: {
-                        lon: -43.25942,
-                        lat: -22.92894
+                        lon: -43.48249,
+                        lat: -22.93694
                     },
-                    zoom: 9.93,
+                    zoom: 10.82,
                     pitch: 0.00,
                     bearing: 0.00,
                     speed: 1,
