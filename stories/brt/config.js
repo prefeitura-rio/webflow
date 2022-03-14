@@ -8,7 +8,7 @@ var labelsContainer = [{
             'textHaloColor': '#ffffff',
             'textHaloWidth': 50,
             'textHaloBlur': 50,
-            'coordinates': [-43.50186,-22.97128]
+            'coordinates': [-43.50186, -22.97128]
         }, ]
     },
     {
@@ -21,7 +21,7 @@ var labelsContainer = [{
             'textHaloColor': '#ffffff',
             'textHaloWidth': 50,
             'textHaloBlur': 50,
-            'coordinates': [-43.35032,-22.78958]
+            'coordinates': [-43.35032, -22.78958]
         }, ]
     },
     {
@@ -34,7 +34,7 @@ var labelsContainer = [{
             'textHaloColor': '#ffffff',
             'textHaloWidth': 50,
             'textHaloBlur': 50,
-            'coordinates': [-43.27152,-22.89830]
+            'coordinates': [-43.27152, -22.89830]
         }, ]
     },
     {
@@ -47,7 +47,7 @@ var labelsContainer = [{
             'textHaloColor': '#ffffff',
             'textHaloWidth': 50,
             'textHaloBlur': 50,
-            'coordinates': [-43.49742,-22.85302]
+            'coordinates': [-43.49742, -22.85302]
         }, ]
     },
     {
@@ -117,8 +117,7 @@ var config = {
             },
             mapAnimation: 'flyTo',
             // callback: 'newContainer', 
-            onChapterEnter: [
-                {
+            onChapterEnter: [{
                     layer: 'transporte',
                     opacity: 1,
                 },
@@ -127,8 +126,7 @@ var config = {
                     opacity: 1,
                 },
             ],
-            onChapterExit: [
-                {
+            onChapterExit: [{
                     layer: 'transporte',
                     opacity: 0,
                 },
@@ -167,8 +165,7 @@ var config = {
             },
             mapAnimation: 'flyTo',
             // callback: 'newContainer', 
-            onChapterEnter: [
-                {
+            onChapterEnter: [{
                     layer: 'transporte',
                     opacity: 1,
                 },
@@ -181,8 +178,7 @@ var config = {
                     opacity: 1,
                 },
             ],
-            onChapterExit: [
-                {
+            onChapterExit: [{
                     layer: 'transporte',
                     opacity: 0,
                 },
@@ -225,8 +221,7 @@ var config = {
             },
             mapAnimation: 'flyTo',
             // callback: 'newContainer', 
-            onChapterEnter: [
-                {
+            onChapterEnter: [{
                     layer: 'transporte',
                     opacity: 1,
                 },
@@ -247,8 +242,7 @@ var config = {
                     opacity: 1,
                 },
             ],
-            onChapterExit: [
-                {
+            onChapterExit: [{
                     layer: 'transporte',
                     opacity: 0,
                 },
@@ -300,8 +294,7 @@ var config = {
 
             mapAnimation: 'flyTo',
             // callback: 'newContainer', 
-            onChapterEnter: [
-                {
+            onChapterEnter: [{
                     layer: 'transporte',
                     opacity: 1,
                 },
@@ -330,8 +323,7 @@ var config = {
                     opacity: 1,
                 },
             ],
-            onChapterExit: [
-                {
+            onChapterExit: [{
                     layer: 'transporte',
                     opacity: 0,
                 },
@@ -391,8 +383,7 @@ var config = {
 
             mapAnimation: 'flyTo',
             // callback: 'newContainer', 
-            onChapterEnter: [
-                {
+            onChapterEnter: [{
                     layer: 'transporte',
                     opacity: 1,
                 },
@@ -429,8 +420,7 @@ var config = {
                     opacity: 1,
                 },
             ],
-            onChapterExit: [
-                {
+            onChapterExit: [{
                     layer: 'transporte',
                     opacity: 0,
                 },
@@ -498,8 +488,7 @@ var config = {
 
             mapAnimation: 'flyTo',
             // callback: 'newContainer', 
-            onChapterEnter: [
-                {
+            onChapterEnter: [{
                     layer: 'corredor_transoeste',
                     opacity: 1,
                 },
@@ -532,8 +521,7 @@ var config = {
                     opacity: 1,
                 },
             ],
-            onChapterExit: [
-                {
+            onChapterExit: [{
                     layer: 'corredor_transoeste',
                     opacity: 0,
                 },
@@ -597,8 +585,7 @@ var config = {
 
             mapAnimation: 'flyTo',
             // callback: 'newContainer', 
-            onChapterEnter: [
-                {
+            onChapterEnter: [{
                     layer: 'corredor_transoeste',
                     opacity: 1,
                 },
@@ -631,8 +618,7 @@ var config = {
                     opacity: 1,
                 },
             ],
-            onChapterExit: [
-                {
+            onChapterExit: [{
                     layer: 'corredor_transoeste',
                     opacity: 0,
                 },
@@ -698,8 +684,7 @@ var config = {
 
             mapAnimation: 'flyTo',
             // callback: 'newContainer', 
-            onChapterEnter: [
-                {
+            onChapterEnter: [{
                     layer: 'estacao_transoeste',
                     opacity: 1,
                 },
@@ -732,8 +717,7 @@ var config = {
                     opacity: 1,
                 },
             ],
-            onChapterExit: [
-                {
+            onChapterExit: [{
                     layer: 'estacao_transoeste',
                     opacity: 0,
                 },
@@ -797,18 +781,14 @@ var config = {
 
             mapAnimation: 'flyTo',
             // callback: 'newContainer', 
-            onChapterEnter: [
-                {
-                    layer: 'crivela-transbrasil',
-                    opacity: 1,
-                },
-            ],
-            onChapterExit: [
-                {
-                    layer: 'crivela-transbrasil',
-                    opacity: 0,
-                },
-            ]
+            onChapterEnter: [{
+                layer: 'crivela-transbrasil',
+                opacity: 1,
+            }, ],
+            onChapterExit: [{
+                layer: 'crivela-transbrasil',
+                opacity: 0,
+            }, ]
         },
         {
             id: 'crivela3',
@@ -841,18 +821,14 @@ var config = {
 
             mapAnimation: 'flyTo',
             // callback: 'newContainer', 
-            onChapterEnter: [
-                {
-                    layer: 'crivela-estacoes',
-                    opacity: 1,
-                },
-            ],
-            onChapterExit: [
-                {
-                    layer: 'crivela-estacoes',
-                    opacity: 0,
-                },
-            ]
+            onChapterEnter: [{
+                layer: 'crivela-estacoes',
+                opacity: 1,
+            }, ],
+            onChapterExit: [{
+                layer: 'crivela-estacoes',
+                opacity: 0,
+            }, ]
         },
         // 2021 - Linha do Tempo
         {
@@ -886,18 +862,14 @@ var config = {
 
             mapAnimation: 'flyTo',
             // callback: 'newContainer', 
-            onChapterEnter: [
-                {
-                    layer: 'crivela-estacoes',
-                    opacity: 1,
-                },
-            ],
-            onChapterExit: [
-                {
-                    layer: 'crivela-estacoes',
-                    opacity: 0,
-                },
-            ]
+            onChapterEnter: [{
+                layer: 'crivela-estacoes',
+                opacity: 1,
+            }, ],
+            onChapterExit: [{
+                layer: 'crivela-estacoes',
+                opacity: 0,
+            }, ]
         },
         {
             id: 'recuperacao2',
@@ -929,18 +901,14 @@ var config = {
 
             mapAnimation: 'flyTo',
             // callback: 'newContainer', 
-            onChapterEnter: [
-                {
-                    layer: 'retomada-1',
-                    opacity: 1,
-                },
-            ],
-            onChapterExit: [
-                {
-                    layer: 'retomada-1',
-                    opacity: 0,
-                },
-            ]
+            onChapterEnter: [{
+                layer: 'retomada-1',
+                opacity: 1,
+            }, ],
+            onChapterExit: [{
+                layer: 'retomada-1',
+                opacity: 0,
+            }, ]
         },
         {
             id: 'recuperacao3',
@@ -972,18 +940,14 @@ var config = {
 
             mapAnimation: 'flyTo',
             // callback: 'newContainer', 
-            onChapterEnter: [
-                {
-                    layer: 'retomada-2',
-                    opacity: 1,
-                },
-            ],
-            onChapterExit: [
-                {
-                    layer: 'retomada-2',
-                    opacity: 0,
-                },
-            ]
+            onChapterEnter: [{
+                layer: 'retomada-2',
+                opacity: 1,
+            }, ],
+            onChapterExit: [{
+                layer: 'retomada-2',
+                opacity: 0,
+            }, ]
         },
         {
             id: 'recuperacao4',
@@ -1015,18 +979,14 @@ var config = {
 
             mapAnimation: 'flyTo',
             // callback: 'newContainer', 
-            onChapterEnter: [
-                {
-                    layer: 'retomada-3',
-                    opacity: 1,
-                },
-            ],
-            onChapterExit: [
-                {
-                    layer: 'retomada-3',
-                    opacity: 0,
-                },
-            ]
+            onChapterEnter: [{
+                layer: 'retomada-3',
+                opacity: 1,
+            }, ],
+            onChapterExit: [{
+                layer: 'retomada-3',
+                opacity: 0,
+            }, ]
         },
         // 2022 - Futuro
         {
@@ -1046,8 +1006,9 @@ var config = {
                 },
                 desktop: {
                     center: {
-                        lon:-43.21537,
-                        lat:-22.86059},
+                        lon: -43.21537,
+                        lat: -22.86059
+                    },
                     zoom: 11.01,
                     pitch: 0.00,
                     bearing: 0.00,
@@ -1058,18 +1019,14 @@ var config = {
 
             mapAnimation: 'flyTo',
             // callback: 'newContainer', 
-            onChapterEnter: [
-                {
-                    layer: 'estacao_transbrasil',
-                    opacity: 1,
-                },
-            ],
-            onChapterExit: [
-                {
-                    layer: 'estacao_transbrasil',
-                    opacity: 0,
-                },
-            ]
+            onChapterEnter: [{
+                layer: 'estacao_transbrasil',
+                opacity: 1,
+            }, ],
+            onChapterExit: [{
+                layer: 'estacao_transbrasil',
+                opacity: 0,
+            }, ]
         },
         {
             id: 'final2',
@@ -1088,11 +1045,12 @@ var config = {
                 },
                 desktop: {
                     center: {
-                        lon:-43.19655,
-                        lat:-22.89957},
-                    zoom: 13.82,
-                    pitch: 0.00,
-                    bearing: 0.00,
+                        lon: -43.20937,
+                        lat: -22.89922
+                    },
+                    zoom: 16.04,
+                    pitch: 58.00,
+                    bearing: 18.40,
                     speed: 1,
                     curve: 1
                 }
@@ -1100,18 +1058,16 @@ var config = {
 
             mapAnimation: 'flyTo',
             // callback: 'newContainer', 
-            onChapterEnter: [
-                {
+            onChapterEnter: [{
                     layer: 'gentileza',
-                    opacity: 1,
+                    opacity: .7,
                 },
                 {
                     layer: 'transporte_completo',
                     opacity: 1,
                 },
             ],
-            onChapterExit: [
-                {
+            onChapterExit: [{
                     layer: 'gentileza',
                     opacity: 0,
                 },
