@@ -1045,12 +1045,12 @@ var config = {
                 },
                 desktop: {
                     center: {
-                        lon: -43.20833,
-                        lat: -22.89906
+                        lon: -43.20975,
+                        lat: -22.89911
                     },
-                    zoom: 15.92,
-                    pitch: 0.00,
-                    bearing: 0.00,
+                    zoom: 16.53,
+                    pitch: 58.00,
+                    bearing: 18.40,
                     speed: 1,
                     curve: 1
                 }
