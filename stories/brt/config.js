@@ -71,7 +71,7 @@ var labelsContainer = [{
     {
         'layerId': 'label-intermodal',
         'labels': [{
-                'description': "TERMINAL INTERMODAL GENTILEZA",
+                'description': "TERMINAL\nINTERMODAL\nGENTILEZA",
                 'textColor': '#ffffff',
                 'textSize': 25,
                 'textSizeMobile': 12,
