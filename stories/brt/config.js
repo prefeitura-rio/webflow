@@ -9,7 +9,7 @@ var labelsContainer = [{
             'textHaloColor': '#ffffff',
             'textHaloWidth': 50,
             'textHaloBlur': 50,
-            'coordinates': [-43.49813, -22.93957]
+            'coordinates': [-43.51444, -22.93781]
         }, ]
     },
     {
@@ -51,7 +51,7 @@ var labelsContainer = [{
             'textHaloColor': '#ffffff',
             'textHaloWidth': 50,
             'textHaloBlur': 50,
-            'coordinates': [-43.48157, -22.82394]
+            'coordinates': [-43.47697, -22.81148]
         }, ]
     },
     {
@@ -72,18 +72,18 @@ var labelsContainer = [{
         'layerId': 'label-intermodal',
         'labels': [{
                 'description': "TERMINAL INTERMODAL GENTILEZA",
-                'textColor': '#004b80',
+                'textColor': '#ffffff',
                 'textSize': 25,
-                'textSizeMobile': 10,
+                'textSizeMobile': 12,
                 "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
-                'textHaloColor': '#ffffff',
+                'textHaloColor': '#d1be1a',
                 'textHaloWidth': 50,
                 'textHaloBlur': 50,
-                'coordinates': [-43.21177, -22.90067]
+                'coordinates': [-43.21243, -22.90052]
             },
             {
                 'description': "RODOVIÁRIA",
-                'textColor': '#004b80',
+                'textColor': '#black',
                 'textSize': 25,
                 'textSizeMobile': 10,
                 "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
@@ -94,7 +94,7 @@ var labelsContainer = [{
             },
             {
                 'description': "TERMINAL DE ÔNIBUS",
-                'textColor': '#004b80',
+                'textColor': '#black',
                 'textSize': 25,
                 'textSizeMobile': 10,
                 "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
@@ -116,14 +116,14 @@ var labelsContainer = [{
             },
             {
                 'description': "TRANSBRASIL",
-                'textColor': '#ffffff',
+                'textColor': '#d1be1a',
                 'textSize': 25,
                 'textSizeMobile': 10,
                 "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
-                'textHaloColor': '#d1be1a',
+                'textHaloColor': '#ffffff',
                 'textHaloWidth': 50,
                 'textHaloBlur': 50,
-                'coordinates': [-43.21288, -22.89673]
+                'coordinates': [-43.21148, -22.89540]
             },
         ]
     },
@@ -133,7 +133,7 @@ var labelsContainer = [{
             'description': "PRIMEIRO CORREDOR BRT",
             'textColor': '#000000',
             'textSize': 17,
-            'textSizeMobile': 10,
+            'textSizeMobile': 9,
             "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
             'textHaloColor': '#ffffff',
             'textHaloWidth': 50,
@@ -145,7 +145,7 @@ var labelsContainer = [{
         'layerId': 'label-abertura-transbrasil',
         'labels': [{
             'description': "TRAÇADO DO FUTURO CORREDOR TRANSBRASIL",
-            'textColor': '#000000',
+            'textColor': '#d1be1a',
             'textSize': 17,
             'textSizeMobile': 10,
             "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
@@ -161,7 +161,7 @@ var labelsContainer = [{
             'description': "TERCEIRO CORREDOR BRT",
             'textColor': '#000000',
             'textSize': 17,
-            'textSizeMobile': 10,
+            'textSizeMobile': 9,
             "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
             'textHaloColor': '#ffffff',
             'textHaloWidth': 50,
@@ -175,7 +175,7 @@ var labelsContainer = [{
             'description': "SEGUNDO CORREDOR BRT",
             'textColor': '#000000',
             'textSize': 17,
-            'textSizeMobile': 10,
+            'textSizeMobile': 9,
             "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
             'textHaloColor': '#ffffff',
             'textHaloWidth': 50,
@@ -195,7 +195,7 @@ var labelsContainer = [{
             'textHaloWidth': 50,
             'textHaloBlur': 50,
             'textJustify': 'left',
-            'coordinates': [-43.26895, -22.94070]
+            'coordinates': [-43.27351, -22.91555]
         }, ]
     },
     {
@@ -210,7 +210,7 @@ var labelsContainer = [{
             'textHaloWidth': 50,
             'textHaloBlur': 50,
             'textJustify': 'left',
-            'coordinates': [-43.49813, -22.93957]
+            'coordinates': [-43.51444, -22.93781]
         }, ]
     },
     {
@@ -233,7 +233,7 @@ var labelsContainer = [{
             'description': "MALHA DE TRENS E METRÔ",
             'textColor': '#3b3b3b',
             'textSize': 22,
-            'textSizeMobile': 10,
+            'textSizeMobile': 14,
             "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
             'textHaloColor': '#ffffff',
             'textHaloWidth': 50,
@@ -254,7 +254,7 @@ var labelsContainer = [{
             'textHaloWidth': 50,
             'textHaloBlur': 50,
             'textJustify': 'left',
-            'coordinates': [-43.31747, -22.85460]
+            'coordinates': [-43.30493, -22.84526]
         }, ]
     },
     {
@@ -299,7 +299,7 @@ var labelsContainer = [{
             'textHaloWidth': 50,
             'textHaloBlur': 50,
             'textJustify': 'left',
-            'coordinates': [-43.37990, -23.04896]
+            'coordinates': [-43.30997, -23.05506]
         }, ]
     },
     {
@@ -399,12 +399,12 @@ var config = {
             location: {
                 mobile: {
                     center: {
-                        lon: -43.46915,
-                        lat: -22.92849
+                        lon: -43.45268,
+                        lat: -22.93530
                     },
-                    zoom: 8.40,
+                    zoom: 8.55,
                     pitch: 0.00,
-                    bearing: -2.42,
+                    bearing: 0.00,
                     speed: 1,
                     curve: 1
                 },
@@ -447,12 +447,12 @@ var config = {
             location: {
                 mobile: {
                     center: {
-                        lon: -43.46915,
-                        lat: -22.92849
+                        lon: -43.45268,
+                        lat: -22.93530
                     },
-                    zoom: 8.40,
+                    zoom: 8.55,
                     pitch: 0.00,
-                    bearing: -2.42,
+                    bearing: 0.00,
                     speed: 1,
                     curve: 1
                 },
@@ -511,12 +511,12 @@ var config = {
             location: {
                 mobile: {
                     center: {
-                        lon: -43.46915,
-                        lat: -22.92849
+                        lon: -43.45268,
+                        lat: -22.93530
                     },
-                    zoom: 8.40,
+                    zoom: 8.55,
                     pitch: 0.00,
-                    bearing: -2.42,
+                    bearing: 0.00,
                     speed: 1,
                     curve: 1
                 },
@@ -583,12 +583,12 @@ var config = {
             location: {
                 mobile: {
                     center: {
-                        lon: -43.46915,
-                        lat: -22.92849
+                        lon: -43.45268,
+                        lat: -22.93530
                     },
-                    zoom: 8.40,
+                    zoom: 8.55,
                     pitch: 0.00,
-                    bearing: -2.42,
+                    bearing: 0.00,
                     speed: 1,
                     curve: 1
                 },
@@ -664,12 +664,12 @@ var config = {
             location: {
                 mobile: {
                     center: {
-                        lon: -43.46915,
-                        lat: -22.92849
+                        lon: -43.45268,
+                        lat: -22.93530
                     },
-                    zoom: 8.40,
+                    zoom: 8.55,
                     pitch: 0.00,
-                    bearing: -2.42,
+                    bearing: 0.00,
                     speed: 1,
                     curve: 1
                 },
@@ -761,10 +761,10 @@ var config = {
             location: {
                 mobile: {
                     center: {
-                        lon: -43.35105,
-                        lat: -22.96172
+                        lon: -43.34756,
+                        lat: -22.96384
                     },
-                    zoom: 11.21,
+                    zoom: 10.88,
                     pitch: 0.00,
                     bearing: 0.00,
                     speed: 1,
@@ -772,11 +772,11 @@ var config = {
                 },
                 desktop: {
                     center: {
-                        lon: -43.30505,
-                        lat: -22.95810
+                        lon: -43.28405,
+                        lat: -22.96238
                     },
-                    zoom: 11.85,
-                    pitch: 0.00,
+                    zoom: 11.62,
+                    pitch: 4.00,
                     bearing: 0.00,
                     speed: 1,
                     curve: 1
@@ -820,12 +820,12 @@ var config = {
             location: {
                 mobile: {
                     center: {
-                        lon: -43.46915,
-                        lat: -22.92849
+                        lon: -43.45268,
+                        lat: -22.93530
                     },
-                    zoom: 8.40,
+                    zoom: 8.55,
                     pitch: 0.00,
-                    bearing: -2.42,
+                    bearing: 0.00,
                     speed: 1,
                     curve: 1
                 },
@@ -897,12 +897,12 @@ var config = {
             location: {
                 mobile: {
                     center: {
-                        lon: -43.46915,
-                        lat: -22.92849
+                        lon: -43.45268,
+                        lat: -22.93530
                     },
-                    zoom: 8.40,
+                    zoom: 8.55,
                     pitch: 0.00,
-                    bearing: -2.42,
+                    bearing: 0.00,
                     speed: 1,
                     curve: 1
                 },
@@ -957,12 +957,12 @@ var config = {
             location: {
                 mobile: {
                     center: {
-                        lon: -43.46915,
-                        lat: -22.92849
+                        lon: -43.45268,
+                        lat: -22.93530
                     },
-                    zoom: 8.40,
+                    zoom: 8.55,
                     pitch: 0.00,
-                    bearing: -2.42,
+                    bearing: 0.00,
                     speed: 1,
                     curve: 1
                 },
@@ -1008,12 +1008,12 @@ var config = {
             location: {
                 mobile: {
                     center: {
-                        lon: -43.46915,
-                        lat: -22.92849
+                        lon: -43.45268,
+                        lat: -22.93530
                     },
-                    zoom: 8.40,
+                    zoom: 8.55,
                     pitch: 0.00,
-                    bearing: -2.42,
+                    bearing: 0.00,
                     speed: 1,
                     curve: 1
                 },
@@ -1058,8 +1058,8 @@ var config = {
             location: {
                 mobile: {
                     center: {
-                        lon: -43.30001,
-                        lat: -22.90513
+                        lon: -43.33262,
+                        lat: -22.90382
                     },
                     zoom: 9.95,
                     pitch: 0.00,
@@ -1156,12 +1156,12 @@ var config = {
             location: {
                 mobile: {
                     center: {
-                        lon: -43.46915,
-                        lat: -22.92849
+                        lon: -43.45268,
+                        lat: -22.93530
                     },
-                    zoom: 8.40,
+                    zoom: 8.55,
                     pitch: 0.00,
-                    bearing: -2.42,
+                    bearing: 0.00,
                     speed: 1,
                     curve: 1
                 },
@@ -1274,12 +1274,12 @@ var config = {
                 },
                 desktop: {
                     center: {
-                        lon: -43.20671,
-                        lat: -22.90025
+                        lon: -43.20766,
+                        lat: -22.89912
                     },
-                    zoom: 16.42,
-                    pitch: 45.00,
-                    bearing: 0.00,
+                    zoom: 15.99,
+                    pitch: 59.50,
+                    bearing: 8.22,
                     speed: 1,
                     curve: 1
                 }
@@ -1328,12 +1328,12 @@ var config = {
             location: {
                 mobile: {
                     center: {
-                        lon: -43.46915,
-                        lat: -22.92849
+                        lon: -43.45268,
+                        lat: -22.93530
                     },
-                    zoom: 8.40,
+                    zoom: 8.55,
                     pitch: 0.00,
-                    bearing: -2.42,
+                    bearing: 0.00,
                     speed: 1,
                     curve: 1
                 },
