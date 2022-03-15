@@ -65,7 +65,7 @@ var labelsContainer = [{
             'textHaloColor': '#ffffff',
             'textHaloWidth': 50,
             'textHaloBlur': 50,
-            'coordinates': [-43.26200, -23.05568]
+            'coordinates': [-43.30997, -23.05506]
         }, ]
     },
     {
@@ -224,7 +224,7 @@ var labelsContainer = [{
             'textHaloColor': '#ffffff',
             'textHaloWidth': 50,
             'textHaloBlur': 50,
-            'coordinates': [-43.26200, -23.05568]
+            'coordinates': [-43.30997, -23.05506]
         }, ]
     },
     {
@@ -269,7 +269,7 @@ var labelsContainer = [{
             'textHaloWidth': 50,
             'textHaloBlur': 50,
             'textJustify': 'left',
-            'coordinates': [-43.26200, -23.05568]
+            'coordinates': [-43.30997, -23.05506]
         }, ]
     },
     {
@@ -284,7 +284,7 @@ var labelsContainer = [{
             'textHaloWidth': 50,
             'textHaloBlur': 50,
             'textJustify': 'left',
-            'coordinates': [-43.26200, -23.05568]
+            'coordinates': [-43.30997, -23.05506]
         }, ]
     },
     {
@@ -760,12 +760,12 @@ var config = {
             location: {
                 mobile: {
                     center: {
-                        lon: -43.46915,
-                        lat: -22.92849
+                        lon: -43.35105,
+                        lat: -22.96172
                     },
-                    zoom: 8.40,
+                    zoom: 11.21,
                     pitch: 0.00,
-                    bearing: -2.42,
+                    bearing: 0.00,
                     speed: 1,
                     curve: 1
                 },
@@ -923,7 +923,11 @@ var config = {
                 {
                     layer: 'label-crivela-brasil',
                     opacity: 1,
-                }
+                },
+                {
+                    layer: 'estacao_transbrasil',
+                    opacity: .4,
+                },
             ],
             onChapterExit: [{
                     layer: 'crivela-transbrasil',
@@ -932,7 +936,11 @@ var config = {
                 {
                     layer: 'label-crivela-brasil',
                     opacity: 0,
-                }
+                },
+                {
+                    layer: 'estacao_transbrasil',
+                    opacity: 0,
+                },
             ]
         },
         {
@@ -1042,12 +1050,12 @@ var config = {
             location: {
                 mobile: {
                     center: {
-                        lon: -43.46915,
-                        lat: -22.92849
+                        lon: -43.30001,
+                        lat: -22.90513
                     },
-                    zoom: 8.40,
+                    zoom: 9.95,
                     pitch: 0.00,
-                    bearing: -2.42,
+                    bearing: 0.00,
                     speed: 1,
                     curve: 1
                 },
@@ -1091,12 +1099,12 @@ var config = {
             location: {
                 mobile: {
                     center: {
-                        lon: -43.46915,
-                        lat: -22.92849
+                        lon: -43.55653,
+                        lat: -22.93631
                     },
-                    zoom: 8.40,
+                    zoom: 9.71,
                     pitch: 0.00,
-                    bearing: -2.42,
+                    bearing: 0.00,
                     speed: 1,
                     curve: 1
                 },
@@ -1190,12 +1198,12 @@ var config = {
             location: {
                 mobile: {
                     center: {
-                        lon: -43.46915,
-                        lat: -22.92849
+                        lon: -43.30118,
+                        lat: -22.85878
                     },
-                    zoom: 8.40,
+                    zoom: 10.24,
                     pitch: 0.00,
-                    bearing: -2.42,
+                    bearing: 0.00,
                     speed: 1,
                     curve: 1
                 },
@@ -1247,12 +1255,12 @@ var config = {
             location: {
                 mobile: {
                     center: {
-                        lon: -43.20258,
-                        lat: -22.89941
+                        lon: -43.21054,
+                        lat: -22.89849
                     },
-                    zoom: 8.40,
-                    pitch: 0.00,
-                    bearing: -2.42,
+                    zoom: 14.56,
+                    pitch: 46.50,
+                    bearing: 15.73,
                     speed: 1,
                     curve: 1
                 },
@@ -1357,7 +1365,23 @@ var config = {
                     opacity: 1,
                 },
                 {
-                    layer: 'label-futuro',
+                    layer: 'label-transoeste',
+                    opacity: 1,
+                },
+                {
+                    layer: 'label-transcarioca',
+                    opacity: 1,
+                },
+                {
+                    layer: 'label-transolimpica',
+                    opacity: 1,
+                },
+                {
+                    layer: 'label-transbrasil',
+                    opacity: 1,
+                },
+                {
+                    layer: 'label-transporte',
                     opacity: 1,
                 },
             ],
@@ -1382,7 +1406,23 @@ var config = {
                     opacity: 0,
                 },
                 {
-                    layer: 'label-futuro',
+                    layer: 'label-transoeste',
+                    opacity: 0,
+                },
+                {
+                    layer: 'label-transcarioca',
+                    opacity: 0,
+                },
+                {
+                    layer: 'label-transolimpica',
+                    opacity: 0,
+                },
+                {
+                    layer: 'label-transbrasil',
+                    opacity: 0,
+                },
+                {
+                    layer: 'label-transporte',
                     opacity: 0,
                 },
             ]
