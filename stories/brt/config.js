@@ -9,7 +9,7 @@ var labelsContainer = [{
             'textHaloColor': '#ffffff',
             'textHaloWidth': 50,
             'textHaloBlur': 50,
-            'coordinates': [-43.49813, -22.93957]
+            'coordinates': [-43.51444, -22.93781]
         }, ]
     },
     {
@@ -133,7 +133,7 @@ var labelsContainer = [{
             'description': "PRIMEIRO CORREDOR BRT",
             'textColor': '#000000',
             'textSize': 17,
-            'textSizeMobile': 10,
+            'textSizeMobile': 9,
             "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
             'textHaloColor': '#ffffff',
             'textHaloWidth': 50,
@@ -145,7 +145,7 @@ var labelsContainer = [{
         'layerId': 'label-abertura-transbrasil',
         'labels': [{
             'description': "TRAÇADO DO FUTURO CORREDOR TRANSBRASIL",
-            'textColor': '#000000',
+            'textColor': '#d1be1a',
             'textSize': 17,
             'textSizeMobile': 10,
             "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
@@ -161,7 +161,7 @@ var labelsContainer = [{
             'description': "TERCEIRO CORREDOR BRT",
             'textColor': '#000000',
             'textSize': 17,
-            'textSizeMobile': 10,
+            'textSizeMobile': 9,
             "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
             'textHaloColor': '#ffffff',
             'textHaloWidth': 50,
@@ -175,7 +175,7 @@ var labelsContainer = [{
             'description': "SEGUNDO CORREDOR BRT",
             'textColor': '#000000',
             'textSize': 17,
-            'textSizeMobile': 10,
+            'textSizeMobile': 9,
             "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
             'textHaloColor': '#ffffff',
             'textHaloWidth': 50,
@@ -233,7 +233,7 @@ var labelsContainer = [{
             'description': "MALHA DE TRENS E METRÔ",
             'textColor': '#3b3b3b',
             'textSize': 22,
-            'textSizeMobile': 10,
+            'textSizeMobile': 14,
             "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
             'textHaloColor': '#ffffff',
             'textHaloWidth': 50,
@@ -398,12 +398,12 @@ var config = {
             location: {
                 mobile: {
                     center: {
-                        lon: -43.46915,
-                        lat: -22.92849
+                        lon: -43.42943,
+                        lat: -22.93120
                     },
-                    zoom: 8.40,
+                    zoom: 9.47,
                     pitch: 0.00,
-                    bearing: -2.42,
+                    bearing: 0.00,
                     speed: 1,
                     curve: 1
                 },
@@ -446,12 +446,12 @@ var config = {
             location: {
                 mobile: {
                     center: {
-                        lon: -43.46915,
-                        lat: -22.92849
+                        lon: -43.46893,
+                        lat: -22.92854
                     },
-                    zoom: 8.40,
+                    zoom: 8.50,
                     pitch: 0.00,
-                    bearing: -2.42,
+                    bearing: 0.00,
                     speed: 1,
                     curve: 1
                 },
@@ -1050,8 +1050,8 @@ var config = {
             location: {
                 mobile: {
                     center: {
-                        lon: -43.30001,
-                        lat: -22.90513
+                        lon: -43.33262,
+                        lat: -22.90382
                     },
                     zoom: 9.95,
                     pitch: 0.00,
