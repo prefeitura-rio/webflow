@@ -705,11 +705,7 @@ var config = {
                     opacity: 1,
                 },
                 {
-                    layer: 'inicio3',
-                    opacity: 1,
-                },
-                {
-                    layer: 'corredor_transbrasil',
+                    layer: 'inicio4',
                     opacity: 1,
                 },
                 {
@@ -734,15 +730,11 @@ var config = {
                     opacity: 0,
                 },
                 {
-                    layer: 'inicio3',
+                    layer: 'inicio4',
                     opacity: 0,
                 },
                 {
                     layer: 'label-transolimpica',
-                    opacity: 0,
-                },
-                {
-                    layer: 'corredor_transbrasil',
                     opacity: 0,
                 },
                 {
@@ -1174,7 +1166,7 @@ var config = {
             mapAnimation: 'flyTo',
             // callback: 'newContainer', 
             onChapterEnter: [{
-                    layer: 'crivela-estacoes',
+                    layer: 'crivela-estacoes1',
                     opacity: 1,
                     style: {
                         mobile: {
