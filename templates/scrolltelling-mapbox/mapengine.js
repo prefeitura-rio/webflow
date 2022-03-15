@@ -4,6 +4,10 @@ function startMap(datavizId, style) {
         return (getWidth() < config.cameraViewWidthBreakpoint)
     }
 
+    function deviceMode() {
+        return isMobile() ? 'mobile' : 'desktop'
+    }
+
     var layerTypes = {
         'fill': ['fill-opacity'],
         'line': ['line-opacity'],
@@ -57,17 +61,42 @@ function startMap(datavizId, style) {
         };
     }
 
-    function setLayerOpacity(layer) {
+    function updateSizes(layer) {
+        console.log(layer)
+
+        var props = map.getPaintProperty(layer.layer, 'circle-radius')
+        if (props.length) {
+            // check if type is number
+            props = props.map(function (p) { 
+                if (typeof p === 'number') {
+                    return config.mobileSizeMultiplier * p
+                } else { return p }})
+        }
+        console.log(props)
+        map.setPaintProperty(layer.layer, 'circle-radius', props)
+    }
+
+    function setLayerProps(layer) {
 
         console.log('layer', layer)
         var paintProps = getLayerPaintType(layer.layer);
         paintProps.forEach(function (prop) {
-            console.log('prop', prop)
             var options = {};
-
             map.setPaintProperty(layer.layer, prop, layer.opacity, options);
-            console.log(map.getLayer(layer.layer))
         });
+
+        // Update radius of circles
+        // if (isMobile()) {updateSizes(layer)}
+        
+        // Update style given deviceMode
+        var entries = (layer.style || {})[deviceMode()] || {};
+
+        for (var key in entries) {
+            var value = entries[key];
+            map.setPaintProperty(layer.layer, key, value);
+        }
+        
+        
     }
 
 
@@ -188,7 +217,7 @@ function startMap(datavizId, style) {
 
                 // Set layer opacity for each layer
                 if (chapter.onChapterEnter.length > 0) {
-                    chapter.onChapterEnter.forEach(setLayerOpacity);
+                    chapter.onChapterEnter.forEach(setLayerProps);
                 }
 
                 // Callback for chapter enter
@@ -216,7 +245,7 @@ function startMap(datavizId, style) {
                 var chapter = config.chapters.find(chap => chap.id === response.element.id);
 
                 if (chapter.onChapterExit.length > 0) {
-                    chapter.onChapterExit.forEach(setLayerOpacity);
+                    chapter.onChapterExit.forEach(setLayerProps);
                 }
 
                 response.element.classList.remove('active');
