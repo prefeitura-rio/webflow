@@ -336,7 +336,7 @@ var labelsContainer = [{
                 'textColor': '#000000',
                 'textSize': 18,
                 'textSizeMobile': 10,
-                "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
+                "textFont": ["Poppins Thin", "Poppins Thin"],
                 'textHaloColor': 'white',
                 'textHaloWidth': 50,
                 'textHaloBlur': 50,
@@ -847,22 +847,38 @@ var config = {
             onChapterEnter: [{
                     layer: 'estacao_transoeste',
                     opacity: 1,
-                    style: {mobile: {'circle-radius': 2.1}}
+                    style: {
+                        mobile: {
+                            'circle-radius': 2.1
+                        }
+                    }
                 },
                 {
                     layer: 'estacao_transcarioca',
                     opacity: 1,
-                    style: {mobile: {'circle-radius': 2.1}}
+                    style: {
+                        mobile: {
+                            'circle-radius': 2.1
+                        }
+                    }
                 },
                 {
                     layer: 'estacao_transolimpica',
                     opacity: 1,
-                    style: {mobile: {'circle-radius': 2.1}}
+                    style: {
+                        mobile: {
+                            'circle-radius': 2.1
+                        }
+                    }
                 },
                 {
                     layer: 'estacao_transbrasil',
                     opacity: 1,
-                    style: {mobile: {'circle-radius': 2}}
+                    style: {
+                        mobile: {
+                            'circle-radius': 2
+                        }
+                    }
                 },
                 {
                     layer: 'label-crivela-estacoes',
@@ -924,7 +940,11 @@ var config = {
             onChapterEnter: [{
                     layer: 'crivela-transbrasil',
                     opacity: 1,
-                    style: {mobile: {'circle-radius': 2}}
+                    style: {
+                        mobile: {
+                            'circle-radius': 2
+                        }
+                    }
                 },
                 {
                     layer: 'label-crivela-brasil',
@@ -933,7 +953,11 @@ var config = {
                 {
                     layer: 'estacao_transbrasil',
                     opacity: .4,
-                    style: {mobile: {'circle-radius': 2}}
+                    style: {
+                        mobile: {
+                            'circle-radius': 2
+                        }
+                    }
                 },
             ],
             onChapterExit: [{
@@ -984,6 +1008,11 @@ var config = {
             onChapterEnter: [{
                     layer: 'crivela-estacoes',
                     opacity: 1,
+                    style: {
+                        mobile: {
+                            'circle-radius': 1.5
+                        }
+                    }
                 },
                 {
                     layer: 'label-crivela',
@@ -1035,7 +1064,11 @@ var config = {
             onChapterEnter: [{
                     layer: 'crivela-estacoes',
                     opacity: 1,
-                    
+                    style: {
+                        mobile: {
+                            'circle-radius': 1.5
+                        }
+                    }
                 },
                 {
                     layer: 'label-recuperacao',
@@ -1085,6 +1118,19 @@ var config = {
             onChapterEnter: [{
                     layer: 'retomada-1',
                     opacity: 1,
+                    style: {
+                        mobile: {
+                            'circle-radius': [
+                                "match",
+                                ["get", "data_reabertura"],
+                                ["2021-01"],
+                                2,
+                                ["2021-06", "2021-07"],
+                                5,
+                                0
+                            ],
+                        }
+                    }
                 },
                 {
                     layer: 'label-reabertura',
@@ -1134,6 +1180,19 @@ var config = {
             onChapterEnter: [{
                     layer: 'retomada-2',
                     opacity: 1,
+                    style: {
+                        mobile: {
+                            'circle-radius': [
+                                "match",
+                                ["get", "data_reabertura"],
+                                ["2021-01", "2021-06", "2021-07"],
+                                2,
+                                ["2021-08", "2021-09"],
+                                5,
+                                0
+                            ],
+                        }
+                    }
                 },
                 {
                     layer: 'label-reabertura1',
@@ -1183,6 +1242,19 @@ var config = {
             onChapterEnter: [{
                     layer: 'retomada-3',
                     opacity: 1,
+                    style: {
+                        mobile: {
+                            'circle-radius': [
+                                "match",
+                                ["get", "data_reabertura"],
+                                ["2021-01", "2021-06", "2021-07", "2021-08", "2021-09"],
+                                2,
+                                ["2021-11", "2021-12"],
+                                5,
+                                0
+                            ],
+                        }
+                    }
                 },
                 {
                     layer: 'label-reabertura2',
