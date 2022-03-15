@@ -72,11 +72,11 @@ var labelsContainer = [{
         'layerId': 'label-intermodal',
         'labels': [{
                 'description': "TERMINAL INTERMODAL GENTILEZA",
-                'textColor': '#004b80',
+                'textColor': '#ffffff',
                 'textSize': 25,
                 'textSizeMobile': 12,
                 "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
-                'textHaloColor': '#ffffff',
+                'textHaloColor': '#d1be1a',
                 'textHaloWidth': 50,
                 'textHaloBlur': 50,
                 'coordinates': [-43.21243, -22.90052]
@@ -116,14 +116,14 @@ var labelsContainer = [{
             },
             {
                 'description': "TRANSBRASIL",
-                'textColor': '#ffffff',
+                'textColor': '#d1be1a',
                 'textSize': 25,
                 'textSizeMobile': 10,
                 "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
-                'textHaloColor': '#d1be1a',
+                'textHaloColor': '#ffffff',
                 'textHaloWidth': 50,
                 'textHaloBlur': 50,
-                'coordinates': [-43.21288, -22.89673]
+                'coordinates': [-43.21148, -22.89540]
             },
         ]
     },
@@ -771,11 +771,11 @@ var config = {
                 },
                 desktop: {
                     center: {
-                        lon: -43.30505,
-                        lat: -22.95810
+                        lon: -43.28405,
+                        lat: -22.96238
                     },
-                    zoom: 11.85,
-                    pitch: 0.00,
+                    zoom: 11.62,
+                    pitch: 4.00,
                     bearing: 0.00,
                     speed: 1,
                     curve: 1
@@ -1266,12 +1266,12 @@ var config = {
                 },
                 desktop: {
                     center: {
-                        lon: -43.20671,
-                        lat: -22.90025
+                        lon: -43.20766,
+                        lat: -22.89912
                     },
-                    zoom: 16.42,
-                    pitch: 45.00,
-                    bearing: 0.00,
+                    zoom: 15.99,
+                    pitch: 59.50,
+                    bearing: 8.22,
                     speed: 1,
                     curve: 1
                 }
