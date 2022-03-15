@@ -812,6 +812,63 @@ var config = {
                 }
             ]
         },
+        {
+            id: 'inicio8',
+            // mapAnimation: 'easeTo', // flyTo, easeTo, seinao
+            location: {
+                mobile: {
+                    center: {
+                        lon: -43.34756,
+                        lat: -22.96384
+                    },
+                    zoom: 10.88,
+                    pitch: 0.00,
+                    bearing: 0.00,
+                    speed: 1,
+                    curve: 1
+                },
+                desktop: {
+                    center: {
+                        lon: -43.28405,
+                        lat: -22.96238
+                    },
+                    zoom: 11.62,
+                    pitch: 4.00,
+                    bearing: 0.00,
+                    speed: 1,
+                    curve: 1
+                }
+            },
+
+            mapAnimation: 'flyTo',
+            // callback: 'newContainer', 
+            onChapterEnter: [{
+                    layer: 'comparacao-onibus',
+                    opacity: 1,
+                },
+                {
+                    layer: 'comparacao-brt',
+                    opacity: 1,
+                },
+                {
+                    layer: 'label-comparacao',
+                    opacity: 1,
+                }
+            ],
+            onChapterExit: [{
+                    layer: 'comparacao-onibus',
+                    opacity: 0,
+                },
+                {
+                    layer: 'comparacao-brt',
+                    opacity: 0,
+                },
+                {
+                    layer: 'label-comparacao',
+                    opacity: 0,
+                }
+            ]
+        },
         // 2017 - 2020
         {
             id: 'crivela1',
@@ -1029,6 +1086,61 @@ var config = {
                 },
             ]
         },
+        {
+            id: 'crivela4',
+            style: 'mapbox://styles/escritoriodedados/cl0o1yvxn001015mtsysibtq6',
+            // mapAnimation: 'easeTo', // flyTo, easeTo, seinao
+            location: {
+                mobile: {
+                    center: {
+                        lon: -43.45268,
+                        lat: -22.93530
+                    },
+                    zoom: 8.55,
+                    pitch: 0.00,
+                    bearing: 0.00,
+                    speed: 1,
+                    curve: 1
+                },
+                desktop: {
+                    center: {
+                        lon: -43.25942,
+                        lat: -22.92894
+                    },
+                    zoom: 9.93,
+                    pitch: 0.00,
+                    bearing: 0.00,
+                    speed: 1,
+                    curve: 1
+                }
+            },
+
+            mapAnimation: 'flyTo',
+            // callback: 'newContainer', 
+            onChapterEnter: [{
+                    layer: 'crivela-estacoes',
+                    opacity: 1,
+                    style: {
+                        mobile: {
+                            'circle-radius': 1.5
+                        }
+                    }
+                },
+                {
+                    layer: 'label-crivela',
+                    opacity: 1,
+                },
+            ],
+            onChapterExit: [{
+                    layer: 'crivela-estacoes',
+                    opacity: 0,
+                },
+                {
+                    layer: 'label-crivela',
+                    opacity: 0,
+                },
+            ]
+        },
         // 2021 - Linha do Tempo
         {
             id: 'recuperacao1',
@@ -1121,11 +1233,9 @@ var config = {
                     style: {
                         mobile: {
                             'circle-radius': [
-                                "match",
-                                ["get", "data_reabertura"],
+                                "match", ["get", "data_reabertura"],
                                 ["2021-01"],
-                                2,
-                                ["2021-06", "2021-07"],
+                                2, ["2021-06", "2021-07"],
                                 5,
                                 0
                             ],
@@ -1183,11 +1293,9 @@ var config = {
                     style: {
                         mobile: {
                             'circle-radius': [
-                                "match",
-                                ["get", "data_reabertura"],
+                                "match", ["get", "data_reabertura"],
                                 ["2021-01", "2021-06", "2021-07"],
-                                2,
-                                ["2021-08", "2021-09"],
+                                2, ["2021-08", "2021-09"],
                                 5,
                                 0
                             ],
@@ -1245,11 +1353,69 @@ var config = {
                     style: {
                         mobile: {
                             'circle-radius': [
-                                "match",
-                                ["get", "data_reabertura"],
+                                "match", ["get", "data_reabertura"],
                                 ["2021-01", "2021-06", "2021-07", "2021-08", "2021-09"],
-                                2,
-                                ["2021-11", "2021-12"],
+                                2, ["2021-11", "2021-12"],
+                                5,
+                                0
+                            ],
+                        }
+                    }
+                },
+                {
+                    layer: 'label-reabertura2',
+                    opacity: 1,
+                },
+            ],
+            onChapterExit: [{
+                    layer: 'retomada-3',
+                    opacity: 0,
+                },
+                {
+                    layer: 'label-reabertura2',
+                    opacity: 0,
+                },
+            ]
+        },
+        {
+            id: 'recuperacao5',
+            // mapAnimation: 'easeTo', // flyTo, easeTo, seinao
+            location: {
+                mobile: {
+                    center: {
+                        lon: -43.45268,
+                        lat: -22.93530
+                    },
+                    zoom: 8.55,
+                    pitch: 0.00,
+                    bearing: 0.00,
+                    speed: 1,
+                    curve: 1
+                },
+                desktop: {
+                    center: {
+                        lon: -43.25942,
+                        lat: -22.92894
+                    },
+                    zoom: 9.93,
+                    pitch: 0.00,
+                    bearing: 0.00,
+                    speed: 1,
+                    curve: 1
+                }
+            },
+
+            mapAnimation: 'flyTo',
+            // callback: 'newContainer', 
+            onChapterEnter: [{
+                    layer: 'retomada-3',
+                    opacity: 1,
+                    style: {
+                        mobile: {
+                            'circle-radius': [
+                                "match", ["get", "data_reabertura"],
+                                ["2021-01", "2021-06", "2021-07", "2021-08", "2021-09"],
+                                2, ["2021-11", "2021-12"],
                                 5,
                                 0
                             ],
@@ -1396,6 +1562,119 @@ var config = {
         },
         {
             id: 'final3',
+            // mapAnimation: 'easeTo', // flyTo, easeTo, seinao
+            location: {
+                mobile: {
+                    center: {
+                        lon: -43.45268,
+                        lat: -22.93530
+                    },
+                    zoom: 8.55,
+                    pitch: 0.00,
+                    bearing: 0.00,
+                    speed: 1,
+                    curve: 1
+                },
+                desktop: {
+                    center: {
+                        lon: -43.44823,
+                        lat: -22.92715
+                    },
+                    zoom: 10.20,
+                    pitch: 0.00,
+                    bearing: 0.00,
+                    speed: 1,
+                    curve: 1
+                }
+            },
+
+            mapAnimation: 'flyTo',
+            // callback: 'newContainer', 
+            onChapterEnter: [{
+                    layer: 'transporte-completo',
+                    opacity: 1,
+                },
+                {
+                    layer: 'corredor_transoeste',
+                    opacity: 1,
+                },
+                {
+                    layer: 'corredor_transcarioca',
+                    opacity: 1,
+                },
+                {
+                    layer: 'corredor_transolimpica',
+                    opacity: 1,
+                },
+                {
+                    layer: 'corredor_transbrasil',
+                    opacity: 1,
+                },
+                {
+                    layer: 'label-transoeste',
+                    opacity: 1,
+                },
+                {
+                    layer: 'label-transcarioca',
+                    opacity: 1,
+                },
+                {
+                    layer: 'label-transolimpica',
+                    opacity: 1,
+                },
+                {
+                    layer: 'label-transbrasil',
+                    opacity: 1,
+                },
+                {
+                    layer: 'label-transporte',
+                    opacity: 1,
+                },
+            ],
+            onChapterExit: [{
+                    layer: 'transporte-completo',
+                    opacity: 0,
+                },
+                {
+                    layer: 'corredor_transoeste',
+                    opacity: 0,
+                },
+                {
+                    layer: 'corredor_transcarioca',
+                    opacity: 0,
+                },
+                {
+                    layer: 'corredor_transolimpica',
+                    opacity: 0,
+                },
+                {
+                    layer: 'corredor_transbrasil',
+                    opacity: 0,
+                },
+                {
+                    layer: 'label-transoeste',
+                    opacity: 0,
+                },
+                {
+                    layer: 'label-transcarioca',
+                    opacity: 0,
+                },
+                {
+                    layer: 'label-transolimpica',
+                    opacity: 0,
+                },
+                {
+                    layer: 'label-transbrasil',
+                    opacity: 0,
+                },
+                {
+                    layer: 'label-transporte',
+                    opacity: 0,
+                },
+            ]
+        },
+        {
+            id: 'footer',
             // mapAnimation: 'easeTo', // flyTo, easeTo, seinao
             location: {
                 mobile: {
