@@ -390,6 +390,7 @@ var config = {
     theme: 'light',
     use3dTerrain: true,
     cameraViewWidthBreakpoint: 800,
+    mobileSizeMultiplier: 0.2,
     chapters: [
         // 2012 - 2019
         {
@@ -846,18 +847,22 @@ var config = {
             onChapterEnter: [{
                     layer: 'estacao_transoeste',
                     opacity: 1,
+                    style: {mobile: {'circle-radius': 2.1}}
                 },
                 {
                     layer: 'estacao_transcarioca',
                     opacity: 1,
+                    style: {mobile: {'circle-radius': 2.1}}
                 },
                 {
                     layer: 'estacao_transolimpica',
                     opacity: 1,
+                    style: {mobile: {'circle-radius': 2.1}}
                 },
                 {
                     layer: 'estacao_transbrasil',
                     opacity: 1,
+                    style: {mobile: {'circle-radius': 2}}
                 },
                 {
                     layer: 'label-crivela-estacoes',
@@ -919,6 +924,7 @@ var config = {
             onChapterEnter: [{
                     layer: 'crivela-transbrasil',
                     opacity: 1,
+                    style: {mobile: {'circle-radius': 2}}
                 },
                 {
                     layer: 'label-crivela-brasil',
@@ -927,6 +933,7 @@ var config = {
                 {
                     layer: 'estacao_transbrasil',
                     opacity: .4,
+                    style: {mobile: {'circle-radius': 2}}
                 },
             ],
             onChapterExit: [{
@@ -1028,6 +1035,7 @@ var config = {
             onChapterEnter: [{
                     layer: 'crivela-estacoes',
                     opacity: 1,
+                    
                 },
                 {
                     layer: 'label-recuperacao',
