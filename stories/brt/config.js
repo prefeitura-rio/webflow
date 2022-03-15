@@ -51,7 +51,7 @@ var labelsContainer = [{
             'textHaloColor': '#ffffff',
             'textHaloWidth': 50,
             'textHaloBlur': 50,
-            'coordinates': [-43.48157, -22.82394]
+            'coordinates': [-43.47697, -22.81148]
         }, ]
     },
     {
@@ -74,16 +74,16 @@ var labelsContainer = [{
                 'description': "TERMINAL INTERMODAL GENTILEZA",
                 'textColor': '#004b80',
                 'textSize': 25,
-                'textSizeMobile': 10,
+                'textSizeMobile': 12,
                 "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
                 'textHaloColor': '#ffffff',
                 'textHaloWidth': 50,
                 'textHaloBlur': 50,
-                'coordinates': [-43.21177, -22.90067]
+                'coordinates': [-43.21243, -22.90052]
             },
             {
                 'description': "RODOVIÁRIA",
-                'textColor': '#004b80',
+                'textColor': '#black',
                 'textSize': 25,
                 'textSizeMobile': 10,
                 "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
@@ -94,7 +94,7 @@ var labelsContainer = [{
             },
             {
                 'description': "TERMINAL DE ÔNIBUS",
-                'textColor': '#004b80',
+                'textColor': '#black',
                 'textSize': 25,
                 'textSizeMobile': 10,
                 "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
@@ -195,7 +195,7 @@ var labelsContainer = [{
             'textHaloWidth': 50,
             'textHaloBlur': 50,
             'textJustify': 'left',
-            'coordinates': [-43.26895, -22.94070]
+            'coordinates': [-43.27351, -22.91555]
         }, ]
     },
     {
@@ -254,7 +254,7 @@ var labelsContainer = [{
             'textHaloWidth': 50,
             'textHaloBlur': 50,
             'textJustify': 'left',
-            'coordinates': [-43.31747, -22.85460]
+            'coordinates': [-43.30493, -22.84526]
         }, ]
     },
     {
