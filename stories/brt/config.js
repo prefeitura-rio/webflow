@@ -1,11 +1,10 @@
-var labelsContainer = [
-    {
+var labelsContainer = [{
         'layerId': 'label-transoeste',
         'labels': [{
             'description': "TRANSOESTE",
             'textColor': '#299ed3',
             'textSize': 22,
-            'textSizeMobile': 12,
+            'textSizeMobile': 10,
             "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
             'textHaloColor': '#ffffff',
             'textHaloWidth': 50,
@@ -19,6 +18,7 @@ var labelsContainer = [
             'description': "TRANSBRASIL",
             'textColor': '#ffffff',
             'textSize': 22,
+            'textSizeMobile': 10,
             "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
             'textHaloColor': '#d1be1a',
             'textHaloWidth': 50,
@@ -32,6 +32,7 @@ var labelsContainer = [
             'description': "TRANSCARIOCA",
             'textColor': '#f9811f',
             'textSize': 22,
+            'textSizeMobile': 10,
             "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
             'textHaloColor': '#ffffff',
             'textHaloWidth': 50,
@@ -45,6 +46,7 @@ var labelsContainer = [
             'description': "TRANSOLIMPICA",
             'textColor': '#1db657',
             'textSize': 22,
+            'textSizeMobile': 10,
             "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
             'textHaloColor': '#ffffff',
             'textHaloWidth': 50,
@@ -58,6 +60,7 @@ var labelsContainer = [
             'description': "56 ESTAÇÕES FORAM ABANDONADAS",
             'textColor': '#000000',
             'textSize': 22,
+            'textSizeMobile': 10,
             "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
             'textHaloColor': '#ffffff',
             'textHaloWidth': 50,
@@ -67,58 +70,62 @@ var labelsContainer = [
     },
     {
         'layerId': 'label-intermodal',
-        'labels': [
+        'labels': [{
+                'description': "TERMINAL INTERMODAL GENTILEZA",
+                'textColor': '#004b80',
+                'textSize': 25,
+                'textSizeMobile': 10,
+                "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
+                'textHaloColor': '#ffffff',
+                'textHaloWidth': 50,
+                'textHaloBlur': 50,
+                'coordinates': [-43.21177, -22.90067]
+            },
             {
-            'description': "TERMINAL INTERMODAL GENTILEZA",
-            'textColor': '#004b80',
-            'textSize': 25,
-            "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
-            'textHaloColor': '#ffffff',
-            'textHaloWidth': 50,
-            'textHaloBlur': 50,
-            'coordinates': [-43.21177,-22.90067]
-        },
-        {
-            'description': "RODOVIÁRIA",
-            'textColor': '#004b80',
-            'textSize': 25,
-            "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
-            'textHaloColor': '#ffffff',
-            'textHaloWidth': 50,
-            'textHaloBlur': 50,
-            'coordinates': [-43.20907,-22.89846]
-        },
-        {
-            'description': "TERMINAL DE ÔNIBUS",
-            'textColor': '#004b80',
-            'textSize': 25,
-            "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
-            'textHaloColor': '#ffffff',
-            'textHaloWidth': 50,
-            'textHaloBlur': 50,
-            'coordinates': [-43.20768,-22.90137]
-        },
-        {
-            'description': "VLT",
-            'textColor': '#black',
-            'textSize': 25,
-            "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
-            'textHaloColor': '#ffffff',
-            'textHaloWidth': 50,
-            'textHaloBlur': 50,
-            'coordinates': [-43.20661,-22.89842]
-        },
-        {
-            'description': "TRANSBRASIL",
-            'textColor': '#ffffff',
-            'textSize': 25,
-            "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
-            'textHaloColor': '#d1be1a',
-            'textHaloWidth': 50,
-            'textHaloBlur': 50,
-            'coordinates': [-43.21288,-22.89673]
-        },
-     ]
+                'description': "RODOVIÁRIA",
+                'textColor': '#004b80',
+                'textSize': 25,
+                'textSizeMobile': 10,
+                "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
+                'textHaloColor': '#ffffff',
+                'textHaloWidth': 50,
+                'textHaloBlur': 50,
+                'coordinates': [-43.20907, -22.89846]
+            },
+            {
+                'description': "TERMINAL DE ÔNIBUS",
+                'textColor': '#004b80',
+                'textSize': 25,
+                'textSizeMobile': 10,
+                "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
+                'textHaloColor': '#ffffff',
+                'textHaloWidth': 50,
+                'textHaloBlur': 50,
+                'coordinates': [-43.20768, -22.90137]
+            },
+            {
+                'description': "VLT",
+                'textColor': '#black',
+                'textSize': 25,
+                'textSizeMobile': 10,
+                "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
+                'textHaloColor': '#ffffff',
+                'textHaloWidth': 50,
+                'textHaloBlur': 50,
+                'coordinates': [-43.20661, -22.89842]
+            },
+            {
+                'description': "TRANSBRASIL",
+                'textColor': '#ffffff',
+                'textSize': 25,
+                'textSizeMobile': 10,
+                "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
+                'textHaloColor': '#d1be1a',
+                'textHaloWidth': 50,
+                'textHaloBlur': 50,
+                'coordinates': [-43.21288, -22.89673]
+            },
+        ]
     },
     {
         'layerId': 'label-abertura-transoeste',
@@ -126,6 +133,7 @@ var labelsContainer = [
             'description': "PRIMEIRO CORREDOR BRT",
             'textColor': '#000000',
             'textSize': 17,
+            'textSizeMobile': 10,
             "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
             'textHaloColor': '#ffffff',
             'textHaloWidth': 50,
@@ -139,6 +147,7 @@ var labelsContainer = [
             'description': "TRAÇADO DO FUTURO CORREDOR TRANSBRASIL",
             'textColor': '#000000',
             'textSize': 17,
+            'textSizeMobile': 10,
             "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
             'textHaloColor': '#ffffff',
             'textHaloWidth': 50,
@@ -152,19 +161,21 @@ var labelsContainer = [
             'description': "TERCEIRO CORREDOR BRT",
             'textColor': '#000000',
             'textSize': 17,
+            'textSizeMobile': 10,
             "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
             'textHaloColor': '#ffffff',
             'textHaloWidth': 50,
             'textHaloBlur': 50,
             'coordinates': [-43.26200, -23.05568]
         }, ]
-    }, 
+    },
     {
         'layerId': 'label-abertura-transcarioca',
         'labels': [{
             'description': "SEGUNDO CORREDOR BRT",
             'textColor': '#000000',
             'textSize': 17,
+            'textSizeMobile': 10,
             "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
             'textHaloColor': '#ffffff',
             'textHaloWidth': 50,
@@ -178,6 +189,7 @@ var labelsContainer = [
             'description': "7 ESTAÇÕES REABERTAS NO PRIMEIRO SEMESTRE",
             'textColor': '#f9811f',
             'textSize': 22,
+            'textSizeMobile': 10,
             "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
             'textHaloColor': '#ffffff',
             'textHaloWidth': 50,
@@ -192,6 +204,7 @@ var labelsContainer = [
             'description': "CESÁRIO DE MELO VOLTA À OPERAR",
             'textColor': '#299ed3',
             'textSize': 22,
+            'textSizeMobile': 10,
             "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
             'textHaloColor': '#ffffff',
             'textHaloWidth': 50,
@@ -206,6 +219,7 @@ var labelsContainer = [
             'description': "TODAS AS ESTAÇÕES REABERTAS ANTES DO FINAL DE 2021",
             'textColor': '#299ed3',
             'textSize': 22,
+            'textSizeMobile': 10,
             "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
             'textHaloColor': '#ffffff',
             'textHaloWidth': 50,
@@ -219,6 +233,7 @@ var labelsContainer = [
             'description': "MALHA DE TRENS E METRÔ",
             'textColor': '#3b3b3b',
             'textSize': 22,
+            'textSizeMobile': 10,
             "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
             'textHaloColor': '#ffffff',
             'textHaloWidth': 50,
@@ -233,6 +248,7 @@ var labelsContainer = [
             'description': "CORREDOR TRANSBRASIL SERÁ FINALIZADO AINDA EM 2022",
             'textColor': '#ffffff',
             'textSize': 22,
+            'textSizeMobile': 10,
             "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
             'textHaloColor': '#d1be1a',
             'textHaloWidth': 50,
@@ -247,6 +263,7 @@ var labelsContainer = [
             'description': "OBRAS DA TRANSBRASIL NÃO AVANÇARAM",
             'textColor': '#d1be1a',
             'textSize': 22,
+            'textSizeMobile': 10,
             "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
             'textHaloColor': 'white',
             'textHaloWidth': 50,
@@ -261,6 +278,7 @@ var labelsContainer = [
             'description': "ESTAÇÕES EM FUNCIONAMENTO E PLANEJADAS EM 2016",
             'textColor': 'black',
             'textSize': 22,
+            'textSizeMobile': 10,
             "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
             'textHaloColor': 'white',
             'textHaloWidth': 50,
@@ -275,6 +293,7 @@ var labelsContainer = [
             'description': "ESTAÇÕES EM FUNCIONAMENTO NO COMEÇO DE 2021",
             'textColor': '#000000',
             'textSize': 22,
+            'textSizeMobile': 10,
             "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
             'textHaloColor': 'white',
             'textHaloWidth': 50,
@@ -289,6 +308,7 @@ var labelsContainer = [
             'description': "FUTURA MALHA DE TRANSPORTES DE ALTA CAPACIDADE",
             'textColor': '#000000',
             'textSize': 22,
+            'textSizeMobile': 10,
             "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
             'textHaloColor': 'white',
             'textHaloWidth': 50,
@@ -299,63 +319,67 @@ var labelsContainer = [
     },
     {
         'layerId': 'label-comparacao',
-        'labels': [
+        'labels': [{
+                'description': "ORIGEM:\nJARDIM OCEÂNICO",
+                'textColor': '#000000',
+                'textSize': 18,
+                'textSizeMobile': 10,
+                "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
+                'textHaloColor': 'white',
+                'textHaloWidth': 50,
+                'textHaloBlur': 50,
+                'textJustify': 'left',
+                'coordinates': [-43.31735, -23.00785]
+            },
             {
-            'description': "ORIGEM:\nJARDIM OCEÂNICO",
-            'textColor': '#000000',
-            'textSize': 18,
-            "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
-            'textHaloColor': 'white',
-            'textHaloWidth': 50,
-            'textHaloBlur': 50,
-            'textJustify': 'left',
-            'coordinates': [-43.31735,-23.00785]
-        },
-        {
-            'description': "DESTINO: TANQUE",
-            'textColor': '#000000',
-            'textSize': 18,
-            "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
-            'textHaloColor': 'white',
-            'textHaloWidth': 50,
-            'textHaloBlur': 50,
-            'textJustify': 'left',
-            'coordinates': [-43.36046,-22.90838]
-        },
-        {
-            'description': "75 MINUTOS DE CARRO",
-            'textColor': '#f01919',
-            'textSize': 18,
-            "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
-            'textHaloColor': 'white',
-            'textHaloWidth': 50,
-            'textHaloBlur': 50,
-            'textJustify': 'left', 
-            'coordinates': [-43.34011,-22.95090]
-        },
-        {
-            'description': "65 MINUTOS\nDE BRT",
-            'textColor': '#299cd1',
-            'textSize': 18,
-            "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
-            'textHaloColor': 'white',
-            'textHaloWidth': 50,
-            'textHaloBlur': 50,
-            'textJustify': 'left',
-            'coordinates': [-43.38797,-22.93684]
-        },
-        {
-            'description': "BRT É MAIS RÁPIDO QUE CARRO NA HORA DO RUSH",
-            'textColor': '#299cd1',
-            'textSize': 22,
-            "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
-            'textHaloColor': 'white',
-            'textHaloWidth': 50,
-            'textHaloBlur': 50,
-            'textJustify': 'left',
-            'coordinates': [-43.32817,-22.92523]
-        },
-     ]
+                'description': "DESTINO: TANQUE",
+                'textColor': '#000000',
+                'textSize': 18,
+                'textSizeMobile': 10,
+                "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
+                'textHaloColor': 'white',
+                'textHaloWidth': 50,
+                'textHaloBlur': 50,
+                'textJustify': 'left',
+                'coordinates': [-43.36046, -22.90838]
+            },
+            {
+                'description': "75 MINUTOS DE CARRO",
+                'textColor': '#f01919',
+                'textSize': 18,
+                'textSizeMobile': 10,
+                "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
+                'textHaloColor': 'white',
+                'textHaloWidth': 50,
+                'textHaloBlur': 50,
+                'textJustify': 'left',
+                'coordinates': [-43.34011, -22.95090]
+            },
+            {
+                'description': "65 MINUTOS\nDE BRT",
+                'textColor': '#299cd1',
+                'textSize': 18,
+                'textSizeMobile': 10,
+                "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
+                'textHaloColor': 'white',
+                'textHaloWidth': 50,
+                'textHaloBlur': 50,
+                'textJustify': 'left',
+                'coordinates': [-43.38797, -22.93684]
+            },
+            {
+                'description': "BRT É MAIS RÁPIDO QUE CARRO NA HORA DO RUSH",
+                'textColor': '#299cd1',
+                'textSize': 22,
+                'textSizeMobile': 10,
+                "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
+                'textHaloColor': 'white',
+                'textHaloWidth': 50,
+                'textHaloBlur': 50,
+                'textJustify': 'left',
+                'coordinates': [-43.32817, -22.92523]
+            },
+        ]
     },
 ]
 
@@ -840,8 +864,7 @@ var config = {
                     opacity: 1,
                 },
             ],
-            onChapterExit: [
-                {
+            onChapterExit: [{
                     layer: 'estacao_transoeste',
                     opacity: 0,
                 },
@@ -1142,23 +1165,23 @@ var config = {
             mapAnimation: 'flyTo',
             // callback: 'newContainer', 
             onChapterEnter: [{
-                layer: 'retomada-3',
-                opacity: 1,
-            },
-            {
-                layer: 'label-reabertura2',
-                opacity: 1,
-            },
-        ],
+                    layer: 'retomada-3',
+                    opacity: 1,
+                },
+                {
+                    layer: 'label-reabertura2',
+                    opacity: 1,
+                },
+            ],
             onChapterExit: [{
-                layer: 'retomada-3',
-                opacity: 0,
-            }, 
-            {
-                layer: 'label-reabertura2',
-                opacity: 0,
-            },
-        ]
+                    layer: 'retomada-3',
+                    opacity: 0,
+                },
+                {
+                    layer: 'label-reabertura2',
+                    opacity: 0,
+                },
+            ]
         },
         // 2022 - Futuro
         {
@@ -1191,8 +1214,7 @@ var config = {
 
             mapAnimation: 'flyTo',
             // callback: 'newContainer', 
-            onChapterEnter: [
-                {
+            onChapterEnter: [{
                     layer: 'corredor_transbrasil',
                     opacity: 1,
                 },
@@ -1205,8 +1227,7 @@ var config = {
                     opacity: 0.2,
                 },
             ],
-            onChapterExit: [
-                {
+            onChapterExit: [{
                     layer: 'corredor_transbrasil',
                     opacity: 0,
                 },
@@ -1226,8 +1247,9 @@ var config = {
             location: {
                 mobile: {
                     center: {
-                        lon:-43.20258,
-                        lat:-22.89941},
+                        lon: -43.20258,
+                        lat: -22.89941
+                    },
                     zoom: 8.40,
                     pitch: 0.00,
                     bearing: -2.42,
@@ -1236,8 +1258,9 @@ var config = {
                 },
                 desktop: {
                     center: {
-                        lon:-43.20671,
-                        lat:-22.90025},
+                        lon: -43.20671,
+                        lat: -22.90025
+                    },
                     zoom: 16.42,
                     pitch: 45.00,
                     bearing: 0.00,
@@ -1265,8 +1288,7 @@ var config = {
                     opacity: 1,
                 },
             ],
-            onChapterExit: [
-                {
+            onChapterExit: [{
                     layer: 'corredor_transbrasil',
                     opacity: 0,
                 },
