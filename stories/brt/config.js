@@ -402,7 +402,7 @@ var config = {
                         lon: -43.45268,
                         lat: -22.93530
                     },
-                    zoom: 8.55,
+                    zoom: 8.65,
                     pitch: 0.00,
                     bearing: 0.00,
                     speed: 1,
@@ -470,12 +470,9 @@ var config = {
             },
             mapAnimation: 'flyTo',
             // callback: 'newContainer', 
-            onChapterEnter: [{
-                    layer: 'transporte',
-                    opacity: 1,
-                },
+            onChapterEnter: [
                 {
-                    layer: 'corredor_transoeste',
+                    layer: 'inicio1',
                     opacity: 1,
                 },
                 {
@@ -487,12 +484,9 @@ var config = {
                     opacity: 1,
                 },
             ],
-            onChapterExit: [{
-                    layer: 'transporte',
-                    opacity: 0,
-                },
+            onChapterExit: [
                 {
-                    layer: 'corredor_transoeste',
+                    layer: 'inicio1',
                     opacity: 0,
                 },
                 {
@@ -534,10 +528,7 @@ var config = {
             },
             mapAnimation: 'flyTo',
             // callback: 'newContainer', 
-            onChapterEnter: [{
-                    layer: 'transporte',
-                    opacity: 1,
-                },
+            onChapterEnter: [
                 {
                     layer: 'inicio2',
                     opacity: 1,
@@ -555,10 +546,7 @@ var config = {
                     opacity: 1,
                 },
             ],
-            onChapterExit: [{
-                    layer: 'transporte',
-                    opacity: 0,
-                },
+            onChapterExit: [
                 {
                     layer: 'inicio2',
                     opacity: 0,
@@ -607,10 +595,7 @@ var config = {
 
             mapAnimation: 'flyTo',
             // callback: 'newContainer', 
-            onChapterEnter: [{
-                    layer: 'transporte',
-                    opacity: 1,
-                },
+            onChapterEnter: [
                 {
                     layer: 'inicio3',
                     opacity: 1,
@@ -632,10 +617,7 @@ var config = {
                     opacity: 1,
                 },
             ],
-            onChapterExit: [{
-                    layer: 'transporte',
-                    opacity: 0,
-                },
+            onChapterExit: [
                 {
                     layer: 'inicio3',
                     opacity: 0,
@@ -688,10 +670,7 @@ var config = {
 
             mapAnimation: 'flyTo',
             // callback: 'newContainer', 
-            onChapterEnter: [{
-                    layer: 'transporte',
-                    opacity: 1,
-                },
+            onChapterEnter: [
                 {
                     layer: 'label-transoeste',
                     opacity: 1,
@@ -717,10 +696,7 @@ var config = {
                     opacity: 1,
                 },
             ],
-            onChapterExit: [{
-                    layer: 'transporte',
-                    opacity: 0,
-                },
+            onChapterExit: [
                 {
                     layer: 'label-transoeste',
                     opacity: 0,
