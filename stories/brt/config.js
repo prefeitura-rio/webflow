@@ -1695,24 +1695,9 @@ var config = {
 
             mapAnimation: 'flyTo',
             // callback: 'newContainer', 
-            onChapterEnter: [{
-                    layer: 'transporte-completo',
-                    opacity: 1,
-                },
+            onChapterEnter: [
                 {
-                    layer: 'corredor_transoeste',
-                    opacity: 1,
-                },
-                {
-                    layer: 'corredor_transcarioca',
-                    opacity: 1,
-                },
-                {
-                    layer: 'corredor_transolimpica',
-                    opacity: 1,
-                },
-                {
-                    layer: 'corredor_transbrasil',
+                    layer: 'final',
                     opacity: 1,
                 },
                 {
@@ -1736,26 +1721,11 @@ var config = {
                     opacity: 1,
                 },
             ],
-            onChapterExit: [{
-                    layer: 'transporte-completo',
-                    opacity: 0,
-                },
+            onChapterExit: [
                 {
-                    layer: 'corredor_transoeste',
+                    layer: 'final',
                     opacity: 0,
-                },
-                {
-                    layer: 'corredor_transcarioca',
-                    opacity: 0,
-                },
-                {
-                    layer: 'corredor_transolimpica',
-                    opacity: 0,
-                },
-                {
-                    layer: 'corredor_transbrasil',
-                    opacity: 0,
-                },
+                }
                 {
                     layer: 'label-transoeste',
                     opacity: 0,
