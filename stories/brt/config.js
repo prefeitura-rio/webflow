@@ -1701,7 +1701,7 @@ var config = {
                 {
                     layer: 'final',
                     opacity: 0,
-                }
+                },
                 {
                     layer: 'label-transoeste',
                     opacity: 0,
