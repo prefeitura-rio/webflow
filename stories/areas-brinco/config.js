@@ -394,7 +394,7 @@ var config = {
     chapters: [
         // 2012 - 2019
         {
-            id: 'inicio1',
+            id: 'header',
             // mapAnimation: 'easeTo', // flyTo, easeTo, seinao
             location: {
                 mobile: {
@@ -410,10 +410,10 @@ var config = {
                 },
                 desktop: {
                     center: {
-                        lon: -43.25942,
-                        lat: -22.92894
+                        lon: -43.41078,
+                        lat: -22.92387
                     },
-                    zoom: 9.93,
+                    zoom: 10.38,
                     pitch: 0.00,
                     bearing: 0.00,
                     speed: 1,
