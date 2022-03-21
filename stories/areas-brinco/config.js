@@ -385,8 +385,8 @@ var labelsContainer = [{
 
 
 var config = {
-    style: 'mapbox://styles/escritoriodedados/cl0o1yvxn001015mtsysibtq6', // original
-    accessToken: 'pk.eyJ1IjoiZXNjcml0b3Jpb2RlZGFkb3MiLCJhIjoiY2t5bGx6Z2I1MG5nbzJwcGUyeHFxcGs1bCJ9.sAUs1LRcb3R4l-6Dbhk8Pw',
+    style: 'mapbox://styles/escritoriodedados/cl0vi8vmj001a14pmorzvxbo2', // original
+    accessToken: 'pk.eyJ1IjoiZXNjcml0b3Jpb2RlZGFkb3MiLCJhIjoiY2t3bWdmcHpjMmJ2cTJucWJ4MGQ1Mm1kbiJ9.4hHJX-1pSevYoBbja7Pq4w',
     theme: 'light',
     use3dTerrain: true,
     cameraViewWidthBreakpoint: 800,
@@ -470,8 +470,7 @@ var config = {
             },
             mapAnimation: 'flyTo',
             // callback: 'newContainer', 
-            onChapterEnter: [
-                {
+            onChapterEnter: [{
                     layer: 'inicio1',
                     opacity: 1,
                 },
@@ -484,8 +483,7 @@ var config = {
                     opacity: 1,
                 },
             ],
-            onChapterExit: [
-                {
+            onChapterExit: [{
                     layer: 'inicio1',
                     opacity: 0,
                 },
@@ -528,8 +526,7 @@ var config = {
             },
             mapAnimation: 'flyTo',
             // callback: 'newContainer', 
-            onChapterEnter: [
-                {
+            onChapterEnter: [{
                     layer: 'inicio2',
                     opacity: 1,
                 },
@@ -546,8 +543,7 @@ var config = {
                     opacity: 1,
                 },
             ],
-            onChapterExit: [
-                {
+            onChapterExit: [{
                     layer: 'inicio2',
                     opacity: 0,
                 },
@@ -595,8 +591,7 @@ var config = {
 
             mapAnimation: 'flyTo',
             // callback: 'newContainer', 
-            onChapterEnter: [
-                {
+            onChapterEnter: [{
                     layer: 'inicio3',
                     opacity: 1,
                 },
@@ -617,8 +612,7 @@ var config = {
                     opacity: 1,
                 },
             ],
-            onChapterExit: [
-                {
+            onChapterExit: [{
                     layer: 'inicio3',
                     opacity: 0,
                 },
@@ -670,8 +664,7 @@ var config = {
 
             mapAnimation: 'flyTo',
             // callback: 'newContainer', 
-            onChapterEnter: [
-                {
+            onChapterEnter: [{
                     layer: 'label-transoeste',
                     opacity: 1,
                 },
@@ -696,8 +689,7 @@ var config = {
                     opacity: 1,
                 },
             ],
-            onChapterExit: [
-                {
+            onChapterExit: [{
                     layer: 'label-transoeste',
                     opacity: 0,
                 },
@@ -1671,8 +1663,7 @@ var config = {
 
             mapAnimation: 'flyTo',
             // callback: 'newContainer', 
-            onChapterEnter: [
-                {
+            onChapterEnter: [{
                     layer: 'final',
                     opacity: 1,
                 },
@@ -1697,8 +1688,7 @@ var config = {
                     opacity: 1,
                 },
             ],
-            onChapterExit: [
-                {
+            onChapterExit: [{
                     layer: 'final',
                     opacity: 0,
                 },
