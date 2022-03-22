@@ -287,7 +287,7 @@
                 ]
             },
             {
-                id: 'cheio2',
+                id: 'comeco1',
                 // mapAnimation: 'easeTo', // flyTo, easeTo, seinao
                 location: {
                     mobile: {
@@ -303,10 +303,10 @@
                     },
                     desktop: {
                         center: {
-                            lon: -43.41078,
-                            lat: -22.92387
+                            lon: -43.24500,
+                            lat: -22.85943
                         },
-                        zoom: 10.38,
+                        zoom: 11.55,
                         pitch: 0.00,
                         bearing: 0.00,
                         speed: 1,
@@ -315,8 +315,62 @@
                 },
                 mapAnimation: 'flyTo',
                 // callback: 'newContainer', 
-                onChapterEnter: [],
-                onChapterExit: []
+                onChapterEnter: [{
+                    layer: 'vias prioritárias',
+                    opacity: 1,
+                }, ],
+                onChapterExit: [{
+                    layer: 'vias prioritárias',
+                    opacity: 0,
+                }, ]
+            },
+            {
+                id: 'comeco2',
+                // mapAnimation: 'easeTo', // flyTo, easeTo, seinao
+                location: {
+                    mobile: {
+                        center: {
+                            lon: -43.45268,
+                            lat: -22.93530
+                        },
+                        zoom: 8.55,
+                        pitch: 0.00,
+                        bearing: 0.00,
+                        speed: 1,
+                        curve: 1
+                    },
+                    desktop: {
+                        center: {
+                            lon: -43.24500,
+                            lat: -22.85943
+                        },
+                        zoom: 11.55,
+                        pitch: 0.00,
+                        bearing: 0.00,
+                        speed: 1,
+                        curve: 1
+                    }
+                },
+                mapAnimation: 'flyTo',
+                // callback: 'newContainer', 
+                onChapterEnter: [{
+                        layer: 'vias prioritárias',
+                        opacity: 1,
+                    },
+                    {
+                        layer: 'bairroszn',
+                        opacity: 1,
+                    },
+                ],
+                onChapterExit: [{
+                        layer: 'vias prioritárias',
+                        opacity: 0,
+                    },
+                    {
+                        layer: 'bairroszn',
+                        opacity: 0,
+                    },
+                ]
             },
             {
                 id: 'footer',
