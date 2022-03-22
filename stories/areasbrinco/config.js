@@ -23,7 +23,7 @@
                 'textHaloColor': '#9f4141',
                 'textHaloWidth': 50,
                 'textHaloBlur': 50,
-                'coordinates': [-43.19971, -22.84133]
+                'coordinates': [-43.38232, -22.89807]
             }, ]
         },
     ]
@@ -87,10 +87,10 @@
                     },
                     desktop: {
                         center: {
-                            lon: -43.41078,
-                            lat: -22.92387
+                            lon: -43.19469,
+                            lat: -22.90916
                         },
-                        zoom: 10.38,
+                        zoom: 10.02,
                         pitch: 0.00,
                         bearing: 0.00,
                         speed: 1,
@@ -119,10 +119,10 @@
                     },
                     desktop: {
                         center: {
-                            lon: -43.41078,
-                            lat: -22.92387
+                            lon: -43.19469,
+                            lat: -22.90916
                         },
-                        zoom: 10.38,
+                        zoom: 10.02,
                         pitch: 0.00,
                         bearing: 0.00,
                         speed: 1,
@@ -151,10 +151,10 @@
                     },
                     desktop: {
                         center: {
-                            lon: -43.41078,
-                            lat: -22.92387
+                            lon: -43.19469,
+                            lat: -22.90916
                         },
-                        zoom: 10.38,
+                        zoom: 10.02,
                         pitch: 0.00,
                         bearing: 0.00,
                         speed: 1,
@@ -199,10 +199,10 @@
                     },
                     desktop: {
                         center: {
-                            lon: -43.30373,
-                            lat: -22.86563
+                            lon: -43.23307,
+                            lat: -22.86589
                         },
-                        zoom: 11.86,
+                        zoom: 11.55,
                         pitch: 0.00,
                         bearing: 0.00,
                         speed: 1,
@@ -255,10 +255,10 @@
                     },
                     desktop: {
                         center: {
-                            lon: -43.30373,
-                            lat: -22.86563
+                            lon: -43.23307,
+                            lat: -22.86589
                         },
-                        zoom: 11.86,
+                        zoom: 11.55,
                         pitch: 0.00,
                         bearing: 0.00,
                         speed: 1,
@@ -269,7 +269,7 @@
                 // callback: 'newContainer', 
                 onChapterEnter: [{
                         layer: 'regioes-administrativas',
-                        opacity: 1,
+                        opacity: .3,
                     },
                     {
                         layer: 'dados-pipocando-zn',
