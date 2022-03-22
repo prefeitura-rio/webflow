@@ -385,7 +385,7 @@ var labelsContainer = [{
 
 
 var config = {
-    style: 'mapbox://styles/escritoriodedados/cl0vi8vmj001a14pmorzvxbo2', // original
+    style: 'mapbox://styles/escritoriodedados/cl12caadq000m15mf0plu1gdw', // original
     accessToken: 'pk.eyJ1IjoiZXNjcml0b3Jpb2RlZGFkb3MiLCJhIjoiY2t3bWdmcHpjMmJ2cTJucWJ4MGQ1Mm1kbiJ9.4hHJX-1pSevYoBbja7Pq4w',
     theme: 'light',
     use3dTerrain: true,
