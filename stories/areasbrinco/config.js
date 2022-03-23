@@ -303,10 +303,10 @@
                     },
                     desktop: {
                         center: {
-                            lon: -43.24500,
-                            lat: -22.85943
+                            lon: -43.22801,
+                            lat: -22.86027
                         },
-                        zoom: 11.55,
+                        zoom: 11.20,
                         pitch: 0.00,
                         bearing: 0.00,
                         speed: 1,
@@ -316,11 +316,11 @@
                 mapAnimation: 'flyTo',
                 // callback: 'newContainer', 
                 onChapterEnter: [{
-                    layer: 'vias prioritárias',
+                    layer: 'vias-prioritárias',
                     opacity: 1,
                 }, ],
                 onChapterExit: [{
-                    layer: 'vias prioritárias',
+                    layer: 'vias-prioritárias',
                     opacity: 0,
                 }, ]
             },
@@ -341,10 +341,10 @@
                     },
                     desktop: {
                         center: {
-                            lon: -43.24500,
-                            lat: -22.85943
+                            lon: -43.22801,
+                            lat: -22.86027
                         },
-                        zoom: 11.55,
+                        zoom: 11.20,
                         pitch: 0.00,
                         bearing: 0.00,
                         speed: 1,
@@ -354,20 +354,20 @@
                 mapAnimation: 'flyTo',
                 // callback: 'newContainer', 
                 onChapterEnter: [{
-                        layer: 'vias prioritárias',
+                        layer: 'vias-prioritárias',
                         opacity: 1,
                     },
                     {
-                        layer: 'bairroszn',
-                        opacity: 1,
+                        layer: 'bairros-zn',
+                        opacity: .7,
                     },
                 ],
                 onChapterExit: [{
-                        layer: 'vias prioritárias',
+                        layer: 'vias-prioritárias',
                         opacity: 0,
                     },
                     {
-                        layer: 'bairroszn',
+                        layer: 'bairros-zn',
                         opacity: 0,
                     },
                 ]
