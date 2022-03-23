@@ -87,10 +87,10 @@
                     },
                     desktop: {
                         center: {
-                            lon: -43.19469,
-                            lat: -22.90916
+                            lon: -43.24080,
+                            lat: -22.90578
                         },
-                        zoom: 10.02,
+                        zoom: 9.88,
                         pitch: 0.00,
                         bearing: 0.00,
                         speed: 1,
@@ -119,10 +119,10 @@
                     },
                     desktop: {
                         center: {
-                            lon: -43.19469,
-                            lat: -22.90916
+                            lon: -43.24080,
+                            lat: -22.90578
                         },
-                        zoom: 10.02,
+                        zoom: 9.88,
                         pitch: 0.00,
                         bearing: 0.00,
                         speed: 1,
@@ -151,10 +151,10 @@
                     },
                     desktop: {
                         center: {
-                            lon: -43.19469,
-                            lat: -22.90916
+                            lon: -43.24080,
+                            lat: -22.90578
                         },
-                        zoom: 10.02,
+                        zoom: 9.88,
                         pitch: 0.00,
                         bearing: 0.00,
                         speed: 1,
@@ -199,10 +199,10 @@
                     },
                     desktop: {
                         center: {
-                            lon: -43.24500,
-                            lat: -22.85943
+                            lon: -43.22801,
+                            lat: -22.86027
                         },
-                        zoom: 11.55,
+                        zoom: 11.20,
                         pitch: 0.00,
                         bearing: 0.00,
                         speed: 1,
@@ -255,10 +255,10 @@
                     },
                     desktop: {
                         center: {
-                            lon: -43.24500,
-                            lat: -22.85943
+                            lon: -43.22801,
+                            lat: -22.86027
                         },
-                        zoom: 11.55,
+                        zoom: 11.20,
                         pitch: 0.00,
                         bearing: 0.00,
                         speed: 1,
