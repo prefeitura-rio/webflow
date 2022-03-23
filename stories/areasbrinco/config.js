@@ -316,11 +316,11 @@
                 mapAnimation: 'flyTo',
                 // callback: 'newContainer', 
                 onChapterEnter: [{
-                    layer: 'vias-prioritárias',
+                    layer: 'vias-prioritarias',
                     opacity: 1,
                 }, ],
                 onChapterExit: [{
-                    layer: 'vias-prioritárias',
+                    layer: 'vias-prioritarias',
                     opacity: 0,
                 }, ]
             },
@@ -354,7 +354,7 @@
                 mapAnimation: 'flyTo',
                 // callback: 'newContainer', 
                 onChapterEnter: [{
-                        layer: 'vias-prioritárias',
+                        layer: 'vias-prioritarias',
                         opacity: 1,
                     },
                     {
@@ -363,7 +363,7 @@
                     },
                 ],
                 onChapterExit: [{
-                        layer: 'vias-prioritárias',
+                        layer: 'vias-prioritarias',
                         opacity: 0,
                     },
                     {
@@ -371,6 +371,176 @@
                         opacity: 0,
                     },
                 ]
+            },
+            {
+                id: 'transporte1',
+                // mapAnimation: 'easeTo', // flyTo, easeTo, seinao
+                location: {
+                    mobile: {
+                        center: {
+                            lon: -43.45268,
+                            lat: -22.93530
+                        },
+                        zoom: 8.55,
+                        pitch: 0.00,
+                        bearing: 0.00,
+                        speed: 1,
+                        curve: 1
+                    },
+                    desktop: {
+                        center: {
+                            lon: -43.22801,
+                            lat: -22.86027
+                        },
+                        zoom: 11.20,
+                        pitch: 0.00,
+                        bearing: 0.00,
+                        speed: 1,
+                        curve: 1
+                    }
+                },
+                mapAnimation: 'flyTo',
+                // callback: 'newContainer', 
+                onChapterEnter: [{
+                        layer: 'vias-prioritarias',
+                        opacity: 1,
+                    },
+                    {
+                        layer: 'linhas',
+                        opacity: 1,
+                    },
+                    {
+                        layer: 'estacoes',
+                        opacity: 1,
+                    },
+                ],
+                onChapterExit: [{
+                        layer: 'vias-prioritarias',
+                        opacity: 0,
+                    },
+                    {
+                        layer: 'linhas',
+                        opacity: 0,
+                    },
+                    {
+                        layer: 'estacoes',
+                        opacity: 0,
+                    },
+                ]
+            },
+            {
+                id: 'transporte2',
+                // mapAnimation: 'easeTo', // flyTo, easeTo, seinao
+                location: {
+                    mobile: {
+                        center: {
+                            lon: -43.45268,
+                            lat: -22.93530
+                        },
+                        zoom: 8.55,
+                        pitch: 0.00,
+                        bearing: 0.00,
+                        speed: 1,
+                        curve: 1
+                    },
+                    desktop: {
+                        center: {
+                            lon: -43.22801,
+                            lat: -22.86027
+                        },
+                        zoom: 11.20,
+                        pitch: 0.00,
+                        bearing: 0.00,
+                        speed: 1,
+                        curve: 1
+                    }
+                },
+                mapAnimation: 'flyTo',
+                // callback: 'newContainer', 
+                onChapterEnter: [{
+                    layer: 'vias-prioritarias',
+                    opacity: 1,
+                }, ],
+                onChapterExit: [{
+                    layer: 'vias-prioritarias',
+                    opacity: 0,
+                }, ]
+            },
+            {
+                id: 'asfalto',
+                // mapAnimation: 'easeTo', // flyTo, easeTo, seinao
+                location: {
+                    mobile: {
+                        center: {
+                            lon: -43.45268,
+                            lat: -22.93530
+                        },
+                        zoom: 8.55,
+                        pitch: 0.00,
+                        bearing: 0.00,
+                        speed: 1,
+                        curve: 1
+                    },
+                    desktop: {
+                        center: {
+                            lon: -43.22801,
+                            lat: -22.86027
+                        },
+                        zoom: 11.20,
+                        pitch: 0.00,
+                        bearing: 0.00,
+                        speed: 1,
+                        curve: 1
+                    }
+                },
+                mapAnimation: 'flyTo',
+                // callback: 'newContainer', 
+                onChapterEnter: [{
+                    layer: 'asfalto',
+                    opacity: 1,
+                }, ],
+                onChapterExit: [{
+                    layer: 'asfalto',
+                    opacity: 0,
+                }, ]
+            },
+            {
+                id: 'luz',
+                // mapAnimation: 'easeTo', // flyTo, easeTo, seinao
+                location: {
+                    mobile: {
+                        center: {
+                            lon: -43.45268,
+                            lat: -22.93530
+                        },
+                        zoom: 8.55,
+                        pitch: 0.00,
+                        bearing: 0.00,
+                        speed: 1,
+                        curve: 1
+                    },
+                    desktop: {
+                        center: {
+                            lon: -43.22801,
+                            lat: -22.86027
+                        },
+                        zoom: 11.20,
+                        pitch: 0.00,
+                        bearing: 0.00,
+                        speed: 1,
+                        curve: 1
+                    }
+                },
+                mapAnimation: 'flyTo',
+                // callback: 'newContainer', 
+                onChapterEnter: [{
+                    layer: 'luz',
+                    opacity: 1,
+                }, ],
+                onChapterExit: [{
+                    layer: 'luz',
+                    opacity: 0,
+                }, ]
             },
             {
                 id: 'footer',
@@ -403,55 +573,13 @@
                 mapAnimation: 'flyTo',
                 // callback: 'newContainer', 
                 onChapterEnter: [{
-                        layer: 'final',
-                        opacity: 1,
-                    },
-                    {
-                        layer: 'label-transoeste',
-                        opacity: 1,
-                    },
-                    {
-                        layer: 'label-transcarioca',
-                        opacity: 1,
-                    },
-                    {
-                        layer: 'label-transolimpica',
-                        opacity: 1,
-                    },
-                    {
-                        layer: 'label-transbrasil',
-                        opacity: 1,
-                    },
-                    {
-                        layer: 'label-transporte',
-                        opacity: 1,
-                    },
-                ],
+                    layer: 'final',
+                    opacity: 1,
+                }, ],
                 onChapterExit: [{
-                        layer: 'final',
-                        opacity: 0,
-                    },
-                    {
-                        layer: 'label-transoeste',
-                        opacity: 0,
-                    },
-                    {
-                        layer: 'label-transcarioca',
-                        opacity: 0,
-                    },
-                    {
-                        layer: 'label-transolimpica',
-                        opacity: 0,
-                    },
-                    {
-                        layer: 'label-transbrasil',
-                        opacity: 0,
-                    },
-                    {
-                        layer: 'label-transporte',
-                        opacity: 0,
-                    },
-                ]
+                    layer: 'final',
+                    opacity: 0,
+                }, ]
             },
         ]
     };
