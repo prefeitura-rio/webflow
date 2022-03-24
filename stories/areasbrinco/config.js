@@ -671,86 +671,6 @@
                 }, ]
             },
             {
-                id: 'equipamentos1',
-                // mapAnimation: 'easeTo', // flyTo, easeTo, seinao
-                location: {
-                    mobile: {
-                        center: {
-                            lon: -43.45268,
-                            lat: -22.93530
-                        },
-                        zoom: 8.55,
-                        pitch: 0.00,
-                        bearing: 0.00,
-                        speed: 1,
-                        curve: 1
-                    },
-                    desktop: {
-                        center: {
-                            lon: -43.22801,
-                            lat: -22.86027
-                        },
-                        zoom: 11.20,
-                        pitch: 0.00,
-                        bearing: 0.00,
-                        speed: 1,
-                        curve: 1
-                    }
-                },
-                mapAnimation: 'flyTo',
-                // callback: 'newContainer', 
-                onChapterEnter: [],
-                onChapterExit: []
-            },
-            {
-                id: 'equipamentos2',
-                // mapAnimation: 'easeTo', // flyTo, easeTo, seinao
-                location: {
-                    mobile: {
-                        center: {
-                            lon: -43.45268,
-                            lat: -22.93530
-                        },
-                        zoom: 8.55,
-                        pitch: 0.00,
-                        bearing: 0.00,
-                        speed: 1,
-                        curve: 1
-                    },
-                    desktop: {
-                        center: {
-                            lon: -43.22801,
-                            lat: -22.86027
-                        },
-                        zoom: 11.20,
-                        pitch: 0.00,
-                        bearing: 0.00,
-                        speed: 1,
-                        curve: 1
-                    }
-                },
-                mapAnimation: 'flyTo',
-                // callback: 'newContainer', 
-                onChapterEnter: [{
-                        layer: 'asfalto',
-                        opacity: 1,
-                    },
-                    {
-                        layer: 'label-asfalto',
-                        opacity: 1,
-                    },
-                ],
-                onChapterExit: [{
-                        layer: 'asfalto',
-                        opacity: 0,
-                    },
-                    {
-                        layer: 'label-asfalto',
-                        opacity: 0,
-                    },
-                ]
-            },
-            {
                 id: 'equipamentos3',
                 // mapAnimation: 'easeTo', // flyTo, easeTo, seinao
                 location: {
@@ -780,6 +700,54 @@
                 mapAnimation: 'flyTo',
                 // callback: 'newContainer', 
                 onChapterEnter: [{
+                        layer: 'asfalto',
+                        opacity: 1,
+                    },
+                    {
+                        layer: 'label-asfalto',
+                        opacity: 1,
+                    },
+                ],
+                onChapterExit: [{
+                        layer: 'asfalto',
+                        opacity: 0,
+                    },
+                    {
+                        layer: 'label-asfalto',
+                        opacity: 0,
+                    },
+                ]
+            },
+            {
+                id: 'equipamentos4',
+                // mapAnimation: 'easeTo', // flyTo, easeTo, seinao
+                location: {
+                    mobile: {
+                        center: {
+                            lon: -43.45268,
+                            lat: -22.93530
+                        },
+                        zoom: 8.55,
+                        pitch: 0.00,
+                        bearing: 0.00,
+                        speed: 1,
+                        curve: 1
+                    },
+                    desktop: {
+                        center: {
+                            lon: -43.22801,
+                            lat: -22.86027
+                        },
+                        zoom: 11.20,
+                        pitch: 0.00,
+                        bearing: 0.00,
+                        speed: 1,
+                        curve: 1
+                    }
+                },
+                mapAnimation: 'flyTo',
+                // callback: 'newContainer', 
+                onChapterEnter: [{
                         layer: 'led',
                         opacity: 1,
                     },
@@ -799,7 +767,7 @@
                 ]
             },
             {
-                id: 'equipamentos4',
+                id: 'equipamentos5',
                 // mapAnimation: 'easeTo', // flyTo, easeTo, seinao
                 location: {
                     mobile: {
