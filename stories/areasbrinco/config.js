@@ -879,6 +879,48 @@
                 ]
             },
             {
+                id: 'avenida1',
+                // mapAnimation: 'easeTo', // flyTo, easeTo, seinao
+                location: {
+                    mobile: {
+                        center: {
+                            lon: -43.45268,
+                            lat: -22.93530
+                        },
+                        zoom: 8.55,
+                        pitch: 0.00,
+                        bearing: 0.00,
+                        speed: 1,
+                        curve: 1
+                    },
+                    desktop: {
+                        center: {
+                            lon: -43.25259,
+                            lat: -22.90843
+                        },
+                        zoom: 14.03,
+                        pitch: 35.50,
+                        bearing: 34.30,
+                        speed: 1,
+                        curve: 1
+                    }
+                },
+                mapAnimation: 'flyTo',
+                // callback: 'newContainer', 
+                onChapterEnter: [{
+                        layer: 'rua',
+                        opacity: 1,
+                    },
+
+                ],
+                onChapterExit: [{
+                        layer: 'rua',
+                        opacity: 0,
+                    },
+
+                ]
+            },
+            {
                 id: 'footer',
                 // mapAnimation: 'easeTo', // flyTo, easeTo, seinao
                 location: {
