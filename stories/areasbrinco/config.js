@@ -3,7 +3,7 @@
             'labels': [{
                 'description': "REGIÕES ADMINISTRATIVAS",
                 'textColor': '#ffffff',
-                'textSize': 22,
+                'textSize': 28,
                 'textSizeMobile': 10,
                 "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
                 'textHaloColor': '#9f4141',
@@ -17,7 +17,7 @@
             'labels': [{
                 'description': "SUBPREFEITURA DA ZONA NORTE",
                 'textColor': '#ffffff',
-                'textSize': 22,
+                'textSize': 28,
                 'textSizeMobile': 10,
                 "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
                 'textHaloColor': '#9f4141',
@@ -25,6 +25,130 @@
                 'textHaloBlur': 50,
                 'coordinates': [-43.38232, -22.89807]
             }, ]
+        },
+        {
+            'layerId': 'label-waze',
+            'labels': [{
+                'description': "ALERTAS DO WAZE",
+                'textColor': '#ffffff',
+                'textSize': 28,
+                'textSizeMobile': 10,
+                "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
+                'textHaloColor': '#9f4141',
+                'textHaloWidth': 50,
+                'textHaloBlur': 50,
+                'coordinates': [-43.38232, -22.89807]
+            }, ]
+        },
+        {
+            'layerId': 'label-arterias',
+            'labels': [{
+                'description': "ARTÉRIAS SUBURBANAS",
+                'textColor': '#ffffff',
+                'textSize': 28,
+                'textSizeMobile': 10,
+                "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
+                'textHaloColor': '#9f4141',
+                'textHaloWidth': 50,
+                'textHaloBlur': 50,
+                'coordinates': [-43.38232, -22.89807]
+            }, ]
+        },
+        {
+            'layerId': 'label-bairros',
+            'labels': [{
+                'description': "BAIRROS",
+                'textColor': '#ffffff',
+                'textSize': 28,
+                'textSizeMobile': 10,
+                "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
+                'textHaloColor': '#306e64',
+                'textHaloWidth': 50,
+                'textHaloBlur': 50,
+                'coordinates': [-43.38232, -22.89807]
+            }, ]
+        },
+        {
+            'layerId': 'label-linhas',
+            'labels': [{
+                'description': "LINHAS E ESTAÇÕES",
+                'textColor': '#ffffff',
+                'textSize': 28,
+                'textSizeMobile': 10,
+                "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
+                'textHaloColor': '#9f4141',
+                'textHaloWidth': 50,
+                'textHaloBlur': 50,
+                'coordinates': [-43.38232, -22.89807]
+            }, ]
+        },
+        {
+            'layerId': 'label-modal',
+            'labels': [{
+                'description': "BRT_METRO_TREM",
+                'textColor': '#ffffff',
+                'textSize': 28,
+                'textSizeMobile': 10,
+                "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
+                'textHaloColor': '#9f4141',
+                'textHaloWidth': 50,
+                'textHaloBlur': 50,
+                'coordinates': [-43.38232, -22.91007]
+            }, ]
+        },
+        {
+            'layerId': 'label-asfalto',
+            'labels': [{
+                'description': "PROGRAMA ASFALTO LISO",
+                'textColor': '#ffffff',
+                'textSize': 28,
+                'textSizeMobile': 10,
+                "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
+                'textHaloColor': '#9f4141',
+                'textHaloWidth': 50,
+                'textHaloBlur': 50,
+                'coordinates': [-43.38232, -22.89807]
+            }, ]
+        },
+        {
+            'layerId': 'label-led',
+            'labels': [{
+                'description': "17 VIAS COM LED",
+                'textColor': '#ffffff',
+                'textSize': 28,
+                'textSizeMobile': 10,
+                "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
+                'textHaloColor': '#306e64',
+                'textHaloWidth': 50,
+                'textHaloBlur': 50,
+                'coordinates': [-43.38232, -22.89807]
+            }, ]
+        },
+        {
+            'layerId': 'label-led-asfalto',
+            'labels': [{
+                    'description': "ASFALTO LISO",
+                    'textColor': '#ffffff',
+                    'textSize': 28,
+                    'textSizeMobile': 10,
+                    "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
+                    'textHaloColor': '#9f4141',
+                    'textHaloWidth': 50,
+                    'textHaloBlur': 50,
+                    'coordinates': [-43.38232, -22.89807]
+                },
+                {
+                    'description': "LED",
+                    'textColor': '#ffffff',
+                    'textSize': 28,
+                    'textSizeMobile': 10,
+                    "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
+                    'textHaloColor': '#306e64',
+                    'textHaloWidth': 50,
+                    'textHaloBlur': 50,
+                    'coordinates': [-43.38232, -22.91007]
+                },
+            ]
         },
     ]
 
@@ -87,10 +211,10 @@
                     },
                     desktop: {
                         center: {
-                            lon: -43.24080,
-                            lat: -22.90578
+                            lon: -43.41078,
+                            lat: -22.92387
                         },
-                        zoom: 9.88,
+                        zoom: 10.38,
                         pitch: 0.00,
                         bearing: 0.00,
                         speed: 1,
@@ -269,10 +393,18 @@
                 // callback: 'newContainer', 
                 onChapterEnter: [{
                         layer: 'regioes-administrativas',
-                        opacity: .3,
+                        opacity: .2,
                     },
                     {
-                        layer: 'dados-pipocando-zn',
+                        layer: 'zona-norte-full',
+                        opacity: .2,
+                    },
+                    {
+                        layer: 'waze-vias',
+                        opacity: 1,
+                    },
+                    {
+                        layer: 'label-waze',
                         opacity: 1,
                     },
                 ],
@@ -281,7 +413,15 @@
                         opacity: 0,
                     },
                     {
-                        layer: 'dados-pipocando-zn',
+                        layer: 'zona-norte-full',
+                        opacity: 0,
+                    },
+                    {
+                        layer: 'waze-vias',
+                        opacity: 0,
+                    },
+                    {
+                        layer: 'label-waze',
                         opacity: 0,
                     },
                 ]
@@ -316,13 +456,23 @@
                 mapAnimation: 'flyTo',
                 // callback: 'newContainer', 
                 onChapterEnter: [{
-                    layer: 'vias-prioritarias',
-                    opacity: 1,
-                }, ],
+                        layer: 'vias-prioritarias',
+                        opacity: 1,
+                    },
+                    {
+                        layer: 'label-arterias',
+                        opacity: 1,
+                    },
+                ],
                 onChapterExit: [{
-                    layer: 'vias-prioritarias',
-                    opacity: 0,
-                }, ]
+                        layer: 'vias-prioritarias',
+                        opacity: 0,
+                    },
+                    {
+                        layer: 'label-arterias',
+                        opacity: 0,
+                    },
+                ]
             },
             {
                 id: 'comeco2',
@@ -359,7 +509,11 @@
                     },
                     {
                         layer: 'bairros-zn',
-                        opacity: .7,
+                        opacity: .5,
+                    },
+                    {
+                        layer: 'label-bairros',
+                        opacity: 1,
                     },
                 ],
                 onChapterExit: [{
@@ -368,6 +522,10 @@
                     },
                     {
                         layer: 'bairros-zn',
+                        opacity: 0,
+                    },
+                    {
+                        layer: 'label-bairros',
                         opacity: 0,
                     },
                 ]
@@ -402,28 +560,36 @@
                 mapAnimation: 'flyTo',
                 // callback: 'newContainer', 
                 onChapterEnter: [{
-                        layer: 'vias-prioritarias',
-                        opacity: 1,
-                    },
-                    {
                         layer: 'linhas',
                         opacity: 1,
                     },
                     {
                         layer: 'estacoes',
+                        opacity: 1,
+                    },
+                    {
+                        layer: 'label-linhas',
+                        opacity: 1,
+                    },
+                    {
+                        layer: 'label-modal',
                         opacity: 1,
                     },
                 ],
                 onChapterExit: [{
-                        layer: 'vias-prioritarias',
-                        opacity: 0,
-                    },
-                    {
                         layer: 'linhas',
                         opacity: 0,
                     },
                     {
                         layer: 'estacoes',
+                        opacity: 0,
+                    },
+                    {
+                        layer: 'label-linhas',
+                        opacity: 0,
+                    },
+                    {
+                        layer: 'label-modal',
                         opacity: 0,
                     },
                 ]
@@ -467,7 +633,7 @@
                 }, ]
             },
             {
-                id: 'asfalto',
+                id: 'transporte3',
                 // mapAnimation: 'easeTo', // flyTo, easeTo, seinao
                 location: {
                     mobile: {
@@ -496,16 +662,48 @@
                 mapAnimation: 'flyTo',
                 // callback: 'newContainer', 
                 onChapterEnter: [{
-                    layer: 'asfalto',
+                    layer: 'vias-prioritarias',
                     opacity: 1,
                 }, ],
                 onChapterExit: [{
-                    layer: 'asfalto',
+                    layer: 'vias-prioritarias',
                     opacity: 0,
                 }, ]
             },
             {
-                id: 'luz',
+                id: 'equipamentos1',
+                // mapAnimation: 'easeTo', // flyTo, easeTo, seinao
+                location: {
+                    mobile: {
+                        center: {
+                            lon: -43.45268,
+                            lat: -22.93530
+                        },
+                        zoom: 8.55,
+                        pitch: 0.00,
+                        bearing: 0.00,
+                        speed: 1,
+                        curve: 1
+                    },
+                    desktop: {
+                        center: {
+                            lon: -43.22801,
+                            lat: -22.86027
+                        },
+                        zoom: 11.20,
+                        pitch: 0.00,
+                        bearing: 0.00,
+                        speed: 1,
+                        curve: 1
+                    }
+                },
+                mapAnimation: 'flyTo',
+                // callback: 'newContainer', 
+                onChapterEnter: [],
+                onChapterExit: []
+            },
+            {
+                id: 'equipamentos2',
                 // mapAnimation: 'easeTo', // flyTo, easeTo, seinao
                 location: {
                     mobile: {
@@ -534,13 +732,183 @@
                 mapAnimation: 'flyTo',
                 // callback: 'newContainer', 
                 onChapterEnter: [{
-                    layer: 'luz',
-                    opacity: 1,
-                }, ],
+                        layer: 'asfalto',
+                        opacity: 1,
+                    },
+                    {
+                        layer: 'label-asfalto',
+                        opacity: 1,
+                    },
+                ],
                 onChapterExit: [{
-                    layer: 'luz',
-                    opacity: 0,
-                }, ]
+                        layer: 'asfalto',
+                        opacity: 0,
+                    },
+                    {
+                        layer: 'label-asfalto',
+                        opacity: 0,
+                    },
+                ]
+            },
+            {
+                id: 'equipamentos3',
+                // mapAnimation: 'easeTo', // flyTo, easeTo, seinao
+                location: {
+                    mobile: {
+                        center: {
+                            lon: -43.45268,
+                            lat: -22.93530
+                        },
+                        zoom: 8.55,
+                        pitch: 0.00,
+                        bearing: 0.00,
+                        speed: 1,
+                        curve: 1
+                    },
+                    desktop: {
+                        center: {
+                            lon: -43.22801,
+                            lat: -22.86027
+                        },
+                        zoom: 11.20,
+                        pitch: 0.00,
+                        bearing: 0.00,
+                        speed: 1,
+                        curve: 1
+                    }
+                },
+                mapAnimation: 'flyTo',
+                // callback: 'newContainer', 
+                onChapterEnter: [{
+                        layer: 'led',
+                        opacity: 1,
+                    },
+                    {
+                        layer: 'label-led',
+                        opacity: 1,
+                    },
+                ],
+                onChapterExit: [{
+                        layer: 'led',
+                        opacity: 0,
+                    },
+                    {
+                        layer: 'label-led',
+                        opacity: 0,
+                    },
+                ]
+            },
+            {
+                id: 'equipamentos4',
+                // mapAnimation: 'easeTo', // flyTo, easeTo, seinao
+                location: {
+                    mobile: {
+                        center: {
+                            lon: -43.45268,
+                            lat: -22.93530
+                        },
+                        zoom: 8.55,
+                        pitch: 0.00,
+                        bearing: 0.00,
+                        speed: 1,
+                        curve: 1
+                    },
+                    desktop: {
+                        center: {
+                            lon: -43.22801,
+                            lat: -22.86027
+                        },
+                        zoom: 11.20,
+                        pitch: 0.00,
+                        bearing: 0.00,
+                        speed: 1,
+                        curve: 1
+                    }
+                },
+                mapAnimation: 'flyTo',
+                // callback: 'newContainer', 
+                onChapterEnter: [{
+                        layer: 'led',
+                        opacity: 1,
+                    },
+                    {
+                        layer: 'asfalto',
+                        opacity: 1,
+                    },
+                    {
+                        layer: 'label-led-asfalto',
+                        opacity: 1,
+                    },
+                ],
+                onChapterExit: [{
+                        layer: 'led',
+                        opacity: 0,
+                    },
+                    {
+                        layer: 'asfalto',
+                        opacity: 0,
+                    },
+                    {
+                        layer: 'label-led-asfalto',
+                        opacity: 0,
+                    },
+                ]
+            },
+            {
+                id: 'equipamentos5',
+                // mapAnimation: 'easeTo', // flyTo, easeTo, seinao
+                location: {
+                    mobile: {
+                        center: {
+                            lon: -43.45268,
+                            lat: -22.93530
+                        },
+                        zoom: 8.55,
+                        pitch: 0.00,
+                        bearing: 0.00,
+                        speed: 1,
+                        curve: 1
+                    },
+                    desktop: {
+                        center: {
+                            lon: -43.22801,
+                            lat: -22.86027
+                        },
+                        zoom: 11.20,
+                        pitch: 0.00,
+                        bearing: 0.00,
+                        speed: 1,
+                        curve: 1
+                    }
+                },
+                mapAnimation: 'flyTo',
+                // callback: 'newContainer', 
+                onChapterEnter: [{
+                        layer: 'led',
+                        opacity: 1,
+                    },
+                    {
+                        layer: 'asfalto',
+                        opacity: 1,
+                    },
+                    {
+                        layer: 'label-led-asfalto',
+                        opacity: 1,
+                    },
+                ],
+                onChapterExit: [{
+                        layer: 'led',
+                        opacity: 0,
+                    },
+                    {
+                        layer: 'asfalto',
+                        opacity: 0,
+                    },
+                    {
+                        layer: 'label-led-asfalto',
+                        opacity: 0,
+                    },
+                ]
             },
             {
                 id: 'footer',
