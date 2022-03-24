@@ -85,7 +85,7 @@
         {
             'layerId': 'label-modal',
             'labels': [{
-                'description': "BRT_METRO_TREM",
+                'description': "BRT METRO TREM",
                 'textColor': '#ffffff',
                 'textSize': 28,
                 'textSizeMobile': 10,
@@ -153,7 +153,7 @@
         {
             'layerId': 'label-waze-todos',
             'labels': [{
-                'description': "NOTIFICAÇÕES WAZE + 1746",
+                'description': "NOTIFICAÇÕES WAZE E 1746",
                 'textColor': '#ffffff',
                 'textSize': 28,
                 'textSizeMobile': 10,
