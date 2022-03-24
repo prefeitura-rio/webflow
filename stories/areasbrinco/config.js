@@ -511,44 +511,6 @@
                 ]
             },
             {
-                id: 'transporte2',
-                // mapAnimation: 'easeTo', // flyTo, easeTo, seinao
-                location: {
-                    mobile: {
-                        center: {
-                            lon: -43.45268,
-                            lat: -22.93530
-                        },
-                        zoom: 8.55,
-                        pitch: 0.00,
-                        bearing: 0.00,
-                        speed: 1,
-                        curve: 1
-                    },
-                    desktop: {
-                        center: {
-                            lon: -43.22801,
-                            lat: -22.86027
-                        },
-                        zoom: 11.20,
-                        pitch: 0.00,
-                        bearing: 0.00,
-                        speed: 1,
-                        curve: 1
-                    }
-                },
-                mapAnimation: 'flyTo',
-                // callback: 'newContainer', 
-                onChapterEnter: [{
-                    layer: 'vias-prioritarias',
-                    opacity: 1,
-                }, ],
-                onChapterExit: [{
-                    layer: 'vias-prioritarias',
-                    opacity: 0,
-                }, ]
-            },
-            {
                 id: 'transporte3',
                 // mapAnimation: 'easeTo', // flyTo, easeTo, seinao
                 location: {
