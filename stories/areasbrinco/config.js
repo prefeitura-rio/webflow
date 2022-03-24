@@ -29,7 +29,7 @@
         {
             'layerId': 'label-waze',
             'labels': [{
-                'description': "ALERTAS DO WAZE",
+                'description': "ALERTAS WAZE",
                 'textColor': '#ffffff',
                 'textSize': 28,
                 'textSizeMobile': 10,
@@ -150,6 +150,20 @@
                 },
             ]
         },
+        {
+            'layerId': 'label-waze-todos',
+            'labels': [{
+                'description': "ALERTAS WAZE",
+                'textColor': '#ffffff',
+                'textSize': 28,
+                'textSizeMobile': 10,
+                "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
+                'textHaloColor': '#9f4141',
+                'textHaloWidth': 50,
+                'textHaloBlur': 50,
+                'coordinates': [-43.34871, -23.06189]
+            }, ]
+        },
     ]
 
 
@@ -255,8 +269,24 @@
                 },
                 mapAnimation: 'flyTo',
                 // callback: 'newContainer', 
-                onChapterEnter: [],
-                onChapterExit: []
+                onChapterEnter: [{
+                        layer: 'waze-todos',
+                        opacity: 1,
+                    },
+                    {
+                        layer: 'label-waze-todos',
+                        opacity: 1,
+                    },
+                ],
+                onChapterExit: [{
+                        layer: 'waze-todos',
+                        opacity: 0,
+                    },
+                    {
+                        layer: 'label-waze-todos',
+                        opacity: 0,
+                    },
+                ]
             },
             {
                 id: 'zn1',
@@ -505,7 +535,7 @@
                 // callback: 'newContainer', 
                 onChapterEnter: [{
                         layer: 'vias-prioritarias',
-                        opacity: 1,
+                        opacity: .7,
                     },
                     {
                         layer: 'bairros-zn',
@@ -895,10 +925,10 @@
                     },
                     desktop: {
                         center: {
-                            lon: -43.25259,
-                            lat: -22.90843
+                            lon: -43.25016,
+                            lat: -22.90993
                         },
-                        zoom: 14.03,
+                        zoom: 13.78,
                         pitch: 35.50,
                         bearing: 34.30,
                         speed: 1,
