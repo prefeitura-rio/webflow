@@ -701,6 +701,44 @@
                 }, ]
             },
             {
+                id: 'equipamentos2',
+                // mapAnimation: 'easeTo', // flyTo, easeTo, seinao
+                location: {
+                    mobile: {
+                        center: {
+                            lon: -43.45268,
+                            lat: -22.93530
+                        },
+                        zoom: 8.55,
+                        pitch: 0.00,
+                        bearing: 0.00,
+                        speed: 1,
+                        curve: 1
+                    },
+                    desktop: {
+                        center: {
+                            lon: -43.22801,
+                            lat: -22.86027
+                        },
+                        zoom: 11.20,
+                        pitch: 0.00,
+                        bearing: 0.00,
+                        speed: 1,
+                        curve: 1
+                    }
+                },
+                mapAnimation: 'flyTo',
+                // callback: 'newContainer', 
+                onChapterEnter: [{
+                    layer: 'zona-norte-full',
+                    opacity: 1,
+                }, ],
+                onChapterExit: [{
+                    layer: 'zona-norte-full',
+                    opacity: 0,
+                }, ]
+            },
+            {
                 id: 'equipamentos3',
                 // mapAnimation: 'easeTo', // flyTo, easeTo, seinao
                 location: {
@@ -826,34 +864,42 @@
                 mapAnimation: 'flyTo',
                 // callback: 'newContainer', 
                 onChapterEnter: [{
-                        layer: 'led',
+                        layer: 'regioes-administrativas',
+                        opacity: .2,
+                    },
+                    {
+                        layer: 'zona-norte-full',
+                        opacity: .2,
+                    },
+                    {
+                        layer: 'waze-vias',
                         opacity: 1,
                     },
                     {
-                        layer: 'asfalto',
-                        opacity: 1,
-                    },
-                    {
-                        layer: 'label-led-asfalto',
+                        layer: 'label-waze',
                         opacity: 1,
                     },
                 ],
                 onChapterExit: [{
-                        layer: 'led',
+                        layer: 'regioes-administrativas',
                         opacity: 0,
                     },
                     {
-                        layer: 'asfalto',
+                        layer: 'zona-norte-full',
                         opacity: 0,
                     },
                     {
-                        layer: 'label-led-asfalto',
+                        layer: 'waze-vias',
+                        opacity: 0,
+                    },
+                    {
+                        layer: 'label-waze',
                         opacity: 0,
                     },
                 ]
             },
             {
-                id: 'equipamentos5',
+                id: 'equipamentos6',
                 // mapAnimation: 'easeTo', // flyTo, easeTo, seinao
                 location: {
                     mobile: {
@@ -882,28 +928,99 @@
                 mapAnimation: 'flyTo',
                 // callback: 'newContainer', 
                 onChapterEnter: [{
-                        layer: 'led',
+                        layer: 'regioes-administrativas',
+                        opacity: .2,
+                    },
+                    {
+                        layer: 'zona-norte-full',
+                        opacity: .2,
+                    },
+                    {
+                        layer: 'waze-vias',
                         opacity: 1,
                     },
                     {
-                        layer: 'asfalto',
-                        opacity: 1,
-                    },
-                    {
-                        layer: 'label-led-asfalto',
+                        layer: 'label-waze',
                         opacity: 1,
                     },
                 ],
                 onChapterExit: [{
-                        layer: 'led',
+                        layer: 'regioes-administrativas',
                         opacity: 0,
                     },
                     {
-                        layer: 'asfalto',
+                        layer: 'zona-norte-full',
                         opacity: 0,
                     },
                     {
-                        layer: 'label-led-asfalto',
+                        layer: 'waze-vias',
+                        opacity: 0,
+                    },
+                    {
+                        layer: 'label-waze',
+                        opacity: 0,
+                    },
+                ]
+            }, {
+                id: 'equipamentos7',
+                // mapAnimation: 'easeTo', // flyTo, easeTo, seinao
+                location: {
+                    mobile: {
+                        center: {
+                            lon: -43.45268,
+                            lat: -22.93530
+                        },
+                        zoom: 8.55,
+                        pitch: 0.00,
+                        bearing: 0.00,
+                        speed: 1,
+                        curve: 1
+                    },
+                    desktop: {
+                        center: {
+                            lon: -43.22801,
+                            lat: -22.86027
+                        },
+                        zoom: 11.20,
+                        pitch: 0.00,
+                        bearing: 0.00,
+                        speed: 1,
+                        curve: 1
+                    }
+                },
+                mapAnimation: 'flyTo',
+                // callback: 'newContainer', 
+                onChapterEnter: [{
+                        layer: 'regioes-administrativas',
+                        opacity: .2,
+                    },
+                    {
+                        layer: 'zona-norte-full',
+                        opacity: .2,
+                    },
+                    {
+                        layer: 'waze-vias',
+                        opacity: 1,
+                    },
+                    {
+                        layer: 'label-waze',
+                        opacity: 1,
+                    },
+                ],
+                onChapterExit: [{
+                        layer: 'regioes-administrativas',
+                        opacity: 0,
+                    },
+                    {
+                        layer: 'zona-norte-full',
+                        opacity: 0,
+                    },
+                    {
+                        layer: 'waze-vias',
+                        opacity: 0,
+                    },
+                    {
+                        layer: 'label-waze',
                         opacity: 0,
                     },
                 ]
