@@ -153,7 +153,7 @@
         {
             'layerId': 'label-waze-todos',
             'labels': [{
-                'description': "ALERTAS WAZE",
+                'description': "NOTIFICAÇÕES WAZE + 1746",
                 'textColor': '#ffffff',
                 'textSize': 28,
                 'textSizeMobile': 10,
@@ -289,111 +289,7 @@
                 ]
             },
             {
-                id: 'zn1',
-                // mapAnimation: 'easeTo', // flyTo, easeTo, seinao
-                location: {
-                    mobile: {
-                        center: {
-                            lon: -43.45268,
-                            lat: -22.93530
-                        },
-                        zoom: 8.55,
-                        pitch: 0.00,
-                        bearing: 0.00,
-                        speed: 1,
-                        curve: 1
-                    },
-                    desktop: {
-                        center: {
-                            lon: -43.24080,
-                            lat: -22.90578
-                        },
-                        zoom: 9.88,
-                        pitch: 0.00,
-                        bearing: 0.00,
-                        speed: 1,
-                        curve: 1
-                    }
-                },
-                mapAnimation: 'flyTo',
-                // callback: 'newContainer', 
-                onChapterEnter: [{
-                        layer: 'regioes-administrativas',
-                        opacity: .7,
-                    },
-                    {
-                        layer: 'label-regioes-administrativas',
-                        opacity: 1,
-                    },
-                ],
-                onChapterExit: [{
-                        layer: 'regioes-administrativas',
-                        opacity: 0,
-                    },
-                    {
-                        layer: 'label-regioes-administrativas',
-                        opacity: 0,
-                    },
-                ]
-            },
-            {
-                id: 'zn2',
-                // mapAnimation: 'easeTo', // flyTo, easeTo, seinao
-                location: {
-                    mobile: {
-                        center: {
-                            lon: -43.45268,
-                            lat: -22.93530
-                        },
-                        zoom: 8.55,
-                        pitch: 0.00,
-                        bearing: 0.00,
-                        speed: 1,
-                        curve: 1
-                    },
-                    desktop: {
-                        center: {
-                            lon: -43.22801,
-                            lat: -22.86027
-                        },
-                        zoom: 11.20,
-                        pitch: 0.00,
-                        bearing: 0.00,
-                        speed: 1,
-                        curve: 1
-                    }
-                },
-                mapAnimation: 'flyTo',
-                // callback: 'newContainer', 
-                onChapterEnter: [{
-                        layer: 'regioes-administrativas',
-                        opacity: .5,
-                    },
-                    {
-                        layer: 'zona-norte-full',
-                        opacity: .5,
-                    },
-                    {
-                        layer: 'label-zona-norte',
-                        opacity: 1,
-                    },
-                ],
-                onChapterExit: [{
-                        layer: 'regioes-administrativas',
-                        opacity: 0,
-                    },
-                    {
-                        layer: 'zona-norte-full',
-                        opacity: 0,
-                    },
-                    {
-                        layer: 'label-zona-norte',
-                        opacity: 0,
-                    },
-                ]
-            },
-            {
-                id: 'zn3',
+                id: 'zn',
                 // mapAnimation: 'easeTo', // flyTo, easeTo, seinao
                 location: {
                     mobile: {
@@ -731,7 +627,7 @@
                 // callback: 'newContainer', 
                 onChapterEnter: [{
                     layer: 'zona-norte-full',
-                    opacity: 1,
+                    opacity: .3,
                 }, ],
                 onChapterExit: [{
                     layer: 'zona-norte-full',
