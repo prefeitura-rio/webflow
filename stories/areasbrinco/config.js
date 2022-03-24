@@ -99,7 +99,7 @@
         {
             'layerId': 'label-asfalto',
             'labels': [{
-                'description': "PROGRAMA ASFALTO LISO",
+                'description': "RUAS CONTEMPLADAS PELO PROGRAMA",
                 'textColor': '#ffffff',
                 'textSize': 28,
                 'textSizeMobile': 10,
@@ -617,7 +617,7 @@
                 // callback: 'newContainer', 
                 onChapterEnter: [{
                     layer: 'vias-prioritarias',
-                    opacity: .3,
+                    opacity: 1,
                 }, ],
                 onChapterExit: [{
                     layer: 'vias-prioritarias',
