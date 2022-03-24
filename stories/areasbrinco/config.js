@@ -270,23 +270,13 @@
                 mapAnimation: 'flyTo',
                 // callback: 'newContainer', 
                 onChapterEnter: [{
-                        layer: 'waze-todos',
-                        opacity: 1,
-                    },
-                    {
-                        layer: 'label-waze-todos',
-                        opacity: 1,
-                    },
-                ],
+                    layer: 'waze-todos',
+                    opacity: 1,
+                }, ],
                 onChapterExit: [{
-                        layer: 'waze-todos',
-                        opacity: 0,
-                    },
-                    {
-                        layer: 'label-waze-todos',
-                        opacity: 0,
-                    },
-                ]
+                    layer: 'waze-todos',
+                    opacity: 0,
+                }, ]
             },
             {
                 id: 'zn',
@@ -626,11 +616,11 @@
                 mapAnimation: 'flyTo',
                 // callback: 'newContainer', 
                 onChapterEnter: [{
-                    layer: 'zona-norte-full',
+                    layer: 'vias-prioritarias',
                     opacity: .3,
                 }, ],
                 onChapterExit: [{
-                    layer: 'zona-norte-full',
+                    layer: 'vias-prioritarias',
                     opacity: 0,
                 }, ]
             },
@@ -938,12 +928,12 @@
                     },
                     desktop: {
                         center: {
-                            lon: -43.25016,
-                            lat: -22.90993
+                            lon: -43.26282,
+                            lat: -22.90272
                         },
-                        zoom: 13.78,
-                        pitch: 35.50,
-                        bearing: 34.30,
+                        zoom: 16.55,
+                        pitch: 50.50,
+                        bearing: 42.30,
                         speed: 1,
                         curve: 1
                     }
