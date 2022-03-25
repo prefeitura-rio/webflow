@@ -350,16 +350,12 @@
                 mapAnimation: 'flyTo',
                 // callback: 'newContainer', 
                 onChapterEnter: [{
-                        layer: 'regioes-administrativas',
-                        opacity: .2,
-                    },
-                    {
                         layer: 'bairros-zn1',
-                        opacity: 1,
+                        opacity: .3,
                     },
                     {
                         layer: 'bairros-zn2',
-                        opacity: .2,
+                        opacity: .15,
                     },
                     {
                         layer: 'waze-vias',
@@ -371,10 +367,6 @@
                     },
                 ],
                 onChapterExit: [{
-                        layer: 'regioes-administrativas',
-                        opacity: 0,
-                    },
-                    {
                         layer: 'bairros-zn1',
                         opacity: 0,
                     },
@@ -758,12 +750,20 @@
                         opacity: 1,
                     },
                     {
+                        layer: 'led1',
+                        opacity: 1,
+                    },
+                    {
                         layer: 'label-rioluz',
                         opacity: 1,
                     },
                 ],
                 onChapterExit: [{
                         layer: 'led',
+                        opacity: 0,
+                    },
+                    {
+                        layer: 'led1',
                         opacity: 0,
                     },
                     {
