@@ -71,7 +71,7 @@
         {
             'layerId': 'label-linhas',
             'labels': [{
-                'description': "25% DAS ESTAÇÕES DE TODA A CIDADE ESTÃO NAS VIAS PRIORITÁRIAS DA ZN",
+                'description': "25% DAS ESTAÇÕES DE TODA A CIDADE ESTÃO NAS ARTÉRIAS SUBURBANAS DA ZN",
                 'textColor': '#ffffff',
                 'textSize': 28,
                 'textSizeMobile': 10,
