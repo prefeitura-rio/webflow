@@ -167,16 +167,28 @@
         {
             'layerId': 'label-comlurb',
             'labels': [{
-                'description': "COMLURB",
-                'textColor': '#ffffff',
-                'textSize': 40,
-                'textSizeMobile': 10,
-                "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
-                'textHaloColor': '#d36f17',
-                'textHaloWidth': 50,
-                'textHaloBlur': 50,
-                'coordinates': [-43.38232, -22.89807]
-            }, ]
+                    'description': "COMLURB",
+                    'textColor': '#ffffff',
+                    'textSize': 40,
+                    'textSizeMobile': 10,
+                    "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
+                    'textHaloColor': '#d36f17',
+                    'textHaloWidth': 50,
+                    'textHaloBlur': 50,
+                    'coordinates': [-43.38232, -22.89807]
+                },
+                {
+                    'description': "MAIS DE 8 SERVIÇOS DEDICADOS",
+                    'textColor': '#ffffff',
+                    'textSize': 25,
+                    'textSizeMobile': 10,
+                    "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
+                    'textHaloColor': '#d36f17',
+                    'textHaloWidth': 50,
+                    'textHaloBlur': 50,
+                    'coordinates': [-43.38232, -22.91807]
+                },
+            ]
         },
         {
             'layerId': 'label-asfaltoliso',
@@ -208,6 +220,43 @@
         },
         {
             'layerId': 'label-geral',
+            'labels': [{
+                    'description': "RIO LUZ",
+                    'textColor': '#ffffff',
+                    'textSize': 40,
+                    'textSizeMobile': 10,
+                    "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
+                    'textHaloColor': '#306e64',
+                    'textHaloWidth': 50,
+                    'textHaloBlur': 50,
+                    'coordinates': [-43.39531, -22.87936]
+                },
+                {
+                    'description': "ASFALTO LISO",
+                    'textColor': '#ffffff',
+                    'textSize': 40,
+                    'textSizeMobile': 10,
+                    "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
+                    'textHaloColor': '#469cb4',
+                    'textHaloWidth': 50,
+                    'textHaloBlur': 50,
+                    'coordinates': [-43.39531, -22.86936]
+                },
+                {
+                    'description': "COMLURB",
+                    'textColor': '#ffffff',
+                    'textSize': 40,
+                    'textSizeMobile': 10,
+                    "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
+                    'textHaloColor': '#d36f17',
+                    'textHaloWidth': 50,
+                    'textHaloBlur': 50,
+                    'coordinates': [-43.39531, -22.85936]
+                },
+            ]
+        },
+        {
+            'layerId': 'label-geral1',
             'labels': [{
                     'description': "RIO LUZ",
                     'textColor': '#ffffff',
@@ -890,7 +939,7 @@
                 ]
             },
             {
-                id: 'geral',
+                id: 'equipamentos5',
                 // mapAnimation: 'easeTo', // flyTo, easeTo, seinao
                 location: {
                     mobile: {
@@ -962,7 +1011,7 @@
                 ]
             },
             {
-                id: 'geral1',
+                id: 'equipamentos6',
                 // mapAnimation: 'easeTo', // flyTo, easeTo, seinao
                 location: {
                     mobile: {
@@ -991,44 +1040,44 @@
                 mapAnimation: 'flyTo',
                 // callback: 'newContainer', 
                 onChapterEnter: [{
-                        layer: 'led',
+                        layer: 'led2',
                         opacity: 1,
                     },
                     {
-                        layer: 'led1',
+                        layer: 'led3',
                         opacity: 1,
                     },
                     {
-                        layer: 'asfalto',
+                        layer: 'asfalto1',
                         opacity: 1,
                     },
                     {
-                        layer: 'vias-prioritarias1',
+                        layer: 'vias-prioritarias3',
                         opacity: 1,
                     },
                     {
-                        layer: 'label-geral',
+                        layer: 'label-geral1',
                         opacity: 1,
                     },
                 ],
                 onChapterExit: [{
-                        layer: 'led',
+                        layer: 'led2',
                         opacity: 0,
                     },
                     {
-                        layer: 'led1',
+                        layer: 'led3',
                         opacity: 0,
                     },
                     {
-                        layer: 'asfalto',
+                        layer: 'asfalto1',
                         opacity: 0,
                     },
                     {
-                        layer: 'vias-prioritarias1',
+                        layer: 'vias-prioritarias3',
                         opacity: 0,
                     },
                     {
-                        layer: 'label-geral',
+                        layer: 'label-geral1',
                         opacity: 0,
                     },
                 ]
