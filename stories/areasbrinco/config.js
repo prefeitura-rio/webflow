@@ -883,20 +883,12 @@
                         opacity: 1,
                     },
                     {
-                        layer: 'vias-prioritarias',
-                        opacity: .5,
-                    },
-                    {
                         layer: 'label-asfaltoliso',
                         opacity: 1,
                     },
                 ],
                 onChapterExit: [{
                         layer: 'asfalto',
-                        opacity: 0,
-                    },
-                    {
-                        layer: 'vias-prioritarias',
                         opacity: 0,
                     },
                     {
@@ -1050,12 +1042,12 @@
                     },
                     desktop: {
                         center: {
-                            lon: -43.33682,
-                            lat: -22.87172
+                            lon: -43.33660,
+                            lat: -22.87193
                         },
-                        zoom: 15.15,
-                        pitch: 51.00,
-                        bearing: 12.57,
+                        zoom: 16.56,
+                        pitch: 53.00,
+                        bearing: -0.58,
                         speed: 1,
                         curve: 1
                     }
