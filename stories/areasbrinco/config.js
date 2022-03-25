@@ -207,16 +207,39 @@
         {
             'layerId': 'label-rioluz',
             'labels': [{
-                'description': "RIO LUZ",
-                'textColor': '#ffffff',
-                'textSize': 40,
-                'textSizeMobile': 10,
-                "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
-                'textHaloColor': '#306e64',
-                'textHaloWidth': 50,
-                'textHaloBlur': 50,
-                'coordinates': [-43.38232, -22.89807]
-            }, ]
+                    'description': "RIO LUZ",
+                    'textColor': '#ffffff',
+                    'textSize': 40,
+                    'textSizeMobile': 10,
+                    "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
+                    'textHaloColor': '#306e64',
+                    'textHaloWidth': 50,
+                    'textHaloBlur': 50,
+                    'coordinates': [-43.38232, -22.89807]
+                },
+                {
+                    'description': "VIAS COM LED",
+                    'textColor': '#ffffff',
+                    'textSize': 25,
+                    'textSizeMobile': 10,
+                    "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
+                    'textHaloColor': '#306e64',
+                    'textHaloWidth': 50,
+                    'textHaloBlur': 50,
+                    'coordinates': [-43.38232, -22.91807]
+                },
+                {
+                    'description': "VIAS PENDENTES",
+                    'textColor': '#ffffff',
+                    'textSize': 25,
+                    'textSizeMobile': 10,
+                    "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
+                    'textHaloColor': '#33e1c4',
+                    'textHaloWidth': 50,
+                    'textHaloBlur': 50,
+                    'coordinates': [-43.38232, -22.92807]
+                },
+            ]
         },
         {
             'layerId': 'label-geral',
@@ -1081,120 +1104,6 @@
                         opacity: 0,
                     },
                 ]
-            },
-            {
-                id: 'organizar1',
-                // mapAnimation: 'easeTo', // flyTo, easeTo, seinao
-                location: {
-                    mobile: {
-                        center: {
-                            lon: -43.45268,
-                            lat: -22.93530
-                        },
-                        zoom: 8.55,
-                        pitch: 0.00,
-                        bearing: 0.00,
-                        speed: 1,
-                        curve: 1
-                    },
-                    desktop: {
-                        center: {
-                            lon: -43.22801,
-                            lat: -22.86027
-                        },
-                        zoom: 11.20,
-                        pitch: 0.00,
-                        bearing: 0.00,
-                        speed: 1,
-                        curve: 1
-                    }
-                },
-                mapAnimation: 'flyTo',
-                // callback: 'newContainer', 
-                onChapterEnter: [{
-                    layer: 'pipoca',
-                    opacity: 1,
-                }, ],
-                onChapterExit: [{
-                    layer: 'led',
-                    opacity: 0,
-                }, ]
-            },
-            {
-                id: 'organizar2',
-                // mapAnimation: 'easeTo', // flyTo, easeTo, seinao
-                location: {
-                    mobile: {
-                        center: {
-                            lon: -43.45268,
-                            lat: -22.93530
-                        },
-                        zoom: 8.55,
-                        pitch: 0.00,
-                        bearing: 0.00,
-                        speed: 1,
-                        curve: 1
-                    },
-                    desktop: {
-                        center: {
-                            lon: -43.22801,
-                            lat: -22.86027
-                        },
-                        zoom: 11.20,
-                        pitch: 0.00,
-                        bearing: 0.00,
-                        speed: 1,
-                        curve: 1
-                    }
-                },
-                mapAnimation: 'flyTo',
-                // callback: 'newContainer', 
-                onChapterEnter: [{
-                    layer: 'pipoca',
-                    opacity: 1,
-                }, ],
-                onChapterExit: [{
-                    layer: 'led',
-                    opacity: 0,
-                }, ]
-            },
-            {
-                id: 'organizar3',
-                // mapAnimation: 'easeTo', // flyTo, easeTo, seinao
-                location: {
-                    mobile: {
-                        center: {
-                            lon: -43.45268,
-                            lat: -22.93530
-                        },
-                        zoom: 8.55,
-                        pitch: 0.00,
-                        bearing: 0.00,
-                        speed: 1,
-                        curve: 1
-                    },
-                    desktop: {
-                        center: {
-                            lon: -43.22801,
-                            lat: -22.86027
-                        },
-                        zoom: 11.20,
-                        pitch: 0.00,
-                        bearing: 0.00,
-                        speed: 1,
-                        curve: 1
-                    }
-                },
-                mapAnimation: 'flyTo',
-                // callback: 'newContainer', 
-                onChapterEnter: [{
-                    layer: 'pipoca',
-                    opacity: 1,
-                }, ],
-                onChapterExit: [{
-                    layer: 'led',
-                    opacity: 0,
-                }, ]
             },
             {
                 id: 'avenida1',
