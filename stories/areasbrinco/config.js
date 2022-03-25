@@ -526,6 +526,10 @@
                         opacity: 1,
                     },
                     {
+                        layer: 'estacoes1',
+                        opacity: 1,
+                    },
+                    {
                         layer: 'label-linhas',
                         opacity: 1,
                     },
@@ -536,6 +540,10 @@
                     },
                     {
                         layer: 'estacoes',
+                        opacity: 0,
+                    },
+                    {
+                        layer: 'estacoes1',
                         opacity: 0,
                     },
                     {
@@ -883,6 +891,44 @@
                 }, ],
                 onChapterExit: [{
                     layer: 'led',
+                    opacity: 0,
+                }, ]
+            },
+            {
+                id: 'avenida1',
+                // mapAnimation: 'easeTo', // flyTo, easeTo, seinao
+                location: {
+                    mobile: {
+                        center: {
+                            lon: -43.45268,
+                            lat: -22.93530
+                        },
+                        zoom: 8.55,
+                        pitch: 0.00,
+                        bearing: 0.00,
+                        speed: 1,
+                        curve: 1
+                    },
+                    desktop: {
+                        center: {
+                            lon: -43.26070,
+                            lat: -22.90349
+                        },
+                        zoom: 16.57,
+                        pitch: 60.00,
+                        bearing: 63.02,
+                        speed: 1,
+                        curve: 1
+                    }
+                },
+                mapAnimation: 'flyTo',
+                // callback: 'newContainer', 
+                onChapterEnter: [{
+                    layer: 'rua',
+                    opacity: 1,
+                }, ],
+                onChapterExit: [{
+                    layer: 'rua',
                     opacity: 0,
                 }, ]
             },
