@@ -1098,7 +1098,7 @@
                 ]
             },
             {
-                id: 'footer',
+                id: 'fim',
                 // mapAnimation: 'easeTo', // flyTo, easeTo, seinao
                 location: {
                     mobile: {
@@ -1114,27 +1114,30 @@
                     },
                     desktop: {
                         center: {
-                            lon: -43.44823,
-                            lat: -22.92715
+                            lon: -43.19709,
+                            lat: -22.91138
                         },
-                        zoom: 10.20,
-                        pitch: 0.00,
-                        bearing: 0.00,
+                        zoom: 17.13,
+                        pitch: 60.00,
+                        bearing: -79.60,
                         speed: 1,
                         curve: 1
                     }
                 },
-
                 mapAnimation: 'flyTo',
                 // callback: 'newContainer', 
                 onChapterEnter: [{
-                    layer: 'final',
-                    opacity: 1,
-                }, ],
+                        layer: 'ruafim',
+                        opacity: 1,
+                    },
+
+                ],
                 onChapterExit: [{
-                    layer: 'final',
-                    opacity: 0,
-                }, ]
+                        layer: 'ruafim',
+                        opacity: 0,
+                    },
+
+                ]
             },
         ]
     };
