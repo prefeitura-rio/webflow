@@ -206,6 +206,43 @@
                 'coordinates': [-43.38232, -22.89807]
             }, ]
         },
+        {
+            'layerId': 'label-geral',
+            'labels': [{
+                    'description': "RIO LUZ",
+                    'textColor': '#ffffff',
+                    'textSize': 40,
+                    'textSizeMobile': 10,
+                    "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
+                    'textHaloColor': '#306e64',
+                    'textHaloWidth': 50,
+                    'textHaloBlur': 50,
+                    'coordinates': [-43.39531, -22.87936]
+                },
+                {
+                    'description': "ASFALTO LISO",
+                    'textColor': '#ffffff',
+                    'textSize': 40,
+                    'textSizeMobile': 10,
+                    "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
+                    'textHaloColor': '#469cb4',
+                    'textHaloWidth': 50,
+                    'textHaloBlur': 50,
+                    'coordinates': [-43.39531, -22.86936]
+                },
+                {
+                    'description': "COMLURB",
+                    'textColor': '#ffffff',
+                    'textSize': 40,
+                    'textSizeMobile': 10,
+                    "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
+                    'textHaloColor': '#d36f17',
+                    'textHaloWidth': 50,
+                    'textHaloBlur': 50,
+                    'coordinates': [-43.39531, -22.85936]
+                },
+            ]
+        },
     ]
 
 
@@ -585,12 +622,12 @@
                     },
                     desktop: {
                         center: {
-                            lon: -43.29479,
-                            lat: -22.86573
+                            lon: -43.31479,
+                            lat: -22.85835
                         },
-                        zoom: 12.08,
-                        pitch: 37.50,
-                        bearing: 9.41,
+                        zoom: 12.19,
+                        pitch: 41.50,
+                        bearing: 14.32,
                         speed: 1,
                         curve: 1
                     }
@@ -598,11 +635,11 @@
                 mapAnimation: 'flyTo',
                 // callback: 'newContainer', 
                 onChapterEnter: [{
-                    layer: 'vias-prioritarias',
+                    layer: '',
                     opacity: 1,
                 }, ],
                 onChapterExit: [{
-                    layer: 'vias-prioritarias',
+                    layer: '',
                     opacity: 0,
                 }, ]
             },
@@ -684,6 +721,54 @@
                 ],
                 onChapterExit: [{
                         layer: 'vias-prioritarias1',
+                        opacity: 0,
+                    },
+                    {
+                        layer: 'label-comlurb',
+                        opacity: 0,
+                    },
+                ]
+            },
+            {
+                id: 'comlurb1',
+                // mapAnimation: 'easeTo', // flyTo, easeTo, seinao
+                location: {
+                    mobile: {
+                        center: {
+                            lon: -43.45268,
+                            lat: -22.93530
+                        },
+                        zoom: 8.55,
+                        pitch: 0.00,
+                        bearing: 0.00,
+                        speed: 1,
+                        curve: 1
+                    },
+                    desktop: {
+                        center: {
+                            lon: -43.22801,
+                            lat: -22.86027
+                        },
+                        zoom: 11.20,
+                        pitch: 0.00,
+                        bearing: 0.00,
+                        speed: 1,
+                        curve: 1
+                    }
+                },
+                mapAnimation: 'flyTo',
+                // callback: 'newContainer', 
+                onChapterEnter: [{
+                        layer: 'vias-prioritarias11',
+                        opacity: 1,
+                    },
+                    {
+                        layer: 'label-comlurb',
+                        opacity: 1,
+                    },
+                ],
+                onChapterExit: [{
+                        layer: 'vias-prioritarias11',
                         opacity: 0,
                     },
                     {
@@ -800,6 +885,150 @@
                     },
                     {
                         layer: 'label-rioluz',
+                        opacity: 0,
+                    },
+                ]
+            },
+            {
+                id: 'geral',
+                // mapAnimation: 'easeTo', // flyTo, easeTo, seinao
+                location: {
+                    mobile: {
+                        center: {
+                            lon: -43.45268,
+                            lat: -22.93530
+                        },
+                        zoom: 8.55,
+                        pitch: 0.00,
+                        bearing: 0.00,
+                        speed: 1,
+                        curve: 1
+                    },
+                    desktop: {
+                        center: {
+                            lon: -43.31479,
+                            lat: -22.85835
+                        },
+                        zoom: 12.19,
+                        pitch: 41.50,
+                        bearing: 14.32,
+                        speed: 1,
+                        curve: 1
+                    }
+                },
+                mapAnimation: 'flyTo',
+                // callback: 'newContainer', 
+                onChapterEnter: [{
+                        layer: 'led',
+                        opacity: 1,
+                    },
+                    {
+                        layer: 'led1',
+                        opacity: 1,
+                    },
+                    {
+                        layer: 'asfalto',
+                        opacity: 1,
+                    },
+                    {
+                        layer: 'vias-prioritarias1',
+                        opacity: 1,
+                    },
+                    {
+                        layer: 'label-geral',
+                        opacity: 1,
+                    },
+                ],
+                onChapterExit: [{
+                        layer: 'led',
+                        opacity: 0,
+                    },
+                    {
+                        layer: 'led1',
+                        opacity: 0,
+                    },
+                    {
+                        layer: 'asfalto',
+                        opacity: 0,
+                    },
+                    {
+                        layer: 'vias-prioritarias1',
+                        opacity: 0,
+                    },
+                    {
+                        layer: 'label-geral',
+                        opacity: 0,
+                    },
+                ]
+            },
+            {
+                id: 'geral1',
+                // mapAnimation: 'easeTo', // flyTo, easeTo, seinao
+                location: {
+                    mobile: {
+                        center: {
+                            lon: -43.45268,
+                            lat: -22.93530
+                        },
+                        zoom: 8.55,
+                        pitch: 0.00,
+                        bearing: 0.00,
+                        speed: 1,
+                        curve: 1
+                    },
+                    desktop: {
+                        center: {
+                            lon: -43.33682,
+                            lat: -22.87172
+                        },
+                        zoom: 15.15,
+                        pitch: 51.00,
+                        bearing: 12.57,
+                        speed: 1,
+                        curve: 1
+                    }
+                },
+                mapAnimation: 'flyTo',
+                // callback: 'newContainer', 
+                onChapterEnter: [{
+                        layer: 'led',
+                        opacity: 1,
+                    },
+                    {
+                        layer: 'led1',
+                        opacity: 1,
+                    },
+                    {
+                        layer: 'asfalto',
+                        opacity: 1,
+                    },
+                    {
+                        layer: 'vias-prioritarias1',
+                        opacity: 1,
+                    },
+                    {
+                        layer: 'label-geral',
+                        opacity: 1,
+                    },
+                ],
+                onChapterExit: [{
+                        layer: 'led',
+                        opacity: 0,
+                    },
+                    {
+                        layer: 'led1',
+                        opacity: 0,
+                    },
+                    {
+                        layer: 'asfalto',
+                        opacity: 0,
+                    },
+                    {
+                        layer: 'vias-prioritarias1',
+                        opacity: 0,
+                    },
+                    {
+                        layer: 'label-geral',
                         opacity: 0,
                     },
                 ]
