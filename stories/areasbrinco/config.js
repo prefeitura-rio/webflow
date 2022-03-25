@@ -132,7 +132,7 @@
                     'textSize': 28,
                     'textSizeMobile': 10,
                     "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
-                    'textHaloColor': '#9f4141',
+                    'textHaloColor': '#469cb4',
                     'textHaloWidth': 50,
                     'textHaloBlur': 50,
                     'coordinates': [-43.38232, -22.89807]
@@ -186,7 +186,7 @@
                 'textSize': 40,
                 'textSizeMobile': 10,
                 "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
-                'textHaloColor': '#9f4141',
+                'textHaloColor': '#469cb4',
                 'textHaloWidth': 50,
                 'textHaloBlur': 50,
                 'coordinates': [-43.38232, -22.89807]
@@ -462,7 +462,7 @@
                 mapAnimation: 'flyTo',
                 // callback: 'newContainer', 
                 onChapterEnter: [{
-                        layer: 'vias-prioritarias',
+                        layer: 'vias-prioritarias2',
                         opacity: 1,
                     },
                     {
@@ -475,7 +475,7 @@
                     },
                 ],
                 onChapterExit: [{
-                        layer: 'vias-prioritarias',
+                        layer: 'vias-prioritarias2',
                         opacity: 0,
                     },
                     {
@@ -522,12 +522,20 @@
                         opacity: 1,
                     },
                     {
+                        layer: 'vias-prioritarias',
+                        opacity: .3,
+                    },
+                    {
                         layer: 'estacoes',
                         opacity: 1,
                     },
                     {
                         layer: 'estacoes1',
                         opacity: 1,
+                    },
+                    {
+                        layer: 'bairros-zn2',
+                        opacity: .15,
                     },
                     {
                         layer: 'label-linhas',
@@ -539,11 +547,19 @@
                         opacity: 0,
                     },
                     {
+                        layer: 'vias-prioritarias',
+                        opacity: 0,
+                    },
+                    {
                         layer: 'estacoes',
                         opacity: 0,
                     },
                     {
                         layer: 'estacoes1',
+                        opacity: 0,
+                    },
+                    {
+                        layer: 'bairros-zn2',
                         opacity: 0,
                     },
                     {
@@ -710,12 +726,20 @@
                         opacity: 1,
                     },
                     {
+                        layer: 'vias-prioritarias',
+                        opacity: .5,
+                    },
+                    {
                         layer: 'label-asfaltoliso',
                         opacity: 1,
                     },
                 ],
                 onChapterExit: [{
                         layer: 'asfalto',
+                        opacity: 0,
+                    },
+                    {
+                        layer: 'vias-prioritarias',
                         opacity: 0,
                     },
                     {
