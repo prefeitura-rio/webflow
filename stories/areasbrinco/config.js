@@ -1042,12 +1042,12 @@
                     },
                     desktop: {
                         center: {
-                            lon: -43.33660,
-                            lat: -22.87193
+                            lon: -43.33502,
+                            lat: -22.87233
                         },
                         zoom: 16.56,
-                        pitch: 53.00,
-                        bearing: -0.58,
+                        pitch: 60.00,
+                        bearing: 0.00,
                         speed: 1,
                         curve: 1
                     }
@@ -1096,44 +1096,6 @@
                         opacity: 0,
                     },
                 ]
-            },
-            {
-                id: 'avenida1',
-                // mapAnimation: 'easeTo', // flyTo, easeTo, seinao
-                location: {
-                    mobile: {
-                        center: {
-                            lon: -43.45268,
-                            lat: -22.93530
-                        },
-                        zoom: 8.55,
-                        pitch: 0.00,
-                        bearing: 0.00,
-                        speed: 1,
-                        curve: 1
-                    },
-                    desktop: {
-                        center: {
-                            lon: -43.26070,
-                            lat: -22.90349
-                        },
-                        zoom: 16.57,
-                        pitch: 60.00,
-                        bearing: 63.02,
-                        speed: 1,
-                        curve: 1
-                    }
-                },
-                mapAnimation: 'flyTo',
-                // callback: 'newContainer', 
-                onChapterEnter: [{
-                    layer: 'rua',
-                    opacity: 1,
-                }, ],
-                onChapterExit: [{
-                    layer: 'rua',
-                    opacity: 0,
-                }, ]
             },
             {
                 id: 'footer',
