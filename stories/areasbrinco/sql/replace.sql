@@ -1,8 +1,7 @@
-
-
-
-/* Query para criar colunas com logradouros sem abreviações do tipo R. Av.
+"""
+Query para criar colunas com logradouros sem abreviações do tipo R. Av.
 Essa query deu origem a view dataviz.032022_zonanorte.habitacao_urbana_enderecos_geolocalizados */
+"""
 SELECT 
     *, 
     REPLACE(

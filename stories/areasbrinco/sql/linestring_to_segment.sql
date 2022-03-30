@@ -1,3 +1,6 @@
+"""
+Query para converter a linestring em diferentes segmentos tendo um em cada linha 
+"""
 with leaded as (
 	with completely_separated as (
 		with lines as (

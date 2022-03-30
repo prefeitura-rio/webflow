@@ -1,4 +1,4 @@
-/* Essa query deu origem a tabela dataviz_032022_zonanorte.merge_waze_logradouro */
+/* Essa query deu origem a tabela dataviz_032022_zonanorte.merge_waze_logradouro_view */
 
 WITH mais_proximo AS (
     WITH cria_rank_mais_proximos AS (
@@ -37,6 +37,6 @@ WITH mais_proximo AS (
 
 SELECT
     * EXCEPT(rank_waze, rank_log),
-    CASE WHEN vp.COD_TRECHO IS NULL THEN 0 ELSE 1 END AS via_prioritaria
+        
 FROM mais_proximo mp
 LEFT JOIN `rj-escritorio-dev.dataviz_032022_zonanorte.vias_prioritarias` vp on (vp.COD_TRECHO = CAST(mp.id_trecho AS INT) AND vp.CHAVEGEO_T=mp.id_chavegeo)
