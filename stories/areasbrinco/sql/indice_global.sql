@@ -28,7 +28,10 @@ indice as (
   GROUP BY
     t1.dt,
     t1.id_trecho)
-select t1.*, t2.nome_completo, t2.geometry
+
+select t1.*, t2.nome_completo, t3. subprefeitura, t2.geometry
 from indice t1
 join `rj-escritorio-dev.dados_mestres.logradouro` t2
 on t1.id_trecho = t2.id_trecho
+join `rj-escritorio-dev.dataviz_032022_zonanorte.subprefeituras_trechos` t3
+on t1.id_trecho = t3.id_trecho
