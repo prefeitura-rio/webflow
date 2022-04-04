@@ -1,6 +1,3 @@
-"""
-Query que deu origem a tabela chamados_agg
-"""
 select 
     t2.origem,
     t2.categoria, 
@@ -13,7 +10,12 @@ select
         when datetime_diff(data_inicio, t1.data_fim, DAY) < 2 
         then datetime(datetime_add(data_inicio, INTERVAL 2 DAY))
         else datetime(t1.data_fim)
-    end data_fim
+    end data_fim,
+    CASE 
+        WHEN DATE(DATE_ADD(data_fim, INTERVAL 2 day)) >= current_date('America/Sao_Paulo') 
+        THEN "Aberto"
+        ELSE "Fechado" 
+    END as status
 from `rj-escritorio-dev.dataviz_032022_zonanorte.merge_waze_logradouro_t` t1
 join `rj-escritorio-dev.dataviz_032022_zonanorte.indicador_fontes` t2
 on t2.id_tipo = t1.tipo and t2.id_subtipo = t1.subtipo
@@ -27,7 +29,9 @@ SELECT
   1 peso,
   datetime(data_inicio),
   coalesce(data_fim,
-    current_datetime('America/Sao_Paulo')) data_fim
+    current_datetime('America/Sao_Paulo')) data_fim,
+CASE WHEN t1.status NOT IN ("Aberto", "Em Andamento")
+    THEN "Fechado" ELSE t1.status END as status
 FROM
   `rj-escritorio-dev.dataviz_032022_zonanorte.merge_1746_logradouro` t1
 JOIN
@@ -44,7 +48,10 @@ select
   id_trecho,
   10 peso,
   datetime(inicio) data_inicio,
-  datetime(date_add(inicio, interval 10 day)) data_fim
+  datetime(date_add(inicio, interval 10 day)) data_fim,
+  CASE WHEN DATE_ADD(inicio, interval 10 day) >= current_date('America/Sao_Paulo') THEN "Aberto"
+  ELSE "Fechado" END as status
+
 FROM
   (
     select t1.*, t2.id_trecho
