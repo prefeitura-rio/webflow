@@ -22,9 +22,10 @@ indice as (
     dt, 
     categoria, 
     subcategoria,
-    id_trecho, 
+    id_trecho,
+    status,
     sum(peso) peso, # numero de chamados 
-    count(*) n_chamados,
+    count(distinct t1.id_chamado) n_chamados,
     case when count(*) > 0 then 0 else 1 end indicador
 from `rj-escritorio-dev.dataviz_032022_zonanorte.chamados_agg` t1
 join dates
@@ -32,10 +33,11 @@ on dates.dt between t1.data_inicio and t1.data_fim
 group by  dt, 
     categoria, 
     subcategoria, 
-    id_trecho
+    id_trecho,
+    status
 )
 select 
-  t2.dt, t2.categoria, t2.subcategoria, t2.id_trecho,
+  t2.dt, t2.categoria, t2.subcategoria, t2.id_trecho, t1.status,
   coalesce(peso, 1) peso, # 1 se peso for nulo
   coalesce(n_chamados, 0) n_chamados,
   coalesce(indicador, 1) indicador, # 1 se indicador for nulo
