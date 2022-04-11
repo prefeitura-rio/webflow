@@ -67,10 +67,11 @@ function startMap(datavizId, style) {
         var props = map.getPaintProperty(layer.layer, 'circle-radius')
         if (props.length) {
             // check if type is number
-            props = props.map(function (p) { 
+            props = props.map(function(p) {
                 if (typeof p === 'number') {
                     return config.mobileSizeMultiplier * p
-                } else { return p }})
+                } else { return p }
+            })
         }
         console.log(props)
         map.setPaintProperty(layer.layer, 'circle-radius', props)
@@ -80,14 +81,14 @@ function startMap(datavizId, style) {
 
         console.log('layer', layer)
         var paintProps = getLayerPaintType(layer.layer);
-        paintProps.forEach(function (prop) {
+        paintProps.forEach(function(prop) {
             var options = {};
             map.setPaintProperty(layer.layer, prop, layer.opacity, options);
         });
 
         // Update radius of circles
         // if (isMobile()) {updateSizes(layer)}
-        
+
         // Update style given deviceMode
         var entries = (layer.style || {})[deviceMode()] || {};
 
@@ -95,8 +96,8 @@ function startMap(datavizId, style) {
             var value = entries[key];
             map.setPaintProperty(layer.layer, key, value);
         }
-        
-        
+
+
     }
 
 
@@ -183,7 +184,7 @@ function startMap(datavizId, style) {
     // instantiate the scrollama
     var scroller = scrollama();
 
-    map.on("load", function () {
+    map.on("load", function() {
 
         addLabelToMap(map, labelsContainer)
 
@@ -195,7 +196,7 @@ function startMap(datavizId, style) {
         scroller
             .setup({
                 step: '.section_' + datavizId,
-                offset: isMobile() ? 0.4 : 0.5,
+                offset: 0.1,
                 // debug: true
             })
             .onStepEnter(response => {
@@ -227,11 +228,11 @@ function startMap(datavizId, style) {
 
                 // Set rotate animation
                 if (chapter.rotateAnimation !== undefined) {
-                    map.once('moveend', function () {
+                    map.once('moveend', function() {
                         const rotateNumber = map.getBearing();
                         map.rotateTo(rotateNumber + chapter.rotateAnimation.degrees, {
                             duration: chapter.rotateAnimation.duration * 1000, // milliseconds
-                            easing: function (t) {
+                            easing: function(t) {
                                 return t;
                             }
                         });
