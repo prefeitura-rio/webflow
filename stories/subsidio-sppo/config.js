@@ -15,7 +15,7 @@ var labelsContainer = [{
                 'description': "ANTES DO ACORDO",
                 'textColor': '#bf5252',
                 'textSize': 30,
-                'textSizeMobile': 10,
+                'textSizeMobile': 12,
                 "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
                 'textHaloColor': '#ffffff',
                 'textHaloWidth': 100,
