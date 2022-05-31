@@ -1,17 +1,56 @@
 var labelsContainer = [{
-    'layerId': 'label-linhasantigas',
-    'labels': [{
-        'description': "LINHAS DE ÔNIBUS MUNICIPAL",
-        'textColor': '#000000',
-        'textSize': 22,
-        'textSizeMobile': 10,
-        "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
-        'textHaloColor': '#ffffff',
-        'textHaloWidth': 50,
-        'textHaloBlur': 50,
-        'coordinates': [-43.33871, -23.04737]
-    }, ]
-}, ]
+        'layerId': 'label-linhasantigas',
+        'labels': [{
+                'description': "LINHAS DE ÔNIBUS",
+                'textColor': '#303e46',
+                'textSize': 30,
+                'textSizeMobile': 10,
+                "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
+                'textHaloColor': '#ffffff',
+                'textHaloWidth': 100,
+                'textHaloBlur': 100,
+                'coordinates': [-43.33871, -23.04737]
+            },
+            {
+                'description': "ANTES DO ACORDO",
+                'textColor': '#bf5252',
+                'textSize': 30,
+                'textSizeMobile': 10,
+                "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
+                'textHaloColor': '#ffffff',
+                'textHaloWidth': 100,
+                'textHaloBlur': 100,
+                'coordinates': [-43.33871, -23.06737]
+            },
+        ]
+    },
+    {
+        'layerId': 'label-pontosantigos',
+        'labels': [{
+                'description': "PONTOS DE ÔNIBUS",
+                'textColor': '#303e46',
+                'textSize': 30,
+                'textSizeMobile': 10,
+                "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
+                'textHaloColor': '#ffffff',
+                'textHaloWidth': 100,
+                'textHaloBlur': 100,
+                'coordinates': [-43.33871, -23.04737]
+            },
+            {
+                'description': "ANTES DO ACORDO",
+                'textColor': '#bf5252',
+                'textSize': 30,
+                'textSizeMobile': 10,
+                "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
+                'textHaloColor': '#ffffff',
+                'textHaloWidth': 100,
+                'textHaloBlur': 100,
+                'coordinates': [-43.33871, -23.06737]
+            },
+        ]
+    },
+]
 
 
 var config = {
@@ -105,6 +144,54 @@ var config = {
                 },
                 {
                     layer: 'label-linhasantigas',
+                    opacity: 0,
+                },
+            ]
+        },
+        {
+            id: 'inicio2',
+            // mapAnimation: 'easeTo', // flyTo, easeTo, seinao
+            location: {
+                mobile: {
+                    center: {
+                        lon: -43.45268,
+                        lat: -22.93530
+                    },
+                    zoom: 8.55,
+                    pitch: 0.00,
+                    bearing: 0.00,
+                    speed: 1,
+                    curve: 1
+                },
+                desktop: {
+                    center: {
+                        lon: -43.45439,
+                        lat: -22.92773
+                    },
+                    zoom: 10.53,
+                    pitch: 0.00,
+                    bearing: 0.00,
+                    speed: 1,
+                    curve: 1
+                }
+            },
+            mapAnimation: 'flyTo',
+            // callback: 'newContainer', 
+            onChapterEnter: [{
+                    layer: 'pontosantigos',
+                    opacity: 1,
+                },
+                {
+                    layer: 'label-pontosantigos',
+                    opacity: 1,
+                },
+            ],
+            onChapterExit: [{
+                    layer: 'pontosantigos',
+                    opacity: 0,
+                },
+                {
+                    layer: 'label-pontosantigos',
                     opacity: 0,
                 },
             ]
