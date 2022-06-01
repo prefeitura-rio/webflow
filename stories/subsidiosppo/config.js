@@ -82,7 +82,7 @@ var config = {
                         lon: -43.46494,
                         lat: -22.91815
                     },
-                    zoom: 9.62,
+                    zoom: 9.89,
                     pitch: 0.00,
                     bearing: 0.00,
                     speed: 1,
