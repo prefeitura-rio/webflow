@@ -108,7 +108,7 @@ var config = {
                         lon: -43.45268,
                         lat: -22.93530
                     },
-                    zoom: 8.65,
+                    zoom: 10.00,
                     pitch: 0.00,
                     bearing: 0.00,
                     speed: 1,
@@ -119,7 +119,7 @@ var config = {
                         lon: -43.46494,
                         lat: -22.91815
                     },
-                    zoom: 9.89,
+                    zoom: 10.00,
                     pitch: 0.00,
                     bearing: 0.00,
                     speed: 1,
@@ -136,6 +136,86 @@ var config = {
                 layer: '',
                 opacity: 0,
             }, ]
+        },
+        {
+            id: 'mapa1',
+            // mapAnimation: 'easeTo', // flyTo, easeTo, seinao
+            location: {
+                mobile: {
+                    center: {
+                        lon: -43.45268,
+                        lat: -22.93530
+                    },
+                    zoom: 8.55,
+                    pitch: 0.00,
+                    bearing: 0.00,
+                    speed: 1,
+                    curve: 1
+                },
+                desktop: {
+                    center: {
+                        lon: -43.45439,
+                        lat: -22.92773
+                    },
+                    zoom: 10.23,
+                    pitch: 0.00,
+                    bearing: 0.00,
+                    speed: 1,
+                    curve: 1
+                }
+            },
+            mapAnimation: 'flyTo',
+            // callback: 'newContainer', 
+            onChapterEnter: [{
+                layer: '',
+                opacity: 1,
+            }, ],
+            onChapterExit: [{
+                    layer: '',
+                    opacity: 0,
+                },
+
+            ]
+        },
+        {
+            id: 'mapa2',
+            // mapAnimation: 'easeTo', // flyTo, easeTo, seinao
+            location: {
+                mobile: {
+                    center: {
+                        lon: -43.45268,
+                        lat: -22.93530
+                    },
+                    zoom: 8.55,
+                    pitch: 0.00,
+                    bearing: 0.00,
+                    speed: 1,
+                    curve: 1
+                },
+                desktop: {
+                    center: {
+                        lon: -43.45439,
+                        lat: -22.92773
+                    },
+                    zoom: 10.23,
+                    pitch: 0.00,
+                    bearing: 0.00,
+                    speed: 1,
+                    curve: 1
+                }
+            },
+            mapAnimation: 'flyTo',
+            // callback: 'newContainer', 
+            onChapterEnter: [{
+                layer: '',
+                opacity: 1,
+            }, ],
+            onChapterExit: [{
+                    layer: '',
+                    opacity: 0,
+                },
+
+            ]
         },
         {
             id: 'inicio1',
@@ -234,6 +314,206 @@ var config = {
             ]
         },
         {
+            id: 'mapa3',
+            // mapAnimation: 'easeTo', // flyTo, easeTo, seinao
+            location: {
+                mobile: {
+                    center: {
+                        lon: -43.45268,
+                        lat: -22.93530
+                    },
+                    zoom: 8.55,
+                    pitch: 0.00,
+                    bearing: 0.00,
+                    speed: 1,
+                    curve: 1
+                },
+                desktop: {
+                    center: {
+                        lon: -43.45439,
+                        lat: -22.92773
+                    },
+                    zoom: 10.23,
+                    pitch: 0.00,
+                    bearing: 0.00,
+                    speed: 1,
+                    curve: 1
+                }
+            },
+            mapAnimation: 'flyTo',
+            // callback: 'newContainer', 
+            onChapterEnter: [{
+                layer: '',
+                opacity: 1,
+            }, ],
+            onChapterExit: [{
+                    layer: '',
+                    opacity: 0,
+                },
+
+            ]
+        },
+        {
+            id: 'mapa4',
+            // mapAnimation: 'easeTo', // flyTo, easeTo, seinao
+            location: {
+                mobile: {
+                    center: {
+                        lon: -43.45268,
+                        lat: -22.93530
+                    },
+                    zoom: 8.55,
+                    pitch: 0.00,
+                    bearing: 0.00,
+                    speed: 1,
+                    curve: 1
+                },
+                desktop: {
+                    center: {
+                        lon: -43.45439,
+                        lat: -22.92773
+                    },
+                    zoom: 10.23,
+                    pitch: 0.00,
+                    bearing: 0.00,
+                    speed: 1,
+                    curve: 1
+                }
+            },
+            mapAnimation: 'flyTo',
+            // callback: 'newContainer', 
+            onChapterEnter: [{
+                layer: '',
+                opacity: 1,
+            }, ],
+            onChapterExit: [{
+                    layer: '',
+                    opacity: 0,
+                },
+
+            ]
+        },
+        {
+            id: 'mapa5',
+            // mapAnimation: 'easeTo', // flyTo, easeTo, seinao
+            location: {
+                mobile: {
+                    center: {
+                        lon: -43.45268,
+                        lat: -22.93530
+                    },
+                    zoom: 8.55,
+                    pitch: 0.00,
+                    bearing: 0.00,
+                    speed: 1,
+                    curve: 1
+                },
+                desktop: {
+                    center: {
+                        lon: -43.45439,
+                        lat: -22.92773
+                    },
+                    zoom: 10.23,
+                    pitch: 0.00,
+                    bearing: 0.00,
+                    speed: 1,
+                    curve: 1
+                }
+            },
+            mapAnimation: 'flyTo',
+            // callback: 'newContainer', 
+            onChapterEnter: [{
+                layer: '',
+                opacity: 1,
+            }, ],
+            onChapterExit: [{
+                    layer: '',
+                    opacity: 0,
+                },
+
+            ]
+        },
+        {
+            id: 'mapa6',
+            // mapAnimation: 'easeTo', // flyTo, easeTo, seinao
+            location: {
+                mobile: {
+                    center: {
+                        lon: -43.45268,
+                        lat: -22.93530
+                    },
+                    zoom: 8.55,
+                    pitch: 0.00,
+                    bearing: 0.00,
+                    speed: 1,
+                    curve: 1
+                },
+                desktop: {
+                    center: {
+                        lon: -43.45439,
+                        lat: -22.92773
+                    },
+                    zoom: 10.23,
+                    pitch: 0.00,
+                    bearing: 0.00,
+                    speed: 1,
+                    curve: 1
+                }
+            },
+            mapAnimation: 'flyTo',
+            // callback: 'newContainer', 
+            onChapterEnter: [{
+                layer: '',
+                opacity: 1,
+            }, ],
+            onChapterExit: [{
+                    layer: '',
+                    opacity: 0,
+                },
+
+            ]
+        },
+        {
+            id: 'mapa7',
+            // mapAnimation: 'easeTo', // flyTo, easeTo, seinao
+            location: {
+                mobile: {
+                    center: {
+                        lon: -43.45268,
+                        lat: -22.93530
+                    },
+                    zoom: 8.55,
+                    pitch: 0.00,
+                    bearing: 0.00,
+                    speed: 1,
+                    curve: 1
+                },
+                desktop: {
+                    center: {
+                        lon: -43.45439,
+                        lat: -22.92773
+                    },
+                    zoom: 10.23,
+                    pitch: 0.00,
+                    bearing: 0.00,
+                    speed: 1,
+                    curve: 1
+                }
+            },
+            mapAnimation: 'flyTo',
+            // callback: 'newContainer', 
+            onChapterEnter: [{
+                layer: '',
+                opacity: 1,
+            }, ],
+            onChapterExit: [{
+                    layer: '',
+                    opacity: 0,
+                },
+
+            ]
+        },
+        {
             id: 'novo',
             // mapAnimation: 'easeTo', // flyTo, easeTo, seinao
             location: {
@@ -279,6 +559,46 @@ var config = {
                     layer: 'label-novaslinhas',
                     opacity: 0,
                 },
+            ]
+        },
+        {
+            id: 'mapa8',
+            // mapAnimation: 'easeTo', // flyTo, easeTo, seinao
+            location: {
+                mobile: {
+                    center: {
+                        lon: -43.45268,
+                        lat: -22.93530
+                    },
+                    zoom: 8.55,
+                    pitch: 0.00,
+                    bearing: 0.00,
+                    speed: 1,
+                    curve: 1
+                },
+                desktop: {
+                    center: {
+                        lon: -43.45439,
+                        lat: -22.92773
+                    },
+                    zoom: 10.23,
+                    pitch: 0.00,
+                    bearing: 0.00,
+                    speed: 1,
+                    curve: 1
+                }
+            },
+            mapAnimation: 'flyTo',
+            // callback: 'newContainer', 
+            onChapterEnter: [{
+                layer: '',
+                opacity: 1,
+            }, ],
+            onChapterExit: [{
+                    layer: '',
+                    opacity: 0,
+                },
+
             ]
         },
         {
