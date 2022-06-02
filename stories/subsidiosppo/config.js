@@ -2,25 +2,25 @@ var labelsContainer = [{
         'layerId': 'label-linhasantigas',
         'labels': [{
                 'description': "LINHAS DE ÔNIBUS",
-                'textColor': '#303e46',
-                'textSize': 30,
+                'textColor': '#964a4a',
+                'textSize': 28,
                 'textSizeMobile': 10,
                 "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
                 'textHaloColor': '#ffffff',
                 'textHaloWidth': 100,
                 'textHaloBlur': 100,
-                'coordinates': [-43.33871, -23.04737]
+                'coordinates': [-43.40871, -23.04737]
             },
             {
                 'description': "ANTES DO ACORDO",
-                'textColor': '#bf5252',
-                'textSize': 30,
+                'textColor': '#303e46',
+                'textSize': 28,
                 'textSizeMobile': 12,
                 "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
                 'textHaloColor': '#ffffff',
                 'textHaloWidth': 100,
                 'textHaloBlur': 100,
-                'coordinates': [-43.33871, -23.06737]
+                'coordinates': [-43.23871, -23.04737]
             },
         ]
     },
@@ -28,25 +28,51 @@ var labelsContainer = [{
         'layerId': 'label-pontosantigos',
         'labels': [{
                 'description': "PONTOS DE ÔNIBUS",
-                'textColor': '#303e46',
-                'textSize': 30,
+                'textColor': '#964a4a',
+                'textSize': 28,
                 'textSizeMobile': 10,
                 "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
                 'textHaloColor': '#ffffff',
                 'textHaloWidth': 100,
                 'textHaloBlur': 100,
-                'coordinates': [-43.33871, -23.04737]
+                'coordinates': [-43.40871, -23.04737]
             },
             {
                 'description': "ANTES DO ACORDO",
-                'textColor': '#bf5252',
-                'textSize': 30,
+                'textColor': '#303e46',
+                'textSize': 28,
+                'textSizeMobile': 12,
+                "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
+                'textHaloColor': '#ffffff',
+                'textHaloWidth': 100,
+                'textHaloBlur': 100,
+                'coordinates': [-43.23871, -23.04737]
+            },
+        ]
+    },
+    {
+        'layerId': 'label-novaslinhas',
+        'labels': [{
+                'description': "LINHAS DE ÔNIBUS ",
+                'textColor': '#964a4a',
+                'textSize': 28,
                 'textSizeMobile': 10,
                 "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
                 'textHaloColor': '#ffffff',
                 'textHaloWidth': 100,
                 'textHaloBlur': 100,
-                'coordinates': [-43.33871, -23.06737]
+                'coordinates': [-43.40871, -23.04737]
+            },
+            {
+                'description': "DEVOLVIDAS",
+                'textColor': '#303e46',
+                'textSize': 28,
+                'textSizeMobile': 12,
+                "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
+                'textHaloColor': '#ffffff',
+                'textHaloWidth': 100,
+                'textHaloBlur': 100,
+                'coordinates': [-43.26871, -23.04737]
             },
         ]
     },
@@ -120,7 +146,7 @@ var config = {
                         lon: -43.45439,
                         lat: -22.92773
                     },
-                    zoom: 10.53,
+                    zoom: 10.23,
                     pitch: 0.00,
                     bearing: 0.00,
                     speed: 1,
@@ -168,7 +194,7 @@ var config = {
                         lon: -43.45439,
                         lat: -22.92773
                     },
-                    zoom: 10.53,
+                    zoom: 10.23,
                     pitch: 0.00,
                     bearing: 0.00,
                     speed: 1,
@@ -192,6 +218,54 @@ var config = {
                 },
                 {
                     layer: 'label-pontosantigos',
+                    opacity: 0,
+                },
+            ]
+        },
+        {
+            id: 'novo',
+            // mapAnimation: 'easeTo', // flyTo, easeTo, seinao
+            location: {
+                mobile: {
+                    center: {
+                        lon: -43.45268,
+                        lat: -22.93530
+                    },
+                    zoom: 8.55,
+                    pitch: 0.00,
+                    bearing: 0.00,
+                    speed: 1,
+                    curve: 1
+                },
+                desktop: {
+                    center: {
+                        lon: -43.45439,
+                        lat: -22.92773
+                    },
+                    zoom: 10.23,
+                    pitch: 0.00,
+                    bearing: 0.00,
+                    speed: 1,
+                    curve: 1
+                }
+            },
+            mapAnimation: 'flyTo',
+            // callback: 'newContainer', 
+            onChapterEnter: [{
+                    layer: 'novaslinhas',
+                    opacity: 1,
+                },
+                {
+                    layer: 'label-novaslinhas',
+                    opacity: 1,
+                },
+            ],
+            onChapterExit: [{
+                    layer: 'novaslinhas',
+                    opacity: 0,
+                },
+                {
+                    layer: 'label-novaslinhas',
                     opacity: 0,
                 },
             ]
