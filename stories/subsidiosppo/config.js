@@ -74,6 +74,17 @@ var labelsContainer = [{
                 'textHaloBlur': 100,
                 'coordinates': [-43.26871, -23.04737]
             },
+            {
+                'description': "INICIALMENTE",
+                'textColor': '#303e46',
+                'textSize': 28,
+                'textSizeMobile': 12,
+                "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
+                'textHaloColor': '#ffffff',
+                'textHaloWidth': 100,
+                'textHaloBlur': 100,
+                'coordinates': [-43.15871, -23.04737]
+            },
         ]
     },
 ]
