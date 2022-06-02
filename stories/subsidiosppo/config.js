@@ -2,7 +2,7 @@ var labelsContainer = [{
         'layerId': 'label-linhasantigas',
         'labels': [{
                 'description': "LINHAS DE ÔNIBUS",
-                'textColor': '#964a4a',
+                'textColor': '#be5b5b',
                 'textSize': 28,
                 'textSizeMobile': 10,
                 "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
@@ -28,7 +28,7 @@ var labelsContainer = [{
         'layerId': 'label-pontosantigos',
         'labels': [{
                 'description': "PONTOS DE ÔNIBUS",
-                'textColor': '#964a4a',
+                'textColor': '#be5b5b',
                 'textSize': 28,
                 'textSizeMobile': 10,
                 "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
@@ -54,7 +54,7 @@ var labelsContainer = [{
         'layerId': 'label-novaslinhas',
         'labels': [{
                 'description': "LINHAS DE ÔNIBUS ",
-                'textColor': '#964a4a',
+                'textColor': '#be5b5b',
                 'textSize': 28,
                 'textSizeMobile': 10,
                 "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
