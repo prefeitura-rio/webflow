@@ -61,7 +61,7 @@ var labelsContainer = [{
                 'textHaloColor': '#ffffff',
                 'textHaloWidth': 100,
                 'textHaloBlur': 100,
-                'coordinates': [-43.44871, -23.04737]
+                'coordinates': [-43.37871, -23.04737]
             },
             {
                 'description': "DEVOLVIDAS",
@@ -72,7 +72,7 @@ var labelsContainer = [{
                 'textHaloColor': '#ffffff',
                 'textHaloWidth': 100,
                 'textHaloBlur': 100,
-                'coordinates': [-43.30871, -23.04737]
+                'coordinates': [-43.40871, -23.08737]
             },
             {
                 'description': "INICIALMENTE",
@@ -83,7 +83,7 @@ var labelsContainer = [{
                 'textHaloColor': '#ffffff',
                 'textHaloWidth': 100,
                 'textHaloBlur': 100,
-                'coordinates': [-43.18871, -23.04737]
+                'coordinates': [-43.24871, -23.08737]
             },
         ]
     },
