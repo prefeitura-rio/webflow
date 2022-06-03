@@ -15,12 +15,12 @@ var labelsContainer = [{
                 'description': "ANTES DO ACORDO",
                 'textColor': '#303e46',
                 'textSize': 28,
-                'textSizeMobile': 12,
+                'textSizeMobile': 10,
                 "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
                 'textHaloColor': '#ffffff',
                 'textHaloWidth': 100,
                 'textHaloBlur': 100,
-                'coordinates': [-43.23871, -23.04737]
+                'coordinates': [-43.20871, -23.04737]
             },
         ]
     },
@@ -41,12 +41,12 @@ var labelsContainer = [{
                 'description': "ANTES DO ACORDO",
                 'textColor': '#303e46',
                 'textSize': 28,
-                'textSizeMobile': 12,
+                'textSizeMobile': 10,
                 "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
                 'textHaloColor': '#ffffff',
                 'textHaloWidth': 100,
                 'textHaloBlur': 100,
-                'coordinates': [-43.23871, -23.04737]
+                'coordinates': [-43.20871, -23.04737]
             },
         ]
     },
@@ -61,29 +61,29 @@ var labelsContainer = [{
                 'textHaloColor': '#ffffff',
                 'textHaloWidth': 100,
                 'textHaloBlur': 100,
-                'coordinates': [-43.40871, -23.04737]
+                'coordinates': [-43.44871, -23.04737]
             },
             {
                 'description': "DEVOLVIDAS",
                 'textColor': '#303e46',
                 'textSize': 28,
-                'textSizeMobile': 12,
+                'textSizeMobile': 10,
                 "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
                 'textHaloColor': '#ffffff',
                 'textHaloWidth': 100,
                 'textHaloBlur': 100,
-                'coordinates': [-43.26871, -23.04737]
+                'coordinates': [-43.30871, -23.04737]
             },
             {
                 'description': "INICIALMENTE",
                 'textColor': '#303e46',
                 'textSize': 28,
-                'textSizeMobile': 12,
+                'textSizeMobile': 10,
                 "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
                 'textHaloColor': '#ffffff',
                 'textHaloWidth': 100,
                 'textHaloBlur': 100,
-                'coordinates': [-43.15871, -23.04737]
+                'coordinates': [-43.18871, -23.04737]
             },
         ]
     },
@@ -108,7 +108,7 @@ var config = {
                         lon: -43.45268,
                         lat: -22.93530
                     },
-                    zoom: 10.00,
+                    zoom: 8.00,
                     pitch: 0.00,
                     bearing: 0.00,
                     speed: 1,
@@ -146,7 +146,7 @@ var config = {
                         lon: -43.45268,
                         lat: -22.93530
                     },
-                    zoom: 8.55,
+                    zoom: 8.15,
                     pitch: 0.00,
                     bearing: 0.00,
                     speed: 1,
@@ -186,7 +186,7 @@ var config = {
                         lon: -43.45268,
                         lat: -22.93530
                     },
-                    zoom: 8.55,
+                    zoom: 8.15,
                     pitch: 0.00,
                     bearing: 0.00,
                     speed: 1,
@@ -226,7 +226,7 @@ var config = {
                         lon: -43.45268,
                         lat: -22.93530
                     },
-                    zoom: 8.55,
+                    zoom: 8.35,
                     pitch: 0.00,
                     bearing: 0.00,
                     speed: 1,
@@ -274,7 +274,7 @@ var config = {
                         lon: -43.45268,
                         lat: -22.93530
                     },
-                    zoom: 8.55,
+                    zoom: 8.35,
                     pitch: 0.00,
                     bearing: 0.00,
                     speed: 1,
@@ -297,6 +297,11 @@ var config = {
             onChapterEnter: [{
                     layer: 'pontosantigos',
                     opacity: 1,
+                    style: {
+                        mobile: {
+                            'circle-radius': .7
+                        }
+                    }
                 },
                 {
                     layer: 'label-pontosantigos',
@@ -322,7 +327,7 @@ var config = {
                         lon: -43.45268,
                         lat: -22.93530
                     },
-                    zoom: 8.55,
+                    zoom: 8.15,
                     pitch: 0.00,
                     bearing: 0.00,
                     speed: 1,
@@ -362,7 +367,7 @@ var config = {
                         lon: -43.45268,
                         lat: -22.93530
                     },
-                    zoom: 8.55,
+                    zoom: 8.15,
                     pitch: 0.00,
                     bearing: 0.00,
                     speed: 1,
@@ -402,7 +407,7 @@ var config = {
                         lon: -43.45268,
                         lat: -22.93530
                     },
-                    zoom: 8.55,
+                    zoom: 8.15,
                     pitch: 0.00,
                     bearing: 0.00,
                     speed: 1,
@@ -442,7 +447,7 @@ var config = {
                         lon: -43.45268,
                         lat: -22.93530
                     },
-                    zoom: 8.55,
+                    zoom: 8.15,
                     pitch: 0.00,
                     bearing: 0.00,
                     speed: 1,
@@ -482,7 +487,7 @@ var config = {
                         lon: -43.45268,
                         lat: -22.93530
                     },
-                    zoom: 8.55,
+                    zoom: 8.15,
                     pitch: 0.00,
                     bearing: 0.00,
                     speed: 1,
@@ -522,7 +527,7 @@ var config = {
                         lon: -43.45268,
                         lat: -22.93530
                     },
-                    zoom: 8.55,
+                    zoom: 8.35,
                     pitch: 0.00,
                     bearing: 0.00,
                     speed: 1,
@@ -570,7 +575,7 @@ var config = {
                         lon: -43.45268,
                         lat: -22.93530
                     },
-                    zoom: 8.55,
+                    zoom: 8.15,
                     pitch: 0.00,
                     bearing: 0.00,
                     speed: 1,
