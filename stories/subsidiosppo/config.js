@@ -13,7 +13,7 @@ var labelsContainer = [{
             },
             {
                 'description': "ANTES DO ACORDO",
-                'textColor': '#303e46',
+                'textColor': '#be5b5b',
                 'textSize': 28,
                 'textSizeMobile': 10,
                 "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
@@ -39,7 +39,7 @@ var labelsContainer = [{
             },
             {
                 'description': "ANTES DO ACORDO",
-                'textColor': '#303e46',
+                'textColor': '#be5b5b',
                 'textSize': 28,
                 'textSizeMobile': 10,
                 "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
@@ -65,7 +65,7 @@ var labelsContainer = [{
             },
             {
                 'description': "DEVOLVIDAS",
-                'textColor': '#303e46',
+                'textColor': '#be5b5b',
                 'textSize': 28,
                 'textSizeMobile': 10,
                 "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
@@ -76,7 +76,7 @@ var labelsContainer = [{
             },
             {
                 'description': "INICIALMENTE",
-                'textColor': '#303e46',
+                'textColor': '#be5b5b',
                 'textSize': 28,
                 'textSizeMobile': 10,
                 "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
