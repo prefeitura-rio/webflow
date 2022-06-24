@@ -196,7 +196,7 @@ function startMap(datavizId, style) {
         scroller
             .setup({
                 step: '.section_' + datavizId,
-                offset: 0.1,
+                offset: 0.5,
                 // debug: true
             })
             .onStepEnter(response => {
