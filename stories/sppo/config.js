@@ -50,43 +50,6 @@ var labelsContainer = [{
             },
         ]
     },
-    {
-        'layerId': 'label-novaslinhas',
-        'labels': [{
-                'description': "LINHAS DE ÔNIBUS ",
-                'textColor': '#be5b5b',
-                'textSize': 28,
-                'textSizeMobile': 10,
-                "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
-                'textHaloColor': '#ffffff',
-                'textHaloWidth': 100,
-                'textHaloBlur': 100,
-                'coordinates': [-43.37871, -23.04737]
-            },
-            {
-                'description': "DEVOLVIDAS",
-                'textColor': '#be5b5b',
-                'textSize': 28,
-                'textSizeMobile': 10,
-                "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
-                'textHaloColor': '#ffffff',
-                'textHaloWidth': 100,
-                'textHaloBlur': 100,
-                'coordinates': [-43.40871, -23.08737]
-            },
-            {
-                'description': "INICIALMENTE",
-                'textColor': '#be5b5b',
-                'textSize': 28,
-                'textSizeMobile': 10,
-                "textFont": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
-                'textHaloColor': '#ffffff',
-                'textHaloWidth': 100,
-                'textHaloBlur': 100,
-                'coordinates': [-43.24871, -23.08737]
-            },
-        ]
-    },
 ]
 
 
@@ -138,15 +101,15 @@ var config = {
             }, ]
         },
         {
-            id: 'mapa1',
+            id: 'numero1',
             // mapAnimation: 'easeTo', // flyTo, easeTo, seinao
             location: {
                 mobile: {
                     center: {
-                        lon: -43.45268,
-                        lat: -22.93530
+                        lon: -43.29614,
+                        lat: -22.92353
                     },
-                    zoom: 8.15,
+                    zoom: 10.17,
                     pitch: 0.00,
                     bearing: 0.00,
                     speed: 1,
@@ -154,10 +117,10 @@ var config = {
                 },
                 desktop: {
                     center: {
-                        lon: -43.46494,
-                        lat: -22.91815
+                        lon: -43.29614,
+                        lat: -22.92353
                     },
-                    zoom: 10.00,
+                    zoom: 10.17,
                     pitch: 0.00,
                     bearing: 0.00,
                     speed: 1,
