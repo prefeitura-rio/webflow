@@ -120,7 +120,7 @@ var config = {
                         lon: -43.24614,
                         lat: -22.92353
                     },
-                    zoom: 9.80,
+                    zoom: 10,
                     pitch: 0.00,
                     bearing: 0.00,
                     speed: 1,
@@ -160,7 +160,7 @@ var config = {
                         lon: -43.24614,
                         lat: -22.92353
                     },
-                    zoom: 9.80,
+                    zoom: 10,
                     pitch: 0.00,
                     bearing: 0.00,
                     speed: 1,
@@ -200,7 +200,7 @@ var config = {
                         lon: -43.24614,
                         lat: -22.92353
                     },
-                    zoom: 9.80,
+                    zoom: 10,
                     pitch: 0.00,
                     bearing: 0.00,
                     speed: 1,
