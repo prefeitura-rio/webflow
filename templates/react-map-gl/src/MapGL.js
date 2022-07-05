@@ -1,38 +1,36 @@
-import * as React from 'react';
-import {Map} from 'react-map-gl';
-import DeckGL from '@deck.gl/react';
-import {TripsLayer} from '@deck.gl/geo-layers';
-
-
+import * as React from "react";
+import { Map } from "react-map-gl";
+import DeckGL from "@deck.gl/react";
+import { TripsLayer } from "@deck.gl/geo-layers";
 
 //  Data format:
-const data = [
-   {
-     "waypoints": [
-      {"coordinates": [-122.3907988, 37.7664413], "timestamp": 1554772579000},
-      {"coordinates": [-122.3908298,37.7667706], "timestamp": 1554772579010},
-      {"coordinates": [-122.4485672, 37.8040182], "timestamp": 1554772580200},
-     ]
-   }
- ];
+// const data = [
+//    {
+//      "waypoints": [
+//       {"coordinates": [-122.3907988, 37.7664413], "timestamp": 1554772579000},
+//       {"coordinates": [-122.3908298,37.7667706], "timestamp": 1554772579010},
+//       {"coordinates": [-122.4485672, 37.8040182], "timestamp": 1554772580200},
+//      ]
+//    }
+//  ];
 
 const layer = new TripsLayer({
-  id: 'TripsLayer',
-  data: 'https://raw.githubusercontent.com/visgl/deck.gl-data/master/website/sf.trips.json',
-  
+  id: "TripsLayer",
+  data: "https://raw.githubusercontent.com/visgl/deck.gl-data/master/website/sf.trips.json",
+
   /* props from TripsLayer class */
-  
+
   currentTime: 500,
   // fadeTrail: true,
-  getTimestamps: d => d.waypoints.map(p => p.timestamp - 1554772579000),
+  getTimestamps: (d) => d.waypoints.map((p) => p.timestamp - 1554772579000),
   trailLength: 600,
-  
+
   /* props inherited from PathLayer class */
-  
+
   // billboard: false,
   capRounded: true,
   getColor: [253, 128, 93],
-  getPath: d => d.waypoints.map(p => p.coordinates),
+  getPath: (d) => d.waypoints.map((p) => p.coordinates),
   // getWidth: 1,
   jointRounded: true,
   // miterLimit: 4,
@@ -41,9 +39,9 @@ const layer = new TripsLayer({
   widthMinPixels: 8,
   // widthScale: 1,
   // widthUnits: 'meters',
-  
+
   /* props inherited from Layer class */
-  
+
   // autoHighlight: false,
   // coordinateOrigin: [0, 0, 0],
   // coordinateSystem: COORDINATE_SYSTEM.LNGLAT,
@@ -57,19 +55,20 @@ const layer = new TripsLayer({
 
 export default function MapTris() {
   return (
-      <DeckGL
-        initialViewState={{longitude: -122.45, latitude: 37.78, zoom: 12}}
-        controller={true}
-        layers= {[layer]}
-      >
+    <DeckGL
+      initialViewState={{ longitude: -122.45, latitude: 37.78, zoom: 12 }}
+      controller={true}
+      layers={[layer]}
+    >
       <Map
         mapStyle="mapbox://styles/mapbox/dark-v9"
-        mapboxApiAccessToken={"pk.eyJ1IjoiZDExNjYyNiIsImEiOiJjazM1ODVoZ3MxNjJoM21vcWMwZmhycHVvIn0.7hxPP_9w7z8QAVc2nStP6w"} />
-      </DeckGL>
+        mapboxApiAccessToken={
+          "pk.eyJ1IjoiZDExNjYyNiIsImEiOiJjazM1ODVoZ3MxNjJoM21vcWMwZmhycHVvIn0.7hxPP_9w7z8QAVc2nStP6w"
+        }
+      />
+    </DeckGL>
   );
 }
-
-
 
 // export default function MapGL() {
 //     return (
