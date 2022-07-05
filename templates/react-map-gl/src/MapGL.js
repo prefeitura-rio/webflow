@@ -53,14 +53,20 @@ const layer = new TripsLayer({
   // wrapLongitude: false,
 });
 
-export default function MapTris() {
+export default function MapGL() {
   return (
     <DeckGL
       initialViewState={{ longitude: -122.45, latitude: 37.78, zoom: 12 }}
-      controller={true}
+      controller={false}
       layers={[layer]}
     >
       <Map
+        // initialViewState={{
+        //       longitude: -100,
+        //       latitude: 40,
+        //       zoom: 3.5
+        // }}
+        // style={{width: '100vw', height: '100vh'}}
         mapStyle="mapbox://styles/mapbox/dark-v9"
         mapboxApiAccessToken={
           "pk.eyJ1IjoiZDExNjYyNiIsImEiOiJjazM1ODVoZ3MxNjJoM21vcWMwZmhycHVvIn0.7hxPP_9w7z8QAVc2nStP6w"
