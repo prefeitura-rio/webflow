@@ -117,10 +117,10 @@ var config = {
                 },
                 desktop: {
                     center: {
-                        lon: -43.29614,
+                        lon: -43.24614,
                         lat: -22.92353
                     },
-                    zoom: 10.17,
+                    zoom: 9.80,
                     pitch: 0.00,
                     bearing: 0.00,
                     speed: 1,
@@ -135,6 +135,86 @@ var config = {
             }, ],
             onChapterExit: [{
                     layer: '',
+                    opacity: 0,
+                },
+
+            ]
+        },
+        {
+            id: 'numero2',
+            // mapAnimation: 'easeTo', // flyTo, easeTo, seinao
+            location: {
+                mobile: {
+                    center: {
+                        lon: -43.29614,
+                        lat: -22.92353
+                    },
+                    zoom: 10.17,
+                    pitch: 0.00,
+                    bearing: 0.00,
+                    speed: 1,
+                    curve: 1
+                },
+                desktop: {
+                    center: {
+                        lon: -43.24614,
+                        lat: -22.92353
+                    },
+                    zoom: 9.80,
+                    pitch: 0.00,
+                    bearing: 0.00,
+                    speed: 1,
+                    curve: 1
+                }
+            },
+            mapAnimation: 'flyTo',
+            // callback: 'newContainer', 
+            onChapterEnter: [{
+                layer: 'linhasantigas',
+                opacity: 1,
+            }, ],
+            onChapterExit: [{
+                    layer: 'linhasantigas',
+                    opacity: 0,
+                },
+
+            ]
+        },
+        {
+            id: 'numero3',
+            // mapAnimation: 'easeTo', // flyTo, easeTo, seinao
+            location: {
+                mobile: {
+                    center: {
+                        lon: -43.29614,
+                        lat: -22.92353
+                    },
+                    zoom: 10.17,
+                    pitch: 0.00,
+                    bearing: 0.00,
+                    speed: 1,
+                    curve: 1
+                },
+                desktop: {
+                    center: {
+                        lon: -43.24614,
+                        lat: -22.92353
+                    },
+                    zoom: 9.80,
+                    pitch: 0.00,
+                    bearing: 0.00,
+                    speed: 1,
+                    curve: 1
+                }
+            },
+            mapAnimation: 'flyTo',
+            // callback: 'newContainer', 
+            onChapterEnter: [{
+                layer: 'pontosantigos',
+                opacity: 1,
+            }, ],
+            onChapterExit: [{
+                    layer: 'pontosantigos',
                     opacity: 0,
                 },
 
