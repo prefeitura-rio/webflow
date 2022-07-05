@@ -1,4 +1,5 @@
 # user defined
+**/node_modules
 **/data/
 test_local.py
 
