@@ -13,7 +13,7 @@ mapboxgl.workerClass = require('worker-loader!mapbox-gl/dist/mapbox-gl-csp-worke
 
 
 // Source data CSV
-const trips = 'https://raw.githubusercontent.com/prefeitura-rio/webflow/c81644344e77c2e82caef5f17a97fca780c758e3/templates/react-map-gl/trips_data/trips.json';
+const trips = require("./trips.json")
 const MAPBOX_API_TOKEN = "pk.eyJ1IjoiZDExNjYyNiIsImEiOiJjazM1ODVoZ3MxNjJoM21vcWMwZmhycHVvIn0.7hxPP_9w7z8QAVc2nStP6w";
 const animationSpeed = 3
 const loopLength = 1800
@@ -46,7 +46,7 @@ export default function MapGL() {
             currentTime: time,
             opacity: 1,
             rounded: true,
-            trailLength:300,
+            trailLength:600,
             shadowEnabled: false
         }),
     ];
@@ -55,8 +55,8 @@ export default function MapGL() {
     const INITIAL_VIEW_STATE = {
         longitude: -43.17785,
         latitude: -22.9561,
-        zoom: 13,
-        pitch: 45,
+        zoom: 11,
+        pitch: 0,
         bearing: 0
     };
     
