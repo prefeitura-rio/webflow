@@ -7,9 +7,9 @@ import { TripsLayer } from "@deck.gl/geo-layers";
 
 
 // Source data CSV
-const trips = 'https://raw.githubusercontent.com/prefeitura-rio/webflow/403d657964af928ee6bc7f20fb634197dc59ec5a/templates/react-map-gl/trips_data/trips_data.json';
+const trips = 'https://raw.githubusercontent.com/prefeitura-rio/webflow/c81644344e77c2e82caef5f17a97fca780c758e3/templates/react-map-gl/trips_data/trips.json';
 const MAPBOX_API_TOKEN = "pk.eyJ1IjoiZDExNjYyNiIsImEiOiJjazM1ODVoZ3MxNjJoM21vcWMwZmhycHVvIn0.7hxPP_9w7z8QAVc2nStP6w";
-const animationSpeed = 6
+const animationSpeed = 3
 const loopLength = 1800
 
 export default function MapGL() {
@@ -40,7 +40,7 @@ export default function MapGL() {
             currentTime: time,
             opacity: 1,
             rounded: true,
-            trailLength:120,
+            trailLength:300,
             shadowEnabled: false
         }),
     ];
