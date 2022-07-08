@@ -210,11 +210,11 @@ var config = {
             mapAnimation: 'flyTo',
             // callback: 'newContainer', 
             onChapterEnter: [{
-                layer: 'linhasantigas',
+                layer: 'linhasantigas1',
                 opacity: 1,
             }, ],
             onChapterExit: [{
-                    layer: 'linhasantigas',
+                    layer: 'linhasantigas1',
                     opacity: 0,
                 },
 
@@ -237,12 +237,12 @@ var config = {
                 },
                 desktop: {
                     center: {
-                        lon: -43.32736,
-                        lat: -22.88121
+                        lon: -43.25678,
+                        lat: -22.86942
                     },
-                    zoom: 12.74,
+                    zoom: 12.78,
                     pitch: 60.00,
-                    bearing: 117.60,
+                    bearing: -136.15,
                     speed: .2,
                     curve: 1
                 }
@@ -277,12 +277,12 @@ var config = {
                 },
                 desktop: {
                     center: {
-                        lon: -43.24251,
-                        lat: -22.93550
+                        lon: -43.24732,
+                        lat: -22.95260
                     },
-                    zoom: 12.10,
+                    zoom: 12.33,
                     pitch: 60.00,
-                    bearing: -123.55,
+                    bearing: -51.24,
                     speed: .2,
                     curve: 1
                 }
