@@ -112,18 +112,18 @@ var config = {
                     zoom: 10.17,
                     pitch: 0.00,
                     bearing: 0.00,
-                    speed: 1,
+                    speed: .2,
                     curve: 1
                 },
                 desktop: {
                     center: {
-                        lon: -43.24614,
-                        lat: -22.92353
+                        lon: -43.45938,
+                        lat: -22.94232
                     },
-                    zoom: 10,
-                    pitch: 0.00,
+                    zoom: 10.67,
+                    pitch: 7.00,
                     bearing: 0.00,
-                    speed: 1,
+                    speed: .2,
                     curve: 1
                 }
             },
@@ -141,7 +141,7 @@ var config = {
             ]
         },
         {
-            id: 'numero2',
+            id: 'numero2-1',
             // mapAnimation: 'easeTo', // flyTo, easeTo, seinao
             location: {
                 mobile: {
@@ -152,18 +152,18 @@ var config = {
                     zoom: 10.17,
                     pitch: 0.00,
                     bearing: 0.00,
-                    speed: 1,
+                    speed: .2,
                     curve: 1
                 },
                 desktop: {
                     center: {
-                        lon: -43.24614,
-                        lat: -22.92353
+                        lon: -43.45938,
+                        lat: -22.94232
                     },
-                    zoom: 10,
-                    pitch: 0.00,
+                    zoom: 10.67,
+                    pitch: 7.00,
                     bearing: 0.00,
-                    speed: 1,
+                    speed: .2,
                     curve: 1
                 }
             },
@@ -181,7 +181,7 @@ var config = {
             ]
         },
         {
-            id: 'numero3',
+            id: 'numero2-2',
             // mapAnimation: 'easeTo', // flyTo, easeTo, seinao
             location: {
                 mobile: {
@@ -192,18 +192,138 @@ var config = {
                     zoom: 10.17,
                     pitch: 0.00,
                     bearing: 0.00,
-                    speed: 1,
+                    speed: .2,
                     curve: 1
                 },
                 desktop: {
                     center: {
-                        lon: -43.24614,
+                        lon: -43.54033,
+                        lat: -22.97802
+                    },
+                    zoom: 11.84,
+                    pitch: 60.00,
+                    bearing: 37.60,
+                    speed: .2,
+                    curve: 1
+                }
+            },
+            mapAnimation: 'flyTo',
+            // callback: 'newContainer', 
+            onChapterEnter: [{
+                layer: 'linhasantigas',
+                opacity: 1,
+            }, ],
+            onChapterExit: [{
+                    layer: 'linhasantigas',
+                    opacity: 0,
+                },
+
+            ]
+        },
+        {
+            id: 'numero2-3',
+            // mapAnimation: 'easeTo', // flyTo, easeTo, seinao
+            location: {
+                mobile: {
+                    center: {
+                        lon: -43.29614,
                         lat: -22.92353
                     },
-                    zoom: 10,
+                    zoom: 10.17,
                     pitch: 0.00,
                     bearing: 0.00,
-                    speed: 1,
+                    speed: .2,
+                    curve: 1
+                },
+                desktop: {
+                    center: {
+                        lon: -43.32736,
+                        lat: -22.88121
+                    },
+                    zoom: 12.74,
+                    pitch: 60.00,
+                    bearing: 117.60,
+                    speed: .2,
+                    curve: 1
+                }
+            },
+            mapAnimation: 'flyTo',
+            // callback: 'newContainer', 
+            onChapterEnter: [{
+                layer: 'linhasantigas',
+                opacity: 1,
+            }, ],
+            onChapterExit: [{
+                    layer: 'linhasantigas',
+                    opacity: 0,
+                },
+
+            ]
+        },
+        {
+            id: 'numero3-1',
+            // mapAnimation: 'easeTo', // flyTo, easeTo, seinao
+            location: {
+                mobile: {
+                    center: {
+                        lon: -43.29614,
+                        lat: -22.92353
+                    },
+                    zoom: 10.17,
+                    pitch: 0.00,
+                    bearing: 0.00,
+                    speed: .2,
+                    curve: 1
+                },
+                desktop: {
+                    center: {
+                        lon: -43.24251,
+                        lat: -22.93550
+                    },
+                    zoom: 12.10,
+                    pitch: 60.00,
+                    bearing: -123.55,
+                    speed: .2,
+                    curve: 1
+                }
+            },
+            mapAnimation: 'flyTo',
+            // callback: 'newContainer', 
+            onChapterEnter: [{
+                layer: 'pontosantigos',
+                opacity: 1,
+            }, ],
+            onChapterExit: [{
+                    layer: 'pontosantigos',
+                    opacity: 0,
+                },
+
+            ]
+        },
+        {
+            id: 'numero3-2',
+            // mapAnimation: 'easeTo', // flyTo, easeTo, seinao
+            location: {
+                mobile: {
+                    center: {
+                        lon: -43.29614,
+                        lat: -22.92353
+                    },
+                    zoom: 10.17,
+                    pitch: 0.00,
+                    bearing: 0.00,
+                    speed: .2,
+                    curve: 1
+                },
+                desktop: {
+                    center: {
+                        lon: -43.45938,
+                        lat: -22.94232
+                    },
+                    zoom: 10.67,
+                    pitch: 7.00,
+                    bearing: 0.00,
+                    speed: .2,
                     curve: 1
                 }
             },
