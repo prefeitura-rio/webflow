@@ -330,11 +330,11 @@ var config = {
             mapAnimation: 'flyTo',
             // callback: 'newContainer', 
             onChapterEnter: [{
-                layer: 'pontosantigos',
+                layer: 'pontosantigos1',
                 opacity: 1,
             }, ],
             onChapterExit: [{
-                    layer: 'pontosantigos',
+                    layer: 'pontosantigos1',
                     opacity: 0,
                 },
 
