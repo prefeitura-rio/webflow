@@ -170,11 +170,11 @@ var config = {
             mapAnimation: 'flyTo',
             // callback: 'newContainer', 
             onChapterEnter: [{
-                layer: 'linhasantigas',
+                layer: '',
                 opacity: 1,
             }, ],
             onChapterExit: [{
-                    layer: 'linhasantigas',
+                    layer: '',
                     opacity: 0,
                 },
 
