@@ -130,11 +130,11 @@ var config = {
             mapAnimation: 'flyTo',
             // callback: 'newContainer', 
             onChapterEnter: [{
-                layer: '',
+                layer: 'busao',
                 opacity: 1,
             }, ],
             onChapterExit: [{
-                    layer: '',
+                    layer: 'busao',
                     opacity: 0,
                 },
 
