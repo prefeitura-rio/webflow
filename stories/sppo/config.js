@@ -132,6 +132,11 @@ var config = {
             onChapterEnter: [{
                 layer: 'busao',
                 opacity: 1,
+                style: {
+                    mobile: {
+                        'circle-radius': 2
+                    }
+                }
             }, ],
             onChapterExit: [{
                     layer: 'busao',
