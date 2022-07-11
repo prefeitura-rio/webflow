@@ -106,11 +106,11 @@ var config = {
             location: {
                 mobile: {
                     center: {
-                        lon: -43.29614,
-                        lat: -22.92353
+                        lon: -43.45938,
+                        lat: -22.94232
                     },
-                    zoom: 10.17,
-                    pitch: 0.00,
+                    zoom: 10.67,
+                    pitch: 7.00,
                     bearing: 0.00,
                     speed: .2,
                     curve: 1
@@ -146,11 +146,11 @@ var config = {
             location: {
                 mobile: {
                     center: {
-                        lon: -43.29614,
-                        lat: -22.92353
+                        lon: -43.45938,
+                        lat: -22.94232
                     },
-                    zoom: 10.17,
-                    pitch: 0.00,
+                    zoom: 10.67,
+                    pitch: 7.00,
                     bearing: 0.00,
                     speed: .2,
                     curve: 1
@@ -186,12 +186,12 @@ var config = {
             location: {
                 mobile: {
                     center: {
-                        lon: -43.29614,
-                        lat: -22.92353
+                        lon: -43.54516,
+                        lat: -22.98354
                     },
-                    zoom: 10.17,
-                    pitch: 0.00,
-                    bearing: 0.00,
+                    zoom: 11.86,
+                    pitch: 60.00,
+                    bearing: 38.08,
                     speed: .2,
                     curve: 1
                 },
@@ -226,11 +226,11 @@ var config = {
             location: {
                 mobile: {
                     center: {
-                        lon: -43.29614,
-                        lat: -22.92353
+                        lon: -43.66089,
+                        lat: -22.92225
                     },
-                    zoom: 10.17,
-                    pitch: 0.00,
+                    zoom: 13.36,
+                    pitch: 60.00,
                     bearing: 0.00,
                     speed: .2,
                     curve: 1
@@ -266,12 +266,12 @@ var config = {
             location: {
                 mobile: {
                     center: {
-                        lon: -43.29614,
-                        lat: -22.92353
+                        lon: -43.35712,
+                        lat: -22.83340
                     },
-                    zoom: 10.17,
-                    pitch: 0.00,
-                    bearing: 0.00,
+                    zoom: 13.26,
+                    pitch: 60.00,
+                    bearing: -151.90,
                     speed: .2,
                     curve: 1
                 },
@@ -301,17 +301,17 @@ var config = {
             ]
         },
         {
-            id: 'numero3-1',
+            id: 'numero3-0',
             // mapAnimation: 'easeTo', // flyTo, easeTo, seinao
             location: {
                 mobile: {
                     center: {
-                        lon: -43.29614,
-                        lat: -22.92353
+                        lon: -43.24732,
+                        lat: -22.95260
                     },
-                    zoom: 10.17,
-                    pitch: 0.00,
-                    bearing: 0.00,
+                    zoom: 12.33,
+                    pitch: 60.00,
+                    bearing: -51.24,
                     speed: .2,
                     curve: 1
                 },
@@ -346,11 +346,11 @@ var config = {
             location: {
                 mobile: {
                     center: {
-                        lon: -43.29614,
-                        lat: -22.92353
+                        lon: -43.45938,
+                        lat: -22.94232
                     },
-                    zoom: 10.17,
-                    pitch: 0.00,
+                    zoom: 10.67,
+                    pitch: 7.00,
                     bearing: 0.00,
                     speed: .2,
                     curve: 1
