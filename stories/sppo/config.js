@@ -109,7 +109,7 @@ var config = {
                         lon: -43.45938,
                         lat: -22.94232
                     },
-                    zoom: 10.67,
+                    zoom: 8.67,
                     pitch: 7.00,
                     bearing: 0.00,
                     speed: .2,
@@ -149,7 +149,7 @@ var config = {
                         lon: -43.45938,
                         lat: -22.94232
                     },
-                    zoom: 10.67,
+                    zoom: 8.67,
                     pitch: 7.00,
                     bearing: 0.00,
                     speed: .2,
@@ -189,7 +189,7 @@ var config = {
                         lon: -43.54516,
                         lat: -22.98354
                     },
-                    zoom: 11.86,
+                    zoom: 9.86,
                     pitch: 60.00,
                     bearing: 38.08,
                     speed: .2,
@@ -229,7 +229,7 @@ var config = {
                         lon: -43.66089,
                         lat: -22.92225
                     },
-                    zoom: 13.36,
+                    zoom: 11.36,
                     pitch: 60.00,
                     bearing: 0.00,
                     speed: .2,
@@ -269,7 +269,7 @@ var config = {
                         lon: -43.35712,
                         lat: -22.83340
                     },
-                    zoom: 13.26,
+                    zoom: 11.26,
                     pitch: 60.00,
                     bearing: -151.90,
                     speed: .2,
@@ -309,7 +309,7 @@ var config = {
                         lon: -43.24732,
                         lat: -22.95260
                     },
-                    zoom: 12.33,
+                    zoom: 10.33,
                     pitch: 60.00,
                     bearing: -51.24,
                     speed: .2,
@@ -349,7 +349,7 @@ var config = {
                         lon: -43.45938,
                         lat: -22.94232
                     },
-                    zoom: 10.67,
+                    zoom: 8.67,
                     pitch: 7.00,
                     bearing: 0.00,
                     speed: .2,
