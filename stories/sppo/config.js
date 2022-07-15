@@ -231,23 +231,23 @@ var config = {
             location: {
                 mobile: {
                     center: {
-                        lon: -43.66089,
-                        lat: -22.92225
+                        lon: -43.17224,
+                        lat: -22.90651
                     },
-                    zoom: 11.36,
+                    zoom: 12.51,
                     pitch: 60.00,
-                    bearing: 0.00,
+                    bearing: -70.40,
                     speed: .2,
                     curve: 1
                 },
                 desktop: {
                     center: {
-                        lon: -43.66089,
-                        lat: -22.92225
+                        lon: -43.17224,
+                        lat: -22.90651
                     },
-                    zoom: 13.36,
+                    zoom: 14.51,
                     pitch: 60.00,
-                    bearing: 0.00,
+                    bearing: -70.40,
                     speed: .2,
                     curve: 1
                 }
@@ -271,23 +271,23 @@ var config = {
             location: {
                 mobile: {
                     center: {
-                        lon: -43.35712,
-                        lat: -22.83340
+                        lon: -43.34443,
+                        lat: -22.85287
                     },
-                    zoom: 11.26,
+                    zoom: 11.94,
                     pitch: 60.00,
-                    bearing: -151.90,
+                    bearing: 85.53,
                     speed: .2,
                     curve: 1
                 },
                 desktop: {
                     center: {
-                        lon: -43.35712,
-                        lat: -22.83340
+                        lon: -43.34443,
+                        lat: -22.85287
                     },
-                    zoom: 13.26,
+                    zoom: 13.94,
                     pitch: 60.00,
-                    bearing: -151.90,
+                    bearing: 85.53,
                     speed: .2,
                     curve: 1
                 }
