@@ -449,10 +449,10 @@ var config = {
         },
         desktop: {
           center: {
-            lon: -43.25942,
-            lat: -22.92894,
+            lon: -43.44823,
+            lat: -22.92715,
           },
-          zoom: 9.93,
+          zoom: 10.2,
           pitch: 0.0,
           bearing: 0.0,
           speed: 1,
@@ -499,10 +499,10 @@ var config = {
         },
         desktop: {
           center: {
-            lon: -43.25942,
-            lat: -22.92894,
+            lon: -43.44823,
+            lat: -22.92715,
           },
-          zoom: 9.93,
+          zoom: 10.2,
           pitch: 0.0,
           bearing: 0.0,
           speed: 1,
@@ -557,10 +557,10 @@ var config = {
         },
         desktop: {
           center: {
-            lon: -43.25942,
-            lat: -22.92894,
+            lon: -43.44823,
+            lat: -22.92715,
           },
-          zoom: 9.93,
+          zoom: 10.2,
           pitch: 0.0,
           bearing: 0.0,
           speed: 1,
@@ -623,10 +623,10 @@ var config = {
         },
         desktop: {
           center: {
-            lon: -43.25942,
-            lat: -22.92894,
+            lon: -43.44823,
+            lat: -22.92715,
           },
-          zoom: 9.93,
+          zoom: 10.2,
           pitch: 0.0,
           bearing: 0.0,
           speed: 1,
@@ -698,10 +698,10 @@ var config = {
         },
         desktop: {
           center: {
-            lon: -43.25942,
-            lat: -22.92894,
+            lon: -43.44823,
+            lat: -22.92715,
           },
-          zoom: 9.93,
+          zoom: 10.2,
           pitch: 0.0,
           bearing: 0.0,
           speed: 1,
@@ -781,7 +781,7 @@ var config = {
         },
         desktop: {
           center: {
-            lon: -43.28405,
+            lon: -43.35405,
             lat: -22.96238,
           },
           zoom: 11.62,
@@ -840,7 +840,7 @@ var config = {
         },
         desktop: {
           center: {
-            lon: -43.28405,
+            lon: -43.35405,
             lat: -22.96238,
           },
           zoom: 11.62,
@@ -901,10 +901,10 @@ var config = {
         },
         desktop: {
           center: {
-            lon: -43.25942,
-            lat: -22.92894,
+            lon: -43.44823,
+            lat: -22.92715,
           },
-          zoom: 9.93,
+          zoom: 10.2,
           pitch: 0.0,
           bearing: 0.0,
           speed: 1,
@@ -996,10 +996,10 @@ var config = {
         },
         desktop: {
           center: {
-            lon: -43.25942,
-            lat: -22.92894,
+            lon: -43.44823,
+            lat: -22.92715,
           },
-          zoom: 9.93,
+          zoom: 10.2,
           pitch: 0.0,
           bearing: 0.0,
           speed: 1,
@@ -1066,10 +1066,10 @@ var config = {
         },
         desktop: {
           center: {
-            lon: -43.25942,
-            lat: -22.92894,
+            lon: -43.44823,
+            lat: -22.92715,
           },
-          zoom: 9.93,
+          zoom: 10.2,
           pitch: 0.0,
           bearing: 0.0,
           speed: 1,
@@ -1123,10 +1123,10 @@ var config = {
         },
         desktop: {
           center: {
-            lon: -43.25942,
-            lat: -22.92894,
+            lon: -43.44823,
+            lat: -22.92715,
           },
-          zoom: 9.93,
+          zoom: 10.2,
           pitch: 0.0,
           bearing: 0.0,
           speed: 1,
@@ -1181,10 +1181,10 @@ var config = {
         },
         desktop: {
           center: {
-            lon: -43.25942,
-            lat: -22.92894,
+            lon: -43.44823,
+            lat: -22.92715,
           },
-          zoom: 9.93,
+          zoom: 10.2,
           pitch: 0.0,
           bearing: 0.0,
           speed: 1,
@@ -1237,7 +1237,7 @@ var config = {
         },
         desktop: {
           center: {
-            lon: -43.23681,
+            lon: -43.33681,
             lat: -22.90992,
           },
           zoom: 10.58,
@@ -1365,10 +1365,10 @@ var config = {
         },
         desktop: {
           center: {
-            lon: -43.25942,
-            lat: -22.92894,
+            lon: -43.44823,
+            lat: -22.92715,
           },
-          zoom: 9.93,
+          zoom: 10.2,
           pitch: 0.0,
           bearing: 0.0,
           speed: 1,
@@ -1429,10 +1429,10 @@ var config = {
         },
         desktop: {
           center: {
-            lon: -43.25942,
-            lat: -22.92894,
+            lon: -43.44823,
+            lat: -22.92715,
           },
-          zoom: 9.93,
+          zoom: 10.2,
           pitch: 0.0,
           bearing: 0.0,
           speed: 1,
@@ -1494,7 +1494,7 @@ var config = {
         },
         desktop: {
           center: {
-            lon: -43.21537,
+            lon: -43.31537,
             lat: -22.86059,
           },
           zoom: 11.01,
@@ -1553,7 +1553,7 @@ var config = {
         },
         desktop: {
           center: {
-            lon: -43.20766,
+            lon: -43.21166,
             lat: -22.89912,
           },
           zoom: 15.99,
