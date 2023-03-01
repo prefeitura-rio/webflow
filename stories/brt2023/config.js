@@ -24,7 +24,7 @@ var labelsContainer = [
         textSize: 22,
         textSizeMobile: 10,
         textFont: ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
-        textHaloColor: "#d1be1a",
+        textHaloColor: "#c8941e",
         textHaloWidth: 50,
         textHaloBlur: 50,
         coordinates: [-43.33511, -22.76938],
@@ -88,7 +88,7 @@ var labelsContainer = [
         textSize: 25,
         textSizeMobile: 12,
         textFont: ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
-        textHaloColor: "#d1be1a",
+        textHaloColor: "#c8941e",
         textHaloWidth: 50,
         textHaloBlur: 50,
         coordinates: [-43.21243, -22.90052],
@@ -128,7 +128,7 @@ var labelsContainer = [
       },
       {
         description: "TRANSBRASIL",
-        textColor: "#d1be1a",
+        textColor: "#c8941e",
         textSize: 25,
         textSizeMobile: 10,
         textFont: ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
@@ -160,7 +160,7 @@ var labelsContainer = [
     labels: [
       {
         description: "TRAÇADO DO FUTURO CORREDOR TRANSBRASIL",
-        textColor: "#d1be1a",
+        textColor: "#c8941e",
         textSize: 17,
         textSizeMobile: 10,
         textFont: ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
@@ -279,7 +279,7 @@ var labelsContainer = [
         textSize: 22,
         textSizeMobile: 10,
         textFont: ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
-        textHaloColor: "#d1be1a",
+        textHaloColor: "#c8941e",
         textHaloWidth: 50,
         textHaloBlur: 50,
         textJustify: "left",
@@ -292,7 +292,7 @@ var labelsContainer = [
     labels: [
       {
         description: "OBRAS DA TRANSBRASIL NÃO AVANÇARAM",
-        textColor: "#d1be1a",
+        textColor: "#c8941e",
         textSize: 22,
         textSizeMobile: 10,
         textFont: ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
