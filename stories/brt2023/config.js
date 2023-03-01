@@ -1719,6 +1719,121 @@ var config = {
       ],
     },
     {
+      id: "final4",
+      // mapAnimation: 'easeTo', // flyTo, easeTo, seinao
+      location: {
+        mobile: {
+          center: {
+            lon: -43.45268,
+            lat: -22.9353,
+          },
+          zoom: 8.55,
+          pitch: 0.0,
+          bearing: 0.0,
+          speed: 1,
+          curve: 1,
+        },
+        desktop: {
+          center: {
+            lon: -43.44823,
+            lat: -22.92715,
+          },
+          zoom: 10.2,
+          pitch: 0.0,
+          bearing: 0.0,
+          speed: 1,
+          curve: 1,
+        },
+      },
+
+      mapAnimation: "flyTo",
+      // callback: 'newContainer',
+      onChapterEnter: [
+        {
+          layer: "transporte-completo",
+          opacity: 1,
+        },
+        {
+          layer: "corredor_transoeste",
+          opacity: 1,
+        },
+        {
+          layer: "corredor_transcarioca",
+          opacity: 1,
+        },
+        {
+          layer: "corredor_transolimpica",
+          opacity: 1,
+        },
+        {
+          layer: "corredor_transbrasil",
+          opacity: 1,
+        },
+        {
+          layer: "label-transoeste",
+          opacity: 1,
+        },
+        {
+          layer: "label-transcarioca",
+          opacity: 1,
+        },
+        {
+          layer: "label-transolimpica",
+          opacity: 1,
+        },
+        {
+          layer: "label-transbrasil",
+          opacity: 1,
+        },
+        {
+          layer: "label-transporte",
+          opacity: 1,
+        },
+      ],
+      onChapterExit: [
+        {
+          layer: "transporte-completo",
+          opacity: 0,
+        },
+        {
+          layer: "corredor_transoeste",
+          opacity: 0,
+        },
+        {
+          layer: "corredor_transcarioca",
+          opacity: 0,
+        },
+        {
+          layer: "corredor_transolimpica",
+          opacity: 0,
+        },
+        {
+          layer: "corredor_transbrasil",
+          opacity: 0,
+        },
+        {
+          layer: "label-transoeste",
+          opacity: 0,
+        },
+        {
+          layer: "label-transcarioca",
+          opacity: 0,
+        },
+        {
+          layer: "label-transolimpica",
+          opacity: 0,
+        },
+        {
+          layer: "label-transbrasil",
+          opacity: 0,
+        },
+        {
+          layer: "label-transporte",
+          opacity: 0,
+        },
+      ],
+    },
+    {
       id: "footer",
       // mapAnimation: 'easeTo', // flyTo, easeTo, seinao
       location: {
