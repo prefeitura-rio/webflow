@@ -274,7 +274,7 @@ var labelsContainer = [
     layerId: "label-transbrasil-final",
     labels: [
       {
-        description: "CORREDOR TRANSBRASIL SERÁ FINALIZADO AINDA EM 2022",
+        description: "CORREDOR TRANSBRASIL SERÁ FINALIZADO EM 2023",
         textColor: "#ffffff",
         textSize: 22,
         textSizeMobile: 10,
